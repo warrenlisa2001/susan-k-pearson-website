@@ -275,9 +275,15 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
+        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden bg-black">
             <div class="absolute inset-0 z-0">
-                <img src="/images/hero-main.jpg" alt="Fundamental Healing Through Energy, Guidance Through Conscience" class="w-full h-full object-cover">
+                <img src="/images/hero-final.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="w-full h-full object-contain md:object-cover">
+            </div>
+            <!-- Interactive overlay for mobile -->
+            <div class="absolute inset-0 z-10 flex items-center justify-center md:hidden">
+                <a href="#booking" class="bg-gold/0 hover:bg-gold/10 text-transparent py-20 px-20 transition-all duration-300">
+                    Book
+                </a>
             </div>
         </section>
 
