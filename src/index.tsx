@@ -244,9 +244,9 @@ app.get('/', (c) => {
         <!-- Navigation -->
         <nav class="fixed w-full bg-midnight/95 backdrop-blur-sm shadow-sm z-50 border-b border-gold/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
+                <div class="flex justify-between items-center h-24">
                     <div class="flex items-center">
-                        <img src="/images/skp-logo.png" alt="SKP" class="h-12 w-auto">
+                        <img src="/images/skp-lotus-logo.png" alt="Susan K. Pearson - SKP" class="h-20 w-auto">
                     </div>
                     <div class="hidden md:flex space-x-8">
                         <a href="#home" class="text-cream hover:text-gold transition-colors">Home</a>
