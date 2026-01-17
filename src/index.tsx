@@ -1178,6 +1178,7 @@ app.get('/', (c) => {
                         <a href="#services" class="text-cream hover:text-gold transition-colors">Services</a>
                         <a href="#pricing" class="text-cream hover:text-gold transition-colors">Pricing</a>
                         <a href="#blog" class="text-cream hover:text-gold transition-colors">Blog</a>
+                        <a href="#faq" class="text-cream hover:text-gold transition-colors">FAQ</a>
                         <a href="#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                     <button id="mobileMenuBtn" class="md:hidden text-cream">
@@ -1193,6 +1194,7 @@ app.get('/', (c) => {
                     <a href="#services" class="block text-cream hover:text-gold transition-colors">Services</a>
                     <a href="#pricing" class="block text-cream hover:text-gold transition-colors">Pricing</a>
                     <a href="#blog" class="block text-cream hover:text-gold transition-colors">Blog</a>
+                    <a href="#faq" class="block text-cream hover:text-gold transition-colors">FAQ</a>
                     <a href="#booking" class="block text-gold hover:text-champagne transition-colors font-medium">Book Session</a>
                 </div>
             </div>
