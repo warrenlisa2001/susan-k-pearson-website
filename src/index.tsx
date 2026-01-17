@@ -275,32 +275,14 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 min-h-screen flex items-center hero-gradient">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="/images/hero-banner.jpg" alt="Elemental Healing" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
                 <div class="text-center fade-in-up">
-                    <div class="mb-6">
-                        <span class="inline-block text-6xl md:text-8xl font-serif font-light text-charcoal tracking-widest">SKP</span>
-                    </div>
-                    <h1 class="text-4xl md:text-6xl font-serif font-light text-charcoal mb-6">
-                        Susan K. Pearson
-                    </h1>
-                    <p class="text-xl md:text-2xl elegant-text text-charcoal/80 mb-4">
-                        Elemental Healing Through Energy, Balance Through Consciousness
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-4 text-sm md:text-base text-charcoal/70 mb-12">
-                        <span>Energy Medicine</span>
-                        <span class="text-gold">•</span>
-                        <span>Reiki Master</span>
-                        <span class="text-gold">•</span>
-                        <span>Hypnotherapy</span>
-                        <span class="text-gold">•</span>
-                        <span>Somatic Alignment</span>
-                    </div>
-                    <div class="elegant-text text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto mb-12">
-                        <p class="mb-4">Reconnect with your body's natural wisdom.</p>
-                        <p>Experience transformation through mindful energy work.</p>
-                    </div>
-                    <a href="#booking" class="inline-block bg-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/90 transition-colors text-lg font-medium">
+                    <a href="#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors text-lg font-medium shadow-lg">
                         Book a Session
                     </a>
                 </div>
