@@ -277,15 +277,7 @@ app.get('/', (c) => {
         <!-- Hero Section -->
         <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <img src="/images/hero-banner.jpg" alt="Elemental Healing Through Energy, Balance Through Consciousness" class="w-full h-full object-cover">
-            </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-                <div class="text-center fade-in-up">
-                    <div class="h-96"></div>
-                    <a href="#booking" class="inline-block bg-gold text-midnight px-10 py-5 rounded-sm hover:bg-champagne transition-colors text-xl font-medium shadow-2xl">
-                        Book a Session
-                    </a>
-                </div>
+                <img src="/images/hero-main.jpg" alt="Fundamental Healing Through Energy, Guidance Through Conscience" class="w-full h-full object-cover">
             </div>
         </section>
 
