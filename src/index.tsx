@@ -112,6 +112,45 @@ const blogPosts = [
   }
 ]
 
+// API Routes
+// Booking submission endpoint
+app.post('/api/booking', async (c) => {
+  try {
+    const data = await c.req.json()
+    
+    // Validate required fields
+    if (!data.name || !data.email || !data.phone || !data.session) {
+      return c.json({ 
+        success: false, 
+        message: 'Please fill in all required fields' 
+      }, 400)
+    }
+    
+    // Here you would typically:
+    // 1. Save to database
+    // 2. Send email notification to Susan
+    // 3. Send confirmation email to client
+    
+    // For now, we'll just log it and return success
+    console.log('New booking request:', data)
+    
+    // In production, integrate with email service (SendGrid, Mailgun, etc.)
+    // Example: await sendEmail(data)
+    
+    return c.json({
+      success: true,
+      message: `Thank you, ${data.name}! Your booking request has been received. I'll contact you within 24 hours to confirm your ${data.session} session.`
+    })
+    
+  } catch (error) {
+    console.error('Booking error:', error)
+    return c.json({
+      success: false,
+      message: 'An error occurred. Please contact us directly at +971 55 177 0957'
+    }, 500)
+  }
+})
+
 // Main page
 app.get('/', (c) => {
   return c.html(`
@@ -128,8 +167,6 @@ app.get('/', (c) => {
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
         
-        <!-- Calendly CSS -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         
         <script>
           tailwind.config = {
@@ -242,11 +279,19 @@ app.get('/', (c) => {
     </head>
     <body class="smooth-scroll">
         <!-- Navigation -->
-        <nav class="fixed w-full bg-midnight/95 backdrop-blur-sm shadow-sm z-50 border-b border-gold/20">
+        <nav class="fixed w-full bg-midnight backdrop-blur-sm shadow-lg z-50 border-b border-gold/30">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-24">
                     <div class="flex items-center">
-                        <img src="/images/skp-lotus-logo.png" alt="Susan K. Pearson - SKP" class="h-20 w-auto">
+                        <a href="#home" class="flex items-center gap-3">
+                            <div class="relative">
+                                <img src="/images/skp-lotus-logo.png" alt="SKP" class="h-20 w-auto filter brightness-110 contrast-125">
+                            </div>
+                            <div class="hidden md:block">
+                                <div class="text-cream font-serif text-lg leading-tight">Susan K. Pearson</div>
+                                <div class="text-gold text-xs tracking-wider">ENERGY · BODY · CONSCIOUSNESS</div>
+                            </div>
+                        </a>
                     </div>
                     <div class="hidden md:flex space-x-8">
                         <a href="#home" class="text-cream hover:text-gold transition-colors">Home</a>
@@ -254,7 +299,7 @@ app.get('/', (c) => {
                         <a href="#services" class="text-cream hover:text-gold transition-colors">Services</a>
                         <a href="#pricing" class="text-cream hover:text-gold transition-colors">Pricing</a>
                         <a href="#blog" class="text-cream hover:text-gold transition-colors">Blog</a>
-                        <a href="#booking" class="bg-gold text-midnight px-6 py-2 rounded-sm hover:bg-champagne transition-colors">Book Session</a>
+                        <a href="#booking" class="bg-gold text-midnight px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                     <button id="mobileMenuBtn" class="md:hidden text-cream">
                         <i class="fas fa-bars text-2xl"></i>
@@ -275,14 +320,23 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 h-[60vh] md:h-[70vh] flex items-center relative overflow-hidden bg-black">
+        <section id="home" class="pt-20 h-[65vh] md:h-[75vh] flex items-center justify-center relative overflow-hidden bg-black">
             <div class="absolute inset-0 z-0">
-                <img src="/images/hero-final.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="w-full h-full object-cover">
+                <img src="/images/hero-final.jpg" alt="Fundamental Healing" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
             </div>
-            <!-- Interactive overlay for mobile -->
-            <div class="absolute inset-0 z-10 flex items-center justify-center md:hidden">
-                <a href="#booking" class="bg-gold/0 hover:bg-gold/10 text-transparent py-20 px-20 transition-all duration-300">
-                    Book
+            
+            <!-- Hero Content Overlay -->
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-light text-gold mb-6 drop-shadow-2xl">
+                    Fundamental Healing Through Energy
+                </h1>
+                <p class="text-2xl md:text-3xl text-gold/90 font-light mb-8 drop-shadow-xl">
+                    & Inner Guidance
+                </p>
+                <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
+                <a href="#booking" class="inline-block bg-gold text-midnight px-8 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-2xl hover:scale-105 transform">
+                    Book a Session
                 </a>
             </div>
         </section>
@@ -851,31 +905,101 @@ app.get('/', (c) => {
             </div>
         </section>
 
-        <!-- Booking Section with Calendly -->
+        <!-- Booking Section -->
         <section id="booking" class="py-20 bg-white">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Book Your Session</h2>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                     <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Select a time that works for you. I look forward to supporting your healing journey.
+                        Complete the form below to request a session. I'll respond within 24 hours to confirm your appointment.
                     </p>
                 </div>
                 
-                <!-- Calendly Widget -->
-                <div class="bg-cream p-8 rounded-sm shadow-sm">
-                    <!-- Calendly inline widget begin -->
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/susankpearson" style="min-width:320px;height:700px;"></div>
-                    <!-- Calendly inline widget end -->
+                <!-- Booking Form -->
+                <div class="bg-cream p-8 rounded-sm shadow-lg">
+                    <form id="bookingForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-charcoal font-medium mb-2">Full Name *</label>
+                                <input type="text" name="name" required 
+                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-charcoal font-medium mb-2">Email Address *</label>
+                                <input type="email" name="email" required 
+                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-charcoal font-medium mb-2">Phone Number *</label>
+                                <input type="tel" name="phone" required 
+                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-charcoal font-medium mb-2">Preferred Session *</label>
+                                <select name="session" required 
+                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                                    <option value="">Select a service...</option>
+                                    <option value="deep-alignment">Deep Alignment Session (90 min) - AED 950</option>
+                                    <option value="hypnotherapy">Clinical Hypnotherapy (75 min) - AED 850</option>
+                                    <option value="skp-method">SKP Method (120 min) - AED 1,200</option>
+                                    <option value="consultation">Free Consultation (15 min)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-charcoal font-medium mb-2">Preferred Date</label>
+                                <input type="date" name="date" 
+                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-charcoal font-medium mb-2">Preferred Time</label>
+                                <select name="time" 
+                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                                    <option value="">Select time...</option>
+                                    <option value="morning">Morning (9am - 12pm)</option>
+                                    <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                                    <option value="evening">Evening (4pm - 8pm)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-charcoal font-medium mb-2">Message / Special Requests</label>
+                            <textarea name="message" rows="4" 
+                                class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors resize-none"
+                                placeholder="Please share any specific concerns or questions..."></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" 
+                                class="bg-gold text-midnight px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-lg hover:scale-105 transform">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Request Booking
+                            </button>
+                            <p class="mt-4 text-sm text-charcoal/60">
+                                I'll respond within 24 hours to confirm your session
+                            </p>
+                        </div>
+                        
+                        <div id="formMessage" class="hidden mt-4 p-4 rounded-sm"></div>
+                    </form>
                     
-                    <div class="mt-8 text-center text-sm text-charcoal/70">
-                        <p class="mb-2">Can't find a suitable time? Reach out directly:</p>
-                        <p class="text-gold font-medium">
-                            <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
-                        </p>
-                        <p class="text-charcoal/70 mt-1">
-                            <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
-                        </p>
+                    <div class="mt-8 text-center text-sm text-charcoal/70 border-t border-gold/20 pt-6">
+                        <p class="mb-3 font-medium text-charcoal">Prefer to reach out directly?</p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors font-medium">
+                                <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
+                            </a>
+                            <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-champagne transition-colors font-medium">
+                                <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -970,8 +1094,52 @@ app.get('/', (c) => {
             </div>
         </footer>
 
-        <!-- Calendly JS -->
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        
+        <script>
+          // Booking Form Handler
+          document.addEventListener('DOMContentLoaded', function() {
+            const bookingForm = document.getElementById('bookingForm');
+            const formMessage = document.getElementById('formMessage');
+            
+            if (bookingForm) {
+              bookingForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(bookingForm);
+                const data = Object.fromEntries(formData.entries());
+                
+                try {
+                  const response = await fetch('/api/booking', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                  });
+                  
+                  const result = await response.json();
+                  
+                  if (response.ok) {
+                    formMessage.className = 'mt-4 p-4 rounded-sm bg-green-100 border border-green-400 text-green-700';
+                    formMessage.textContent = result.message || 'Thank you! Your booking request has been received. I will contact you within 24 hours.';
+                    formMessage.classList.remove('hidden');
+                    bookingForm.reset();
+                  } else {
+                    throw new Error(result.message || 'Something went wrong');
+                  }
+                } catch (error) {
+                  formMessage.className = 'mt-4 p-4 rounded-sm bg-red-100 border border-red-400 text-red-700';
+                  formMessage.textContent = 'There was an error submitting your request. Please contact us directly at +971 55 177 0957 or susankpearson@elementalskp.com';
+                  formMessage.classList.remove('hidden');
+                }
+                
+                setTimeout(() => {
+                  formMessage.classList.add('hidden');
+                }, 8000);
+              });
+            }
+          });
+        </script>
         
         <script>
             // Mobile menu toggle
