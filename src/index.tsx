@@ -6,6 +6,59 @@ const app = new Hono()
 
 app.use('/api/*', cors())
 app.use('/static/*', serveStatic({ root: './public' }))
+app.use('/images/*', serveStatic({ root: './public' }))
+
+// Blog data
+const blogPosts = [
+  {
+    id: 1,
+    title: "Understanding Energy Medicine: A Holistic Approach to Healing",
+    excerpt: "Energy medicine works with the body's natural electromagnetic fields to promote healing and balance. Discover how this ancient practice combines with modern understanding...",
+    date: "January 15, 2026",
+    category: "Energy Medicine",
+    readTime: "5 min read"
+  },
+  {
+    id: 2,
+    title: "The Power of Reiki: Channeling Universal Life Energy",
+    excerpt: "Reiki is a gentle yet powerful healing modality that works on physical, emotional, mental, and spiritual levels. Learn about the transformative effects of this Japanese technique...",
+    date: "January 10, 2026",
+    category: "Reiki",
+    readTime: "6 min read"
+  },
+  {
+    id: 3,
+    title: "Hypnotherapy for Lasting Change: Reprogramming Your Subconscious",
+    excerpt: "Your subconscious mind holds the key to breaking patterns and creating lasting behavioral change. Explore how clinical hypnotherapy can help you unlock your potential...",
+    date: "January 5, 2026",
+    category: "Hypnotherapy",
+    readTime: "7 min read"
+  },
+  {
+    id: 4,
+    title: "Somatic Healing: Reconnecting with Your Body's Wisdom",
+    excerpt: "Your body holds memories, emotions, and wisdom. Somatic alignment practices help you reconnect with this innate intelligence for profound healing...",
+    date: "December 28, 2025",
+    category: "Somatic Work",
+    readTime: "5 min read"
+  },
+  {
+    id: 5,
+    title: "Creating Sacred Space: Preparing for Your Healing Journey",
+    excerpt: "The environment in which healing occurs matters. Learn how to create sacred space in your daily life to support your transformational journey...",
+    date: "December 20, 2025",
+    category: "Wellness",
+    readTime: "4 min read"
+  },
+  {
+    id: 6,
+    title: "Integration: Honoring Your Healing Process",
+    excerpt: "True transformation requires time and conscious integration. Discover practices to help you embody the shifts from your healing sessions...",
+    date: "December 15, 2025",
+    category: "Integration",
+    readTime: "6 min read"
+  }
+]
 
 // Main page
 app.get('/', (c) => {
@@ -22,6 +75,10 @@ app.get('/', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        
+        <!-- Calendly CSS -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        
         <script>
           tailwind.config = {
             theme: {
@@ -85,6 +142,24 @@ app.get('/', (c) => {
           .fade-in-up {
             animation: fadeInUp 0.8s ease-out;
           }
+          .profile-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #C9A961;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+          }
+          .blog-card {
+            background: white;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+          }
+          .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+          }
         </style>
     </head>
     <body class="smooth-scroll">
@@ -100,7 +175,8 @@ app.get('/', (c) => {
                         <a href="#about" class="text-charcoal hover:text-gold transition-colors">About</a>
                         <a href="#services" class="text-charcoal hover:text-gold transition-colors">Services</a>
                         <a href="#approach" class="text-charcoal hover:text-gold transition-colors">Approach</a>
-                        <a href="#contact" class="text-charcoal hover:text-gold transition-colors">Contact</a>
+                        <a href="#blog" class="text-charcoal hover:text-gold transition-colors">Blog</a>
+                        <a href="#booking" class="bg-gold text-cream px-6 py-2 rounded-sm hover:bg-gold/90 transition-colors">Book Session</a>
                     </div>
                     <button id="mobileMenuBtn" class="md:hidden text-charcoal">
                         <i class="fas fa-bars text-2xl"></i>
@@ -114,7 +190,8 @@ app.get('/', (c) => {
                     <a href="#about" class="block text-charcoal hover:text-gold transition-colors">About</a>
                     <a href="#services" class="block text-charcoal hover:text-gold transition-colors">Services</a>
                     <a href="#approach" class="block text-charcoal hover:text-gold transition-colors">Approach</a>
-                    <a href="#contact" class="block text-charcoal hover:text-gold transition-colors">Contact</a>
+                    <a href="#blog" class="block text-charcoal hover:text-gold transition-colors">Blog</a>
+                    <a href="#booking" class="block text-gold hover:text-gold/80 transition-colors font-medium">Book Session</a>
                 </div>
             </div>
         </nav>
@@ -145,7 +222,7 @@ app.get('/', (c) => {
                         <p class="mb-4">Reconnect with your body's natural wisdom.</p>
                         <p>Experience transformation through mindful energy work.</p>
                     </div>
-                    <a href="#contact" class="inline-block bg-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/90 transition-colors text-lg font-medium">
+                    <a href="#booking" class="inline-block bg-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/90 transition-colors text-lg font-medium">
                         Book a Session
                     </a>
                 </div>
@@ -161,6 +238,17 @@ app.get('/', (c) => {
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="flex justify-center">
+                        <div class="text-center">
+                            <img src="https://www.genspark.ai/api/files/s/q6FMJ9Sl" alt="Susan K. Pearson" class="profile-image mx-auto mb-6">
+                            <div class="mb-4">
+                                <p class="text-2xl font-serif text-charcoal mb-2">Susan K. Pearson</p>
+                                <p class="text-gold"><i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957</p>
+                                <p class="text-charcoal/70 mt-2"><i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="space-y-6 text-charcoal/80 leading-relaxed">
                         <p class="text-lg">
                             I work at the intersection of energy, body, and consciousness—combining Master-level Reiki, 
@@ -176,35 +264,36 @@ app.get('/', (c) => {
                             I bring a refined, sophisticated approach to healing that respects both ancient wisdom and 
                             contemporary understanding of the mind-body connection.
                         </p>
-                    </div>
-                    <div class="bg-stone/50 p-8 rounded-sm">
-                        <h3 class="text-2xl font-serif text-charcoal mb-6">Credentials & Training</h3>
-                        <ul class="space-y-3 text-charcoal/80">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Master-level Reiki Practitioner</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Certified Energy Medicine Specialist</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Clinical Hypnotherapy Certification</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Somatic Alignment Practitioner</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Nir Levy Method (Coming February 2026)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Based in Dubai | Sharjah-Registered</span>
-                            </li>
-                        </ul>
+                        
+                        <div class="bg-stone/50 p-6 rounded-sm mt-8">
+                            <h3 class="text-xl font-serif text-charcoal mb-4">Credentials & Training</h3>
+                            <ul class="space-y-2 text-sm text-charcoal/80">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Master-level Reiki Practitioner</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Certified Energy Medicine Specialist</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Clinical Hypnotherapy Certification</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Somatic Alignment Practitioner</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Nir Levy Method (Coming February 2026)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Based in Dubai | Sharjah-Registered</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,8 +385,8 @@ app.get('/', (c) => {
                                 <span>Energy medicine protocols</span>
                             </li>
                         </ul>
-                        <a href="#contact" class="text-gold hover:text-gold/80 transition-colors font-medium">
-                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
 
@@ -328,8 +417,8 @@ app.get('/', (c) => {
                                 <span>Nervous system regulation</span>
                             </li>
                         </ul>
-                        <a href="#contact" class="text-gold hover:text-gold/80 transition-colors font-medium">
-                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
 
@@ -360,7 +449,7 @@ app.get('/', (c) => {
                                 <span>Conscious integration</span>
                             </li>
                         </ul>
-                        <a href="#contact" class="text-gold hover:text-gold/80 transition-colors font-medium">
+                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium">
                             Coming February 2026 <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -445,14 +534,84 @@ app.get('/', (c) => {
             </div>
         </section>
 
+        <!-- Blog Section -->
+        <section id="blog" class="py-20 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Insights & Wisdom</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        Explore articles on energy medicine, healing practices, and conscious living
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    ${blogPosts.map(post => `
+                        <article class="blog-card">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-xs text-gold font-medium uppercase tracking-wider">${post.category}</span>
+                                    <span class="text-xs text-charcoal/60">${post.readTime}</span>
+                                </div>
+                                <h3 class="text-xl font-serif text-charcoal mb-3 leading-tight">${post.title}</h3>
+                                <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">${post.excerpt}</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-charcoal/60"><i class="far fa-calendar mr-2"></i>${post.date}</span>
+                                    <a href="/blog/${post.id}" class="text-gold hover:text-gold/80 transition-colors text-sm font-medium">
+                                        Read More <i class="fas fa-arrow-right ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    `).join('')}
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="/blog" class="inline-block bg-gold text-cream px-8 py-3 rounded-sm hover:bg-gold/90 transition-colors font-medium">
+                        View All Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section with Calendly -->
+        <section id="booking" class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Book Your Session</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        Select a time that works for you. I look forward to supporting your healing journey.
+                    </p>
+                </div>
+                
+                <!-- Calendly Widget -->
+                <div class="bg-cream p-8 rounded-sm shadow-sm">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/susankpearson" style="min-width:320px;height:700px;"></div>
+                    <!-- Calendly inline widget end -->
+                    
+                    <div class="mt-8 text-center text-sm text-charcoal/70">
+                        <p class="mb-2">Can't find a suitable time? Reach out directly:</p>
+                        <p class="text-gold font-medium">
+                            <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
+                        </p>
+                        <p class="text-charcoal/70 mt-1">
+                            <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="py-20 bg-cream">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Begin Your Journey</h2>
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Get in Touch</h2>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                     <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Take the first step toward transformation. Reach out to schedule your consultation.
+                        Have questions? I'm here to support you on your healing journey.
                     </p>
                 </div>
                 
@@ -496,8 +655,11 @@ app.get('/', (c) => {
                 <div class="mt-12 text-center">
                     <p class="text-charcoal/70 mb-4">Based in Dubai | Sharjah-Registered</p>
                     <div class="flex justify-center space-x-6">
-                        <a href="mailto:contact@elementalhealing.ae" class="text-gold hover:text-gold/80 transition-colors">
+                        <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-gold/80 transition-colors">
                             <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="tel:+971551770957" class="text-gold hover:text-gold/80 transition-colors">
+                            <i class="fas fa-phone text-xl"></i>
                         </a>
                         <a href="#" class="text-gold hover:text-gold/80 transition-colors">
                             <i class="fab fa-instagram text-xl"></i>
@@ -518,13 +680,22 @@ app.get('/', (c) => {
                         <span class="text-4xl font-serif font-light text-cream tracking-widest">SKP</span>
                     </div>
                     <p class="mb-4 elegant-text text-lg">Susan K. Pearson | Elemental Healing</p>
-                    <p class="text-sm mb-6">Energy Medicine • Reiki Master • Hypnotherapy • Somatic Alignment</p>
+                    <p class="text-sm mb-2">Energy Medicine • Reiki Master • Hypnotherapy • Somatic Alignment</p>
+                    <p class="text-sm mb-2">
+                        <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
+                    </p>
+                    <p class="text-sm mb-6">
+                        <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                    </p>
                     <div class="section-divider opacity-30"></div>
                     <p class="text-xs mt-6">© 2026 Elemental Healing LLC. All rights reserved. | Confidential & Proprietary</p>
                 </div>
             </div>
         </footer>
 
+        <!-- Calendly JS -->
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        
         <script>
             // Mobile menu toggle
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -560,7 +731,7 @@ app.get('/', (c) => {
             // Contact form handling
             document.getElementById('contactForm').addEventListener('submit', (e) => {
                 e.preventDefault();
-                alert('Thank you for your interest. Your message has been received. I will respond within 24 hours.');
+                alert('Thank you for your interest. Your message has been received. I will respond within 24 hours.\\n\\nFor immediate assistance, please call +971 55 177 0957 or email susankpearson@elementalskp.com');
                 e.target.reset();
             });
 
@@ -582,6 +753,51 @@ app.get('/', (c) => {
                 observer.observe(section);
             });
         </script>
+    </body>
+    </html>
+  `)
+})
+
+// Blog listing page
+app.get('/blog', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog | Susan K. Pearson</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+          body { font-family: 'Montserrat', sans-serif; background-color: #F5F1E8; }
+          h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+        </style>
+    </head>
+    <body class="pt-20">
+        <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+            <div class="max-w-7xl mx-auto px-4 py-4">
+                <a href="/" class="text-2xl font-serif text-gray-800">← Back to Home</a>
+            </div>
+        </nav>
+        
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <h1 class="text-5xl font-serif text-center mb-8">All Blog Posts</h1>
+            <div class="grid md:grid-cols-3 gap-8">
+                ${blogPosts.map(post => `
+                    <article class="bg-white p-6 rounded shadow-sm">
+                        <span class="text-xs text-gold font-medium">${post.category}</span>
+                        <h3 class="text-xl font-serif mt-2 mb-3">${post.title}</h3>
+                        <p class="text-sm text-gray-600 mb-4">${post.excerpt}</p>
+                        <div class="flex justify-between items-center text-xs text-gray-500">
+                            <span>${post.date}</span>
+                            <a href="/blog/${post.id}" class="text-gold">Read More →</a>
+                        </div>
+                    </article>
+                `).join('')}
+            </div>
+        </div>
     </body>
     </html>
   `)
