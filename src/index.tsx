@@ -1681,22 +1681,53 @@ app.get('/', (c) => {
                     </p>
                 </div>
                 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    ${testimonials.map((testimonial, index) => `
-                        <div class="bg-midnight border border-gold/20 p-8 rounded-sm card-hover ${index === 0 ? 'lg:col-span-2' : ''}">
-                            <div class="flex items-center mb-6">
-                                <div class="text-4xl mr-4">${testimonial.image}</div>
-                                <div>
-                                    <h4 class="font-serif text-xl text-gold">${testimonial.name}</h4>
-                                    <p class="text-sm text-cream/60">${testimonial.location}</p>
-                                    <div class="flex mt-1">
-                                        ${Array(testimonial.rating).fill('').map(() => '<i class="fas fa-star text-gold text-xs"></i>').join('')}
+                <!-- Testimonials Carousel -->
+                <div class="relative max-w-5xl mx-auto">
+                    <!-- Carousel Container -->
+                    <div class="overflow-hidden rounded-sm">
+                        <div id="testimonialCarousel" class="flex transition-transform duration-500 ease-in-out">
+                            ${testimonials.map((testimonial, index) => `
+                                <div class="min-w-full px-4">
+                                    <div class="bg-midnight border-2 border-gold/30 p-8 md:p-12 rounded-sm">
+                                        <!-- Quote Icon -->
+                                        <div class="text-center mb-6">
+                                            <i class="fas fa-quote-left text-gold text-4xl opacity-50"></i>
+                                        </div>
+                                        
+                                        <!-- Testimonial Text -->
+                                        <p class="text-cream/90 text-lg md:text-xl leading-relaxed italic text-center mb-8">
+                                            "${testimonial.text}"
+                                        </p>
+                                        
+                                        <!-- Client Info -->
+                                        <div class="flex flex-col items-center">
+                                            <div class="text-5xl mb-4">${testimonial.image}</div>
+                                            <h4 class="font-serif text-2xl text-gold mb-1">${testimonial.name}</h4>
+                                            <p class="text-sm text-cream/60 mb-3">${testimonial.location}</p>
+                                            <div class="flex gap-1">
+                                                ${Array(testimonial.rating).fill('').map(() => '<i class="fas fa-star text-gold"></i>').join('')}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <p class="text-cream/80 leading-relaxed italic">"${testimonial.text}"</p>
+                            `).join('')}
                         </div>
-                    `).join('')}
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <button id="prevTestimonial" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-gold hover:bg-champagne text-midnight w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:scale-110">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextTestimonial" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-gold hover:bg-champagne text-midnight w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:scale-110">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <!-- Dots Indicator -->
+                    <div class="flex justify-center gap-3 mt-8">
+                        ${testimonials.map((_, index) => `
+                            <button class="testimonial-dot w-3 h-3 rounded-full transition-all duration-300 ${index === 0 ? 'bg-gold w-8' : 'bg-cream/30 hover:bg-cream/50'}" data-index="${index}"></button>
+                        `).join('')}
+                    </div>
                 </div>
                 
                 <div class="mt-12 text-center">
@@ -2032,6 +2063,94 @@ app.get('/', (c) => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('hidden');
                 });
+            });
+
+            // Testimonials Carousel
+            const carousel = document.getElementById('testimonialCarousel');
+            const prevBtn = document.getElementById('prevTestimonial');
+            const nextBtn = document.getElementById('nextTestimonial');
+            const dots = document.querySelectorAll('.testimonial-dot');
+            let currentSlide = 0;
+            const totalSlides = ${testimonials.length};
+            let autoplayInterval;
+
+            function updateCarousel() {
+                carousel.style.transform = \`translateX(-\${currentSlide * 100}%)\`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    if (index === currentSlide) {
+                        dot.classList.remove('bg-cream/30', 'w-3');
+                        dot.classList.add('bg-gold', 'w-8');
+                    } else {
+                        dot.classList.remove('bg-gold', 'w-8');
+                        dot.classList.add('bg-cream/30', 'w-3');
+                    }
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            }
+
+            function goToSlide(index) {
+                currentSlide = index;
+                updateCarousel();
+            }
+
+            function startAutoplay() {
+                autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            }
+
+            function stopAutoplay() {
+                clearInterval(autoplayInterval);
+            }
+
+            // Event listeners
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                stopAutoplay();
+                startAutoplay();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                stopAutoplay();
+                startAutoplay();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                    stopAutoplay();
+                    startAutoplay();
+                });
+            });
+
+            // Pause autoplay on hover
+            carousel.parentElement.addEventListener('mouseenter', stopAutoplay);
+            carousel.parentElement.addEventListener('mouseleave', startAutoplay);
+
+            // Start autoplay
+            startAutoplay();
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                    stopAutoplay();
+                    startAutoplay();
+                } else if (e.key === 'ArrowRight') {
+                    nextSlide();
+                    stopAutoplay();
+                    startAutoplay();
+                }
             });
 
             // Smooth scroll for anchor links
