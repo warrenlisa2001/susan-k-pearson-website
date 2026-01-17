@@ -1981,15 +1981,63 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Reiki (pronounced "ray-key") is a Japanese healing technique that channels universal life force energy. As a Master-level practitioner trained in both Usui and Karuna systems, I serve as a conduit for this healing energy.</p>
-                            <p class="mb-3"><strong>How it works:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>I place my hands on or slightly above specific areas of your body</li>
-                                <li>Universal life force energy flows through my hands to you</li>
-                                <li>This energy is intelligent—it goes where it's needed most</li>
-                                <li>It works on physical, emotional, mental, and spiritual levels simultaneously</li>
+                            <p class="mb-3"><strong>Reiki</strong> (pronounced "ray-key") is a Japanese healing technique that translates to "universal life force energy." Developed by Mikao Usui in the early 1900s, it's now practiced worldwide as a gentle yet powerful healing modality.</p>
+                            
+                            <p class="mb-3"><strong>What Reiki Is:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Energy Medicine:</strong> Works with your body's bioelectromagnetic field and subtle energy systems</li>
+                                <li><strong>Non-invasive:</strong> Fully clothed, hands placed on or above the body</li>
+                                <li><strong>Intelligent Energy:</strong> Reiki goes where it's needed most—you don't have to direct it</li>
+                                <li><strong>Holistic:</strong> Addresses physical, emotional, mental, and spiritual imbalances simultaneously</li>
+                                <li><strong>Complementary:</strong> Works beautifully alongside medical treatment, never interfering</li>
                             </ul>
-                            <p class="mt-3">You might feel warmth, tingling, deep relaxation, or emotional release. Many clients describe it as deeply peaceful and restorative.</p>
+
+                            <p class="mb-3"><strong>How Reiki Works:</strong></p>
+                            <ol class="list-decimal pl-6 space-y-2 mb-3">
+                                <li><strong>Energy Channeling:</strong> As a Master-level practitioner, I've been attuned to channel high-frequency healing energy. I serve as a conduit, not the source—the energy comes through me, not from me.</li>
+                                <li><strong>Biofield Balancing:</strong> Reiki clears blockages in your energy field (chakras, meridians, aura) that may be causing physical or emotional symptoms</li>
+                                <li><strong>Resonance Healing:</strong> The high-frequency Reiki energy raises your body's vibration, helping cells return to their optimal state</li>
+                                <li><strong>Nervous System Reset:</strong> Shifts you from sympathetic (stress) to parasympathetic (healing) mode, allowing deep restoration</li>
+                                <li><strong>Subconscious Release:</strong> Often releases suppressed emotions, traumas, or limiting beliefs held in the energy field</li>
+                            </ol>
+
+                            <p class="mb-3"><strong>What You Might Experience:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Physical:</strong> Warmth, tingling, pulsing, coolness, heaviness, or floating sensations</li>
+                                <li><strong>Emotional:</strong> Deep peace, emotional releases (tears, laughter), joy, or feelings of love</li>
+                                <li><strong>Visual:</strong> Colors, light, images, or memories with eyes closed</li>
+                                <li><strong>Mental:</strong> Clarity, insights, downloads of information, or gentle awareness shifts</li>
+                                <li><strong>Spiritual:</strong> Sense of connection, expanded consciousness, or divine presence</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>My Training & Approach:</strong></p>
+                            <p class="mb-3">I hold Master-level certifications in both:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Usui Reiki:</strong> The foundational system, gentle and balancing</li>
+                                <li><strong>Karuna Reiki®:</strong> Advanced system for deep emotional healing and compassionate action</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>Scientific Support:</strong></p>
+                            <p class="mb-2">Research has shown Reiki may:</p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Reduce pain, anxiety, and depression (numerous peer-reviewed studies)</li>
+                                <li>Lower blood pressure and heart rate</li>
+                                <li>Improve sleep quality</li>
+                                <li>Enhance recovery from surgery</li>
+                                <li>Support immune function</li>
+                                <li>Increase feelings of peace and well-being</li>
+                            </ul>
+
+                            <p class="mt-3"><strong>What Makes My Reiki Different:</strong></p>
+                            <p class="mb-2">I integrate Reiki with other modalities for enhanced effectiveness:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Combined with somatic bodywork (Anma/Ampuku) for physical release</li>
+                                <li>Layered with energy medicine protocols for specific conditions</li>
+                                <li>Integrated with hypnotherapy for subconscious reprogramming</li>
+                                <li>Enhanced with chakra balancing and meridian clearing</li>
+                            </ul>
+
+                            <p class="mt-3">Reiki is deeply peaceful, safe for all ages, and many clients describe it as the most relaxing experience they've ever had. It's especially effective for stress, anxiety, pain, insomnia, and supporting overall wellness.</p>
                         </div>
                     </div>
 
@@ -1999,16 +2047,122 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>Let me dispel the myths:</strong> You remain fully in control during hypnotherapy. You're not asleep, unconscious, or under anyone's control. Hypnosis is simply a deeply relaxed, focused state where your subconscious mind becomes more receptive to positive change.</p>
-                            <p class="mb-3"><strong>What hypnotherapy really is:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>A natural state you enter many times daily (like being absorbed in a book)</li>
-                                <li>You hear everything and remember the session</li>
-                                <li>You can open your eyes and end the session anytime</li>
-                                <li>You cannot be made to do anything against your will or values</li>
-                                <li>It's a collaborative process—you're an active participant</li>
+                            <p class="mb-3"><strong>Let me dispel the myths immediately:</strong> You remain fully conscious and in complete control during hypnotherapy. You're not asleep, unconscious, or under anyone's control. You cannot be made to do anything against your will or values. Hypnosis is simply a deeply relaxed, focused state (similar to meditation or daydreaming) where your subconscious mind becomes more receptive to positive suggestions and healing.</p>
+                            
+                            <p class="mb-3"><strong>What Clinical Hypnotherapy Really Is:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>A Natural Brain State:</strong> Theta brainwave state (4-8 Hz) you enter naturally many times daily—when absorbed in a book, driving on autopilot, or in the moments before sleep</li>
+                                <li><strong>Heightened Suggestibility:</strong> Your critical conscious mind relaxes, allowing direct communication with the subconscious (where habits, beliefs, and patterns live)</li>
+                                <li><strong>Focused Awareness:</strong> You're deeply relaxed yet mentally alert and aware of everything happening</li>
+                                <li><strong>Therapeutic Tool:</strong> Used clinically for behavior change, pain management, trauma healing, and personal transformation</li>
+                                <li><strong>Evidence-Based:</strong> Recognized by the American Psychological Association and used in medical settings worldwide</li>
                             </ul>
-                            <p class="mt-3">I use Ericksonian hypnotherapy, which is gentle, conversational, and client-centered. It's more like guided meditation than stage hypnosis.</p>
+
+                            <p class="mb-3"><strong>How Hypnotherapy Works:</strong></p>
+                            <p class="mb-2">Your mind has two primary aspects:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Conscious Mind (10%):</strong> Logical, analytical, willpower-driven. This is where you make decisions and try to change through effort.</li>
+                                <li><strong>Subconscious Mind (90%):</strong> Holds all your memories, beliefs, habits, emotions, and automatic responses. This runs 95% of your daily behavior.</li>
+                            </ul>
+                            <p class="mb-3">When you try to change through willpower alone (conscious mind), you're fighting against the much more powerful subconscious. Hypnotherapy bypasses the conscious mind's resistance to communicate directly with the subconscious, where lasting change happens.</p>
+
+                            <p class="mb-3"><strong>My Hypnotherapy Approach (Ericksonian Method):</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Permissive vs. Authoritarian:</strong> I use gentle, indirect suggestions that honor your autonomy (Ericksonian approach) rather than commanding directives</li>
+                                <li><strong>Metaphor & Story:</strong> The subconscious speaks in symbols, so I use metaphors, guided imagery, and storytelling</li>
+                                <li><strong>Customized:</strong> Every session is tailored to your unique needs, language patterns, and goals</li>
+                                <li><strong>Multi-Layered:</strong> I address not just the symptom but the root cause and underlying needs</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>What Hypnotherapy Can Help With:</strong></p>
+                            <p class="mb-2"><strong>Behavioral Patterns:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Breaking unwanted habits (smoking, nail biting, emotional eating)</li>
+                                <li>Building new positive habits and routines</li>
+                                <li>Overcoming procrastination and self-sabotage</li>
+                                <li>Enhancing motivation and discipline</li>
+                            </ul>
+
+                            <p class="mb-2"><strong>Emotional Healing:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Anxiety, panic attacks, and phobias</li>
+                                <li>Depression and low mood</li>
+                                <li>Anger and emotional regulation</li>
+                                <li>Grief and loss processing</li>
+                                <li>Trauma resolution (PTSD, childhood wounds)</li>
+                            </ul>
+
+                            <p class="mb-2"><strong>Belief System Work:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Reprogramming limiting beliefs ("I'm not good enough," "I don't deserve happiness")</li>
+                                <li>Building self-esteem and confidence</li>
+                                <li>Releasing perfectionism and people-pleasing</li>
+                                <li>Installing empowering beliefs and identity shifts</li>
+                            </ul>
+
+                            <p class="mb-2"><strong>Physical Applications:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Pain management (chronic pain, migraines)</li>
+                                <li>Sleep disorders and insomnia</li>
+                                <li>IBS and stress-related digestive issues</li>
+                                <li>Preparation for surgery or medical procedures</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>A Typical Hypnotherapy Session (75 minutes):</strong></p>
+                            <ol class="list-decimal pl-6 space-y-2 mb-3">
+                                <li><strong>Consultation (15 mins):</strong> We discuss your goals, history, and what you'd like to shift. I explain the process and answer questions.</li>
+                                <li><strong>Induction (10 mins):</strong> Guided relaxation using breath, body awareness, and visualization to enter the hypnotic state</li>
+                                <li><strong>Deepening (5 mins):</strong> Using techniques like counting down stairs, progressive relaxation, or imagery to deepen the trance</li>
+                                <li><strong>Therapeutic Work (30-35 mins):</strong> The core healing work using techniques like:
+                                    <ul class="list-disc pl-8 space-y-1 mt-2">
+                                        <li><strong>Regression:</strong> Revisiting past events to release emotional charge</li>
+                                        <li><strong>Parts Therapy:</strong> Dialoguing with different aspects of self</li>
+                                        <li><strong>Future Pacing:</strong> Rehearsing new behaviors and outcomes</li>
+                                        <li><strong>Metaphor Therapy:</strong> Using stories for unconscious change</li>
+                                        <li><strong>Suggestion Work:</strong> Installing new beliefs and patterns</li>
+                                        <li><strong>Resource Building:</strong> Anchoring states of calm, confidence, power</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Emergence (5 mins):</strong> Gently bringing you back to full waking consciousness, feeling refreshed</li>
+                                <li><strong>Integration (10 mins):</strong> Discussing the experience, insights gained, and providing tools for continued transformation</li>
+                            </ol>
+
+                            <p class="mb-3"><strong>What You'll Experience:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Deep Relaxation:</strong> Your body feels heavy, relaxed, and comfortable—like sinking into a warm bath</li>
+                                <li><strong>Focused Awareness:</strong> Distractions fade away; you're absorbed in the process</li>
+                                <li><strong>Time Distortion:</strong> 45 minutes might feel like 10 minutes (or vice versa)</li>
+                                <li><strong>Vivid Imagery:</strong> Visualizations feel more real and immersive</li>
+                                <li><strong>Emotional Releases:</strong> Tears, laughter, or other emotions may arise as old patterns release</li>
+                                <li><strong>Physical Sensations:</strong> Tingling, warmth, lightness, or energy moving</li>
+                                <li><strong>Insights & Clarity:</strong> Sudden understanding of patterns, "aha" moments</li>
+                                <li><strong>Complete Memory:</strong> You remember the session (unlike stage hypnosis portrayals)</li>
+                                <li><strong>Refreshed After:</strong> Most feel energized, clear, and lighter afterward</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>Important Truths About Hypnotherapy:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>✓ You remain in complete control at all times</li>
+                                <li>✓ You hear everything and can speak anytime</li>
+                                <li>✓ You can open your eyes and end the session whenever you choose</li>
+                                <li>✓ You cannot be made to do anything against your will, morals, or values</li>
+                                <li>✓ It's a collaborative process—you're an active, empowered participant</li>
+                                <li>✓ You cannot get "stuck" in hypnosis (you'd simply open your eyes or fall asleep)</li>
+                            </ul>
+
+                            <p class=\"mb-3\"><strong>Research & Effectiveness:</strong></p>\n                            <p class=\"mb-2\">Clinical studies show hypnotherapy can be highly effective for:</p>\n                            <ul class=\"list-disc pl-6 space-y-1 mb-3\">\n                                <li>Breaking habits: 90%+ success rate for smoking cessation after 6 sessions</li>\n                                <li>Anxiety reduction: Comparable to medication without side effects</li>\n                                <li>Pain management: Used in hospitals for surgery, childbirth, chronic pain</li>\n                                <li>IBS: APA recognizes hypnotherapy as evidence-based treatment for IBS</li>\n                                <li>PTSD: Effective for trauma resolution when combined with other therapies</li>\n                            </ul>
+
+                            <p class="mb-3"><strong>Why Choose Hypnotherapy?</strong></p>\n                            <p class="mb-2">Consider hypnotherapy if:</p>\n                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>You've tried to change through willpower alone without lasting results</li>
+                                <li>You know what you want to change but can't seem to stop the behavior</li>
+                                <li>You have deep-seated beliefs or patterns that feel hardwired</li>
+                                <li>You want to accelerate healing and transformation</li>
+                                <li>You're open to a mind-body approach to change</li>
+                            </ul>
+
+                            <p class="mt-3"><strong>My Approach:</strong> I use Ericksonian hypnotherapy, which is gentle, conversational, respectful, and client-centered. It's more like guided meditation with therapeutic suggestions than stage hypnosis. I create a safe, supportive space where your subconscious can heal at its own pace, in its own way.</p>
+                            
+                            <p class="mt-3">Hypnotherapy is one of the fastest paths to lasting change when you're ready to work with—not against—your subconscious mind.</p>
                         </div>
                     </div>
 
@@ -2018,21 +2172,111 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>Anma</strong> is one of the oldest forms of massage therapy, dating back over 1,000 years in Japan. It uses rhythmic pressure and kneading techniques to:</p>
+                            <p class="mb-3"><strong>Anma</strong> and <strong>Ampuku</strong> are ancient Japanese therapeutic bodywork modalities that I've integrated into my practice to address the physical, energetic, and emotional layers of healing simultaneously.</p>
+
+                            <p class="mb-3"><strong>ANMA (按摩): Traditional Japanese Therapeutic Massage</strong></p>
+                            <p class="mb-2"><strong>History & Philosophy:</strong></p>
                             <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Release deep muscle tension</li>
-                                <li>Improve energy flow through meridians</li>
-                                <li>Promote circulation and vitality</li>
-                                <li>Ground and center the body</li>
+                                <li>Dating back over 1,300 years, Anma predates modern massage</li>
+                                <li>Arrived in Japan from China in the 6th century</li>
+                                <li>The term means "press-rub" or "calming with hand pressure"</li>
+                                <li>Based on Traditional Chinese Medicine principles of Qi (energy) and meridians</li>
+                                <li>Practiced fully clothed on a futon or massage table</li>
                             </ul>
-                            <p class="mb-3"><strong>Ampuku</strong> is specialized Japanese abdominal therapy focusing on the hara (belly)—considered the body's energetic center. This gentle yet profound work:</p>
+
+                            <p class="mb-3"><strong>Anma Techniques:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Pressing (Oshi):</strong> Deep, sustained pressure on meridian points and trigger points</li>
+                                <li><strong>Rubbing (Ma):</strong> Friction techniques to warm tissues and improve circulation</li>
+                                <li><strong>Kneading (Jyunetsu):</strong> Deep tissue kneading to release muscle tension</li>
+                                <li><strong>Percussion (Tataki):</strong> Rhythmic tapping to invigorate and energize</li>
+                                <li><strong>Stretching (Shin):</strong> Passive joint mobilization and muscle stretching</li>
+                                <li><strong>Vibration (Shindo):</strong> Trembling movements to release stagnation</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>What Anma Addresses:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Physical:</strong> Chronic muscle tension, poor circulation, joint stiffness, fatigue</li>
+                                <li><strong>Energetic:</strong> Meridian blockages, stagnant Qi, depleted vitality</li>
+                                <li><strong>Nervous System:</strong> Stress, anxiety, autonomic imbalance</li>
+                                <li><strong>Grounding:</strong> Feeling spacey, ungrounded, disconnected from body</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>AMPUKU (腹診): Japanese Abdominal Therapy</strong></p>
+                            <p class="mb-2"><strong>Philosophy & Approach:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Hara (腹):</strong> The belly/abdomen—considered the body's physical and energetic center in Japanese medicine</li>
+                                <li><strong>"Second Brain":</strong> The gut contains 500 million neurons and produces 90% of the body's serotonin</li>
+                                <li><strong>Emotional Storage:</strong> The belly holds unprocessed emotions (fear, grief, anxiety, trauma)</li>
+                                <li><strong>Diagnostic & Therapeutic:</strong> Ampuku both assesses and treats imbalances through abdominal palpation</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>What Ampuku Treats:</strong></p>
+                            <p class="mb-2"><strong>Physical Issues:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Digestive disorders: IBS, bloating, constipation, acid reflux</li>
+                                <li>Reproductive concerns: menstrual cramps, PMS, fertility support</li>
+                                <li>Back and hip pain (often rooted in abdominal tension)</li>
+                                <li>Chronic tension and armoring in the belly</li>
+                            </ul>
+
+                            <p class="mb-2"><strong>Emotional & Energetic:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Anxiety and worry (held in the solar plexus)</li>
+                                <li>Fear and insecurity (held in the lower belly)</li>
+                                <li>Grief and sadness (constricting the diaphragm)</li>
+                                <li>Power issues and boundaries (solar plexus chakra)</li>
+                                <li>Disconnection from intuition and "gut feelings"</li>
+                                <li>Lack of groundedness or centeredness</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>The Ampuku Experience:</strong></p>
+                            <p class="mb-2">During Ampuku, I use:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Gentle Palpation:</strong> Feeling for areas of tension, coldness, heat, or pulsation</li>
+                                <li><strong>Sustained Pressure:</strong> Holding specific points to release deep holdings</li>
+                                <li><strong>Breathing Coordination:</strong> Working with your breath to deepen the release</li>
+                                <li><strong>Intention & Presence:</strong> Creating a safe container for emotional release</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>What You Might Experience:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Physical:</strong> Gurgling, warmth spreading through belly, softening of abdominal wall, deeper breathing</li>
+                                <li><strong>Emotional:</strong> Tears, laughter, sighs, or release of stored emotions</li>
+                                <li><strong>Energetic:</strong> Feeling more grounded, centered, "at home" in your body</li>
+                                <li><strong>Digestive:</strong> Improved digestion, reduced bloating, regular elimination</li>
+                                <li><strong>Mental:</strong> Clearer intuition, better decision-making ("trusting your gut")</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>Why Anma & Ampuku Are Powerful:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Addresses Root Causes:</strong> Not just symptom relief but addressing underlying imbalances</li>
+                                <li><strong>Body-Mind Integration:</strong> Releases both physical tension and emotional holdings simultaneously</li>
+                                <li><strong>Deeply Grounding:</strong> Brings you back into your body after trauma or dissociation</li>
+                                <li><strong>Energetically Clearing:</strong> Removes blockages in meridians and chakras</li>
+                                <li><strong>Nervous System Reset:</strong> Shifts from stress (sympathetic) to rest/digest (parasympathetic)</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>How I Use Them:</strong></p>
+                            <p class="mb-2">I integrate Anma and Ampuku into Deep Alignment Sessions and the SKP Method:</p>
                             <ul class="list-disc pl-6 space-y-2">
-                                <li>Releases tension in the digestive system</li>
-                                <li>Addresses emotional holdings stored in the belly (fear, anxiety, grief)</li>
-                                <li>Improves organ function</li>
-                                <li>Restores connection to your core/center</li>
+                                <li><strong>Assessment:</strong> Begin with Ampuku abdominal diagnosis to identify imbalances</li>
+                                <li><strong>Full-Body Work:</strong> Use Anma meridian therapy to release tension and improve flow</li>
+                                <li><strong>Targeted Release:</strong> Deep Ampuku work to address emotional holdings in the belly</li>
+                                <li><strong>Integration:</strong> Combine with Reiki, energy medicine, or hypnotherapy for multi-layered healing</li>
                             </ul>
-                            <p class="mt-3">Both modalities are deeply relaxing and therapeutic, often incorporated into Deep Alignment Sessions.</p>
+
+                            <p class="mt-3"><strong>Who Benefits Most:</strong></p>
+                            <p class="mb-2">These modalities are especially effective for:</p>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>People who carry tension in their belly or gut</li>
+                                <li>Those with digestive issues tied to stress or emotion</li>
+                                <li>Individuals who are "in their head" and disconnected from their body</li>
+                                <li>Anyone seeking deep grounding and centering</li>
+                                <li>Those who want therapeutic bodywork beyond surface-level massage</li>
+                            </ul>
+
+                            <p class="mt-3">Both Anma and Ampuku honor the body's wisdom and work with—not against—its natural healing capacity. They're deeply relaxing yet profoundly therapeutic, often releasing years of held tension in a single session.</p>
                         </div>
                     </div>
 
@@ -2042,22 +2286,135 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">The <strong>Nir Levy Method</strong> is an advanced somatic and energetic healing modality I'm completing certification in (February 2026). It combines:</p>
+                            <p class="mb-3">This question gets to the heart of my most advanced and comprehensive healing offering. Let me explain both the <strong>Nir Levy Method</strong> and how it integrates into my signature <strong>SKP Method (Soul Key Process™)</strong>.</p>
+
+                            <p class="mb-3"><strong>THE NIR LEVY METHOD</strong></p>
+                            <p class="mb-2"><strong>Overview & Philosophy:</strong></p>
+                            <p class="mb-3">The Nir Levy Method is an advanced somatic and energetic healing system developed by Israeli master healer Nir Levy. It represents the cutting edge of consciousness-based healing, integrating ancient wisdom with modern neuroscience and trauma research. I'm completing my certification in February 2026 and am one of the first practitioners in the Middle East to offer this transformative work.</p>
+
+                            <p class="mb-3"><strong>Core Principles:</strong></p>
                             <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Deep somatic work with the nervous system</li>
-                                <li>Advanced energy medicine techniques</li>
-                                <li>Trauma resolution protocols</li>
-                                <li>Consciousness transformation practices</li>
+                                <li><strong>Trauma Lives in the Body:</strong> Past experiences are stored as somatic patterns, not just memories</li>
+                                <li><strong>Nervous System Repatterning:</strong> Healing requires resetting the autonomic nervous system, not just understanding trauma cognitively</li>
+                                <li><strong>Energy Follows Consciousness:</strong> Where we place our awareness determines how energy moves and heals</li>
+                                <li><strong>Cellular Memory:</strong> Every cell holds consciousness and can be reprogrammed</li>
+                                <li><strong>Wholeness, Not Fixing:</strong> You're not broken—healing is remembering your innate wholeness</li>
                             </ul>
-                            <p class="mb-3">The <strong>SKP Method</strong> (Soul Key Process) is my signature integration that combines Nir Levy Method with my other modalities:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Master-level Reiki (Usui & Karuna)</li>
-                                <li>Energy Medicine</li>
-                                <li>Clinical Hypnotherapy</li>
-                                <li>Anma & Ampuku</li>
-                                <li>Somatic Alignment</li>
+
+                            <p class="mb-3"><strong>What the Nir Levy Method Addresses:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Complex Trauma & PTSD:</strong> Including developmental trauma, shock trauma, and attachment wounds</li>
+                                <li><strong>Chronic Nervous System Dysregulation:</strong> Stuck in fight/flight/freeze/fawn responses</li>
+                                <li><strong>Somatic Symptoms:</strong> Physical pain, chronic tension, or illness rooted in unresolved trauma</li>
+                                <li><strong>Dissociation & Numbing:</strong> Feeling disconnected from body, emotions, or life</li>
+                                <li><strong>Repeating Patterns:</strong> Relationship dynamics, self-sabotage, or limiting beliefs that won't shift</li>
+                                <li><strong>Spiritual Emergencies:</strong> Awakening experiences that feel destabilizing</li>
+                                <li><strong>Ancestral & Karmic Patterns:</strong> Inherited trauma and soul-level wounds</li>
                             </ul>
-                            <p class="mt-3">This comprehensive approach addresses the full spectrum of healing—physical, emotional, energetic, and spiritual—for lasting transformation.</p>
+
+                            <p class="mb-3"><strong>Key Techniques & Approaches:</strong></p>
+                            <ol class="list-decimal pl-6 space-y-3 mb-3">
+                                <li><strong>Somatic Resourcing:</strong> Building capacity in the nervous system to hold more activation without overwhelm. We establish "islands of safety" in the body before addressing trauma.</li>
+                                
+                                <li><strong>Pendulation:</strong> Gently moving between activation (trauma charge) and regulation (safety/calm), gradually increasing the nervous system's window of tolerance.</li>
+                                
+                                <li><strong>Completion of Defensive Responses:</strong> Trauma often occurs when the body's natural defensive responses (fight/flight) are thwarted. We allow the body to complete these incomplete survival responses.</li>
+                                
+                                <li><strong>Energetic Surgery:</strong> Advanced energy work to remove energetic cords, attachments, implants, and foreign energies that don't serve your highest good.</li>
+                                
+                                <li><strong>Timeline Healing:</strong> Working across past, present, and even future timelines to heal wounds at their source and prevent pattern repetition.</li>
+                                
+                                <li><strong>Cellular Reprogramming:</strong> Communicating directly with cells and organs to release stored trauma and install new, healthy programming.</li>
+                                
+                                <li><strong>Integration of Fragmented Parts:</strong> Addressing dissociated aspects of self (similar to Internal Family Systems) but with somatic and energetic components.</li>
+                                
+                                <li><strong>Awakening Dormant Capacities:</strong> Activating latent abilities, gifts, and potentials that have been suppressed or shut down.</li>
+                            </ol>
+
+                            <p class="mb-3"><strong>What Makes It Different:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Non-Retraumatizing:</strong> No need to retell traumatic stories or relive painful experiences</li>
+                                <li><strong>Works at Root Level:</strong> Addresses the energetic and somatic imprints, not just the mental understanding</li>
+                                <li><strong>Rapid Yet Gentle:</strong> Profound shifts can occur quickly because we bypass cognitive defenses</li>
+                                <li><strong>Holistic Integration:</strong> Addresses physical, emotional, mental, energetic, and spiritual dimensions simultaneously</li>
+                                <li><strong>Empowering:</strong> Restores your sense of agency, power, and sovereignty</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>THE SKP METHOD (SOUL KEY PROCESS™)</strong></p>
+                            <p class="mb-2"><strong>My Signature Integration:</strong></p>
+                            <p class="mb-3">The SKP Method is my unique synthesis of the Nir Levy Method with all the modalities I've mastered over 15+ years of practice. It's designed for those seeking profound, lasting transformation—not just symptom relief.</p>
+
+                            <p class="mb-3"><strong>What SKP Method Includes:</strong></p>
+                            <ol class="list-decimal pl-6 space-y-3 mb-3">
+                                <li><strong>Nir Levy Method Protocols:</strong> Advanced somatic and energetic healing techniques described above</li>
+                                
+                                <li><strong>Master-Level Reiki (Usui & Karuna):</strong> High-frequency energy healing for balancing, clearing, and activation</li>
+                                
+                                <li><strong>Clinical Hypnotherapy (Ericksonian):</strong> Subconscious reprogramming and belief system transformation</li>
+                                
+                                <li><strong>Energy Medicine:</strong> Chakra balancing, meridian clearing, biofield optimization</li>
+                                
+                                <li><strong>Somatic Bodywork (Anma & Ampuku):</strong> Deep tissue release, abdominal therapy, and nervous system regulation through touch</li>
+                                
+                                <li><strong>Trauma-Informed Practices:</strong> Working gently with the nervous system's capacity, honoring your pace</li>
+                                
+                                <li><strong>Intuitive Guidance:</strong> I'm guided to use exactly what your system needs in each moment</li>
+                            </ol>
+
+                            <p class="mb-3"><strong>The SKP Method Session (120 minutes):</strong></p>
+                            <p class="mb-2"><strong>Part 1 - Assessment & Preparation (20 mins):</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Deep discussion of what you're experiencing and what you're ready to shift</li>
+                                <li>Assessment of nervous system state, energy field, and somatic patterns</li>
+                                <li>Setting clear intentions for the session</li>
+                                <li>Establishing safety and building resources in the body</li>
+                            </ul>
+
+                            <p class="mb-2"><strong>Part 2 - Multi-Layered Healing Work (80 mins):</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Somatic & Nervous System Work:</strong> Nir Levy Method protocols to address trauma, complete defensive responses, and increase capacity</li>
+                                <li><strong>Energetic Clearing:</strong> Reiki and energy medicine to clear blockages, cords, and attachments</li>
+                                <li><strong>Subconscious Reprogramming:</strong> Hypnotherapy to install new beliefs and patterns</li>
+                                <li><strong>Bodywork Integration:</strong> Anma/Ampuku to release physical holdings and ground the shifts</li>
+                                <li><strong>Timeline & Cellular Healing:</strong> Working across time and with cellular consciousness</li>
+                                <li><strong>Activation & Empowerment:</strong> Awakening dormant capacities and restoring your full power</li>
+                            </ul>
+
+                            <p class="mb-2"><strong>Part 3 - Integration & Embodiment (20 mins):</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Grounding and integrating all the shifts that occurred</li>
+                                <li>Discussing your experience and any insights</li>
+                                <li>Providing integration practices tailored to your needs</li>
+                                <li>Establishing ongoing support and next steps</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>Who Is SKP Method For?</strong></p>
+                            <p class="mb-2">This intensive is ideal for:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Complex Healing Needs:</strong> Multiple layers of trauma, chronic patterns, or deep-seated issues</li>
+                                <li><strong>Advanced Seekers:</strong> Those already doing inner work who are ready for the next level</li>
+                                <li><strong>Major Transitions:</strong> Life crossroads, spiritual awakening, or significant transformation</li>
+                                <li><strong>Exhausted by Other Approaches:</strong> Tried therapy, medication, or other modalities without lasting results</li>
+                                <li><strong>Deep Commitment:</strong> Ready to invest in comprehensive, transformational healing</li>
+                                <li><strong>Accelerated Healing:</strong> Want to compress months or years of healing into focused, intensive sessions</li>
+                            </ul>
+
+                            <p class="mb-3"><strong>What Clients Say:</strong></p>
+                            <p class="mb-2 italic text-charcoal/80">"The SKP Method session was like months of therapy condensed into two hours. I felt layers of old trauma lift that I'd been carrying for decades. Susan's intuitive integration of all her modalities is masterful."</p>
+                            <p class="mb-3 italic text-charcoal/80">"I finally understand what 'embodied healing' means. The Nir Levy Method work Susan does goes so deep—I've never experienced anything like it. This isn't just healing; it's transformation."</p>
+
+                            <p class="mb-3"><strong>Investment & Commitment:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Session Length:</strong> 120 minutes (2 full hours of intensive work)</li>
+                                <li><strong>Investment:</strong> AED 1,200 (≈$325 USD)</li>
+                                <li><strong>Recommended:</strong> Series of 3-6 sessions for complex issues (package pricing available)</li>
+                                <li><strong>Integration Support:</strong> Email support between sessions, integration practices, follow-up guidance</li>
+                            </ul>
+
+                            <p class="mt-3"><strong>Why "Soul Key Process"?</strong></p>
+                            <p class="mb-3">I call this the Soul Key Process because it unlocks your deepest potential by addressing all the locks that have kept you from full expression—trauma patterns, limiting beliefs, energetic blockages, somatic armoring, and disconnection from your true self. It's not just about healing what's broken; it's about remembering who you really are and activating your soul's full capacity.</p>
+
+                            <p class="mt-3">This is the most comprehensive, powerful work I offer. It's for those ready to go deep, heal fully, and emerge transformed.</p>
                         </div>
                     </div>
 
