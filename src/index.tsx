@@ -275,9 +275,9 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden bg-charcoal">
+        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden bg-bone">
             <div class="absolute inset-0 z-0 flex items-center justify-center">
-                <img src="/images/skp-logo.png" alt="Susan K. Pearson - Elemental Healing" class="w-full max-w-4xl h-auto object-contain">
+                <img src="/images/skp-lotus-logo.png" alt="Susan K. Pearson - SKP Method" class="w-full max-w-3xl h-auto object-contain">
             </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
                 <div class="text-center fade-in-up">
