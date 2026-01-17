@@ -275,9 +275,9 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden bg-black">
+        <section id="home" class="pt-20 h-[60vh] md:h-[70vh] flex items-center relative overflow-hidden bg-black">
             <div class="absolute inset-0 z-0">
-                <img src="/images/hero-final.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="w-full h-full object-contain md:object-cover">
+                <img src="/images/hero-final.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="w-full h-full object-cover">
             </div>
             <!-- Interactive overlay for mobile -->
             <div class="absolute inset-0 z-10 flex items-center justify-center md:hidden">
@@ -290,48 +290,65 @@ app.get('/', (c) => {
         <!-- About Section -->
         <section id="about" class="py-20 bg-cream">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">About Susan</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto"></div>
+                <!-- Section Header with Susan's Photo -->
+                <div class="text-center mb-12">
+                    <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6 shadow-2xl">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-2">Susan K. Pearson</h2>
+                    <p class="text-xl text-gold/90 font-medium mb-4">Energy Medicine Practitioner | Dubai</p>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <div class="flex justify-center gap-6 text-charcoal/70">
+                        <a href="tel:+971551770957" class="hover:text-gold transition-colors">
+                            <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
+                        </a>
+                        <a href="mailto:susankpearson@elementalskp.com" class="hover:text-gold transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="flex justify-center">
-                        <div class="text-center">
-                            <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6">
-                            <div class="mb-4">
-                                <p class="text-2xl font-serif text-charcoal mb-2">Susan K. Pearson</p>
-                                <p class="text-gold"><i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957</p>
-                                <p class="text-charcoal/70 mt-2"><i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com</p>
+                <!-- Bio Content -->
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                        <div class="space-y-6 text-charcoal/80 leading-relaxed">
+                            <p class="text-xl font-medium text-charcoal text-center mb-8">
+                                I work at the intersection of energy, body, and consciousness—combining Master-level Reiki, 
+                                Energy Medicine, and Clinical Hypnotherapy to create lasting shifts in the nervous system 
+                                and subconscious.
+                            </p>
+                            
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="mb-4">
+                                        My practice is a sanctuary for high-end, discreet, results-oriented healing. Based in Dubai, 
+                                        I offer precise, transformational work that honors the holistic nature of true wellness.
+                                    </p>
+                                    <p>
+                                        With over 15 years of experience in the healing arts, I've had the privilege of working with 
+                                        clients from around the world—from corporate executives seeking stress relief to individuals 
+                                        navigating major life transitions.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="mb-4">
+                                        My approach is grounded in both ancient wisdom and contemporary understanding of trauma, 
+                                        the nervous system, and the subconscious mind.
+                                    </p>
+                                    <p>
+                                        I am currently completing certification in the Nir Levy Method (February 2026), an advanced 
+                                        somatic and energetic healing modality that complements my existing toolkit.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="space-y-6 text-charcoal/80 leading-relaxed">
-                        <p class="text-lg font-medium text-charcoal">
-                            I work at the intersection of energy, body, and consciousness—combining Master-level Reiki, 
-                            Energy Medicine, and Clinical Hypnotherapy to create lasting shifts in the nervous system 
-                            and subconscious.
-                        </p>
-                        <p>
-                            My practice is a sanctuary for high-end, discreet, results-oriented healing. Based in Dubai, 
-                            I offer precise, transformational work that honors the holistic nature of true wellness.
-                        </p>
-                        <p>
-                            With over 15 years of experience in the healing arts, I've had the privilege of working with 
-                            clients from around the world—from corporate executives seeking stress relief to individuals 
-                            navigating major life transitions. My approach is grounded in both ancient wisdom and 
-                            contemporary understanding of trauma, the nervous system, and the subconscious mind.
-                        </p>
-                        <p>
-                            I am currently completing certification in the Nir Levy Method (February 2026), an advanced 
-                            somatic and energetic healing modality that complements my existing toolkit of Reiki, 
-                            Energy Medicine, Clinical Hypnotherapy, and Japanese bodywork traditions including Anma 
-                            and Ampuku (abdominal therapy).
-                        </p>
-                        
-                        <div class="bg-stone/50 p-6 rounded-sm mt-8">
-                            <h3 class="text-xl font-serif text-charcoal mb-4">Credentials & Training</h3>
+                    <!-- Credentials -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-sm shadow-lg border-l-4 border-gold">
+                            <h3 class="text-xl font-serif text-charcoal mb-4 flex items-center">
+                                <i class="fas fa-award text-gold mr-3"></i>
+                                Credentials & Training
+                            </h3>
                             <ul class="space-y-2 text-sm text-charcoal/80">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -353,6 +370,15 @@ app.get('/', (c) => {
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
                                     <span>Anma (Traditional Japanese Massage)</span>
                                 </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-sm shadow-lg border-l-4 border-gold">
+                            <h3 class="text-xl font-serif text-charcoal mb-4 flex items-center">
+                                <i class="fas fa-certificate text-gold mr-3"></i>
+                                Specializations
+                            </h3>
+                            <ul class="space-y-2 text-sm text-charcoal/80">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
                                     <span>Ampuku (Japanese Abdominal Therapy)</span>
@@ -369,17 +395,25 @@ app.get('/', (c) => {
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
                                     <span>Based in Dubai | Sharjah-Registered LLC</span>
                                 </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>15+ Years Professional Practice</span>
+                                </li>
                             </ul>
                         </div>
+                    </div>
 
-                        <div class="bg-white border-l-4 border-gold p-6 rounded-sm mt-8">
-                            <h3 class="text-xl font-serif text-charcoal mb-4">My Philosophy</h3>
-                            <p class="text-charcoal/80 italic">
-                                "True healing happens when we address not just the symptoms, but the root causes held 
+                    <!-- Philosophy Quote -->
+                    <div class="bg-charcoal p-8 rounded-sm mt-8 text-center shadow-lg">
+                        <div class="max-w-3xl mx-auto">
+                            <i class="fas fa-quote-left text-gold text-3xl mb-4 block"></i>
+                            <p class="text-cream/90 text-lg italic leading-relaxed mb-4">
+                                True healing happens when we address not just the symptoms, but the root causes held 
                                 in the body, energy field, and subconscious mind. My work creates a safe, sacred space 
                                 for transformation—where ancient wisdom meets contemporary understanding, and where 
-                                lasting change becomes possible."
+                                lasting change becomes possible.
                             </p>
+                            <i class="fas fa-quote-right text-gold text-3xl block"></i>
                         </div>
                     </div>
                 </div>
