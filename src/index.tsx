@@ -252,7 +252,7 @@ app.get('/', (c) => {
                         <a href="#home" class="text-cream hover:text-gold transition-colors">Home</a>
                         <a href="#about" class="text-cream hover:text-gold transition-colors">About</a>
                         <a href="#services" class="text-cream hover:text-gold transition-colors">Services</a>
-                        <a href="#testimonials" class="text-cream hover:text-gold transition-colors">Testimonials</a>
+                        <a href="#pricing" class="text-cream hover:text-gold transition-colors">Pricing</a>
                         <a href="#blog" class="text-cream hover:text-gold transition-colors">Blog</a>
                         <a href="#booking" class="bg-gold text-midnight px-6 py-2 rounded-sm hover:bg-champagne transition-colors">Book Session</a>
                     </div>
@@ -267,7 +267,7 @@ app.get('/', (c) => {
                     <a href="#home" class="block text-cream hover:text-gold transition-colors">Home</a>
                     <a href="#about" class="block text-cream hover:text-gold transition-colors">About</a>
                     <a href="#services" class="block text-cream hover:text-gold transition-colors">Services</a>
-                    <a href="#testimonials" class="block text-cream hover:text-gold transition-colors">Testimonials</a>
+                    <a href="#pricing" class="block text-cream hover:text-gold transition-colors">Pricing</a>
                     <a href="#blog" class="block text-cream hover:text-gold transition-colors">Blog</a>
                     <a href="#booking" class="block text-gold hover:text-champagne transition-colors font-medium">Book Session</a>
                 </div>
@@ -308,7 +308,7 @@ app.get('/', (c) => {
                     </div>
                     
                     <div class="space-y-6 text-charcoal/80 leading-relaxed">
-                        <p class="text-lg">
+                        <p class="text-lg font-medium text-charcoal">
                             I work at the intersection of energy, body, and consciousness—combining Master-level Reiki, 
                             Energy Medicine, and Clinical Hypnotherapy to create lasting shifts in the nervous system 
                             and subconscious.
@@ -318,9 +318,16 @@ app.get('/', (c) => {
                             I offer precise, transformational work that honors the holistic nature of true wellness.
                         </p>
                         <p>
-                            With certifications in advanced energy modalities and the forthcoming Nir Levy Method (February 2026), 
-                            I bring a refined, sophisticated approach to healing that respects both ancient wisdom and 
-                            contemporary understanding of the mind-body connection.
+                            With over 15 years of experience in the healing arts, I've had the privilege of working with 
+                            clients from around the world—from corporate executives seeking stress relief to individuals 
+                            navigating major life transitions. My approach is grounded in both ancient wisdom and 
+                            contemporary understanding of trauma, the nervous system, and the subconscious mind.
+                        </p>
+                        <p>
+                            I am currently completing certification in the Nir Levy Method (February 2026), an advanced 
+                            somatic and energetic healing modality that complements my existing toolkit of Reiki, 
+                            Energy Medicine, Clinical Hypnotherapy, and Japanese bodywork traditions including Anma 
+                            and Ampuku (abdominal therapy).
                         </p>
                         
                         <div class="bg-stone/50 p-6 rounded-sm mt-8">
@@ -328,7 +335,7 @@ app.get('/', (c) => {
                             <ul class="space-y-2 text-sm text-charcoal/80">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Master-level Reiki Practitioner</span>
+                                    <span>Master-level Reiki Practitioner (Usui & Karuna)</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -336,21 +343,43 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Clinical Hypnotherapy Certification</span>
+                                    <span>Clinical Hypnotherapy Certification (NGH)</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Somatic Alignment Practitioner</span>
+                                    <span>Somatic Alignment & Trauma-Informed Bodywork</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Nir Levy Method (Coming February 2026)</span>
+                                    <span>Anma (Traditional Japanese Massage)</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Based in Dubai | Sharjah-Registered</span>
+                                    <span>Ampuku (Japanese Abdominal Therapy)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Chakra Balancing & Energy Clearing</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Nir Levy Method Certification (February 2026)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Based in Dubai | Sharjah-Registered LLC</span>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="bg-white border-l-4 border-gold p-6 rounded-sm mt-8">
+                            <h3 class="text-xl font-serif text-charcoal mb-4">My Philosophy</h3>
+                            <p class="text-charcoal/80 italic">
+                                "True healing happens when we address not just the symptoms, but the root causes held 
+                                in the body, energy field, and subconscious mind. My work creates a safe, sacred space 
+                                for transformation—where ancient wisdom meets contemporary understanding, and where 
+                                lasting change becomes possible."
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -464,6 +493,213 @@ app.get('/', (c) => {
                         <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium">
                             Coming February 2026 <i class="fas fa-arrow-right ml-2"></i>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 bg-midnight">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">Investment in Your Wellness</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-cream/70 max-w-2xl mx-auto">
+                        Transparent pricing for transformational healing work
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- Deep Alignment Session Pricing -->
+                    <div class="bg-charcoal border-2 border-gold/30 p-8 rounded-sm hover:border-gold transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-spa text-gold text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif text-cream mb-2">Deep Alignment</h3>
+                            <p class="text-gold/80 text-sm mb-4">90-Minute Session</p>
+                        </div>
+                        <div class="text-center mb-6">
+                            <div class="text-4xl font-serif text-gold mb-2">AED 950</div>
+                            <p class="text-cream/60 text-sm">≈ $260 USD</p>
+                        </div>
+                        <ul class="space-y-3 text-sm text-cream/70 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Master-level Reiki energy work</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Somatic alignment & bodywork</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Energy medicine protocols</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Chakra balancing & clearing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Integration guidance</span>
+                            </li>
+                        </ul>
+                        <a href="#booking" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                            Book Now
+                        </a>
+                    </div>
+
+                    <!-- Clinical Hypnotherapy Pricing -->
+                    <div class="bg-charcoal border-2 border-gold p-8 rounded-sm transform md:scale-105 shadow-2xl">
+                        <div class="absolute top-0 right-0 bg-gold text-midnight text-xs font-bold px-3 py-1 rounded-bl-sm">
+                            POPULAR
+                        </div>
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-brain text-gold text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif text-cream mb-2">Hypnotherapy</h3>
+                            <p class="text-gold/80 text-sm mb-4">75-Minute Session</p>
+                        </div>
+                        <div class="text-center mb-6">
+                            <div class="text-4xl font-serif text-gold mb-2">AED 850</div>
+                            <p class="text-cream/60 text-sm">≈ $230 USD</p>
+                        </div>
+                        <ul class="space-y-3 text-sm text-cream/70 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Deep subconscious reprogramming</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Pattern interruption work</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Belief system restructuring</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Nervous system regulation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Audio recording for home practice</span>
+                            </li>
+                        </ul>
+                        <a href="#booking" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                            Book Now
+                        </a>
+                    </div>
+
+                    <!-- SKP Method Pricing -->
+                    <div class="bg-charcoal border-2 border-gold/30 p-8 rounded-sm hover:border-gold transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-infinity text-gold text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif text-cream mb-2">SKP Method</h3>
+                            <p class="text-gold/80 text-sm mb-4">120-Minute Session</p>
+                        </div>
+                        <div class="text-center mb-6">
+                            <div class="text-4xl font-serif text-gold mb-2">AED 1,200</div>
+                            <p class="text-cream/60 text-sm">≈ $325 USD</p>
+                        </div>
+                        <ul class="space-y-3 text-sm text-cream/70 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Full-spectrum integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Nir Levy Method protocols</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Advanced somatic techniques</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Energy medicine & Reiki</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Personalized integration plan</span>
+                            </li>
+                        </ul>
+                        <a href="#booking" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package Options -->
+                <div class="bg-charcoal border border-gold/20 p-8 rounded-sm">
+                    <h3 class="text-2xl font-serif text-cream mb-6 text-center">Healing Packages</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-midnight p-6 rounded-sm">
+                            <h4 class="text-xl font-serif text-gold mb-3">Foundation Package</h4>
+                            <p class="text-3xl font-serif text-cream mb-2">AED 2,550 <span class="text-lg text-cream/60">/ 3 sessions</span></p>
+                            <p class="text-sm text-gold/80 mb-4">Save AED 300 • Best for: Initial transformation</p>
+                            <ul class="space-y-2 text-sm text-cream/70 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
+                                    <span>Choice of any modality</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
+                                    <span>Email support between sessions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
+                                    <span>Valid for 3 months</span>
+                                </li>
+                            </ul>
+                            <a href="#booking" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
+                                Inquire About Package <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-midnight p-6 rounded-sm border-2 border-gold/50">
+                            <h4 class="text-xl font-serif text-gold mb-3">Transformation Package</h4>
+                            <p class="text-3xl font-serif text-cream mb-2">AED 5,100 <span class="text-lg text-cream/60">/ 6 sessions</span></p>
+                            <p class="text-sm text-gold/80 mb-4">Save AED 600 • Best for: Deep, lasting change</p>
+                            <ul class="space-y-2 text-sm text-cream/70 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
+                                    <span>Mix & match any modalities</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
+                                    <span>Priority scheduling</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
+                                    <span>Ongoing email & WhatsApp support</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
+                                    <span>Valid for 6 months</span>
+                                </li>
+                            </ul>
+                            <a href="#booking" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
+                                Inquire About Package <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment & Policies -->
+                <div class="mt-12 text-center">
+                    <p class="text-cream/60 text-sm mb-4">
+                        <i class="fas fa-info-circle text-gold mr-2"></i>
+                        All sessions include pre-session consultation and post-session integration support
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6 text-sm text-cream/60">
+                        <span><i class="fas fa-credit-card text-gold mr-2"></i>Cash & Bank Transfer Accepted</span>
+                        <span><i class="fas fa-calendar-check text-gold mr-2"></i>48-Hour Cancellation Policy</span>
+                        <span><i class="fas fa-map-marker-alt text-gold mr-2"></i>Dubai Studio Location</span>
                     </div>
                 </div>
             </div>
