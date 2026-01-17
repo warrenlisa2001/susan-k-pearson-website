@@ -1,12 +1,590 @@
 import { Hono } from 'hono'
-import { renderer } from './renderer'
+import { serveStatic } from 'hono/cloudflare-workers'
+import { cors } from 'hono/cors'
 
 const app = new Hono()
 
-app.use(renderer)
+app.use('/api/*', cors())
+app.use('/static/*', serveStatic({ root: './public' }))
 
+// Main page
 app.get('/', (c) => {
-  return c.render(<h1>Hello!</h1>)
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Susan K. Pearson | Elemental Healing</title>
+        <meta name="description" content="Master-level Reiki, Energy Medicine, and Clinical Hypnotherapy in Dubai. Transformational healing at the intersection of energy, body, and consciousness.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  'sage': '#B8B5A0',
+                  'cream': '#F5F1E8',
+                  'charcoal': '#3A3A3A',
+                  'gold': '#C9A961',
+                  'stone': '#E8DCC8',
+                  'earth': '#8B7355',
+                },
+                fontFamily: {
+                  'serif': ['Cormorant Garamond', 'serif'],
+                  'sans': ['Montserrat', 'sans-serif'],
+                }
+              }
+            }
+          }
+        </script>
+        <style>
+          body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F5F1E8;
+          }
+          h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+          }
+          .elegant-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+          }
+          .smooth-scroll {
+            scroll-behavior: smooth;
+          }
+          .hero-gradient {
+            background: linear-gradient(135deg, #B8B5A0 0%, #E8DCC8 100%);
+          }
+          .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+          .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+          }
+          .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #C9A961, transparent);
+            margin: 4rem 0;
+          }
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(30px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+          }
+        </style>
+    </head>
+    <body class="smooth-scroll">
+        <!-- Navigation -->
+        <nav class="fixed w-full bg-cream/95 backdrop-blur-sm shadow-sm z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center">
+                        <span class="text-2xl font-serif font-light text-charcoal tracking-wider">SKP</span>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#home" class="text-charcoal hover:text-gold transition-colors">Home</a>
+                        <a href="#about" class="text-charcoal hover:text-gold transition-colors">About</a>
+                        <a href="#services" class="text-charcoal hover:text-gold transition-colors">Services</a>
+                        <a href="#approach" class="text-charcoal hover:text-gold transition-colors">Approach</a>
+                        <a href="#contact" class="text-charcoal hover:text-gold transition-colors">Contact</a>
+                    </div>
+                    <button id="mobileMenuBtn" class="md:hidden text-charcoal">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-cream border-t border-sage/20">
+                <div class="px-4 py-4 space-y-3">
+                    <a href="#home" class="block text-charcoal hover:text-gold transition-colors">Home</a>
+                    <a href="#about" class="block text-charcoal hover:text-gold transition-colors">About</a>
+                    <a href="#services" class="block text-charcoal hover:text-gold transition-colors">Services</a>
+                    <a href="#approach" class="block text-charcoal hover:text-gold transition-colors">Approach</a>
+                    <a href="#contact" class="block text-charcoal hover:text-gold transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="pt-20 min-h-screen flex items-center hero-gradient">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="text-center fade-in-up">
+                    <div class="mb-6">
+                        <span class="inline-block text-6xl md:text-8xl font-serif font-light text-charcoal tracking-widest">SKP</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-serif font-light text-charcoal mb-6">
+                        Susan K. Pearson
+                    </h1>
+                    <p class="text-xl md:text-2xl elegant-text text-charcoal/80 mb-4">
+                        Elemental Healing Through Energy, Balance Through Consciousness
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 text-sm md:text-base text-charcoal/70 mb-12">
+                        <span>Energy Medicine</span>
+                        <span class="text-gold">•</span>
+                        <span>Reiki Master</span>
+                        <span class="text-gold">•</span>
+                        <span>Hypnotherapy</span>
+                        <span class="text-gold">•</span>
+                        <span>Somatic Alignment</span>
+                    </div>
+                    <div class="elegant-text text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto mb-12">
+                        <p class="mb-4">Reconnect with your body's natural wisdom.</p>
+                        <p>Experience transformation through mindful energy work.</p>
+                    </div>
+                    <a href="#contact" class="inline-block bg-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/90 transition-colors text-lg font-medium">
+                        Book a Session
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-cream">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">About Susan</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-charcoal/80 leading-relaxed">
+                        <p class="text-lg">
+                            I work at the intersection of energy, body, and consciousness—combining Master-level Reiki, 
+                            Energy Medicine, and Clinical Hypnotherapy to create lasting shifts in the nervous system 
+                            and subconscious.
+                        </p>
+                        <p>
+                            My practice is a sanctuary for high-end, discreet, results-oriented healing. Based in Dubai, 
+                            I offer precise, transformational work that honors the holistic nature of true wellness.
+                        </p>
+                        <p>
+                            With certifications in advanced energy modalities and the forthcoming Nir Levy Method (February 2026), 
+                            I bring a refined, sophisticated approach to healing that respects both ancient wisdom and 
+                            contemporary understanding of the mind-body connection.
+                        </p>
+                    </div>
+                    <div class="bg-stone/50 p-8 rounded-sm">
+                        <h3 class="text-2xl font-serif text-charcoal mb-6">Credentials & Training</h3>
+                        <ul class="space-y-3 text-charcoal/80">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Master-level Reiki Practitioner</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Certified Energy Medicine Specialist</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Clinical Hypnotherapy Certification</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Somatic Alignment Practitioner</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Nir Levy Method (Coming February 2026)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                <span>Based in Dubai | Sharjah-Registered</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Voice Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Tone of Voice</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        Every interaction is guided by these core principles
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
+                        <div class="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heart text-sage text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Calm & Nurturing</h3>
+                        <p class="text-sm text-charcoal/70">soothing, supportive communication</p>
+                    </div>
+                    
+                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-lightbulb text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Empowering & Wise</h3>
+                        <p class="text-sm text-charcoal/70">knowledgeable yet accessible</p>
+                    </div>
+                    
+                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
+                        <div class="w-16 h-16 bg-earth/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-leaf text-earth text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Authentic & Grounded</h3>
+                        <p class="text-sm text-charcoal/70">genuine, earth-connected energy</p>
+                    </div>
+                    
+                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
+                        <div class="w-16 h-16 bg-stone/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-crown text-charcoal text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Elegant & Professional</h3>
+                        <p class="text-sm text-charcoal/70">refined, sophisticated presence</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Core Offerings</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        Transformational healing modalities designed for lasting change
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Deep Alignment Session -->
+                    <div class="bg-white p-8 rounded-sm card-hover">
+                        <div class="mb-6">
+                            <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-spa text-sage text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif text-charcoal mb-2">Deep Alignment Session</h3>
+                            <p class="text-sm text-gold mb-4">Flagship Integration</p>
+                        </div>
+                        <p class="text-charcoal/70 mb-6 leading-relaxed">
+                            My signature integration of Reiki, energy medicine, and somatic touch. 
+                            This comprehensive session addresses the full spectrum of mind, body, and spirit.
+                        </p>
+                        <ul class="space-y-2 text-sm text-charcoal/70 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Master-level Reiki energy work</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Somatic alignment techniques</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Energy medicine protocols</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="text-gold hover:text-gold/80 transition-colors font-medium">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Clinical Hypnotherapy -->
+                    <div class="bg-white p-8 rounded-sm card-hover">
+                        <div class="mb-6">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-brain text-gold text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif text-charcoal mb-2">Clinical Hypnotherapy</h3>
+                            <p class="text-sm text-gold mb-4">Subconscious Transformation</p>
+                        </div>
+                        <p class="text-charcoal/70 mb-6 leading-relaxed">
+                            Access and reprogram limiting beliefs at the subconscious level. 
+                            Powerful work for breaking patterns and creating lasting behavioral change.
+                        </p>
+                        <ul class="space-y-2 text-sm text-charcoal/70 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Pattern interruption & release</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Belief system restructuring</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Nervous system regulation</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="text-gold hover:text-gold/80 transition-colors font-medium">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- SKP Method -->
+                    <div class="bg-white p-8 rounded-sm card-hover">
+                        <div class="mb-6">
+                            <div class="w-12 h-12 bg-earth/20 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-hands-helping text-earth text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif text-charcoal mb-2">SKP Method</h3>
+                            <p class="text-sm text-gold mb-4">Nir Levy Integration</p>
+                        </div>
+                        <p class="text-charcoal/70 mb-6 leading-relaxed">
+                            Combining advanced somatic practices with energy medicine. 
+                            My unique approach to holistic healing informed by the Nir Levy Method.
+                        </p>
+                        <ul class="space-y-2 text-sm text-charcoal/70 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Body-centered awareness</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Energetic realignment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
+                                <span>Conscious integration</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="text-gold hover:text-gold/80 transition-colors font-medium">
+                            Coming February 2026 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section id="approach" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">My Approach</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                </div>
+                
+                <div class="bg-cream p-12 rounded-sm">
+                    <h3 class="text-2xl font-serif text-charcoal mb-8 text-center">Language Style</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-flower text-sage mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-charcoal mb-2">Warm, Inviting Language</h4>
+                                    <p class="text-sm text-charcoal/70">Creating a safe space for transformation through gentle, supportive communication</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-sage mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-charcoal mb-2">Speak with Quiet Confidence</h4>
+                                    <p class="text-sm text-charcoal/70">Grounded expertise delivered with humility and presence</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-ban text-sage mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-charcoal mb-2">Avoid Clinical or Harsh Terms</h4>
+                                    <p class="text-sm text-charcoal/70">Honoring the sacred nature of healing work through thoughtful language</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-seedling text-sage mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium text-charcoal mb-2">Embrace Holistic Vocabulary</h4>
+                                    <p class="text-sm text-charcoal/70">Recognizing the interconnected nature of mind, body, and spirit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="text-center">
+                    <h3 class="text-3xl font-serif text-charcoal mb-8">What to Expect</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-serif text-sage">1</span>
+                            </div>
+                            <h4 class="font-medium text-charcoal mb-2">Initial Consultation</h4>
+                            <p class="text-sm text-charcoal/70">We'll discuss your intentions and create a personalized healing plan</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-serif text-gold">2</span>
+                            </div>
+                            <h4 class="font-medium text-charcoal mb-2">Transformational Session</h4>
+                            <p class="text-sm text-charcoal/70">Experience deep work tailored to your unique needs and goals</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-earth/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-serif text-earth">3</span>
+                            </div>
+                            <h4 class="font-medium text-charcoal mb-2">Integration Support</h4>
+                            <p class="text-sm text-charcoal/70">Guidance for integrating your experience into daily life</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-cream">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Begin Your Journey</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        Take the first step toward transformation. Reach out to schedule your consultation.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-12 rounded-sm shadow-sm">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Name</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Email</label>
+                                <input type="email" required class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Phone (Optional)</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="+971 ...">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Service Interest</label>
+                            <select class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
+                                <option>Deep Alignment Session</option>
+                                <option>Clinical Hypnotherapy</option>
+                                <option>SKP Method</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Message</label>
+                            <textarea rows="5" required class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="Tell me about your healing journey and intentions..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-gold text-cream px-10 py-4 rounded-sm hover:bg-gold/90 transition-colors text-lg font-medium">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-charcoal/70 mb-4">Based in Dubai | Sharjah-Registered</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="mailto:contact@elementalhealing.ae" class="text-gold hover:text-gold/80 transition-colors">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gold hover:text-gold/80 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gold hover:text-gold/80 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-charcoal text-cream/70 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <div class="mb-6">
+                        <span class="text-4xl font-serif font-light text-cream tracking-widest">SKP</span>
+                    </div>
+                    <p class="mb-4 elegant-text text-lg">Susan K. Pearson | Elemental Healing</p>
+                    <p class="text-sm mb-6">Energy Medicine • Reiki Master • Hypnotherapy • Somatic Alignment</p>
+                    <div class="section-divider opacity-30"></div>
+                    <p class="text-xs mt-6">© 2026 Elemental Healing LLC. All rights reserved. | Confidential & Proprietary</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('#mobileMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const offset = 80;
+                        const targetPosition = target.offsetTop - offset;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Contact form handling
+            document.getElementById('contactForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your interest. Your message has been received. I will respond within 24 hours.');
+                e.target.reset();
+            });
+
+            // Add fade-in animations on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        </script>
+    </body>
+    </html>
+  `)
 })
 
 export default app
