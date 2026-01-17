@@ -279,18 +279,13 @@ app.get('/', (c) => {
     </head>
     <body class="smooth-scroll">
         <!-- Navigation -->
-        <nav class="fixed w-full bg-midnight backdrop-blur-sm shadow-lg z-50 border-b border-gold/30">
+        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-24">
+                <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
-                        <a href="#home" class="flex items-center gap-3">
-                            <div class="relative">
-                                <img src="/images/skp-lotus-logo.png" alt="SKP" class="h-20 w-auto filter brightness-110 contrast-125">
-                            </div>
-                            <div class="hidden md:block">
-                                <div class="text-cream font-serif text-lg leading-tight">Susan K. Pearson</div>
-                                <div class="text-gold text-xs tracking-wider">ENERGY · BODY · CONSCIOUSNESS</div>
-                            </div>
+                        <a href="#home" class="flex flex-col">
+                            <div class="text-cream font-serif text-xl md:text-2xl tracking-wide">Susan K. Pearson</div>
+                            <div class="text-gold text-xs md:text-sm tracking-widest font-light">ENERGY · BODY · CONSCIOUSNESS</div>
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8">
@@ -299,7 +294,7 @@ app.get('/', (c) => {
                         <a href="#services" class="text-cream hover:text-gold transition-colors">Services</a>
                         <a href="#pricing" class="text-cream hover:text-gold transition-colors">Pricing</a>
                         <a href="#blog" class="text-cream hover:text-gold transition-colors">Blog</a>
-                        <a href="#booking" class="bg-gold text-midnight px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
+                        <a href="#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                     <button id="mobileMenuBtn" class="md:hidden text-cream">
                         <i class="fas fa-bars text-2xl"></i>
@@ -307,7 +302,7 @@ app.get('/', (c) => {
                 </div>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden bg-midnight border-t border-gold/20">
+            <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-gold/20">
                 <div class="px-4 py-4 space-y-3">
                     <a href="#home" class="block text-cream hover:text-gold transition-colors">Home</a>
                     <a href="#about" class="block text-cream hover:text-gold transition-colors">About</a>
@@ -320,24 +315,9 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 h-[65vh] md:h-[75vh] flex items-center justify-center relative overflow-hidden bg-black">
+        <section id="home" class="pt-20 h-[70vh] md:h-[80vh] flex items-center justify-center relative overflow-hidden bg-black">
             <div class="absolute inset-0 z-0">
-                <img src="/images/hero-final.jpg" alt="Fundamental Healing" class="w-full h-full object-cover opacity-70">
-                <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
-            </div>
-            
-            <!-- Hero Content Overlay -->
-            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-light text-gold mb-6 drop-shadow-2xl">
-                    Fundamental Healing Through Energy
-                </h1>
-                <p class="text-2xl md:text-3xl text-gold/90 font-light mb-8 drop-shadow-xl">
-                    & Inner Guidance
-                </p>
-                <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
-                <a href="#booking" class="inline-block bg-gold text-midnight px-8 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-2xl hover:scale-105 transform">
-                    Book a Session
-                </a>
+                <img src="/images/hero-v3.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="w-full h-full object-cover">
             </div>
         </section>
 
