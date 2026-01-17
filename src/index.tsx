@@ -275,13 +275,13 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <img src="/images/hero-banner.jpg" alt="Elemental Healing" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40"></div>
+        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden bg-charcoal">
+            <div class="absolute inset-0 z-0 flex items-center justify-center">
+                <img src="/images/skp-logo.png" alt="Susan K. Pearson - Elemental Healing" class="w-full max-w-4xl h-auto object-contain">
             </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
                 <div class="text-center fade-in-up">
+                    <div class="h-96"></div>
                     <a href="#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors text-lg font-medium shadow-lg">
                         Book a Session
                     </a>
@@ -359,52 +359,6 @@ app.get('/', (c) => {
             </div>
         </section>
 
-        <!-- Brand Voice Section -->
-        <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Tone of Voice</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Every interaction is guided by these core principles
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-4 gap-6">
-                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
-                        <div class="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-heart text-sage text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-serif text-charcoal mb-3">Calm & Nurturing</h3>
-                        <p class="text-sm text-charcoal/70">soothing, supportive communication</p>
-                    </div>
-                    
-                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
-                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-lightbulb text-gold text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-serif text-charcoal mb-3">Empowering & Wise</h3>
-                        <p class="text-sm text-charcoal/70">knowledgeable yet accessible</p>
-                    </div>
-                    
-                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
-                        <div class="w-16 h-16 bg-earth/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-leaf text-earth text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-serif text-charcoal mb-3">Authentic & Grounded</h3>
-                        <p class="text-sm text-charcoal/70">genuine, earth-connected energy</p>
-                    </div>
-                    
-                    <div class="bg-cream p-8 rounded-sm card-hover text-center">
-                        <div class="w-16 h-16 bg-stone/50 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-crown text-charcoal text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-serif text-charcoal mb-3">Elegant & Professional</h3>
-                        <p class="text-sm text-charcoal/70">refined, sophisticated presence</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Services Section -->
         <section id="services" class="py-20 bg-cream">
@@ -633,13 +587,13 @@ app.get('/', (c) => {
         </section>
 
         <!-- Blog Section -->
-        <section id="blog" class="py-20 bg-cream">
+        <section id="blog" class="py-20 bg-midnight">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Insights & Wisdom</h2>
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">Insights & Wisdom</h2>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Explore articles on energy medicine, healing practices, and conscious living
+                    <p class="text-lg text-cream/70 max-w-2xl mx-auto">
+                        Articles on energy medicine, healing practices, and conscious living
                     </p>
                 </div>
                 
@@ -649,13 +603,13 @@ app.get('/', (c) => {
                             <div class="p-6">
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="text-xs text-gold font-medium uppercase tracking-wider">${post.category}</span>
-                                    <span class="text-xs text-charcoal/60">${post.readTime}</span>
+                                    <span class="text-xs text-cream/60">${post.readTime}</span>
                                 </div>
-                                <h3 class="text-xl font-serif text-charcoal mb-3 leading-tight">${post.title}</h3>
-                                <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">${post.excerpt}</p>
+                                <h3 class="text-xl font-serif text-cream mb-3 leading-tight">${post.title}</h3>
+                                <p class="text-sm text-cream/70 mb-4 leading-relaxed">${post.excerpt}</p>
                                 <div class="flex items-center justify-between">
-                                    <span class="text-xs text-charcoal/60"><i class="far fa-calendar mr-2"></i>${post.date}</span>
-                                    <a href="/blog/${post.id}" class="text-gold hover:text-gold/80 transition-colors text-sm font-medium">
+                                    <span class="text-xs text-cream/60"><i class="far fa-calendar mr-2"></i>${post.date}</span>
+                                    <a href="/blog/${post.id}" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
                                         Read More <i class="fas fa-arrow-right ml-1"></i>
                                     </a>
                                 </div>
@@ -665,7 +619,7 @@ app.get('/', (c) => {
                 </div>
                 
                 <div class="text-center mt-12">
-                    <a href="/blog" class="inline-block bg-gold text-cream px-8 py-3 rounded-sm hover:bg-gold/90 transition-colors font-medium">
+                    <a href="/blog" class="inline-block bg-gold text-midnight px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                         View All Articles
                     </a>
                 </div>
