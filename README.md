@@ -5,6 +5,7 @@
 - **Practitioner**: Susan K. Pearson
 - **Location**: Dubai | Sharjah-Registered
 - **Website**: Professional healing practice with NYC-chic black & gold aesthetic
+- **Tagline**: *Fundamental Healing Through Energy & Inner Guidance*
 - **Core Services**: 
   - Deep Alignment Therapy
   - Hara Release (Anma & Ampuku)
