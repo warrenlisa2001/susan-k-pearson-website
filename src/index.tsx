@@ -300,7 +300,7 @@ app.get('/', (c) => {
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="flex justify-center">
                         <div class="text-center">
-                            <img src="https://www.genspark.ai/api/files/s/q6FMJ9Sl" alt="Susan K. Pearson" class="profile-image mx-auto mb-6">
+                            <img src="/images/susan-profile.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6">
                             <div class="mb-4">
                                 <p class="text-2xl font-serif text-charcoal mb-2">Susan K. Pearson</p>
                                 <p class="text-gold"><i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957</p>
@@ -518,37 +518,37 @@ app.get('/', (c) => {
         </section>
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="py-20 bg-white">
+        <section id="testimonials" class="py-20 bg-charcoal">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Client Experiences</h2>
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">Client Experiences</h2>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Hear from those who have experienced transformational healing
+                    <p class="text-lg text-cream/70 max-w-2xl mx-auto">
+                        Real stories from clients around the world
                     </p>
                 </div>
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     ${testimonials.map((testimonial, index) => `
-                        <div class="bg-cream p-8 rounded-sm card-hover ${index === 0 ? 'lg:col-span-2' : ''}">
+                        <div class="bg-midnight border border-gold/20 p-8 rounded-sm card-hover ${index === 0 ? 'lg:col-span-2' : ''}">
                             <div class="flex items-center mb-6">
                                 <div class="text-4xl mr-4">${testimonial.image}</div>
                                 <div>
-                                    <h4 class="font-serif text-xl text-charcoal">${testimonial.name}</h4>
-                                    <p class="text-sm text-charcoal/60">${testimonial.location}</p>
+                                    <h4 class="font-serif text-xl text-gold">${testimonial.name}</h4>
+                                    <p class="text-sm text-cream/60">${testimonial.location}</p>
                                     <div class="flex mt-1">
                                         ${Array(testimonial.rating).fill('').map(() => '<i class="fas fa-star text-gold text-xs"></i>').join('')}
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-charcoal/80 leading-relaxed italic">"${testimonial.text}"</p>
+                            <p class="text-cream/80 leading-relaxed italic">"${testimonial.text}"</p>
                         </div>
                     `).join('')}
                 </div>
                 
                 <div class="mt-12 text-center">
-                    <p class="text-charcoal/70 mb-6">Ready to begin your own healing journey?</p>
-                    <a href="#booking" class="inline-block bg-gold text-cream px-8 py-3 rounded-sm hover:bg-gold/90 transition-colors font-medium">
+                    <p class="text-cream/70 mb-6">Ready to begin your healing journey?</p>
+                    <a href="#booking" class="inline-block bg-gold text-midnight px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                         Book Your Session
                     </a>
                 </div>
