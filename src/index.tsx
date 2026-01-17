@@ -242,47 +242,47 @@ app.get('/', (c) => {
     </head>
     <body class="smooth-scroll">
         <!-- Navigation -->
-        <nav class="fixed w-full bg-cream/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="fixed w-full bg-midnight/95 backdrop-blur-sm shadow-sm z-50 border-b border-gold/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
-                        <span class="text-2xl font-serif font-light text-charcoal tracking-wider">SKP</span>
+                        <img src="/images/skp-logo.png" alt="SKP" class="h-12 w-auto">
                     </div>
                     <div class="hidden md:flex space-x-8">
-                        <a href="#home" class="text-charcoal hover:text-gold transition-colors">Home</a>
-                        <a href="#about" class="text-charcoal hover:text-gold transition-colors">About</a>
-                        <a href="#services" class="text-charcoal hover:text-gold transition-colors">Services</a>
-                        <a href="#testimonials" class="text-charcoal hover:text-gold transition-colors">Testimonials</a>
-                        <a href="#blog" class="text-charcoal hover:text-gold transition-colors">Blog</a>
-                        <a href="#booking" class="bg-gold text-cream px-6 py-2 rounded-sm hover:bg-gold/90 transition-colors">Book Session</a>
+                        <a href="#home" class="text-cream hover:text-gold transition-colors">Home</a>
+                        <a href="#about" class="text-cream hover:text-gold transition-colors">About</a>
+                        <a href="#services" class="text-cream hover:text-gold transition-colors">Services</a>
+                        <a href="#testimonials" class="text-cream hover:text-gold transition-colors">Testimonials</a>
+                        <a href="#blog" class="text-cream hover:text-gold transition-colors">Blog</a>
+                        <a href="#booking" class="bg-gold text-midnight px-6 py-2 rounded-sm hover:bg-champagne transition-colors">Book Session</a>
                     </div>
-                    <button id="mobileMenuBtn" class="md:hidden text-charcoal">
+                    <button id="mobileMenuBtn" class="md:hidden text-cream">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden bg-cream border-t border-sage/20">
+            <div id="mobileMenu" class="hidden md:hidden bg-midnight border-t border-gold/20">
                 <div class="px-4 py-4 space-y-3">
-                    <a href="#home" class="block text-charcoal hover:text-gold transition-colors">Home</a>
-                    <a href="#about" class="block text-charcoal hover:text-gold transition-colors">About</a>
-                    <a href="#services" class="block text-charcoal hover:text-gold transition-colors">Services</a>
-                    <a href="#testimonials" class="block text-charcoal hover:text-gold transition-colors">Testimonials</a>
-                    <a href="#blog" class="block text-charcoal hover:text-gold transition-colors">Blog</a>
-                    <a href="#booking" class="block text-gold hover:text-gold/80 transition-colors font-medium">Book Session</a>
+                    <a href="#home" class="block text-cream hover:text-gold transition-colors">Home</a>
+                    <a href="#about" class="block text-cream hover:text-gold transition-colors">About</a>
+                    <a href="#services" class="block text-cream hover:text-gold transition-colors">Services</a>
+                    <a href="#testimonials" class="block text-cream hover:text-gold transition-colors">Testimonials</a>
+                    <a href="#blog" class="block text-cream hover:text-gold transition-colors">Blog</a>
+                    <a href="#booking" class="block text-gold hover:text-champagne transition-colors font-medium">Book Session</a>
                 </div>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden bg-bone">
-            <div class="absolute inset-0 z-0 flex items-center justify-center">
-                <img src="/images/skp-lotus-logo.png" alt="Susan K. Pearson - SKP Method" class="w-full max-w-3xl h-auto object-contain">
+        <section id="home" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="/images/hero-banner.jpg" alt="Elemental Healing Through Energy, Balance Through Consciousness" class="w-full h-full object-cover">
             </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
                 <div class="text-center fade-in-up">
                     <div class="h-96"></div>
-                    <a href="#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors text-lg font-medium shadow-lg">
+                    <a href="#booking" class="inline-block bg-gold text-midnight px-10 py-5 rounded-sm hover:bg-champagne transition-colors text-xl font-medium shadow-2xl">
                         Book a Session
                     </a>
                 </div>
