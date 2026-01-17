@@ -298,7 +298,7 @@ app.get('/', (c) => {
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="flex justify-center">
                         <div class="text-center">
-                            <img src="/images/susan-profile.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6">
+                            <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6">
                             <div class="mb-4">
                                 <p class="text-2xl font-serif text-charcoal mb-2">Susan K. Pearson</p>
                                 <p class="text-gold"><i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957</p>
