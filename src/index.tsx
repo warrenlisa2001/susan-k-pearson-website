@@ -510,77 +510,34 @@ app.get('/', (c) => {
         </section>
 
         <!-- Approach Section -->
-        <section id="approach" class="py-20 bg-white">
+        <section id="approach" class="py-20 bg-charcoal">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">My Approach</h2>
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">What to Expect</h2>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                 </div>
-                
-                <div class="bg-cream p-12 rounded-sm">
-                    <h3 class="text-2xl font-serif text-charcoal mb-8 text-center">Language Style</h3>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <i class="fas fa-flower text-sage mr-4 mt-1"></i>
-                                <div>
-                                    <h4 class="font-medium text-charcoal mb-2">Warm, Inviting Language</h4>
-                                    <p class="text-sm text-charcoal/70">Creating a safe space for transformation through gentle, supportive communication</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-shield-alt text-sage mr-4 mt-1"></i>
-                                <div>
-                                    <h4 class="font-medium text-charcoal mb-2">Speak with Quiet Confidence</h4>
-                                    <p class="text-sm text-charcoal/70">Grounded expertise delivered with humility and presence</p>
-                                </div>
-                            </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center bg-midnight border border-gold/20 p-8 rounded-sm card-hover">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-serif text-gold">1</span>
                         </div>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <i class="fas fa-ban text-sage mr-4 mt-1"></i>
-                                <div>
-                                    <h4 class="font-medium text-charcoal mb-2">Avoid Clinical or Harsh Terms</h4>
-                                    <p class="text-sm text-charcoal/70">Honoring the sacred nature of healing work through thoughtful language</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-seedling text-sage mr-4 mt-1"></i>
-                                <div>
-                                    <h4 class="font-medium text-charcoal mb-2">Embrace Holistic Vocabulary</h4>
-                                    <p class="text-sm text-charcoal/70">Recognizing the interconnected nature of mind, body, and spirit</p>
-                                </div>
-                            </div>
-                        </div>
+                        <h4 class="font-medium text-cream mb-3">Initial Consultation</h4>
+                        <p class="text-sm text-cream/70">We'll discuss your intentions and create a personalized healing plan</p>
                     </div>
-                </div>
-
-                <div class="section-divider"></div>
-
-                <div class="text-center">
-                    <h3 class="text-3xl font-serif text-charcoal mb-8">What to Expect</h3>
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span class="text-2xl font-serif text-sage">1</span>
-                            </div>
-                            <h4 class="font-medium text-charcoal mb-2">Initial Consultation</h4>
-                            <p class="text-sm text-charcoal/70">We'll discuss your intentions and create a personalized healing plan</p>
+                    <div class="text-center bg-midnight border border-gold/20 p-8 rounded-sm card-hover">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-serif text-gold">2</span>
                         </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span class="text-2xl font-serif text-gold">2</span>
-                            </div>
-                            <h4 class="font-medium text-charcoal mb-2">Transformational Session</h4>
-                            <p class="text-sm text-charcoal/70">Experience deep work tailored to your unique needs and goals</p>
+                        <h4 class="font-medium text-cream mb-3">Healing Session</h4>
+                        <p class="text-sm text-cream/70">Experience deep work tailored to your unique needs and goals</p>
+                    </div>
+                    <div class="text-center bg-midnight border border-gold/20 p-8 rounded-sm card-hover">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-serif text-gold">3</span>
                         </div>
-                        <div class="text-center">
-                            <div class="w-16 h-16 bg-earth/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span class="text-2xl font-serif text-earth">3</span>
-                            </div>
-                            <h4 class="font-medium text-charcoal mb-2">Integration Support</h4>
-                            <p class="text-sm text-charcoal/70">Guidance for integrating your experience into daily life</p>
-                        </div>
+                        <h4 class="font-medium text-cream mb-3">Integration Support</h4>
+                        <p class="text-sm text-cream/70">Guidance for integrating your experience into daily life</p>
                     </div>
                 </div>
             </div>
