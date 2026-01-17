@@ -1167,9 +1167,8 @@ app.get('/', (c) => {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
-                        <a href="#home" class="flex flex-col">
-                            <div class="text-cream font-serif text-xl md:text-2xl tracking-wide">Susan K. Pearson</div>
-                            <div class="text-gold text-xs md:text-sm tracking-widest font-light">ENERGY · BODY · CONSCIOUSNESS</div>
+                        <a href="#home" class="flex items-center">
+                            <img src="/images/skp-brand-logo.png" alt="Susan K. Pearson - SKP - Energy, Body, Consciousness" class="h-16 md:h-20 w-auto">
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8">
