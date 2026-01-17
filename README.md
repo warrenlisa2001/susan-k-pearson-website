@@ -1,38 +1,52 @@
 # Susan K. Pearson | Elemental Healing
 
 ## Project Overview
-- **Name**: Elemental Healing LLC
+- **Name**: Elemental Healing LLC - SKP Method
 - **Practitioner**: Susan K. Pearson
 - **Location**: Dubai | Sharjah-Registered
-- **Goal**: Professional website for high-end energy healing practice
-- **Features**: 
-  - Elegant, sophisticated brand presentation
-  - Comprehensive service offerings
-  - Brand voice and messaging alignment
-  - Contact form for client inquiries
-  - Mobile-responsive design
+- **Website**: Professional healing practice with NYC-chic black & gold aesthetic
+- **Core Services**: 
+  - Deep Alignment Therapy
+  - Hara Release (Anma & Ampuku)
+  - Energy Recalibration (Reiki & Chakras)  
+  - Subconscious Shift Therapy (Hypnotherapy & Nir Levy Method)
+  - Full Integration Sessions
 
 ## Brand Identity
 
-### Tone of Voice
-1. **Calm & Nurturing** - Soothing, supportive communication
-2. **Empowering & Wise** - Knowledgeable yet accessible
-3. **Authentic & Grounded** - Genuine, earth-connected energy
-4. **Elegant & Professional** - Refined, sophisticated presence
+### SKP Method
+**Soul Key Process™** - A multidimensional healing system integrating energy alignment, Japanese bodywork, and consciousness transformation.
 
-### Language Style
-- Use warm, inviting language
-- Speak with quiet confidence
-- Avoid clinical or harsh terms
-- Embrace holistic vocabulary
+### Design Aesthetic
+**NYC Loft Meets Healing Sanctuary:**
+- Black crown molded walls
+- Gold and champagne accents
+- Cream and bone highlights
+- Elegant, refined, powerful
 
 ### Color Palette
-- **Sage** (#B8B5A0) - Calming, natural
-- **Cream** (#F5F1E8) - Soft, elegant background
-- **Charcoal** (#3A3A3A) - Professional text
-- **Gold** (#C9A961) - Luxury accents
-- **Stone** (#E8DCC8) - Warm neutral
-- **Earth** (#8B7355) - Grounded tones
+- **Midnight** (#0A0A0A) - Primary background
+- **Obsidian** (#000000) - Deep blacks
+- **Charcoal** (#1A1A1A) - Card backgrounds  
+- **Gold** (#C8A974) - Primary accent
+- **Champagne** (#D4AF37) - Luxury highlight
+- **Cream** (#FAF7F3) - Text on dark
+- **Bone** (#F4F2EF) - Soft accents
+
+## Contact Information
+- **Email**: susankpearson@elementalskp.com
+- **Phone**: +971 55 177 0957
+- **Location**: Dubai, UAE | Sharjah-Registered
+
+## Certifications & Training
+- Master-level Reiki Practitioner
+- Certified Energy Medicine Specialist
+- Clinical Hypnotherapy Certification
+- Anma (Traditional Japanese Massage)
+- Ampuku (Abdominal Therapy)
+- Somatic Alignment Practitioner
+- Nir Levy Method (Certified February 2026)
+- Chakra Balancing Specialist
 
 ## Core Services
 
@@ -100,39 +114,26 @@ webapp/
 
 ## Features Implemented
 
-### ✅ Completed Features
-- [x] Professional landing page with hero section
-- [x] About Susan section with credentials and profile photo
-- [x] Professional profile image with contact details
-- [x] Contact email: susankpearson@elementalskp.com
-- [x] Phone: +971 55 177 0957
-- [x] Tone of Voice presentation (4 brand pillars)
-- [x] Core services showcase (3 main offerings)
-- [x] Testimonials section with 5 authentic client reviews
-  - Featured testimonial from Lisa M. (Ireland/Dubai)
-  - 4 additional diverse testimonials
-  - 5-star rating system
-  - Geographic diversity (UAE, UK, Australia, Ireland)
-- [x] Approach and methodology section
-- [x] Blog section with 6 articles
-  - Energy Medicine
-  - Reiki
-  - Hypnotherapy
-  - Somatic Work
-  - Wellness
-  - Integration
-- [x] Calendly booking integration
-  - Inline calendar widget
-  - Direct scheduling capability
-  - Fallback contact information
-- [x] Contact form with service selection
-- [x] Mobile-responsive navigation with testimonials link
-- [x] Smooth scrolling navigation
-- [x] Brand-aligned color scheme (Sage, Cream, Gold, Charcoal)
-- [x] Professional typography (Cormorant Garamond + Montserrat)
-- [x] Elegant hover effects and animations
-- [x] Footer with social media links and contact info
-- [x] Professional branding with SKP logo
+### Completed Features
+- Professional landing page with black & gold theme
+- About Susan with profile photo and contact details
+- Comprehensive certifications including Nir Levy Method
+- Core services (Deep Alignment, Hara Release, Energy Recalibration, Subconscious Shift)
+- 6 authentic client testimonials from around the world:
+  - Lisa M. (Ireland/Dubai)
+  - Catherine R. (New York/Dubai)
+  - James L. (London, UK)
+  - Layla S. (Abu Dhabi, UAE)
+  - Michael Chen (Sydney, Australia/Dubai)
+  - Sophia Martinez (Barcelona, Spain/Dubai)
+- Blog section with 6 articles
+- Calendly booking integration
+- Contact form
+- Mobile-responsive navigation
+- Black and gold luxury aesthetic (NYC-chic)
+- Professional typography (Cormorant Garamond + Montserrat)
+- Elegant hover effects and animations
+- SKP Method branding integration
 
 ### 🔄 Recommended Next Steps
 1. **Calendly Setup**
