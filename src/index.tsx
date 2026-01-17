@@ -68,7 +68,72 @@ const blogPosts = [
     excerpt: "Energy medicine works with the body's natural electromagnetic fields to promote healing and balance. Discover how this ancient practice combines with modern understanding...",
     date: "January 15, 2026",
     category: "Energy Medicine",
-    readTime: "5 min read"
+    readTime: "5 min read",
+    content: `
+      <p class="lead">Energy medicine is based on the scientific principle that all matter, including our bodies, is made of energy. This ancient healing modality works with the body's subtle energy systems to promote healing, balance, and vitality.</p>
+
+      <h3>The Science Behind Energy Medicine</h3>
+      <p>Modern physics has confirmed what ancient healers have known for millennia: everything in the universe is energy vibrating at different frequencies. Our bodies are not just physical structures—they're complex energy systems with electromagnetic fields that can be measured and influenced.</p>
+
+      <p>The human body generates various forms of energy:</p>
+      <ul>
+        <li><strong>Bioelectromagnetic fields</strong> created by electrical activity in the heart and brain</li>
+        <li><strong>Biochemical energy</strong> from cellular metabolism</li>
+        <li><strong>Photonic energy</strong> emitted by cells (biophotons)</li>
+        <li><strong>Subtle energy</strong> flowing through meridian pathways</li>
+      </ul>
+
+      <h3>How Energy Medicine Works</h3>
+      <p>Energy medicine practitioners work with these energy systems to:</p>
+      <ul>
+        <li>Remove energetic blockages that impede natural healing</li>
+        <li>Restore balance to disrupted energy flows</li>
+        <li>Strengthen the body's energy field (aura)</li>
+        <li>Support the body's innate healing intelligence</li>
+      </ul>
+
+      <h3>The Chakra System</h3>
+      <p>Central to energy medicine is the chakra system—seven major energy centers running from the base of the spine to the crown of the head. Each chakra corresponds to specific physical, emotional, and spiritual aspects of our being:</p>
+      
+      <ul>
+        <li><strong>Root Chakra (Muladhara):</strong> Foundation, survival, security</li>
+        <li><strong>Sacral Chakra (Svadhisthana):</strong> Creativity, emotions, sexuality</li>
+        <li><strong>Solar Plexus (Manipura):</strong> Personal power, confidence, will</li>
+        <li><strong>Heart Chakra (Anahata):</strong> Love, compassion, connection</li>
+        <li><strong>Throat Chakra (Vishuddha):</strong> Communication, truth, expression</li>
+        <li><strong>Third Eye (Ajna):</strong> Intuition, wisdom, insight</li>
+        <li><strong>Crown Chakra (Sahasrara):</strong> Spiritual connection, consciousness</li>
+      </ul>
+
+      <h3>Benefits of Energy Medicine</h3>
+      <p>Regular energy medicine sessions can help with:</p>
+      <ul>
+        <li>Chronic pain and inflammation</li>
+        <li>Stress and anxiety reduction</li>
+        <li>Emotional trauma healing</li>
+        <li>Enhanced immune function</li>
+        <li>Better sleep quality</li>
+        <li>Increased energy and vitality</li>
+        <li>Accelerated post-surgery recovery</li>
+        <li>Greater mental clarity and focus</li>
+      </ul>
+
+      <h3>What to Expect in a Session</h3>
+      <p>An energy medicine session typically involves:</p>
+      <ol>
+        <li><strong>Assessment:</strong> Evaluation of your energy field and chakra system</li>
+        <li><strong>Energy Clearing:</strong> Removal of stagnant or blocked energy</li>
+        <li><strong>Balancing:</strong> Harmonizing chakras and energy pathways</li>
+        <li><strong>Integration:</strong> Grounding and anchoring the energetic shifts</li>
+      </ol>
+
+      <p>Most people report feeling deeply relaxed, peaceful, and energized after a session. Some experience emotional releases or profound insights as blocked energy begins to move.</p>
+
+      <h3>Combining Ancient Wisdom with Modern Science</h3>
+      <p>What makes energy medicine so powerful is its integration of time-tested healing traditions with contemporary scientific understanding. Research in quantum physics, neuroscience, and bioelectromagnetics continues to validate what energy medicine practitioners have always known: we are energetic beings, and healing happens on multiple levels.</p>
+
+      <p class="mt-6"><em>Ready to experience energy medicine for yourself? Book a Deep Alignment Session to explore how this transformative modality can support your healing journey.</em></p>
+    `
   },
   {
     id: 2,
@@ -76,7 +141,87 @@ const blogPosts = [
     excerpt: "Reiki is a gentle yet powerful healing modality that works on physical, emotional, mental, and spiritual levels. Learn about the transformative effects of this Japanese technique...",
     date: "January 10, 2026",
     category: "Reiki",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    content: `
+      <p class="lead">Reiki (pronounced "ray-key") is a Japanese healing technique that channels universal life force energy to promote healing, reduce stress, and restore balance. Developed by Mikao Usui in the early 1920s, Reiki has become one of the most widely practiced energy healing modalities worldwide.</p>
+
+      <h3>What is Reiki?</h3>
+      <p>The word Reiki comes from two Japanese words:</p>
+      <ul>
+        <li><strong>Rei:</strong> Universal, spiritual wisdom</li>
+        <li><strong>Ki:</strong> Life force energy (similar to Chi or Prana)</li>
+      </ul>
+
+      <p>Reiki practitioners serve as channels for this universal life force energy, allowing it to flow through their hands to the recipient. This energy is intelligent—it goes where it's needed most, working on physical, emotional, mental, and spiritual levels simultaneously.</p>
+
+      <h3>The Five Reiki Principles</h3>
+      <p>Reiki is not just about hands-on healing; it's also a spiritual practice based on five principles (Gokai):</p>
+      <ol>
+        <li><strong>Just for today, I will not worry</strong></li>
+        <li><strong>Just for today, I will not be angry</strong></li>
+        <li><strong>Just for today, I will be grateful</strong></li>
+        <li><strong>Just for today, I will do my work honestly</strong></li>
+        <li><strong>Just for today, I will be kind to every living thing</strong></li>
+      </ol>
+
+      <p>These principles guide practitioners toward mindful living and spiritual growth.</p>
+
+      <h3>How Reiki Works</h3>
+      <p>During a Reiki session, the practitioner places their hands on or slightly above specific areas of the body, allowing universal life force energy to flow through. This energy:</p>
+      <ul>
+        <li>Activates the body's natural healing processes</li>
+        <li>Releases energetic blockages</li>
+        <li>Balances the chakras and energy meridians</li>
+        <li>Promotes deep relaxation and stress relief</li>
+        <li>Supports emotional healing and release</li>
+      </ul>
+
+      <h3>The Reiki Attunement Process</h3>
+      <p>Becoming a Reiki practitioner involves receiving "attunements"—sacred ceremonies that open and align your energy channels to channel Reiki. There are traditionally three levels:</p>
+      
+      <ul>
+        <li><strong>Level 1 (Shoden):</strong> Physical healing, self-treatment</li>
+        <li><strong>Level 2 (Okuden):</strong> Mental/emotional healing, distance healing</li>
+        <li><strong>Level 3 (Shinpiden/Master):</strong> Spiritual healing, teaching capability</li>
+      </ul>
+
+      <p>As a Master-level Reiki practitioner trained in both Usui and Karuna Reiki systems, I work with advanced energy techniques and sacred symbols to facilitate profound healing.</p>
+
+      <h3>What to Expect in a Reiki Session</h3>
+      <p>A typical Reiki session lasts 60-90 minutes and includes:</p>
+      <ol>
+        <li><strong>Intention Setting:</strong> We discuss your healing goals and intentions</li>
+        <li><strong>Energy Assessment:</strong> I scan your energy field to identify blockages</li>
+        <li><strong>Hands-On Healing:</strong> Gentle hand placements on or above the body</li>
+        <li><strong>Integration:</strong> Time to process and ground the energy</li>
+      </ol>
+
+      <h3>Benefits of Regular Reiki</h3>
+      <p>Research and clinical experience show that Reiki can help with:</p>
+      <ul>
+        <li><strong>Stress Reduction:</strong> Deep relaxation response, lower cortisol levels</li>
+        <li><strong>Pain Management:</strong> Reduced chronic pain, faster surgical recovery</li>
+        <li><strong>Emotional Healing:</strong> Release of trauma, anxiety, and depression</li>
+        <li><strong>Better Sleep:</strong> Improved sleep quality and duration</li>
+        <li><strong>Enhanced Clarity:</strong> Greater mental focus and decision-making</li>
+        <li><strong>Spiritual Growth:</strong> Deeper connection to your higher self</li>
+        <li><strong>Immune Support:</strong> Strengthened immune system function</li>
+      </ul>
+
+      <h3>Scientific Research on Reiki</h3>
+      <p>While Reiki is an ancient practice, modern science is beginning to understand its mechanisms. Studies have shown that Reiki:</p>
+      <ul>
+        <li>Affects the autonomic nervous system, promoting parasympathetic activation</li>
+        <li>Influences brainwave patterns, inducing theta and alpha states</li>
+        <li>May affect cellular healing through bioelectromagnetic fields</li>
+        <li>Reduces biomarkers of stress and inflammation</li>
+      </ul>
+
+      <h3>Reiki as Complementary Care</h3>
+      <p>Reiki is increasingly used in hospitals, hospices, and medical settings as a complementary therapy. It enhances conventional medical treatments without interfering with them, making it a safe addition to any healthcare regimen.</p>
+
+      <p class="mt-6"><em>Experience the transformative power of Master-level Reiki. Book a session to restore balance, release stress, and reconnect with your innate healing capacity.</em></p>
+    `
   },
   {
     id: 3,
@@ -84,7 +229,156 @@ const blogPosts = [
     excerpt: "Your subconscious mind holds the key to breaking patterns and creating lasting behavioral change. Explore how clinical hypnotherapy can help you unlock your potential...",
     date: "January 5, 2026",
     category: "Hypnotherapy",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    content: `
+      <p class="lead">Clinical hypnotherapy is a powerful therapeutic tool that accesses the subconscious mind to create lasting behavioral change. By working directly with the part of your mind that controls 95% of your thoughts, emotions, and behaviors, hypnotherapy can help you break free from limiting patterns and step into your full potential.</p>
+
+      <h3>Understanding the Subconscious Mind</h3>
+      <p>Your mind operates on two levels:</p>
+      <ul>
+        <li><strong>Conscious Mind (5%):</strong> Logical thinking, willpower, short-term memory</li>
+        <li><strong>Subconscious Mind (95%):</strong> Habits, beliefs, emotions, automatic behaviors, long-term memory</li>
+      </ul>
+
+      <p>The subconscious mind is like an incredibly powerful computer running programs installed during childhood, traumatic events, and repeated experiences. These programs run automatically, often outside your awareness, controlling your reactions, habits, and beliefs.</p>
+
+      <h3>What is Hypnotherapy?</h3>
+      <p>Hypnotherapy is a therapeutic technique that induces a deeply relaxed, focused state of consciousness (trance) where the subconscious mind becomes more receptive to positive suggestions and change. Despite common misconceptions:</p>
+      <ul>
+        <li>You remain fully in control at all times</li>
+        <li>You cannot be made to do anything against your will</li>
+        <li>You're not asleep—you're in a heightened state of awareness</li>
+        <li>You'll remember the session (unless therapeutic amnesia is specifically requested)</li>
+      </ul>
+
+      <h3>How Hypnotherapy Creates Change</h3>
+      <p>Traditional therapy works with the conscious mind—using logic, willpower, and understanding. While valuable, this approach often falls short because:</p>
+      <ul>
+        <li>Willpower is limited and easily depleted</li>
+        <li>Understanding a problem doesn't automatically change behavior</li>
+        <li>Conscious resolutions often conflict with subconscious programming</li>
+      </ul>
+
+      <p>Hypnotherapy works differently. By accessing the subconscious mind directly, we can:</p>
+      <ol>
+        <li><strong>Identify Root Causes:</strong> Discover the original events that created limiting beliefs</li>
+        <li><strong>Release Emotional Charges:</strong> Process and release stored emotions from past events</li>
+        <li><strong>Rewrite Programs:</strong> Install new, empowering beliefs and behaviors</li>
+        <li><strong>Integrate Changes:</strong> Allow new patterns to become automatic</li>
+      </ol>
+
+      <h3>What Hypnotherapy Can Help With</h3>
+      <p>Clinical hypnotherapy is highly effective for:</p>
+      
+      <h4>Behavioral Change</h4>
+      <ul>
+        <li>Smoking cessation</li>
+        <li>Weight management and healthy eating</li>
+        <li>Nail biting, skin picking, hair pulling</li>
+        <li>Procrastination and motivation</li>
+      </ul>
+
+      <h4>Emotional Healing</h4>
+      <ul>
+        <li>Anxiety and panic attacks</li>
+        <li>Depression and low mood</li>
+        <li>Phobias and fears</li>
+        <li>Grief and loss</li>
+        <li>Anger management</li>
+      </ul>
+
+      <h4>Performance Enhancement</h4>
+      <ul>
+        <li>Public speaking confidence</li>
+        <li>Sports performance</li>
+        <li>Test anxiety and exam performance</li>
+        <li>Creative blocks</li>
+      </ul>
+
+      <h4>Trauma Resolution</h4>
+      <ul>
+        <li>PTSD symptoms</li>
+        <li>Childhood trauma</li>
+        <li>Relationship trauma</li>
+        <li>Accident or injury recovery</li>
+      </ul>
+
+      <h4>Physical Symptoms</h4>
+      <ul>
+        <li>Chronic pain management</li>
+        <li>IBS and digestive issues</li>
+        <li>Tension headaches</li>
+        <li>Insomnia and sleep disorders</li>
+      </ul>
+
+      <h3>The Hypnotherapy Process</h3>
+      <p>A typical hypnotherapy session includes:</p>
+
+      <h4>1. Pre-Talk & Goal Setting (15-20 minutes)</h4>
+      <p>We discuss your goals, address any concerns about hypnosis, and ensure you understand the process. This builds trust and rapport—essential for effective hypnotherapy.</p>
+
+      <h4>2. Induction (5-10 minutes)</h4>
+      <p>Using guided relaxation techniques, I help you enter a comfortable trance state. This might include progressive muscle relaxation, breathing exercises, or visualization.</p>
+
+      <h4>3. Deepening (5-10 minutes)</h4>
+      <p>We deepen the trance state to access the subconscious mind more effectively. You'll feel deeply relaxed while remaining fully aware.</p>
+
+      <h4>4. Therapeutic Work (30-40 minutes)</h4>
+      <p>This is where the transformation happens. Depending on your goals, this might include:</p>
+      <ul>
+        <li>Age regression to heal past events</li>
+        <li>Parts therapy to resolve internal conflicts</li>
+        <li>Positive suggestion and affirmation</li>
+        <li>Future pacing to rehearse new behaviors</li>
+        <li>Metaphor and storytelling</li>
+      </ul>
+
+      <h4>5. Emergence & Integration (5-10 minutes)</h4>
+      <p>I guide you back to full conscious awareness, feeling refreshed and empowered. We discuss your experience and any insights gained.</p>
+
+      <h3>My Approach: Ericksonian Hypnotherapy</h3>
+      <p>I practice Ericksonian hypnotherapy, developed by Dr. Milton Erickson, which is:</p>
+      <ul>
+        <li><strong>Permissive rather than authoritarian:</strong> Gentle suggestions instead of commands</li>
+        <li><strong>Conversational and indirect:</strong> Natural, story-based language</li>
+        <li><strong>Client-centered:</strong> Tailored to your unique needs and learning style</li>
+        <li><strong>Solution-focused:</strong> Emphasizing resources and possibilities</li>
+      </ul>
+
+      <h3>Scientific Validation</h3>
+      <p>Hypnotherapy is recognized as an evidence-based treatment by:</p>
+      <ul>
+        <li>American Psychological Association</li>
+        <li>British Medical Association</li>
+        <li>National Institute of Health</li>
+      </ul>
+
+      <p>Brain imaging studies show that hypnosis creates measurable changes in brain activity, affecting areas involved in attention, pain perception, and emotional regulation.</p>
+
+      <h3>How Many Sessions Do You Need?</h3>
+      <p>This varies by individual and issue:</p>
+      <ul>
+        <li><strong>Simple habits:</strong> 1-3 sessions</li>
+        <li><strong>Phobias or specific fears:</strong> 3-5 sessions</li>
+        <li><strong>Anxiety or confidence:</strong> 5-8 sessions</li>
+        <li><strong>Complex trauma or deeply rooted patterns:</strong> 8-12+ sessions</li>
+      </ul>
+
+      <p>Many clients notice improvements after just one session, with changes deepening over subsequent sessions.</p>
+
+      <h3>Is Hypnotherapy Right for You?</h3>
+      <p>Hypnotherapy works best for people who:</p>
+      <ul>
+        <li>Are motivated to change</li>
+        <li>Are open to the process</li>
+        <li>Can focus and follow instructions</li>
+        <li>Want to understand and heal root causes</li>
+      </ul>
+
+      <p>It's not recommended for people with certain mental health conditions (active psychosis, severe personality disorders) without coordination with their mental health provider.</p>
+
+      <p class="mt-6"><em>Ready to break free from limiting patterns? Book a Clinical Hypnotherapy session to access your subconscious mind's incredible capacity for transformation.</em></p>
+    `
   },
   {
     id: 4,
@@ -92,7 +386,151 @@ const blogPosts = [
     excerpt: "Your body holds memories, emotions, and wisdom. Somatic alignment practices help you reconnect with this innate intelligence for profound healing...",
     date: "December 28, 2025",
     category: "Somatic Work",
-    readTime: "5 min read"
+    readTime: "5 min read",
+    content: `
+      <p class="lead">Somatic healing recognizes a profound truth: your body is not just a vehicle for your mind—it's an intelligent system that stores memories, processes emotions, and holds the key to deep, lasting healing. Through somatic practices, we can access and release what's been held in the tissues, nervous system, and cellular memory.</p>
+
+      <h3>What is Somatic Healing?</h3>
+      <p>The word "somatic" comes from the Greek "soma," meaning "the body." Somatic healing encompasses various body-centered therapeutic approaches that work with the mind-body connection to:</p>
+      <ul>
+        <li>Release stored trauma and tension</li>
+        <li>Regulate the nervous system</li>
+        <li>Restore natural movement patterns</li>
+        <li>Reconnect with body wisdom and intuition</li>
+        <li>Process emotions held in the tissues</li>
+      </ul>
+
+      <h3>The Body Keeps the Score</h3>
+      <p>Research by Dr. Bessel van der Kolk and other trauma experts has shown that traumatic experiences are stored not just in our minds, but in our bodies. When we experience stress or trauma:</p>
+      <ul>
+        <li>The nervous system can become dysregulated</li>
+        <li>Muscles contract and hold tension</li>
+        <li>Breathing patterns become restricted</li>
+        <li>Emotions get "frozen" in the tissues</li>
+        <li>The body remains in a state of hypervigilance or collapse</li>
+      </ul>
+
+      <p>Traditional talk therapy alone often can't access or release these somatic holdings. This is where somatic healing becomes essential.</p>
+
+      <h3>Your Nervous System: The Key to Healing</h3>
+      <p>Understanding your nervous system is crucial to somatic healing. Your autonomic nervous system has three states:</p>
+
+      <h4>1. Ventral Vagal (Social Engagement)</h4>
+      <p>This is your natural, balanced state:</p>
+      <ul>
+        <li>Feeling safe and connected</li>
+        <li>Open and receptive</li>
+        <li>Creative and playful</li>
+        <li>Able to rest and digest</li>
+      </ul>
+
+      <h4>2. Sympathetic (Fight or Flight)</h4>
+      <p>Activated by perceived threats:</p>
+      <ul>
+        <li>Racing heart, rapid breathing</li>
+        <li>Anxiety and restlessness</li>
+        <li>Difficulty relaxing</li>
+        <li>Hypervigilance</li>
+      </ul>
+
+      <h4>3. Dorsal Vagal (Freeze/Shutdown)</h4>
+      <p>Occurs when overwhelmed:</p>
+      <ul>
+        <li>Numbing and dissociation</li>
+        <li>Fatigue and depression</li>
+        <li>Feeling disconnected</li>
+        <li>Low energy and motivation</li>
+      </ul>
+
+      <p>Somatic healing helps you recognize these states and gently guide your nervous system back to safety and regulation.</p>
+
+      <h3>Somatic Modalities I Practice</h3>
+
+      <h4>Somatic Experiencing (SE)</h4>
+      <p>Developed by Dr. Peter Levine, SE works with the body's innate ability to heal from trauma by:</p>
+      <ul>
+        <li>Tracking sensations and impulses</li>
+        <li>Completing incomplete defensive responses</li>
+        <li>Releasing stored survival energy</li>
+        <li>Restoring nervous system regulation</li>
+      </ul>
+
+      <h4>Anma (Traditional Japanese Massage)</h4>
+      <p>Anma is one of the oldest forms of massage therapy, dating back over 1,000 years. This rhythmic, pressure-based technique:</p>
+      <ul>
+        <li>Releases deep muscle tension</li>
+        <li>Improves energy flow through meridians</li>
+        <li>Promotes circulation and vitality</li>
+        <li>Grounds and centers the body</li>
+      </ul>
+
+      <h4>Ampuku (Abdominal Therapy)</h4>
+      <p>Ampuku is a specialized Japanese technique focusing on the hara (abdomen)—considered the body's energetic center. This gentle yet profound work:</p>
+      <ul>
+        <li>Releases tension in the digestive system</li>
+        <li>Addresses emotional holdings in the belly</li>
+        <li>Improves organ function</li>
+        <li>Restores connection to your core/center</li>
+        <li>Supports deep emotional release</li>
+      </ul>
+
+      <p>The abdomen stores tremendous emotional energy—fear, anxiety, and grief often lodge here. Ampuku provides a safe, nurturing way to release these holdings.</p>
+
+      <h3>Trauma-Informed Approach</h3>
+      <p>All somatic work I offer is trauma-informed, meaning:</p>
+      <ul>
+        <li><strong>You remain in control:</strong> You always have choice about touch, pace, and depth</li>
+        <li><strong>We work within your window of tolerance:</strong> Never overwhelming your nervous system</li>
+        <li><strong>Consent is ongoing:</strong> You can pause, adjust, or stop at any time</li>
+        <li><strong>We track your body's responses:</strong> Honoring what emerges without forcing</li>
+        <li><strong>Pendulation is key:</strong> Moving between activation and resource to prevent overwhelm</li>
+      </ul>
+
+      <h3>What Somatic Healing Can Help With</h3>
+      <ul>
+        <li><strong>Trauma and PTSD:</strong> Releasing stored trauma without re-traumatization</li>
+        <li><strong>Chronic Pain:</strong> Addressing tension patterns and nervous system dysregulation</li>
+        <li><strong>Anxiety:</strong> Calming an overactive nervous system</li>
+        <li><strong>Depression:</strong> Bringing energy and aliveness back into the body</li>
+        <li><strong>Digestive Issues:</strong> Releasing abdominal tension and supporting organ function</li>
+        <li><strong>Disconnection:</strong> Restoring the mind-body connection</li>
+        <li><strong>Emotional Numbness:</strong> Helping you feel again in a safe way</li>
+      </ul>
+
+      <h3>What to Expect in a Somatic Session</h3>
+      <p>Sessions typically include:</p>
+      <ol>
+        <li><strong>Check-In (10 minutes):</strong> We discuss what's present for you today</li>
+        <li><strong>Grounding (5 minutes):</strong> Establishing safety and presence</li>
+        <li><strong>Bodywork (60 minutes):</strong> Anma, Ampuku, and gentle somatic techniques</li>
+        <li><strong>Integration (15 minutes):</strong> Processing what emerged, grounding new awareness</li>
+      </ol>
+
+      <p>You remain fully clothed for most somatic work. Sessions are designed to feel safe, nurturing, and empowering.</p>
+
+      <h3>The Power of Presence</h3>
+      <p>One of the most healing aspects of somatic work is simply being present with your body without judgment or agenda. Many of us have learned to:</p>
+      <ul>
+        <li>Ignore body signals</li>
+        <li>Override discomfort</li>
+        <li>Disconnect from sensations</li>
+        <li>View the body as an object rather than an ally</li>
+      </ul>
+
+      <p>Somatic healing invites you to listen deeply, trust your body's wisdom, and allow healing to unfold organically.</p>
+
+      <h3>Integration Practices</h3>
+      <p>Between sessions, I may recommend simple practices:</p>
+      <ul>
+        <li><strong>Body Scans:</strong> Bringing mindful awareness to sensations</li>
+        <li><strong>Orienting:</strong> Using your senses to establish presence and safety</li>
+        <li><strong>Grounding:</strong> Feeling your connection to the earth</li>
+        <li><strong>Pendulation:</strong> Moving between sensation and resource</li>
+        <li><strong>Self-Holds:</strong> Gentle hand placements for self-soothing</li>
+      </ul>
+
+      <p class="mt-6"><em>Your body has been waiting for you to listen. Book a Somatic Healing session to reconnect with your body's innate wisdom and release what no longer serves you.</em></p>
+    `
   },
   {
     id: 5,
@@ -100,7 +538,178 @@ const blogPosts = [
     excerpt: "The environment in which healing occurs matters. Learn how to create sacred space in your daily life to support your transformational journey...",
     date: "December 20, 2025",
     category: "Wellness",
-    readTime: "4 min read"
+    readTime: "4 min read",
+    content: `
+      <p class="lead">Sacred space is not just about physical environment—it's about creating conditions that support healing, transformation, and deep inner work. Whether preparing for a healing session or cultivating daily practices, learning to create and hold sacred space is an essential skill for your wellness journey.</p>
+
+      <h3>What is Sacred Space?</h3>
+      <p>Sacred space is a container—energetic, physical, and psychological—that supports presence, healing, and transformation. It's a space where:</p>
+      <ul>
+        <li>You feel safe to be vulnerable</li>
+        <li>Distractions fade into the background</li>
+        <li>Time seems to slow down</li>
+        <li>Deeper truths can emerge</li>
+        <li>Healing becomes possible</li>
+      </ul>
+
+      <p>Think of sacred space as the difference between rushing through a meal standing at the kitchen counter versus sitting down for a nourishing dinner by candlelight. The food might be the same, but the experience—and the digestion—are completely different.</p>
+
+      <h3>Creating Physical Sacred Space</h3>
+
+      <h4>1. Choose Your Space</h4>
+      <p>Select a quiet area where you won't be disturbed. This might be:</p>
+      <ul>
+        <li>A corner of your bedroom</li>
+        <li>A dedicated meditation room</li>
+        <li>A comfortable chair near a window</li>
+        <li>A spot in your garden</li>
+      </ul>
+
+      <h4>2. Clear the Energy</h4>
+      <p>Before creating sacred space, clear stagnant energy:</p>
+      <ul>
+        <li><strong>Sound:</strong> Bells, singing bowls, or chanting</li>
+        <li><strong>Smoke:</strong> Sage, palo santo, or incense (if appropriate)</li>
+        <li><strong>Intention:</strong> Visualize white light filling the space</li>
+        <li><strong>Physical:</strong> Clean and declutter the area</li>
+      </ul>
+
+      <h4>3. Set the Atmosphere</h4>
+      <p>Engage all five senses:</p>
+      <ul>
+        <li><strong>Sight:</strong> Candles, soft lighting, meaningful objects, flowers</li>
+        <li><strong>Sound:</strong> Gentle music, nature sounds, or silence</li>
+        <li><strong>Scent:</strong> Essential oils, incense, or fresh flowers</li>
+        <li><strong>Touch:</strong> Comfortable cushions, soft blankets, smooth stones</li>
+        <li><strong>Taste:</strong> Herbal tea or water infused with intention</li>
+      </ul>
+
+      <h4>4. Create Boundaries</h4>
+      <p>Protect your sacred space:</p>
+      <ul>
+        <li>Turn off phones and devices</li>
+        <li>Put a "do not disturb" sign on your door</li>
+        <li>Let household members know you need uninterrupted time</li>
+        <li>Set a specific time frame to honor your commitment</li>
+      </ul>
+
+      <h3>Creating Energetic Sacred Space</h3>
+
+      <h4>Opening a Sacred Space</h4>
+      <p>Begin with intention-setting:</p>
+      <ol>
+        <li><strong>Ground yourself:</strong> Feel your connection to the earth</li>
+        <li><strong>Center in your heart:</strong> Bring awareness to your heart center</li>
+        <li><strong>Call in protection:</strong> Invite supportive energies (guides, angels, ancestors)</li>
+        <li><strong>State your intention:</strong> Clearly express why you're creating this space</li>
+        <li><strong>Visualize a boundary:</strong> Imagine a sphere of light surrounding you</li>
+      </ol>
+
+      <h4>The Four Directions</h4>
+      <p>Many traditions honor the four cardinal directions. You might face each direction and offer gratitude or invoke specific qualities:</p>
+      <ul>
+        <li><strong>East:</strong> New beginnings, air, mental clarity</li>
+        <li><strong>South:</strong> Passion, fire, emotional healing</li>
+        <li><strong>West:</strong> Release, water, intuition</li>
+        <li><strong>North:</strong> Wisdom, earth, grounding</li>
+      </ul>
+
+      <h3>Sacred Space in Your Daily Life</h3>
+
+      <h4>Morning Sacred Space</h4>
+      <p>Start your day with intention:</p>
+      <ul>
+        <li>5 minutes of silent meditation</li>
+        <li>Gratitude practice</li>
+        <li>Setting intentions for the day</li>
+        <li>Gentle stretching or yoga</li>
+      </ul>
+
+      <h4>Mealtime as Sacred Space</h4>
+      <p>Transform eating into a mindful practice:</p>
+      <ul>
+        <li>Pause before eating to offer gratitude</li>
+        <li>Eat without distractions (no phone, TV, computer)</li>
+        <li>Notice colors, textures, flavors</li>
+        <li>Chew slowly and breathe</li>
+      </ul>
+
+      <h4>Evening Wind-Down</h4>
+      <p>Create transition time before sleep:</p>
+      <ul>
+        <li>Gentle yin yoga or stretching</li>
+        <li>Journaling</li>
+        <li>Gratitude reflection</li>
+        <li>Releasing the day's concerns</li>
+      </ul>
+
+      <h3>Sacred Space for Healing Sessions</h3>
+
+      <h4>Before Your Session</h4>
+      <p>To prepare for a healing session with me:</p>
+      <ul>
+        <li><strong>Hydrate well:</strong> Drink plenty of water the day before</li>
+        <li><strong>Avoid heavy meals:</strong> Eat lightly 2 hours before</li>
+        <li><strong>Minimize stimulants:</strong> Reduce caffeine and sugar</li>
+        <li><strong>Set an intention:</strong> Reflect on what you want to receive</li>
+        <li><strong>Arrive early:</strong> Give yourself time to settle</li>
+      </ul>
+
+      <h4>After Your Session</h4>
+      <p>Honor the integration period:</p>
+      <ul>
+        <li><strong>Rest:</strong> Avoid rushing back to activities</li>
+        <li><strong>Hydrate:</strong> Drink plenty of water to support release</li>
+        <li><strong>Journal:</strong> Note insights, sensations, or emotions</li>
+        <li><strong>Gentle movement:</strong> Walk in nature if possible</li>
+        <li><strong>Early bedtime:</strong> Deep healing often occurs during sleep</li>
+      </ul>
+
+      <h3>Portable Sacred Space</h3>
+      <p>You can create sacred space anywhere:</p>
+      <ul>
+        <li><strong>In your car:</strong> Take three deep breaths before driving</li>
+        <li><strong>At work:</strong> Close your eyes for a 2-minute reset</li>
+        <li><strong>In line at the store:</strong> Practice present-moment awareness</li>
+        <li><strong>Before difficult conversations:</strong> Center in your heart</li>
+      </ul>
+
+      <h3>Sacred Space as Practice</h3>
+      <p>The more you practice creating sacred space, the more easily you'll be able to access that state of presence, peace, and openness. Over time, you might find that:</p>
+      <ul>
+        <li>You need fewer external tools</li>
+        <li>Your intention alone creates the container</li>
+        <li>You can hold sacred space for others</li>
+        <li>Life itself becomes more sacred</li>
+      </ul>
+
+      <h3>Common Obstacles</h3>
+
+      <h4>"I don't have time"</h4>
+      <p>Sacred space can be as simple as three conscious breaths. Start with 5 minutes and build from there.</p>
+
+      <h4>"I don't have a special place"</h4>
+      <p>Any space becomes sacred through your intention. A chair, a cushion on the floor, a spot under a tree—all can work.</p>
+
+      <h4>"I feel silly or self-conscious"</h4>
+      <p>This is your journey. What matters is not how it looks, but how it feels to you. Start simple and let your practice evolve.</p>
+
+      <h4>"My mind wanders"</h4>
+      <p>This is completely normal. Gently return to your breath, your intention, or your senses. There's no perfect way to do this.</p>
+
+      <h3>The Invitation</h3>
+      <p>Creating sacred space is ultimately an act of self-respect and self-love. It's a way of saying:</p>
+      <ul>
+        <li>"I matter"</li>
+        <li>"My healing matters"</li>
+        <li>"I deserve this time and space"</li>
+        <li>"I honor the sacred within me"</li>
+      </ul>
+
+      <p>When you consistently create sacred space in your life, you'll find that healing naturally deepens, insights arrive more easily, and transformation becomes possible.</p>
+
+      <p class="mt-6"><em>Every session in my practice is held within sacred space—a container of safety, respect, and reverence for your healing journey. I invite you to experience the power of healing within sacred space.</em></p>
+    `
   },
   {
     id: 6,
@@ -108,7 +717,282 @@ const blogPosts = [
     excerpt: "True transformation requires time and conscious integration. Discover practices to help you embody the shifts from your healing sessions...",
     date: "December 15, 2025",
     category: "Integration",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    content: `
+      <p class="lead">In our results-driven culture, we often expect healing to be linear and immediate. But true, lasting transformation is a process—one that requires conscious integration. Integration is the bridge between insight and embodiment, between healing session and daily life, between who you've been and who you're becoming.</p>
+
+      <h3>What is Integration?</h3>
+      <p>Integration is the process of:</p>
+      <ul>
+        <li>Absorbing and anchoring healing experiences</li>
+        <li>Allowing new patterns to become automatic</li>
+        <li>Releasing old identities and stories</li>
+        <li>Embodying insights at the cellular level</li>
+        <li>Living from your healed state</li>
+      </ul>
+
+      <p>Think of integration like planting a seed. The healing session plants the seed, but integration is the watering, sunlight, and tending that allows it to take root and grow.</p>
+
+      <h3>Why Integration Matters</h3>
+      <p>Without conscious integration:</p>
+      <ul>
+        <li>Profound sessions can fade quickly</li>
+        <li>Old patterns reassert themselves</li>
+        <li>Insights remain intellectual rather than embodied</li>
+        <li>You return to baseline without lasting change</li>
+        <li>The nervous system reverts to familiar patterns</li>
+      </ul>
+
+      <p>With conscious integration:</p>
+      <ul>
+        <li>Changes deepen and stabilize</li>
+        <li>New neural pathways strengthen</li>
+        <li>The body adapts to new states</li>
+        <li>Transformation becomes sustainable</li>
+        <li>You build on each session's progress</li>
+      </ul>
+
+      <h3>The Integration Timeline</h3>
+
+      <h4>Immediately After a Session (0-2 hours)</h4>
+      <p><strong>What's Happening:</strong> Your nervous system is processing the session. Energy is reorganizing. You may feel spacey, emotional, or deeply peaceful.</p>
+
+      <p><strong>How to Support:</strong></p>
+      <ul>
+        <li>Rest if possible—avoid rushing back to activities</li>
+        <li>Drink plenty of water</li>
+        <li>Avoid making major decisions</li>
+        <li>Notice sensations, emotions, or insights without judgment</li>
+        <li>Journal if inspired</li>
+      </ul>
+
+      <h4>The First 24 Hours</h4>
+      <p><strong>What's Happening:</strong> The body is processing on multiple levels—physical, emotional, energetic. You might experience:</p>
+      <ul>
+        <li>Fatigue or increased energy</li>
+        <li>Emotional releases (tears, laughter, anger)</li>
+        <li>Vivid dreams</li>
+        <li>Physical sensations or temporary soreness</li>
+        <li>Shifts in appetite or sleep</li>
+      </ul>
+
+      <p><strong>How to Support:</strong></p>
+      <ul>
+        <li>Gentle movement (walking, stretching, yin yoga)</li>
+        <li>Continue hydrating</li>
+        <li>Early bedtime—healing deepens during sleep</li>
+        <li>Avoid alcohol, heavy foods, or numbing behaviors</li>
+        <li>Spend time in nature if possible</li>
+      </ul>
+
+      <h4>Days 2-7: The Integration Week</h4>
+      <p><strong>What's Happening:</strong> New patterns are beginning to stabilize. Old patterns may try to reassert themselves. This is normal and part of the process.</p>
+
+      <p><strong>How to Support:</strong></p>
+      <ul>
+        <li>Continue self-care practices</li>
+        <li>Notice when old patterns arise—observe without judgment</li>
+        <li>Practice new behaviors consciously</li>
+        <li>Journal about changes you notice</li>
+        <li>Be patient with the process</li>
+      </ul>
+
+      <h4>Weeks 2-4: Deepening</h4>
+      <p><strong>What's Happening:</strong> Changes become more automatic. New neural pathways strengthen. Your identity begins to shift.</p>
+
+      <p><strong>How to Support:</strong></p>
+      <ul>
+        <li>Maintain consistent self-care</li>
+        <li>Notice positive changes and acknowledge them</li>
+        <li>Be compassionate when old patterns appear</li>
+        <li>Consider scheduling your next session</li>
+      </ul>
+
+      <h3>Integration Practices</h3>
+
+      <h4>Body-Based Integration</h4>
+      <p><strong>Grounding Practices:</strong></p>
+      <ul>
+        <li>Walk barefoot on earth</li>
+        <li>Sit with your back against a tree</li>
+        <li>Feel your feet on the floor</li>
+        <li>Lie on the ground and feel supported</li>
+      </ul>
+
+      <p><strong>Gentle Movement:</strong></p>
+      <ul>
+        <li>Yin or restorative yoga</li>
+        <li>Qi gong or tai chi</li>
+        <li>Dance or free movement</li>
+        <li>Swimming or water activities</li>
+      </ul>
+
+      <p><strong>Breathwork:</strong></p>
+      <ul>
+        <li>Three-part breath (belly, ribs, chest)</li>
+        <li>Extended exhales (inhale 4, exhale 6-8)</li>
+        <li>Alternate nostril breathing</li>
+        <li>Simply noticing your natural breath</li>
+      </ul>
+
+      <h4>Emotional Integration</h4>
+      <p><strong>Journaling Prompts:</strong></p>
+      <ul>
+        <li>"What am I noticing in my body?"</li>
+        <li>"What emotions are present?"</li>
+        <li>"What insights arose during my session?"</li>
+        <li>"What's different now?"</li>
+        <li>"What do I need right now?"</li>
+      </ul>
+
+      <p><strong>Emotional Release:</strong></p>
+      <ul>
+        <li>Allow tears without trying to stop them</li>
+        <li>Sound release (humming, toning, sighing)</li>
+        <li>Shaking or trembling (allow natural release)</li>
+        <li>Creative expression (art, music, writing)</li>
+      </ul>
+
+      <h4>Mental Integration</h4>
+      <p><strong>Reflection Questions:</strong></p>
+      <ul>
+        <li>What beliefs are shifting?</li>
+        <li>What's my relationship with this pattern now?</li>
+        <li>What am I learning about myself?</li>
+        <li>How am I different than before?</li>
+      </ul>
+
+      <p><strong>Affirmations & Anchoring:</strong></p>
+      <ul>
+        <li>Create affirmations based on your session insights</li>
+        <li>Repeat them while in a relaxed state</li>
+        <li>Pair them with a physical anchor (hand on heart)</li>
+        <li>Write them where you'll see them daily</li>
+      </ul>
+
+      <h4>Spiritual Integration</h4>
+      <p><strong>Meditation & Contemplation:</strong></p>
+      <ul>
+        <li>Sit in silence daily</li>
+        <li>Notice what arises without attachment</li>
+        <li>Ask for guidance or clarity</li>
+        <li>Trust the unfolding process</li>
+      </ul>
+
+      <p><strong>Gratitude Practice:</strong></p>
+      <ul>
+        <li>Appreciate your willingness to heal</li>
+        <li>Honor the courage it takes to change</li>
+        <li>Thank your body for its wisdom</li>
+        <li>Acknowledge progress, however small</li>
+      </ul>
+
+      <h3>Common Integration Experiences</h3>
+
+      <h4>The Integration Dip</h4>
+      <p>Sometimes, 2-3 days after a session, you might feel worse before feeling better. This is called an "integration dip" or "healing crisis." You might experience:</p>
+      <ul>
+        <li>Fatigue or low energy</li>
+        <li>Emotional sensitivity</li>
+        <li>Temporary return of symptoms</li>
+        <li>Vivid or intense dreams</li>
+      </ul>
+
+      <p><strong>This is actually a good sign!</strong> It means:</p>
+      <ul>
+        <li>Deep processing is occurring</li>
+        <li>Old patterns are releasing</li>
+        <li>Your system is reorganizing at a fundamental level</li>
+      </ul>
+
+      <p><strong>How to Navigate:</strong></p>
+      <ul>
+        <li>Rest and be gentle with yourself</li>
+        <li>Trust the process</li>
+        <li>Reach out if you need support</li>
+        <li>Remember: this is temporary</li>
+      </ul>
+
+      <h4>Resistance and Backsliding</h4>
+      <p>Sometimes the old pattern feels comfortable, even if it's painful. You might notice:</p>
+      <ul>
+        <li>Self-sabotage</li>
+        <li>Reverting to old habits</li>
+        <li>Minimizing progress</li>
+        <li>Creating drama or crisis</li>
+      </ul>
+
+      <p><strong>This is your nervous system's attempt to maintain homeostasis.</strong> It's not failure—it's information.</p>
+
+      <p><strong>How to Work With Resistance:</strong></p>
+      <ul>
+        <li>Notice it without judgment</li>
+        <li>Get curious: "What's this protecting?"</li>
+        <li>Acknowledge the fear of change</li>
+        <li>Gently redirect toward new patterns</li>
+        <li>Reach out for support</li>
+      </ul>
+
+      <h3>Integration Support Between Sessions</h3>
+      <p>As your practitioner, I'm available for integration support:</p>
+      <ul>
+        <li><strong>Email check-ins:</strong> Brief questions or concerns</li>
+        <li><strong>WhatsApp support:</strong> For clients in ongoing work</li>
+        <li><strong>Integration sessions:</strong> Shorter sessions to support processing</li>
+        <li><strong>Adjusting plans:</strong> We can modify our approach as needed</li>
+      </ul>
+
+      <h3>Creating an Integration Routine</h3>
+      <p>A simple daily routine supports ongoing integration:</p>
+
+      <p><strong>Morning (10 minutes):</strong></p>
+      <ul>
+        <li>Gratitude for your healing journey</li>
+        <li>Intention for the day</li>
+        <li>Brief body scan or meditation</li>
+      </ul>
+
+      <p><strong>Throughout the Day:</strong></p>
+      <ul>
+        <li>Pause for three conscious breaths</li>
+        <li>Notice sensations and emotions</li>
+        <li>Choose new responses when old patterns arise</li>
+      </ul>
+
+      <p><strong>Evening (10 minutes):</strong></p>
+      <ul>
+        <li>Reflect on changes noticed</li>
+        <li>Journal briefly</li>
+        <li>Release the day</li>
+        <li>Gratitude practice</li>
+      </ul>
+
+      <h3>Long-Term Integration</h3>
+      <p>True integration continues long after sessions end. You might find:</p>
+      <ul>
+        <li><strong>Layered healing:</strong> Deeper layers reveal themselves over time</li>
+        <li><strong>Spiral pattern:</strong> You revisit themes at new levels of understanding</li>
+        <li><strong>Embodied wisdom:</strong> Changes become so integrated you forget you ever struggled</li>
+        <li><strong>Ripple effects:</strong> Healing in one area affects other areas of life</li>
+      </ul>
+
+      <h3>Honoring Your Unique Process</h3>
+      <p>Remember:</p>
+      <ul>
+        <li>There's no "right" way to integrate</li>
+        <li>Your timeline is your own</li>
+        <li>Healing is not linear</li>
+        <li>Progress isn't always obvious</li>
+        <li>Trust your body's wisdom</li>
+      </ul>
+
+      <h3>The Gift of Integration</h3>
+      <p>Integration is where the magic really happens. It's in the quiet moments of noticing you responded differently. It's in the subtle shifts that compound over time. It's in the realization that something that once triggered you no longer does.</p>
+
+      <p>Integration is the gift you give yourself—the gift of patience, self-compassion, and trust in your own healing journey.</p>
+
+      <p class="mt-6"><em>Integration is an ongoing conversation between you and your healing process. I'm here to support you every step of the way. Together, we'll honor your unique timeline and create conditions for lasting transformation.</em></p>
+    `
   }
 ]
 
@@ -1236,6 +2120,231 @@ app.get('/blog', (c) => {
                 `).join('')}
             </div>
         </div>
+    </body>
+    </html>
+  `)
+})
+
+// Individual blog post route
+app.get('/blog/:id', (c) => {
+  const id = parseInt(c.req.param('id'))
+  const post = blogPosts.find(p => p.id === id)
+  
+  if (!post) {
+    return c.redirect('/blog')
+  }
+  
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${post.title} | Susan K. Pearson</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  midnight: '#0A0A0A',
+                  obsidian: '#000000',
+                  charcoal: '#1A1A1A',
+                  gold: '#C8A974',
+                  champagne: '#D4AF37',
+                  cream: '#FAF7F3',
+                  bone: '#F4F2EF',
+                  sage: '#B8B5A0',
+                  stone: '#E8DCC8',
+                  earth: '#8B7355'
+                },
+                fontFamily: {
+                  serif: ['Cormorant Garamond', 'serif'],
+                  sans: ['Montserrat', 'sans-serif']
+                }
+              }
+            }
+          }
+        </script>
+        
+        <style>
+          body { 
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+          }
+          h1, h2, h3, h4, h5, h6 { 
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+          }
+          .blog-content h3 {
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1A1A1A;
+            font-weight: 500;
+          }
+          .blog-content h4 {
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #3A3A3A;
+            font-weight: 500;
+          }
+          .blog-content p {
+            margin-bottom: 1.25rem;
+            color: #4A4A4A;
+          }
+          .blog-content p.lead {
+            font-size: 1.25rem;
+            line-height: 1.7;
+            color: #2A2A2A;
+            margin-bottom: 2rem;
+            font-weight: 400;
+          }
+          .blog-content ul, .blog-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+          }
+          .blog-content li {
+            margin-bottom: 0.5rem;
+            color: #4A4A4A;
+          }
+          .blog-content strong {
+            color: #1A1A1A;
+            font-weight: 600;
+          }
+          .blog-content em {
+            font-style: italic;
+            color: #5A5A5A;
+          }
+          .blog-content a {
+            color: #C8A974;
+            text-decoration: underline;
+          }
+          .blog-content a:hover {
+            color: #D4AF37;
+          }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <!-- Navigation -->
+        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center">
+                        <a href="/" class="flex flex-col">
+                            <div class="text-cream font-serif text-xl md:text-2xl tracking-wide">Susan K. Pearson</div>
+                            <div class="text-gold text-xs md:text-sm tracking-widest font-light">ENERGY · BODY · CONSCIOUSNESS</div>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="/" class="text-cream hover:text-gold transition-colors">Home</a>
+                        <a href="/#blog" class="text-cream hover:text-gold transition-colors">All Posts</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Blog Post Content -->
+        <article class="pt-32 pb-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Header -->
+                <div class="mb-12">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="inline-block px-4 py-1 bg-gold/20 text-gold text-sm font-medium rounded-sm">
+                            ${post.category}
+                        </span>
+                        <span class="text-charcoal/60 text-sm">
+                            <i class="far fa-clock mr-2"></i>${post.readTime}
+                        </span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">
+                        ${post.title}
+                    </h1>
+                    <div class="flex items-center text-charcoal/60 text-sm">
+                        <i class="far fa-calendar mr-2"></i>
+                        <time datetime="${post.date}">${post.date}</time>
+                        <span class="mx-3">•</span>
+                        <span>By Susan K. Pearson</span>
+                    </div>
+                </div>
+                
+                <!-- Divider -->
+                <div class="w-32 h-1 bg-gold mb-12"></div>
+                
+                <!-- Blog Content -->
+                <div class="blog-content prose prose-lg max-w-none">
+                    ${post.content}
+                </div>
+                
+                <!-- Author Bio -->
+                <div class="mt-16 p-8 bg-white rounded-sm border-l-4 border-gold">
+                    <div class="flex items-start gap-6">
+                        <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" 
+                            class="w-24 h-24 rounded-full object-cover border-2 border-gold">
+                        <div>
+                            <h3 class="text-2xl font-serif mb-2">About Susan K. Pearson</h3>
+                            <p class="text-charcoal/70 mb-4">
+                                Susan is a Master-level Reiki practitioner, Certified Energy Medicine Specialist, and Clinical Hypnotherapist based in Dubai. With over 15 years of experience, she integrates ancient healing wisdom with contemporary understanding to support transformational healing.
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="/#about" class="text-gold hover:text-champagne transition-colors font-medium">
+                                    Learn More About Susan →
+                                </a>
+                                <a href="/#booking" class="text-gold hover:text-champagne transition-colors font-medium">
+                                    Book a Session →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Posts -->
+                <div class="mt-16">
+                    <h3 class="text-3xl font-serif mb-8">Related Articles</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        ${blogPosts
+                          .filter(p => p.id !== post.id)
+                          .slice(0, 3)
+                          .map(relatedPost => `
+                            <a href="/blog/${relatedPost.id}" class="block bg-white p-6 rounded-sm hover:shadow-lg transition-shadow">
+                                <span class="text-xs text-gold font-medium">${relatedPost.category}</span>
+                                <h4 class="text-lg font-serif mt-2 mb-2 text-charcoal">${relatedPost.title}</h4>
+                                <p class="text-sm text-charcoal/60 mb-3">${relatedPost.excerpt.substring(0, 100)}...</p>
+                                <span class="text-gold text-sm font-medium">Read More →</span>
+                            </a>
+                          `).join('')}
+                    </div>
+                </div>
+                
+                <!-- Back to Blog -->
+                <div class="mt-12 text-center">
+                    <a href="/#blog" class="inline-block bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-gold hover:text-black transition-all duration-300 font-medium">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Back to All Posts
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Footer -->
+        <footer class="bg-charcoal text-cream py-12">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <p class="text-cream/60 mb-4">© 2026 Susan K. Pearson | Elemental Healing LLC</p>
+                <div class="flex justify-center gap-6">
+                    <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors">
+                        <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
+                    </a>
+                    <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-champagne transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
     </html>
   `)
