@@ -8,6 +8,50 @@ app.use('/api/*', cors())
 app.use('/static/*', serveStatic({ root: './public' }))
 app.use('/images/*', serveStatic({ root: './public' }))
 
+// Testimonials data
+const testimonials = [
+  {
+    id: 1,
+    name: "Lisa M.",
+    location: "Ireland | Living in Dubai",
+    rating: 5,
+    text: "Working with Susan has been nothing short of life-changing. I came to her feeling disconnected and carrying years of unresolved tension. From the very first session, I felt seen, heard, and held in a way I had never experienced before. Susan's mastery of energy work, combined with her intuitive understanding of exactly what I needed, created profound shifts that I can only describe as miraculous. Her Deep Alignment sessions helped me release patterns I didn't even know I was holding. I've recommended her to everyone I know - she is truly exceptional. If you're looking for genuine, transformational healing in Dubai, Susan is the only practitioner you need.",
+    image: "👩🏻"
+  },
+  {
+    id: 2,
+    name: "Amira K.",
+    location: "Dubai, UAE",
+    rating: 5,
+    text: "Susan's hypnotherapy sessions helped me break through limiting beliefs that had held me back for years. Her calm, nurturing approach made me feel safe to explore deep subconscious patterns. The shifts have been lasting and profound. I feel more empowered and aligned than ever before.",
+    image: "👩🏽"
+  },
+  {
+    id: 3,
+    name: "James R.",
+    location: "United Kingdom | Dubai",
+    rating: 5,
+    text: "As a skeptic, I wasn't sure what to expect from energy healing. Susan's professional, grounded approach immediately put me at ease. The results speak for themselves - chronic pain I'd lived with for years has significantly reduced, and I feel more present and balanced in my daily life. Highly recommended.",
+    image: "👨🏼"
+  },
+  {
+    id: 4,
+    name: "Layla S.",
+    location: "Abu Dhabi, UAE",
+    rating: 5,
+    text: "Susan has a rare gift. Her Reiki sessions are deeply restorative, and I always leave feeling renewed on every level - physically, emotionally, and spiritually. She creates such a sacred, elegant space for healing. I've worked with many practitioners over the years, and Susan stands out as truly exceptional.",
+    image: "👩🏻‍🦱"
+  },
+  {
+    id: 5,
+    name: "Michael T.",
+    location: "Australia | Dubai",
+    rating: 5,
+    text: "The SKP Method is unlike anything I've experienced. Susan's integration of somatic work and energy medicine helped me reconnect with my body in a way I never thought possible. Her wisdom, professionalism, and genuine care for her clients' wellbeing shine through in every session. Worth every dirham.",
+    image: "👨🏻‍🦰"
+  }
+]
+
 // Blog data
 const blogPosts = [
   {
@@ -174,7 +218,7 @@ app.get('/', (c) => {
                         <a href="#home" class="text-charcoal hover:text-gold transition-colors">Home</a>
                         <a href="#about" class="text-charcoal hover:text-gold transition-colors">About</a>
                         <a href="#services" class="text-charcoal hover:text-gold transition-colors">Services</a>
-                        <a href="#approach" class="text-charcoal hover:text-gold transition-colors">Approach</a>
+                        <a href="#testimonials" class="text-charcoal hover:text-gold transition-colors">Testimonials</a>
                         <a href="#blog" class="text-charcoal hover:text-gold transition-colors">Blog</a>
                         <a href="#booking" class="bg-gold text-cream px-6 py-2 rounded-sm hover:bg-gold/90 transition-colors">Book Session</a>
                     </div>
@@ -189,7 +233,7 @@ app.get('/', (c) => {
                     <a href="#home" class="block text-charcoal hover:text-gold transition-colors">Home</a>
                     <a href="#about" class="block text-charcoal hover:text-gold transition-colors">About</a>
                     <a href="#services" class="block text-charcoal hover:text-gold transition-colors">Services</a>
-                    <a href="#approach" class="block text-charcoal hover:text-gold transition-colors">Approach</a>
+                    <a href="#testimonials" class="block text-charcoal hover:text-gold transition-colors">Testimonials</a>
                     <a href="#blog" class="block text-charcoal hover:text-gold transition-colors">Blog</a>
                     <a href="#booking" class="block text-gold hover:text-gold/80 transition-colors font-medium">Book Session</a>
                 </div>
@@ -453,6 +497,44 @@ app.get('/', (c) => {
                             Coming February 2026 <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Client Experiences</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        Hear from those who have experienced transformational healing
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    ${testimonials.map((testimonial, index) => `
+                        <div class="bg-cream p-8 rounded-sm card-hover ${index === 0 ? 'lg:col-span-2' : ''}">
+                            <div class="flex items-center mb-6">
+                                <div class="text-4xl mr-4">${testimonial.image}</div>
+                                <div>
+                                    <h4 class="font-serif text-xl text-charcoal">${testimonial.name}</h4>
+                                    <p class="text-sm text-charcoal/60">${testimonial.location}</p>
+                                    <div class="flex mt-1">
+                                        ${Array(testimonial.rating).fill('').map(() => '<i class="fas fa-star text-gold text-xs"></i>').join('')}
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-charcoal/80 leading-relaxed italic">"${testimonial.text}"</p>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <p class="text-charcoal/70 mb-6">Ready to begin your own healing journey?</p>
+                    <a href="#booking" class="inline-block bg-gold text-cream px-8 py-3 rounded-sm hover:bg-gold/90 transition-colors font-medium">
+                        Book Your Session
+                    </a>
                 </div>
             </div>
         </section>
