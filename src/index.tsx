@@ -1813,6 +1813,890 @@ app.get('/', (c) => {
             </div>
         </section>
 
+        <!-- Q&A / FAQ Section -->
+        <section id="faq" class="py-20 bg-cream">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Frequently Asked Questions</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        Everything you need to know about sessions, healing modalities, and what to expect
+                    </p>
+                </div>
+
+                <!-- FAQ Categories -->
+                <div class="mb-12 flex flex-wrap justify-center gap-4">
+                    <button class="faq-category-btn active px-6 py-2 rounded-sm bg-gold text-black font-medium transition-all" data-category="all">
+                        All Questions
+                    </button>
+                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="general">
+                        General
+                    </button>
+                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="sessions">
+                        Sessions
+                    </button>
+                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="modalities">
+                        Modalities
+                    </button>
+                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="practical">
+                        Practical Info
+                    </button>
+                </div>
+
+                <!-- FAQ Items -->
+                <div class="space-y-4" id="faqContainer">
+                    <!-- General Questions -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What makes your approach different from traditional therapy or massage?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">My work integrates multiple healing modalities to address the whole person—physical, emotional, energetic, and spiritual. Unlike traditional massage, which focuses primarily on muscle tension, or talk therapy, which works with the conscious mind, I work with:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Energy systems:</strong> Chakras, meridians, and the subtle body</li>
+                                <li><strong>The subconscious mind:</strong> Through hypnotherapy to address root causes</li>
+                                <li><strong>The nervous system:</strong> Using somatic techniques to release trauma held in the body</li>
+                                <li><strong>The physical body:</strong> Through Anma, Ampuku, and bodywork</li>
+                            </ul>
+                            <p class="mt-3">This integrative approach allows for deeper, more lasting transformation than any single modality alone.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Do I need to believe in energy healing for it to work?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">No, you don't need to believe in energy healing for it to be effective. Energy work operates on a physical, measurable level—your body's bioelectromagnetic fields—regardless of your beliefs.</p>
+                            <p class="mb-3">That said, an open, receptive attitude does enhance the experience. If you're skeptical, that's completely fine—many of my clients started as skeptics. I encourage you to:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Come with curiosity rather than expectation</li>
+                                <li>Notice what you experience without judgment</li>
+                                <li>Give yourself permission to simply receive</li>
+                            </ul>
+                            <p class="mt-3">The results speak for themselves, and many former skeptics become my most enthusiastic advocates!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Is energy healing safe? Are there any side effects?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Energy healing is extremely safe and non-invasive. It works with your body's natural healing processes, never forcing or overriding them. However, as your body releases stored tension and energy, you may experience:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Emotional releases:</strong> Tears, laughter, or other emotions</li>
+                                <li><strong>Physical sensations:</strong> Tingling, warmth, temporary soreness</li>
+                                <li><strong>Fatigue:</strong> As your body integrates the work</li>
+                                <li><strong>Vivid dreams:</strong> As processing continues during sleep</li>
+                                <li><strong>Temporary symptom increase:</strong> Before improvement (healing crisis)</li>
+                            </ul>
+                            <p class="mt-3">These are all normal signs of healing and typically resolve within 24-48 hours. I provide integration support to help you navigate any responses.</p>
+                        </div>
+                    </div>
+
+                    <!-- Session Questions -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">How long is a typical session and how much does it cost?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Session lengths and investment vary by modality:</p>
+                            <ul class="list-disc pl-6 space-y-3">
+                                <li><strong>Deep Alignment Session:</strong> 90 minutes - AED 950 (≈$260 USD)<br>
+                                    <span class="text-sm text-charcoal/60">My signature integration of Reiki, energy medicine, and somatic work</span>
+                                </li>
+                                <li><strong>Clinical Hypnotherapy:</strong> 75 minutes - AED 850 (≈$230 USD)<br>
+                                    <span class="text-sm text-charcoal/60">Deep subconscious reprogramming and pattern interruption</span>
+                                </li>
+                                <li><strong>SKP Method:</strong> 120 minutes - AED 1,200 (≈$325 USD)<br>
+                                    <span class="text-sm text-charcoal/60">Full-spectrum integration including Nir Levy Method</span>
+                                </li>
+                            </ul>
+                            <p class="mt-3">Package discounts are available for multiple sessions. All sessions include pre-consultation and integration support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">How many sessions will I need?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">This varies greatly depending on your goals, the issues we're addressing, and your body's healing timeline. As a general guide:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Acute stress or tension:</strong> 1-3 sessions</li>
+                                <li><strong>Chronic patterns or pain:</strong> 3-6 sessions</li>
+                                <li><strong>Deep trauma or complex issues:</strong> 6-12+ sessions</li>
+                                <li><strong>Ongoing wellness support:</strong> Monthly maintenance sessions</li>
+                            </ul>
+                            <p class="mt-3">Many clients notice improvements after just one session, with changes deepening over time. We'll discuss your specific needs during our initial consultation and create a personalized plan. You're never locked into a specific number of sessions—we'll work at your pace.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What should I wear to a session? Do I need to undress?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Comfort is key! Here's what to wear for different modalities:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Reiki & Energy Work:</strong> You remain fully clothed. Wear comfortable, loose clothing (yoga wear, soft fabrics)</li>
+                                <li><strong>Hypnotherapy:</strong> Whatever makes you feel comfortable—you'll be sitting or reclining in a chair</li>
+                                <li><strong>Somatic Work & Bodywork:</strong> Comfortable, stretchy clothing that allows movement. For Anma and Ampuku, I may need access to your abdomen (you can lift your shirt or I can work through clothing)</li>
+                            </ul>
+                            <p class="mt-3">You never need to undress unless you choose to for your comfort. Everything is done with full consent and respect for your boundaries.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What does a typical session look like?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Here's what you can expect in a Deep Alignment Session:</p>
+                            <ol class="list-decimal pl-6 space-y-3">
+                                <li><strong>Welcome & Check-In (10 min):</strong> We discuss what brings you in, your intentions, and any specific concerns</li>
+                                <li><strong>Energy Assessment (5 min):</strong> I scan your energy field and chakras to identify blockages or imbalances</li>
+                                <li><strong>Hands-On Healing (60 min):</strong> You lie comfortably on a massage table while I work with Reiki, energy medicine, and somatic techniques. Many clients enter a deep meditative state</li>
+                                <li><strong>Integration (10 min):</strong> Time to process, ask questions, and receive guidance for continued healing</li>
+                                <li><strong>Closing (5 min):</strong> Recommendations for aftercare and scheduling if needed</li>
+                            </ol>
+                            <p class="mt-3">Sessions are conducted in a safe, sacred space with soft lighting, gentle music, and complete privacy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Modality Questions -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What is Reiki and how does it work?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Reiki (pronounced "ray-key") is a Japanese healing technique that channels universal life force energy. As a Master-level practitioner trained in both Usui and Karuna systems, I serve as a conduit for this healing energy.</p>
+                            <p class="mb-3"><strong>How it works:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>I place my hands on or slightly above specific areas of your body</li>
+                                <li>Universal life force energy flows through my hands to you</li>
+                                <li>This energy is intelligent—it goes where it's needed most</li>
+                                <li>It works on physical, emotional, mental, and spiritual levels simultaneously</li>
+                            </ul>
+                            <p class="mt-3">You might feel warmth, tingling, deep relaxation, or emotional release. Many clients describe it as deeply peaceful and restorative.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What is hypnotherapy and will I be under your control?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3"><strong>Let me dispel the myths:</strong> You remain fully in control during hypnotherapy. You're not asleep, unconscious, or under anyone's control. Hypnosis is simply a deeply relaxed, focused state where your subconscious mind becomes more receptive to positive change.</p>
+                            <p class="mb-3"><strong>What hypnotherapy really is:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>A natural state you enter many times daily (like being absorbed in a book)</li>
+                                <li>You hear everything and remember the session</li>
+                                <li>You can open your eyes and end the session anytime</li>
+                                <li>You cannot be made to do anything against your will or values</li>
+                                <li>It's a collaborative process—you're an active participant</li>
+                            </ul>
+                            <p class="mt-3">I use Ericksonian hypnotherapy, which is gentle, conversational, and client-centered. It's more like guided meditation than stage hypnosis.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What are Anma and Ampuku?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3"><strong>Anma</strong> is one of the oldest forms of massage therapy, dating back over 1,000 years in Japan. It uses rhythmic pressure and kneading techniques to:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>Release deep muscle tension</li>
+                                <li>Improve energy flow through meridians</li>
+                                <li>Promote circulation and vitality</li>
+                                <li>Ground and center the body</li>
+                            </ul>
+                            <p class="mb-3"><strong>Ampuku</strong> is specialized Japanese abdominal therapy focusing on the hara (belly)—considered the body's energetic center. This gentle yet profound work:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Releases tension in the digestive system</li>
+                                <li>Addresses emotional holdings stored in the belly (fear, anxiety, grief)</li>
+                                <li>Improves organ function</li>
+                                <li>Restores connection to your core/center</li>
+                            </ul>
+                            <p class="mt-3">Both modalities are deeply relaxing and therapeutic, often incorporated into Deep Alignment Sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What is the Nir Levy Method / SKP Method?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">The <strong>Nir Levy Method</strong> is an advanced somatic and energetic healing modality I'm completing certification in (February 2026). It combines:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>Deep somatic work with the nervous system</li>
+                                <li>Advanced energy medicine techniques</li>
+                                <li>Trauma resolution protocols</li>
+                                <li>Consciousness transformation practices</li>
+                            </ul>
+                            <p class="mb-3">The <strong>SKP Method</strong> (Soul Key Process) is my signature integration that combines Nir Levy Method with my other modalities:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Master-level Reiki (Usui & Karuna)</li>
+                                <li>Energy Medicine</li>
+                                <li>Clinical Hypnotherapy</li>
+                                <li>Anma & Ampuku</li>
+                                <li>Somatic Alignment</li>
+                            </ul>
+                            <p class="mt-3">This comprehensive approach addresses the full spectrum of healing—physical, emotional, energetic, and spiritual—for lasting transformation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Practical Questions -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Where are you located and do you offer online sessions?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3"><strong>In-Person Sessions:</strong> I practice in Dubai, UAE (Sharjah-registered LLC). My studio is a private, peaceful space designed for deep healing work.</p>
+                            <p class="mb-3"><strong>Distance Sessions:</strong> Yes! I offer distance healing for:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Reiki & Energy Work:</strong> Energy transcends physical distance. Distance Reiki is just as effective as in-person</li>
+                                <li><strong>Hypnotherapy:</strong> Conducted via secure video call</li>
+                                <li><strong>Consultation & Integration Support:</strong> Via phone, WhatsApp, or video</li>
+                            </ul>
+                            <p class="mt-3">Distance sessions are ideal for clients traveling, living abroad, or unable to come in person. Many of my international clients work exclusively via distance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What forms of payment do you accept?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">I accept:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Cash:</strong> AED or USD</li>
+                                <li><strong>Bank Transfer:</strong> Local UAE transfer or international wire</li>
+                                <li><strong>Payment Plans:</strong> Available for package purchases</li>
+                            </ul>
+                            <p class="mt-3">Payment is due at the time of service unless we've arranged a package or payment plan in advance.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What is your cancellation policy?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">I understand that life happens and schedules change. My policy is:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>48+ hours notice:</strong> Full refund or reschedule at no charge</li>
+                                <li><strong>24-48 hours notice:</strong> Reschedule once at no charge (subsequent late cancellations charged 50%)</li>
+                                <li><strong>Less than 24 hours or no-show:</strong> Full session fee applies</li>
+                            </ul>
+                            <p class="mt-3">I reserve your session time specifically for you and turn away other clients during that slot, so advance notice is appreciated. For emergencies, please contact me directly—I'm happy to work with you.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">How do I prepare for my first session?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">To get the most from your session:</p>
+                            <p class="mb-3"><strong>24 Hours Before:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>Drink plenty of water</li>
+                                <li>Reduce caffeine and sugar if possible</li>
+                                <li>Get adequate sleep</li>
+                                <li>Set an intention for what you'd like to receive</li>
+                            </ul>
+                            <p class="mb-3"><strong>Day Of:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>Eat lightly 2 hours before</li>
+                                <li>Avoid alcohol or recreational substances</li>
+                                <li>Arrive 5-10 minutes early to settle in</li>
+                                <li>Wear comfortable clothing</li>
+                                <li>Turn off or silence your phone</li>
+                            </ul>
+                            <p class="mb-3"><strong>After Your Session:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Drink extra water</li>
+                                <li>Rest if possible—avoid rushing back to activities</li>
+                                <li>Avoid alcohol for 24 hours</li>
+                                <li>Early bedtime helps integration</li>
+                                <li>Gentle movement (walking, stretching) supports processing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Can energy healing replace medical treatment?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3"><strong>No.</strong> Energy healing is complementary to, not a replacement for, medical care. I am not a doctor and do not diagnose or treat medical conditions.</p>
+                            <p class="mb-3">That said, energy healing works beautifully alongside conventional medicine:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Reduces stress and anxiety</li>
+                                <li>Supports the body's natural healing processes</li>
+                                <li>Helps manage pain and side effects</li>
+                                <li>Accelerates recovery from surgery or illness</li>
+                                <li>Addresses the emotional and spiritual aspects of healing</li>
+                            </ul>
+                            <p class="mt-3">Always consult your healthcare provider for medical concerns. I'm happy to work in coordination with your medical team for the most comprehensive care.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What issues can you help with?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">My clients seek support for a wide range of issues including:</p>
+                            <p class="mb-3"><strong>Emotional & Mental:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Stress, anxiety, panic attacks</li>
+                                <li>Depression and low mood</li>
+                                <li>Trauma (PTSD, childhood trauma, relationship trauma)</li>
+                                <li>Grief and loss</li>
+                                <li>Life transitions and uncertainty</li>
+                            </ul>
+                            <p class="mb-3"><strong>Physical:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Chronic pain and tension</li>
+                                <li>Fatigue and low energy</li>
+                                <li>Sleep issues and insomnia</li>
+                                <li>Digestive concerns</li>
+                                <li>Headaches and migraines</li>
+                            </ul>
+                            <p class="mb-3"><strong>Behavioral & Patterns:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Breaking unwanted habits</li>
+                                <li>Confidence and self-esteem</li>
+                                <li>Relationship patterns</li>
+                                <li>Performance enhancement</li>
+                            </ul>
+                            <p class="mb-3"><strong>Spiritual & Growth:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>Disconnection from self or purpose</li>
+                                <li>Spiritual awakening support</li>
+                                <li>Personal transformation</li>
+                                <li>Conscious living</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- More Session Questions -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Can I bring someone with me to a session?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">For your first session, I prefer clients to come alone to create a safe, confidential space for deep work. The healing environment is most effective when you can fully relax without concern for others.</p>
+                            <p class="mb-3">However, exceptions can be made for:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Minors (parent/guardian must be present)</li>
+                                <li>Clients with mobility issues requiring assistance</li>
+                                <li>Those with specific cultural or personal needs</li>
+                            </ul>
+                            <p class="mt-3">If you have concerns about coming alone, please discuss this with me when booking—I'm here to ensure your comfort.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What happens during a hypnotherapy session?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">A hypnotherapy session typically unfolds in stages:</p>
+                            <ol class="list-decimal pl-6 space-y-3 mb-3">
+                                <li><strong>Consultation (15 mins):</strong> We discuss your goals, concerns, and what you'd like to shift</li>
+                                <li><strong>Induction (10 mins):</strong> Guided relaxation to access the theta brainwave state where the subconscious is receptive</li>
+                                <li><strong>Deepening (5-10 mins):</strong> Moving into deeper relaxation while maintaining awareness</li>
+                                <li><strong>Therapeutic Work (30-40 mins):</strong> Using techniques like regression, parts work, visualization, and suggestion to address your specific goals</li>
+                                <li><strong>Emergence (5 mins):</strong> Gently returning to full conscious awareness</li>
+                                <li><strong>Integration (10 mins):</strong> Discussing the experience and providing tools for continued transformation</li>
+                            </ol>
+                            <p class="mt-3">You remain conscious and in control throughout. Many describe it as a deeply relaxed, meditative state—similar to daydreaming or the moments before sleep.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What will I feel during a Reiki or energy session?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Everyone's experience is unique, but common sensations include:</p>
+                            <p class="mb-3"><strong>Physical Sensations:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Warmth, tingling, or pulsing in various areas</li>
+                                <li>Deep relaxation and heavy limbs</li>
+                                <li>Cool breezes or temperature shifts</li>
+                                <li>Gentle twitching as tension releases</li>
+                                <li>Waves of energy moving through the body</li>
+                            </ul>
+                            <p class="mb-3"><strong>Emotional/Energetic:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Profound peace and calm</li>
+                                <li>Emotional releases (tears, laughter)</li>
+                                <li>Memories or insights arising</li>
+                                <li>Colors or visions behind closed eyes</li>
+                                <li>Feeling "lighter" or more spacious</li>
+                            </ul>
+                            <p class="mt-3">Some people feel subtle shifts, while others have dramatic experiences. There's no "right" way to experience energy work—whatever you feel is perfect for you.</p>
+                        </div>
+                    </div>
+
+                    <!-- Modality Deep-Dive Questions -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What's the difference between Usui Reiki and Karuna Reiki?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3"><strong>Usui Reiki</strong> (the foundation system) focuses on:</p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Physical healing and energy balance</li>
+                                <li>Chakra clearing and alignment</li>
+                                <li>Grounding and centering energy</li>
+                                <li>General wellness and stress relief</li>
+                            </ul>
+                            <p class="mb-3"><strong>Karuna Reiki</strong> (advanced system) works with:</p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Deep emotional and trauma healing</li>
+                                <li>Shadow work and subconscious patterns</li>
+                                <li>Karmic and ancestral clearing</li>
+                                <li>Compassionate action (Karuna = compassionate action)</li>
+                                <li>Higher vibrational frequencies for spiritual evolution</li>
+                            </ul>
+                            <p class="mt-3">As a Master in both systems, I intuitively select which frequencies will best serve your healing in each session. Often, I combine both for comprehensive support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">How is your bodywork different from a regular massage?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">While massage primarily addresses muscular tension, my somatic bodywork integrates:</p>
+                            <p class="mb-3"><strong>Anma (Japanese therapeutic massage):</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Meridian-based work to balance energy flow</li>
+                                <li>Rhythmic pressure and stretching</li>
+                                <li>Focus on Ki (life force) circulation</li>
+                            </ul>
+                            <p class="mb-3"><strong>Ampuku (Japanese abdominal therapy):</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Addresses the "Hara" (energetic center below the navel)</li>
+                                <li>Releases deep emotional holding patterns</li>
+                                <li>Supports digestive health and nervous system regulation</li>
+                                <li>Grounds and centers your energy</li>
+                            </ul>
+                            <p class="mb-3"><strong>Somatic Alignment:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Works with the nervous system to release trauma held in tissues</li>
+                                <li>Honors the body's innate wisdom and timing</li>
+                                <li>Combines gentle touch with awareness and presence</li>
+                            </ul>
+                            <p class="mt-3">This isn't relaxation massage—it's therapeutic bodywork that addresses physical, energetic, and emotional layers simultaneously.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What makes the SKP Method unique?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">The SKP Method (Soul Key Process™) is my signature integration of everything I've mastered over 15+ years, including the transformative Nir Levy Method. It's designed for those seeking profound, lasting transformation rather than temporary relief.</p>
+                            <p class="mb-3"><strong>What makes it different:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Full-Spectrum Integration:</strong> Combines Reiki, energy medicine, hypnotherapy, somatic work, and the Nir Levy Method in one comprehensive session</li>
+                                <li><strong>Personalized Protocol:</strong> Each session is uniquely designed for your specific needs and healing timeline</li>
+                                <li><strong>Deeper Layers:</strong> Works simultaneously with physical, emotional, mental, energetic, and spiritual bodies</li>
+                                <li><strong>Root-Level Shifts:</strong> Addresses not just symptoms but the underlying patterns creating them</li>
+                                <li><strong>Extended Integration Support:</strong> Includes follow-up guidance and practices tailored to your journey</li>
+                            </ul>
+                            <p class="mt-3">This 120-minute session is ideal for complex issues, trauma healing, major life transitions, or when you're ready for significant transformation. Many clients describe it as "months of therapy in one session."</p>
+                        </div>
+                    </div>
+
+                    <!-- Credentials & Experience Questions -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What are your qualifications and training?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">I bring 15+ years of experience and comprehensive training across multiple healing disciplines:</p>
+                            <p class="mb-3"><strong>Master-Level Certifications:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Usui Reiki Master/Teacher</li>
+                                <li>Karuna Reiki® Master</li>
+                                <li>Certified Energy Medicine Specialist</li>
+                                <li>Clinical Hypnotherapy Certification (Ericksonian approach)</li>
+                            </ul>
+                            <p class="mb-3"><strong>Specialized Training:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Anma (Japanese Therapeutic Massage)</li>
+                                <li>Ampuku (Hara-Centered Abdominal Therapy)</li>
+                                <li>Somatic Alignment & Trauma-Informed Touch</li>
+                                <li>Chakra Balancing & Energy Clearing</li>
+                                <li>Nir Levy Method Certification (February 2026)</li>
+                            </ul>
+                            <p class="mb-3"><strong>Ongoing Education:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>Regular continuing education in somatic psychology</li>
+                                <li>Advanced energy medicine techniques</li>
+                                <li>Trauma-informed healing practices</li>
+                            </ul>
+                            <p class="mt-3">My practice is registered in Sharjah, UAE, and I maintain professional liability insurance. I approach this work with deep reverence, continuous learning, and commitment to ethical practice.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">How long have you been practicing?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">I've been a professional healing practitioner for over 15 years, with my journey beginning in New York before establishing my practice in Dubai.</p>
+                            <p class="mb-3">Over this time, I've:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Worked with hundreds of clients across 5 continents</li>
+                                <li>Specialized in serving high-achieving professionals, expatriates, and those navigating complex life transitions</li>
+                                <li>Developed the SKP Method based on years of clinical observation and refinement</li>
+                                <li>Maintained a private practice focused on depth, discretion, and lasting results</li>
+                                <li>Continuously expanded my skills through advanced trainings and mentorship</li>
+                            </ul>
+                            <p class="mt-3">This work isn't a side practice—it's my life's calling, and I bring the full depth of my experience to every session.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Do you work with men, women, and all genders?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Yes, absolutely. I welcome clients of all genders, ages (18+), backgrounds, and belief systems. Healing is a universal human need, and my practice is a safe, inclusive space for anyone seeking transformation.</p>
+                            <p class="mb-3">My diverse client base includes:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Men and women from their 20s to their 70s</li>
+                                <li>LGBTQ+ individuals</li>
+                                <li>People of all cultural and religious backgrounds</li>
+                                <li>Believers, skeptics, and everyone in between</li>
+                                <li>Expatriates, locals, and international visitors</li>
+                            </ul>
+                            <p class="mt-3">What matters most is your openness to healing and your commitment to your own growth. I honor each person's unique path and create a space of deep respect, confidentiality, and non-judgment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Specific Conditions & Concerns -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Can you help with anxiety and panic attacks?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Yes, anxiety is one of the most common issues I address, and my multi-modal approach is particularly effective for:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Generalized anxiety</strong> and persistent worry</li>
+                                <li><strong>Panic attacks</strong> and panic disorder</li>
+                                <li><strong>Social anxiety</strong> and performance anxiety</li>
+                                <li><strong>Health anxiety</strong> and hypervigilance</li>
+                                <li><strong>Trauma-related anxiety</strong> (PTSD)</li>
+                            </ul>
+                            <p class="mb-3"><strong>How I work with anxiety:</strong></p>
+                            <ol class="list-decimal pl-6 space-y-2 mb-3">
+                                <li><strong>Nervous System Regulation:</strong> Somatic techniques to shift from sympathetic (fight/flight) to parasympathetic (rest/digest) states</li>
+                                <li><strong>Energy Clearing:</strong> Release stuck energy in the solar plexus, heart, and throat chakras where anxiety typically lodges</li>
+                                <li><strong>Hypnotherapy:</strong> Reprogram the subconscious patterns triggering anxious responses</li>
+                                <li><strong>Root Cause Work:</strong> Address underlying beliefs, past experiences, or trauma fueling the anxiety</li>
+                            </ol>
+                            <p class="mt-3">Many clients report significant relief after just 1-2 sessions, with continued improvement over time. I also teach self-regulation tools you can use between sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Can energy healing help with physical pain?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Yes, especially for pain with an energetic or emotional component. While I cannot diagnose or treat medical conditions, energy healing is remarkably effective for:</p>
+                            <p class="mb-3"><strong>Chronic Pain Conditions:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Back, neck, and shoulder tension</li>
+                                <li>Headaches and migraines</li>
+                                <li>Fibromyalgia and chronic fatigue</li>
+                                <li>Joint pain and arthritis symptoms</li>
+                                <li>Digestive discomfort (IBS, tension)</li>
+                            </ul>
+                            <p class="mb-3"><strong>How it works:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>Releases energetic blockages</strong> that contribute to inflammation and tension</li>
+                                <li><strong>Relaxes the nervous system,</strong> reducing pain signaling</li>
+                                <li><strong>Addresses emotional components</strong>—many physical pains have emotional roots (e.g., shouldering burdens = shoulder pain)</li>
+                                <li><strong>Stimulates the body's natural healing</strong> through improved energy flow</li>
+                            </ul>
+                            <p class="mt-3">I work in complement to your medical care, not as a replacement. Always consult your doctor for physical symptoms, and share your treatment plan with me so we can coordinate the most effective support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Can you help me break unwanted habits or addictions?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Hypnotherapy is particularly powerful for habit change and addiction support. I work with clients on:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>Smoking cessation</li>
+                                <li>Emotional eating and food compulsions</li>
+                                <li>Alcohol reduction or sobriety support</li>
+                                <li>Nail biting, skin picking, hair pulling</li>
+                                <li>Technology/phone addictions</li>
+                                <li>Procrastination and avoidance patterns</li>
+                            </ul>
+                            <p class="mb-3"><strong>My approach addresses:</strong></p>
+                            <ol class="list-decimal pl-6 space-y-2">
+                                <li><strong>The subconscious triggers:</strong> What's really driving the behavior?</li>
+                                <li><strong>The underlying needs:</strong> What is the habit providing (comfort, distraction, control)?</li>
+                                <li><strong>Pattern interruption:</strong> Creating new neural pathways and responses</li>
+                                <li><strong>Healthier alternatives:</strong> Installing new behaviors that meet the same needs</li>
+                                <li><strong>Energetic clearing:</strong> Releasing attachments on all levels</li>
+                            </ol>
+                            <p class="mt-3"><strong>Important:</strong> For substance addictions, I work best as part of a comprehensive treatment team (medical supervision, support groups, therapy). I'm not a substitute for medical detox or addiction counseling, but I'm a powerful complement to traditional treatment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Do you work with trauma and PTSD?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Yes, trauma healing is central to my work. I'm trained in trauma-informed approaches and work with clients experiencing:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>PTSD (post-traumatic stress disorder)</li>
+                                <li>Complex trauma (C-PTSD)</li>
+                                <li>Childhood trauma and adverse childhood experiences</li>
+                                <li>Relationship trauma and betrayal</li>
+                                <li>Medical trauma and birth trauma</li>
+                                <li>Acute trauma from recent events</li>
+                            </ul>
+                            <p class="mb-3"><strong>My trauma-informed approach:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Safety first:</strong> We work at YOUR pace, honoring your nervous system's capacity</li>
+                                <li><strong>Somatic focus:</strong> Trauma lives in the body—we address it where it's stored</li>
+                                <li><strong>Gentle, indirect:</strong> No forced "reliving" of traumatic events</li>
+                                <li><strong>Resource building:</strong> Developing safety and regulation skills before deep work</li>
+                                <li><strong>Energy clearing:</strong> Releasing imprints without having to retell the story</li>
+                            </ul>
+                            <p class="mt-3">I'm experienced in working with complex trauma and understand the layers involved. However, if you're in active crisis or have complex mental health needs, I'll recommend working with a trauma therapist alongside our sessions for comprehensive support.</p>
+                        </div>
+                    </div>
+
+                    <!-- Practical Deep Dive -->
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Do you offer online/remote sessions?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Yes, I offer remote sessions via secure video call for clients who:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>Are traveling or live outside Dubai</li>
+                                <li>Prefer the comfort and privacy of their own space</li>
+                                <li>Have mobility or transportation challenges</li>
+                                <li>Want to continue sessions after relocating</li>
+                            </ul>
+                            <p class="mb-3"><strong>What works well remotely:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Hypnotherapy sessions (actually ideal via video)</li>
+                                <li>Distance Reiki and energy healing</li>
+                                <li>Energy clearing and chakra balancing</li>
+                                <li>Consultation and integration sessions</li>
+                            </ul>
+                            <p class="mb-3"><strong>What requires in-person:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Anma and Ampuku bodywork (hands-on required)</li>
+                                <li>Full SKP Method sessions (best in-person)</li>
+                            </ul>
+                            <p class="mt-3">Remote sessions are equally powerful—energy transcends physical distance. I recommend starting in-person if possible, then transitioning to remote as needed. Same rates apply for all formats.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What if I need to reschedule or cancel?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Life happens, and I understand scheduling conflicts arise. My cancellation policy is:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>48+ hours notice:</strong> Full refund or free rescheduling</li>
+                                <li><strong>24-48 hours notice:</strong> 50% fee, remaining credit toward future session</li>
+                                <li><strong>Less than 24 hours:</strong> Full session fee (no refund or credit)</li>
+                                <li><strong>No-show:</strong> Full session fee charged</li>
+                            </ul>
+                            <p class="mb-3"><strong>Exceptions made for:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Medical emergencies (documentation required)</li>
+                                <li>Family emergencies</li>
+                                <li>Sudden illness</li>
+                            </ul>
+                            <p class="mt-3">Please contact me as soon as possible if you need to change your appointment. I hold sacred space for each client and often decline other bookings to accommodate your session, so timely notice is appreciated.</p>
+                            <p class="mt-2"><strong>To reschedule:</strong> Call/WhatsApp +971 55 177 0957 or email susankpearson@elementalskp.com</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Do you offer package deals or multiple-session discounts?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Yes! Deep healing often unfolds over multiple sessions, so I offer packages that provide both savings and accountability:</p>
+                            <p class="mb-3"><strong>Foundation Package (3 sessions):</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>AED 2,550 (save AED 300)</li>
+                                <li>Ideal for: Addressing a specific issue or establishing a healing foundation</li>
+                                <li>Valid for 3 months</li>
+                            </ul>
+                            <p class="mb-3"><strong>Transformation Package (6 sessions):</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>AED 5,100 (save AED 600)</li>
+                                <li>Ideal for: Chronic patterns, trauma healing, or major life transitions</li>
+                                <li>Valid for 6 months</li>
+                            </ul>
+                            <p class="mb-3"><strong>Custom Packages:</strong></p>
+                            <p class="mb-2">For ongoing support or specialized programs, I can create custom packages tailored to your needs and budget. Contact me to discuss.</p>
+                            <p class="mt-3"><strong>Package benefits:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>Cost savings (10-15% discount)</li>
+                                <li>Consistent appointment times (priority scheduling)</li>
+                                <li>Deeper transformation through committed work</li>
+                                <li>Flexible modality selection within the package</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">Is my information confidential?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Absolutely. Confidentiality is sacred in this work. Everything you share—verbally or energetically—is held in complete confidence.</p>
+                            <p class="mb-3"><strong>My confidentiality commitment:</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li>I never disclose client names, details, or session content</li>
+                                <li>Client records are stored securely and encrypted</li>
+                                <li>Testimonials are shared only with explicit written permission</li>
+                                <li>Your healing journey is yours alone—I'm merely the witness</li>
+                            </ul>
+                            <p class="mb-3"><strong>Exceptions (legally required):</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Threat of harm to self or others</li>
+                                <li>Child abuse or neglect</li>
+                                <li>Court order or legal subpoena</li>
+                            </ul>
+                            <p class="mt-3">Dubai's expatriate community values discretion, and so do I. Your privacy is paramount, and you can trust that your healing space is completely safe.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">What should I avoid before or after a session?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3"><strong>Before your session (24 hours):</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Avoid:</strong> Heavy alcohol consumption (light is okay)</li>
+                                <li><strong>Avoid:</strong> Recreational substances that alter consciousness</li>
+                                <li><strong>Minimize:</strong> Caffeine intake (reduces nervous system reactivity)</li>
+                                <li><strong>Hydrate well:</strong> Water supports energy flow</li>
+                            </ul>
+                            <p class="mb-3"><strong>Day of session:</strong></p>
+                            <ul class="list-disc pl-6 space-y-1 mb-3">
+                                <li>Eat lightly 1-2 hours before (not on full or empty stomach)</li>
+                                <li>Avoid wearing strong perfumes or scents</li>
+                                <li>Wear comfortable, loose clothing</li>
+                                <li>Silence your phone during the session</li>
+                            </ul>
+                            <p class="mb-3"><strong>After your session (24-48 hours):</strong></p>
+                            <ul class="list-disc pl-6 space-y-2 mb-3">
+                                <li><strong>Rest:</strong> Allow your body to integrate; avoid scheduling intense activities</li>
+                                <li><strong>Hydrate:</strong> Drink extra water to support energy clearing</li>
+                                <li><strong>Gentle movement:</strong> Walking, stretching, or gentle yoga (avoid intense exercise)</li>
+                                <li><strong>Limit alcohol/substances:</strong> Your system is more sensitive post-session</li>
+                                <li><strong>Journal:</strong> Note insights, dreams, or shifts you experience</li>
+                                <li><strong>Be gentle with yourself:</strong> Honor any emotional releases or fatigue</li>
+                            </ul>
+                            <p class="mt-3">Integration is as important as the session itself. Treat the 48 hours after as sacred time for embodying your shifts.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
+                            <span class="text-lg font-medium text-charcoal pr-8">How do I book a session?</span>
+                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
+                            <p class="mb-3">Booking is easy:</p>
+                            <ol class="list-decimal pl-6 space-y-2 mb-3">
+                                <li><strong>Use the booking form</strong> at the bottom of this page to request your preferred date and time</li>
+                                <li><strong>Call or WhatsApp:</strong> +971 55 177 0957</li>
+                                <li><strong>Email:</strong> susankpearson@elementalskp.com</li>
+                            </ol>
+                            <p class="mb-3">I'll respond within 24 hours to confirm your appointment. If you have questions before booking, feel free to reach out—I'm happy to discuss which modality might be best for your needs.</p>
+                            <p class="mt-3">For your first session, I recommend scheduling when you have no major obligations afterward, allowing time for integration and rest.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Still Have Questions CTA -->
+                <div class="mt-16 text-center bg-white p-8 rounded-sm border-2 border-gold/30">
+                    <h3 class="text-2xl font-serif text-charcoal mb-4">Still Have Questions?</h3>
+                    <p class="text-charcoal/70 mb-6">
+                        I'm happy to answer any questions you have about my work, approach, or whether a session would be right for you.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="tel:+971551770957" class="inline-flex items-center justify-center bg-gold text-black px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            Call +971 55 177 0957
+                        </a>
+                        <a href="mailto:susankpearson@elementalskp.com" class="inline-flex items-center justify-center bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-gold hover:text-black transition-colors font-medium">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Email Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Booking Section -->
         <section id="booking" class="py-20 bg-white">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
