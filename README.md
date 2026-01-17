@@ -56,7 +56,7 @@ Unique approach combining advanced somatic practices with energy medicine, infor
 - **Development Server**: https://3000-ioqgnm3ppw6cdrd5xnthp-18e660f9.sandbox.novita.ai
 - **Local Development**: http://localhost:3000
 - **Production**: (Ready to deploy to Cloudflare Pages)
-- **Project Backup**: https://www.genspark.ai/api/files/s/Cz1gzGu2
+- **Project Backup**: https://www.genspark.ai/api/files/s/S94rVgRn
 
 ## Development
 
