@@ -1163,7 +1163,7 @@ app.get('/', (c) => {
     </head>
     <body class="smooth-scroll">
         <!-- Navigation -->
-        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/20">
+        <nav class="fixed w-full bg-cream backdrop-blur-sm shadow-lg z-50 border-b border-gold/30">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
@@ -1172,29 +1172,29 @@ app.get('/', (c) => {
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8">
-                        <a href="#home" class="text-cream hover:text-gold transition-colors">Home</a>
-                        <a href="#about" class="text-cream hover:text-gold transition-colors">About</a>
-                        <a href="#services" class="text-cream hover:text-gold transition-colors">Services</a>
-                        <a href="#pricing" class="text-cream hover:text-gold transition-colors">Pricing</a>
-                        <a href="#blog" class="text-cream hover:text-gold transition-colors">Blog</a>
-                        <a href="#faq" class="text-cream hover:text-gold transition-colors">FAQ</a>
+                        <a href="#home" class="text-black hover:text-gold transition-colors font-medium">Home</a>
+                        <a href="#about" class="text-black hover:text-gold transition-colors font-medium">About</a>
+                        <a href="#services" class="text-black hover:text-gold transition-colors font-medium">Services</a>
+                        <a href="#pricing" class="text-black hover:text-gold transition-colors font-medium">Pricing</a>
+                        <a href="#blog" class="text-black hover:text-gold transition-colors font-medium">Blog</a>
+                        <a href="#faq" class="text-black hover:text-gold transition-colors font-medium">FAQ</a>
                         <a href="#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
-                    <button id="mobileMenuBtn" class="md:hidden text-cream">
+                    <button id="mobileMenuBtn" class="md:hidden text-black">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-gold/20">
+            <div id="mobileMenu" class="hidden md:hidden bg-cream border-t border-gold/30">
                 <div class="px-4 py-4 space-y-3">
-                    <a href="#home" class="block text-cream hover:text-gold transition-colors">Home</a>
-                    <a href="#about" class="block text-cream hover:text-gold transition-colors">About</a>
-                    <a href="#services" class="block text-cream hover:text-gold transition-colors">Services</a>
-                    <a href="#pricing" class="block text-cream hover:text-gold transition-colors">Pricing</a>
-                    <a href="#blog" class="block text-cream hover:text-gold transition-colors">Blog</a>
-                    <a href="#faq" class="block text-cream hover:text-gold transition-colors">FAQ</a>
-                    <a href="#booking" class="block text-gold hover:text-champagne transition-colors font-medium">Book Session</a>
+                    <a href="#home" class="block text-black hover:text-gold transition-colors font-medium">Home</a>
+                    <a href="#about" class="block text-black hover:text-gold transition-colors font-medium">About</a>
+                    <a href="#services" class="block text-black hover:text-gold transition-colors font-medium">Services</a>
+                    <a href="#pricing" class="block text-black hover:text-gold transition-colors font-medium">Pricing</a>
+                    <a href="#blog" class="block text-black hover:text-gold transition-colors font-medium">Blog</a>
+                    <a href="#faq" class="block text-black hover:text-gold transition-colors font-medium">FAQ</a>
+                    <a href="#booking" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center">Book Session</a>
                 </div>
             </div>
         </nav>
