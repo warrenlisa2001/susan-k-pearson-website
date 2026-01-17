@@ -315,9 +315,22 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-20 h-[70vh] md:h-[80vh] flex items-center justify-center relative overflow-hidden bg-black">
-            <div class="absolute inset-0 z-0">
-                <img src="/images/hero-v3.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="w-full h-full object-cover">
+        <section id="home" class="pt-20 relative overflow-hidden bg-black">
+            <div class="relative w-full" style="padding-bottom: 56.25%;">
+                <img src="/images/hero-banner-final.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="absolute inset-0 w-full h-full object-contain">
+                
+                <!-- Interactive Book Button Overlay -->
+                <a href="#booking" class="absolute bottom-[15%] left-1/2 transform -translate-x-1/2 
+                    px-12 py-4 
+                    bg-transparent hover:bg-gold/10 
+                    border-2 border-transparent hover:border-gold/30
+                    rounded-sm
+                    transition-all duration-300
+                    cursor-pointer
+                    w-[200px] h-[60px]
+                    flex items-center justify-center">
+                    <span class="sr-only">Book a Session</span>
+                </a>
             </div>
         </section>
 
