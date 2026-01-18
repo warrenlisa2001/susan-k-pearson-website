@@ -1202,7 +1202,7 @@ app.get('/', (c) => {
         <!-- Hero Section -->
         <section id="home" class="pt-20 relative overflow-hidden bg-black">
             <div class="relative w-full" style="padding-bottom: 56.25%;">
-                <img src="/images/hero-banner-final.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="absolute inset-0 w-full h-full object-contain">
+                <img src="/images/hero-main.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="absolute inset-0 w-full h-full object-cover">
                 
                 <!-- Interactive Book Button Overlay -->
                 <a href="#booking" class="absolute bottom-[15%] left-1/2 transform -translate-x-1/2 
