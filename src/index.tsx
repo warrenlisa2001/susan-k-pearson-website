@@ -3411,6 +3411,49 @@ app.get('/', (c) => {
                 });
             });
 
+            // FAQ Accordion functionality
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    const isOpen = !answer.classList.contains('hidden');
+                    
+                    if (isOpen) {
+                        answer.classList.add('hidden');
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    } else {
+                        answer.classList.remove('hidden');
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    }
+                });
+            });
+
+            // FAQ Category filtering
+            document.querySelectorAll('.faq-category-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const category = btn.getAttribute('data-category');
+                    
+                    // Update active button
+                    document.querySelectorAll('.faq-category-btn').forEach(b => {
+                        b.classList.remove('active', 'bg-gold', 'text-black');
+                        b.classList.add('bg-white', 'border-gold/30', 'text-charcoal');
+                    });
+                    btn.classList.add('active', 'bg-gold', 'text-black');
+                    btn.classList.remove('bg-white', 'border-gold/30', 'text-charcoal');
+                    
+                    // Filter FAQ items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
             // Contact form handling
             document.getElementById('contactForm').addEventListener('submit', (e) => {
                 e.preventDefault();
