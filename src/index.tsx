@@ -3205,18 +3205,22 @@ app.get('/', (c) => {
 
                 <div class="mt-12 text-center">
                     <p class="text-charcoal/70 mb-4">Based in Dubai | Sharjah-Registered</p>
-                    <div class="flex justify-center space-x-6">
-                        <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-gold/80 transition-colors">
-                            <i class="fas fa-envelope text-xl"></i>
+                    <p class="text-charcoal/70 mb-6">Connect With Us</p>
+                    <div class="flex justify-center space-x-8">
+                        <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Email">
+                            <i class="fas fa-envelope text-2xl"></i>
                         </a>
-                        <a href="tel:+971551770957" class="text-gold hover:text-gold/80 transition-colors">
-                            <i class="fas fa-phone text-xl"></i>
+                        <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Phone">
+                            <i class="fas fa-phone text-2xl"></i>
                         </a>
-                        <a href="#" class="text-gold hover:text-gold/80 transition-colors">
-                            <i class="fab fa-instagram text-xl"></i>
+                        <a href="https://wa.me/971551770957?text=Hello%2C%20I%20would%20like%20to%20book%20a%20session%20with%20Susan" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="WhatsApp">
+                            <i class="fab fa-whatsapp text-2xl"></i>
                         </a>
-                        <a href="#" class="text-gold hover:text-gold/80 transition-colors">
-                            <i class="fab fa-linkedin text-xl"></i>
+                        <a href="https://www.facebook.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Facebook">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Instagram">
+                            <i class="fab fa-instagram text-2xl"></i>
                         </a>
                     </div>
                 </div>
@@ -3238,11 +3242,114 @@ app.get('/', (c) => {
                     <p class="text-sm mb-6">
                         <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
                     </p>
+                    <div class="flex justify-center space-x-6 mb-6">
+                        <a href="https://wa.me/971551770957" target="_blank" rel="noopener noreferrer" class="text-cream/70 hover:text-gold transition-colors" title="WhatsApp">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="https://www.facebook.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-cream/70 hover:text-gold transition-colors" title="Facebook">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-cream/70 hover:text-gold transition-colors" title="Instagram">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
                     <div class="section-divider opacity-30"></div>
                     <p class="text-xs mt-6">© 2026 Elemental Healing LLC. All rights reserved. | Confidential & Proprietary</p>
                 </div>
             </div>
         </footer>
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/971551770957?text=Hello%2C%20I%20would%20like%20to%20book%20a%20session%20with%20Susan" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 shadow-2xl hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50 animate-bounce"
+           title="Chat on WhatsApp"
+           id="whatsappButton">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+
+        <!-- AI Chatbot Widget -->
+        <div id="chatbotWidget" class="fixed bottom-24 right-6 z-50">
+            <!-- Chat Button -->
+            <button id="chatbotToggle" class="bg-gold text-black rounded-full p-4 shadow-2xl hover:bg-champagne transition-all duration-300 hover:scale-110">
+                <i class="fas fa-comments text-3xl"></i>
+            </button>
+            
+            <!-- Chat Window -->
+            <div id="chatbotWindow" class="hidden absolute bottom-16 right-0 w-80 md:w-96 bg-white rounded-lg shadow-2xl border-2 border-gold/30 overflow-hidden">
+                <!-- Chat Header -->
+                <div class="bg-gold text-black p-4 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-robot text-2xl mr-3"></i>
+                        <div>
+                            <h3 class="font-semibold">Susan's Assistant</h3>
+                            <p class="text-xs opacity-80">Ask me anything!</p>
+                        </div>
+                    </div>
+                    <button id="chatbotClose" class="text-black hover:text-charcoal transition-colors">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Chat Messages -->
+                <div id="chatbotMessages" class="h-80 overflow-y-auto p-4 bg-cream/50">
+                    <div class="mb-4">
+                        <div class="bg-white rounded-lg p-3 shadow-sm border border-gold/20">
+                            <p class="text-sm text-charcoal">
+                                👋 Hello! I'm Susan's virtual assistant. I can help you with:
+                            </p>
+                            <ul class="text-sm text-charcoal mt-2 space-y-1">
+                                <li>• Booking sessions</li>
+                                <li>• Learning about services</li>
+                                <li>• Pricing information</li>
+                                <li>• Answering FAQs</li>
+                            </ul>
+                            <p class="text-sm text-charcoal mt-2">
+                                How can I assist you today?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="p-3 bg-cream border-t border-gold/20">
+                    <p class="text-xs text-charcoal/70 mb-2">Quick Actions:</p>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="book">
+                            📅 Book Session
+                        </button>
+                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="services">
+                            💆 View Services
+                        </button>
+                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="pricing">
+                            💰 Pricing
+                        </button>
+                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="contact">
+                            📞 Contact
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chat Input -->
+                <div class="p-4 bg-white border-t border-gold/20">
+                    <div class="flex space-x-2">
+                        <input 
+                            type="text" 
+                            id="chatbotInput" 
+                            placeholder="Type your message..."
+                            class="flex-1 border border-gold/30 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold"
+                        >
+                        <button id="chatbotSend" class="bg-gold text-black rounded-lg px-4 py-2 hover:bg-champagne transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-charcoal/50 mt-2 text-center">
+                        Or <a href="https://wa.me/971551770957" class="text-gold hover:underline">chat on WhatsApp</a>
+                    </p>
+                </div>
+            </div>
+        </div>
 
         
         <script>
@@ -3478,6 +3585,114 @@ app.get('/', (c) => {
             document.querySelectorAll('section').forEach(section => {
                 observer.observe(section);
             });
+
+            // Chatbot functionality
+            const chatbotToggle = document.getElementById('chatbotToggle');
+            const chatbotWindow = document.getElementById('chatbotWindow');
+            const chatbotClose = document.getElementById('chatbotClose');
+            const chatbotInput = document.getElementById('chatbotInput');
+            const chatbotSend = document.getElementById('chatbotSend');
+            const chatbotMessages = document.getElementById('chatbotMessages');
+            const quickBtns = document.querySelectorAll('.chatbot-quick-btn');
+
+            // Toggle chatbot
+            chatbotToggle.addEventListener('click', () => {
+                chatbotWindow.classList.toggle('hidden');
+                if (!chatbotWindow.classList.contains('hidden')) {
+                    chatbotInput.focus();
+                }
+            });
+
+            chatbotClose.addEventListener('click', () => {
+                chatbotWindow.classList.add('hidden');
+            });
+
+            // Send message function
+            function addMessage(text, isUser = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = \`mb-4 \${isUser ? 'text-right' : ''}\`;
+                messageDiv.innerHTML = \`
+                    <div class="\${isUser ? 'bg-gold text-black ml-auto' : 'bg-white border border-gold/20'} rounded-lg p-3 shadow-sm inline-block max-w-[80%]">
+                        <p class="text-sm">\${text}</p>
+                    </div>
+                \`;
+                chatbotMessages.appendChild(messageDiv);
+                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            }
+
+            // Bot responses
+            function getBotResponse(message) {
+                const msg = message.toLowerCase();
+                
+                if (msg.includes('book') || msg.includes('appointment') || msg.includes('session')) {
+                    return "I'd be happy to help you book a session! You can:<br>• Fill out our <a href='#booking' class='text-gold hover:underline'>booking form</a><br>• Call +971 55 177 0957<br>• <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp us</a>";
+                } else if (msg.includes('price') || msg.includes('cost') || msg.includes('pricing')) {
+                    return "Our session pricing:<br>• Deep Alignment (90 min): AED 950<br>• Hypnotherapy (75 min): AED 850<br>• SKP Method (120 min): AED 1,200<br><br>Check our <a href='#pricing' class='text-gold hover:underline'>pricing page</a> for packages!";
+                } else if (msg.includes('service') || msg.includes('what do you do')) {
+                    return "Susan offers:<br>• Master-level Reiki<br>• Clinical Hypnotherapy<br>• Energy Medicine<br>• Anma & Ampuku<br>• SKP Method<br><br>Learn more in our <a href='#services' class='text-gold hover:underline'>services section</a>!";
+                } else if (msg.includes('location') || msg.includes('where')) {
+                    return "We're based in Dubai, UAE (Sharjah-Registered). Sessions are by appointment only. Contact us at +971 55 177 0957";
+                } else if (msg.includes('hour') || msg.includes('time') || msg.includes('schedule')) {
+                    return "Sessions are by appointment. We're flexible with scheduling! Please call +971 55 177 0957 or book via our <a href='#booking' class='text-gold hover:underline'>booking form</a>.";
+                } else if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey')) {
+                    return "Hello! 👋 How can I assist you today? I can help with booking, pricing, services, or any questions you have!";
+                } else if (msg.includes('thank')) {
+                    return "You're welcome! Feel free to reach out anytime. Have a wonderful day! 🌟";
+                } else {
+                    return "I'm here to help! For detailed information, please:<br>• Check our <a href='#faq' class='text-gold hover:underline'>FAQ section</a><br>• Call +971 55 177 0957<br>• Email susankpearson@elementalskp.com<br><br>What specific information can I help you find?";
+                }
+            }
+
+            // Send message
+            function sendMessage() {
+                const message = chatbotInput.value.trim();
+                if (message) {
+                    addMessage(message, true);
+                    chatbotInput.value = '';
+                    
+                    setTimeout(() => {
+                        const response = getBotResponse(message);
+                        addMessage(response, false);
+                    }, 500);
+                }
+            }
+
+            chatbotSend.addEventListener('click', sendMessage);
+            chatbotInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+
+            // Quick action buttons
+            quickBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const action = btn.getAttribute('data-action');
+                    let response = '';
+                    
+                    switch(action) {
+                        case 'book':
+                            response = "Great! You can book a session by:<br>• Filling our <a href='#booking' class='text-gold hover:underline'>booking form</a><br>• Calling +971 55 177 0957<br>• <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br><br>What type of session interests you?";
+                            break;
+                        case 'services':
+                            response = "Our healing services include:<br>• <strong>Deep Alignment</strong> (90 min)<br>• <strong>Clinical Hypnotherapy</strong> (75 min)<br>• <strong>SKP Method</strong> (120 min)<br><br>Check <a href='#services' class='text-gold hover:underline'>services</a> for details!";
+                            break;
+                        case 'pricing':
+                            response = "Pricing:<br>• Deep Alignment: AED 950<br>• Hypnotherapy: AED 850<br>• SKP Method: AED 1,200<br><br>Packages available! See <a href='#pricing' class='text-gold hover:underline'>pricing</a>";
+                            break;
+                        case 'contact':
+                            response = "Contact Susan:<br>📞 +971 55 177 0957<br>✉️ susankpearson@elementalskp.com<br>💬 <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br>📍 Dubai, UAE";
+                            break;
+                    }
+                    
+                    addMessage(response, false);
+                });
+            });
+
+            // Stop WhatsApp button animation after 5 seconds
+            setTimeout(() => {
+                document.getElementById('whatsappButton').classList.remove('animate-bounce');
+            }, 5000);
         </script>
     </body>
     </html>
