@@ -1171,10 +1171,23 @@ app.get('/', (c) => {
                             <img src="/images/skp-brand-logo.png" alt="Susan K. Pearson - SKP - Energy, Body, Consciousness" class="h-16 md:h-20 w-auto">
                         </a>
                     </div>
-                    <div class="hidden md:flex space-x-8">
+                    <div class="hidden md:flex space-x-8 items-center">
                         <a href="#home" class="text-black hover:text-gold transition-colors font-medium">Home</a>
                         <a href="#about" class="text-black hover:text-gold transition-colors font-medium">About</a>
-                        <a href="#services" class="text-black hover:text-gold transition-colors font-medium">Services</a>
+                        <div class="relative group">
+                            <button class="text-black hover:text-gold transition-colors font-medium flex items-center">
+                                Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-72 bg-white rounded-sm shadow-xl border border-gold/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <a href="/nir-levy-method" class="block px-6 py-4 hover:bg-cream/50 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-charcoal mb-1">The Nir Levy Method</div>
+                                    <div class="text-xs text-charcoal/60">Holistic bodywork with Five Elements</div>
+                                </a>
+                                <a href="#services" class="block px-6 py-3 hover:bg-cream/50 text-charcoal transition-colors">
+                                    View All Services
+                                </a>
+                            </div>
+                        </div>
                         <a href="#pricing" class="text-black hover:text-gold transition-colors font-medium">Pricing</a>
                         <a href="#blog" class="text-black hover:text-gold transition-colors font-medium">Blog</a>
                         <a href="#faq" class="text-black hover:text-gold transition-colors font-medium">FAQ</a>
@@ -1190,7 +1203,11 @@ app.get('/', (c) => {
                 <div class="px-4 py-4 space-y-3">
                     <a href="#home" class="block text-black hover:text-gold transition-colors font-medium">Home</a>
                     <a href="#about" class="block text-black hover:text-gold transition-colors font-medium">About</a>
-                    <a href="#services" class="block text-black hover:text-gold transition-colors font-medium">Services</a>
+                    <div class="border-l-2 border-gold/30 pl-3 space-y-2">
+                        <div class="text-xs text-charcoal/60 uppercase tracking-wide mb-2">Services</div>
+                        <a href="/nir-levy-method" class="block text-black hover:text-gold transition-colors text-sm">The Nir Levy Method</a>
+                        <a href="#services" class="block text-black hover:text-gold transition-colors text-sm">All Services</a>
+                    </div>
                     <a href="#pricing" class="block text-black hover:text-gold transition-colors font-medium">Pricing</a>
                     <a href="#blog" class="block text-black hover:text-gold transition-colors font-medium">Blog</a>
                     <a href="#faq" class="block text-black hover:text-gold transition-colors font-medium">FAQ</a>
@@ -1294,10 +1311,6 @@ app.get('/', (c) => {
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
                                     <span>Somatic Alignment & Trauma-Informed Bodywork</span>
                                 </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Anma & Ampuku (Traditional Japanese Bodywork)</span>
-                                </li>
                             </ul>
                         </div>
                         
@@ -1307,6 +1320,10 @@ app.get('/', (c) => {
                                 Specializations
                             </h3>
                             <ul class="space-y-2 text-sm text-charcoal/80">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Anma (Traditional Japanese Bodywork)</span>
+                                </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
                                     <span>Ampuku (Japanese Abdominal Therapy)</span>
@@ -3695,6 +3712,289 @@ app.get('/', (c) => {
                 document.getElementById('whatsappButton').classList.remove('animate-bounce');
             }, 5000);
         </script>
+    </body>
+    </html>
+  `)
+})
+
+// Nir Levy Method page
+app.get('/nir-levy-method', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Nir Levy Method with Susan K Pearson | Elemental Healing</title>
+        <meta name="description" content="Experience the Nir Levy Method—a holistic bodywork approach blending Five Elements Body Reading with hands-on meridian work. Certified practitioner Susan K Pearson.">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+          body { font-family: 'Montserrat', sans-serif; }
+          h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+          .section-spacing { padding: 4rem 0; }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="/#home" class="flex items-center">
+                        <img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto">
+                    </a>
+                    <div class="flex space-x-6 items-center">
+                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
+                        <a href="/#about" class="text-black hover:text-gold transition-colors">About</a>
+                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="pt-32 pb-16 bg-charcoal text-cream">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">The Nir Levy Method</h1>
+                <p class="text-xl text-cream/80 mb-8">with Susan K Pearson</p>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="section-spacing bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                    <p class="text-lg text-charcoal/80 leading-relaxed mb-6">
+                        Susan K Pearson offers the Nir Levy Method as a grounded, whole-person approach to healing—one that listens to what the body is holding and supports it in finding movement again.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed mb-6">
+                        The Nir Levy Method is based on the ancient healing art of <strong>Anma</strong>, originating in China around 5000 years ago. It is informed by Taoist philosophy, Yin–Yang, and the Five Elements theory. Nir Levi connected this lineage with a modern understanding of human behavior, creating a Five Elements Body Reading system and a distinct line of treatment designed to support the full human experience.
+                    </p>
+                    <div class="bg-cream/50 border-l-4 border-gold p-6 rounded-sm">
+                        <p class="text-charcoal/80 italic text-sm">
+                            A holistic bodywork experience that blends Five Elements Body Reading with hands-on meridian-based work to support release, circulation, and a deeper connection to your body's own wisdom. Rooted in the ancient art of Anma and informed by Taoism, Yin–Yang, and Five Elements theory, this method bridges traditional healing with a modern understanding of human behavior.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gold/10 border border-gold/30 p-6 rounded-sm text-center">
+                    <p class="text-charcoal font-medium">
+                        <i class="fas fa-certificate text-gold mr-2"></i>
+                        Susan K Pearson is a certified practitioner of the Nir Levy Method.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What This Work Is -->
+        <section class="section-spacing bg-stone/30">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-4xl font-serif text-charcoal mb-8 text-center">What this work is</h2>
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg">
+                    <p class="text-lg text-charcoal/90 leading-relaxed mb-8 italic text-center">
+                        "Our body remembers what our conscious mind forgot."
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed mb-6">
+                        At the center of this method is a simple truth: the body carries a story—often more honestly than words can.
+                    </p>
+                    <h3 class="text-2xl font-serif text-charcoal mb-4">Sessions combine:</h3>
+                    <ul class="space-y-4 text-charcoal/80">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mr-3 mt-1"></i>
+                            <div>
+                                <strong>Five Elements Body Reading</strong> — a way of understanding the internal situation of the body by observing the external body.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-gold mr-3 mt-1"></i>
+                            <div>
+                                <strong>Hands-on bodywork</strong> — including stimulation techniques on Qi points along the body's meridians, plus stretches and movement to support tension release and healthier circulation.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- What to Expect -->
+        <section class="section-spacing bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-4xl font-serif text-charcoal mb-8 text-center">What to expect in a session with Susan</h2>
+                <p class="text-charcoal/70 text-center mb-8">Every session is individual, but most follow a gentle arc:</p>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3 flex items-center">
+                            <span class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center mr-3 text-gold font-medium">1</span>
+                            Arrive + settle
+                        </h3>
+                        <p class="text-charcoal/80 leading-relaxed">
+                            Susan begins by helping the nervous system land—so the body can be met with clarity and respect.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3 flex items-center">
+                            <span class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center mr-3 text-gold font-medium">2</span>
+                            Body Reading (Five Elements)
+                        </h3>
+                        <p class="text-charcoal/80 leading-relaxed">
+                            Observation is used to understand where the body may be compensating, bracing, or holding patterns that are ready for support.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3 flex items-center">
+                            <span class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center mr-3 text-gold font-medium">3</span>
+                            Hands-on work + movement support
+                        </h3>
+                        <p class="text-charcoal/80 leading-relaxed">
+                            Susan uses the Nir Levy Method's full-body physical work—working with meridians and Qi points, and incorporating stretches and techniques designed to stimulate energy movement and release muscular tension.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3 flex items-center">
+                            <span class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center mr-3 text-gold font-medium">4</span>
+                            Integration
+                        </h3>
+                        <p class="text-charcoal/80 leading-relaxed">
+                            Time is given at the end for the work to settle—so what shifts in the body can be felt, understood, and carried into daily life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blockages Section -->
+        <section class="section-spacing bg-stone/30">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-4xl font-serif text-charcoal mb-8 text-center">The kinds of "blockages" this method works with</h2>
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg">
+                    <p class="text-charcoal/80 leading-relaxed mb-6">
+                        The Nir Levy Method views the body as a mirror of internal emotional and physical state and speaks about blockages as places where natural expression and flow get interrupted.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed mb-6">
+                        The method describes three levels of blockages:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-dumbbell text-sage"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl text-charcoal mb-1">Physical</h3>
+                                <p class="text-charcoal/70">Muscles and tendon blockages</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-bolt text-gold"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl text-charcoal mb-1">Energetic</h3>
+                                <p class="text-charcoal/70">Internal organs and circulation blockages</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-earth/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-heart text-earth"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl text-charcoal mb-1">Emotional</h3>
+                                <p class="text-charcoal/70">Heart and feelings blockages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-charcoal/80 leading-relaxed mt-6 italic">
+                        Susan's intention is not to "force" release, but to support a safer return to movement—so the body can do what it naturally knows how to do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who This Is For -->
+        <section class="section-spacing bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-4xl font-serif text-charcoal mb-8 text-center">Who this is for</h2>
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg">
+                    <p class="text-charcoal/80 leading-relaxed mb-6">
+                        This work can be supportive for clients who:
+                    </p>
+                    <ul class="space-y-3 text-charcoal/80">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Feel chronically tense, braced, or "stuck"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Sense that stress and lived experience is being carried in the body</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Want bodywork that includes both the physical structure and the emotional layer of healing (without rushing either)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section (Optional) -->
+        <section class="section-spacing bg-charcoal">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-serif text-cream mb-8">Experience the Nir Levy Method</h2>
+                <div class="bg-cream/10 p-6 rounded-sm">
+                    <p class="text-cream/70 mb-4">
+                        <i class="fas fa-play-circle text-gold text-2xl mr-2"></i>
+                        Learn more about this profound healing modality
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="https://www.youtube.com/watch?v=example1" target="_blank" rel="noopener" class="text-gold hover:text-champagne transition-colors">
+                            Bodywork - The Nir Levy Method →
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=example2" target="_blank" rel="noopener" class="text-gold hover:text-champagne transition-colors">
+                            Private Treatments →
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=example3" target="_blank" rel="noopener" class="text-gold hover:text-champagne transition-colors">
+                            Anma Ampuku →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book a Session -->
+        <section class="section-spacing bg-cream">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-serif text-charcoal mb-6">Book a session</h2>
+                <p class="text-lg text-charcoal/80 leading-relaxed mb-8 max-w-2xl mx-auto">
+                    If you feel drawn to this work, Susan welcomes you to book a session and experience what it's like to be met—steadily, clearly, and with care.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium text-lg">
+                        Book Now
+                    </a>
+                    <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-charcoal px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium text-lg">
+                        Questions? Contact Susan
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Disclaimer -->
+        <footer class="bg-charcoal py-12 text-cream/70 text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <p class="text-sm mb-4">
+                    The Nir Levy Method is a holistic bodywork modality and is not a substitute for medical diagnosis or treatment.
+                </p>
+                <p class="text-xs text-cream/50">
+                    © 2026 Elemental Healing LLC. All rights reserved.
+                </p>
+            </div>
+        </footer>
     </body>
     </html>
   `)
