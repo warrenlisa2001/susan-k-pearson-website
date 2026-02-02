@@ -13,15 +13,15 @@ const testimonials = [
   {
     id: 1,
     name: "Lisa M.",
-    location: "Ireland | Living in Dubai",
+    location: "Ireland",
     rating: 5,
-    text: "Working with Susan has been nothing short of life-changing. I came to her feeling disconnected and carrying years of unresolved tension. From the very first session, I felt seen, heard, and held in a way I had never experienced before. Susan's mastery of energy work, combined with her intuitive understanding of exactly what I needed, created profound shifts that I can only describe as miraculous. Her Deep Alignment sessions helped me release patterns I didn't even know I was holding. The integration of Anma, Reiki, and the Nir Levy Method is seamless and extraordinary. I've recommended her to everyone I know - she is truly exceptional. If you're looking for genuine, transformational healing in Dubai, Susan is the only practitioner you need.",
+    text: "Working with Susan has been nothing short of life-changing. I came to her feeling disconnected and carrying years of unresolved tension. From the very first session, I felt seen, heard, and held in a way I had never experienced before. Susan's mastery of energy work, combined with her intuitive understanding of exactly what I needed, created profound shifts that I can only describe as miraculous. Her Deep Alignment sessions helped me release patterns I didn't even know I was holding. The integration of Anma, Reiki, and the Nir Levy Method is seamless and extraordinary. I've recommended her to everyone I know - she is truly exceptional. If you're looking for genuine, transformational healing, Susan is the only practitioner you need.",
     image: "👩🏻"
   },
   {
     id: 2,
     name: "Catherine R.",
-    location: "New York, USA | Dubai",
+    location: "New York, USA",
     rating: 5,
     text: "As someone who's experienced healing modalities across Manhattan's finest wellness centers, I can confidently say Susan's work stands in a class of its own. Her treatment room reflects her practice - refined, intentional, powerful. The combination of hypnotherapy and Ampuku abdominal work released trauma I'd been holding for decades. Susan's elegance and depth create a sanctuary where true transformation happens. This is healing for the discerning client.",
     image: "👩🏼"
@@ -39,13 +39,13 @@ const testimonials = [
     name: "Layla S.",
     location: "Abu Dhabi, UAE",
     rating: 5,
-    text: "Susan has a rare gift that transcends technique. Her Reiki sessions are deeply restorative, and I always leave feeling renewed on every level - physically, emotionally, and spiritually. She creates such a sacred, elegant space for healing. The chakra balancing work she does is the most profound I've experienced in the Middle East. I've worked with many practitioners over the years across Dubai and Abu Dhabi, and Susan stands out as truly exceptional. She is the healer other healers go to.",
+    text: "Susan has a rare gift that transcends technique. Her Reiki sessions are deeply restorative, and I always leave feeling renewed on every level - physically, emotionally, and spiritually. She creates such a sacred, elegant space for healing. The chakra balancing work she does is the most profound I've experienced. I've worked with many practitioners over the years, and Susan stands out as truly exceptional. She is the healer other healers go to.",
     image: "👩🏻‍🦱"
   },
   {
     id: 5,
     name: "Michael Chen",
-    location: "Sydney, Australia | Dubai",
+    location: "Sydney, Australia",
     rating: 5,
     text: "The SKP Method is unlike anything I've experienced across three continents. Susan's integration of somatic work, energy medicine, and the Nir Levy Method helped me reconnect with my body in a way I never thought possible after years of disconnection following a traumatic accident. Her wisdom, professionalism, and genuine care for her clients' wellbeing shine through in every session. The Ampuku work alone was worth the investment, but combined with everything else she offers, it's truly transformational. Worth every dirham.",
     image: "👨🏻"
@@ -53,9 +53,9 @@ const testimonials = [
   {
     id: 6,
     name: "Sophia Martinez",
-    location: "Barcelona, Spain | Dubai",
+    location: "Barcelona, Spain",
     rating: 5,
-    text: "I came to Susan after trying everything - traditional therapy, medication, various alternative treatments across Europe and the UAE. Nothing prepared me for the depth of her work. The way she combines Japanese healing arts with modern consciousness techniques is revolutionary. Her Anma sessions released tension I didn't know I was holding, and the hypnotherapy helped me finally break free from anxiety patterns that had controlled my life. Susan's space is a sanctuary of elegance and healing power. She is a true master of her craft.",
+    text: "I came to Susan after trying everything - traditional therapy, medication, various alternative treatments. Nothing prepared me for the depth of her work. The way she combines Japanese healing arts with modern consciousness techniques is revolutionary. Her Anma sessions released tension I didn't know I was holding, and the hypnotherapy helped me finally break free from anxiety patterns that had controlled my life. Susan's space is a sanctuary of elegance and healing power. She is a true master of her craft.",
     image: "👩🏽"
   }
 ]
@@ -1044,7 +1044,7 @@ app.get('/', (c) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Susan K. Pearson | Elemental Healing</title>
-        <meta name="description" content="Master-level Reiki, Energy Medicine, and Clinical Hypnotherapy in Dubai. Transformational healing at the intersection of energy, body, and consciousness.">
+        <meta name="description" content="Master-level Reiki, Energy Medicine, and Clinical Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1202,7 +1202,7 @@ app.get('/', (c) => {
         <!-- Hero Section -->
         <section id="home" class="pt-20 relative overflow-hidden bg-black">
             <div class="relative w-full" style="padding-bottom: 56.25%;">
-                <img src="/images/hero-main.jpg" alt="Fundamental Healing Through Energy & Inner Guidance" class="absolute inset-0 w-full h-full object-cover">
+                <img src="/images/hero-main.jpg" alt="Elemental Guidance to awaken Your Healing Intelligence" class="absolute inset-0 w-full h-full object-cover">
                 
                 <!-- Interactive Book Button Overlay -->
                 <a href="#booking" class="absolute bottom-[15%] left-1/2 transform -translate-x-1/2 
@@ -1226,7 +1226,7 @@ app.get('/', (c) => {
                 <div class="text-center mb-12">
                     <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6 shadow-2xl">
                     <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-2">Susan K. Pearson</h2>
-                    <p class="text-xl text-gold/90 font-medium mb-4">Energy Medicine Practitioner | Dubai</p>
+                    <p class="text-xl text-gold/90 font-medium mb-4">Energy Medicine Practitioner | Worldwide</p>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                     <div class="flex justify-center gap-6 text-charcoal/70">
                         <a href="tel:+971551770957" class="hover:text-gold transition-colors">
@@ -1318,7 +1318,7 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Based in Dubai | Sharjah-Registered LLC</span>
+                                    <span>Worldwide Practice | Remote & In-Person Sessions</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -1658,7 +1658,7 @@ app.get('/', (c) => {
                     <div class="flex flex-wrap justify-center gap-6 text-sm text-cream/60">
                         <span><i class="fas fa-credit-card text-gold mr-2"></i>Cash & Bank Transfer Accepted</span>
                         <span><i class="fas fa-calendar-check text-gold mr-2"></i>48-Hour Cancellation Policy</span>
-                        <span><i class="fas fa-map-marker-alt text-gold mr-2"></i>Dubai Studio Location</span>
+                        <span><i class="fas fa-globe text-gold mr-2"></i>Worldwide Practice</span>
                     </div>
                 </div>
             </div>
@@ -2417,8 +2417,8 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>In-Person Sessions:</strong> I practice in Dubai, UAE (Sharjah-registered LLC). My studio is a private, peaceful space designed for deep healing work.</p>
-                            <p class="mb-3"><strong>Distance Sessions:</strong> Yes! I offer distance healing for:</p>
+                            <p class="mb-3"><strong>In-Person Sessions:</strong> I offer in-person sessions in a private, peaceful studio designed for deep healing work. Location details provided upon booking.</p>
+                            <p class="mb-3"><strong>Distance Sessions:</strong> Yes! I offer distance healing worldwide for:</p>
                             <ul class="list-disc pl-6 space-y-2">
                                 <li><strong>Reiki & Energy Work:</strong> Energy transcends physical distance. Distance Reiki is just as effective as in-person</li>
                                 <li><strong>Hypnotherapy:</strong> Conducted via secure video call</li>
@@ -2720,7 +2720,7 @@ app.get('/', (c) => {
                                 <li>Advanced energy medicine techniques</li>
                                 <li>Trauma-informed healing practices</li>
                             </ul>
-                            <p class="mt-3">My practice is registered in Sharjah, UAE, and I maintain professional liability insurance. I approach this work with deep reverence, continuous learning, and commitment to ethical practice.</p>
+                            <p class="mt-3">I maintain professional liability insurance and approach this work with deep reverence, continuous learning, and commitment to ethical practice. I serve clients worldwide both in-person and remotely.</p>
                         </div>
                     </div>
 
@@ -2730,7 +2730,7 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">I've been a professional healing practitioner for over 15 years, with my journey beginning in New York before establishing my practice in Dubai.</p>
+                            <p class="mb-3">I've been a professional healing practitioner for over 15 years, serving clients worldwide both in-person and remotely.</p>
                             <p class="mb-3">Over this time, I've:</p>
                             <ul class="list-disc pl-6 space-y-2">
                                 <li>Worked with hundreds of clients across 5 continents</li>
@@ -2875,12 +2875,12 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Yes, I offer remote sessions via secure video call for clients who:</p>
+                            <p class="mb-3">Yes, I offer remote sessions via secure video call for clients worldwide who:</p>
                             <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Are traveling or live outside Dubai</li>
                                 <li>Prefer the comfort and privacy of their own space</li>
+                                <li>Are traveling or live internationally</li>
                                 <li>Have mobility or transportation challenges</li>
-                                <li>Want to continue sessions after relocating</li>
+                                <li>Want continuity of care regardless of location</li>
                             </ul>
                             <p class="mb-3"><strong>What works well remotely:</strong></p>
                             <ul class="list-disc pl-6 space-y-1 mb-3">
@@ -2973,7 +2973,7 @@ app.get('/', (c) => {
                                 <li>Child abuse or neglect</li>
                                 <li>Court order or legal subpoena</li>
                             </ul>
-                            <p class="mt-3">Dubai's expatriate community values discretion, and so do I. Your privacy is paramount, and you can trust that your healing space is completely safe.</p>
+                            <p class="mt-3">I value discretion deeply, and your privacy is paramount. You can trust that your healing space is completely safe and confidential.</p>
                         </div>
                     </div>
 
@@ -3197,7 +3197,6 @@ app.get('/', (c) => {
                 </div>
 
                 <div class="mt-12 text-center">
-                    <p class="text-charcoal/70 mb-4">Based in Dubai | Sharjah-Registered</p>
                     <p class="text-charcoal/70 mb-6">Connect With Us</p>
                     <div class="flex justify-center space-x-8">
                         <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Email">
@@ -3624,9 +3623,9 @@ app.get('/', (c) => {
                 } else if (msg.includes('service') || msg.includes('what do you do')) {
                     return "Susan offers:<br>• Master-level Reiki<br>• Clinical Hypnotherapy<br>• Energy Medicine<br>• Anma & Ampuku<br>• SKP Method<br><br>Learn more in our <a href='#services' class='text-gold hover:underline'>services section</a>!";
                 } else if (msg.includes('location') || msg.includes('where')) {
-                    return "We're based in Dubai, UAE (Sharjah-Registered). Sessions are by appointment only. Contact us at +971 55 177 0957";
+                    return "Sessions available worldwide - both remote and in-person. Contact us at +971 55 177 0957 to discuss your preferred session format and location details.";
                 } else if (msg.includes('hour') || msg.includes('time') || msg.includes('schedule')) {
-                    return "Sessions are by appointment. We're flexible with scheduling! Please call +971 55 177 0957 or book via our <a href='#booking' class='text-gold hover:underline'>booking form</a>.";
+                    return "Sessions are by appointment. We're flexible with scheduling globally! Please call +971 55 177 0957 or book via our <a href='#booking' class='text-gold hover:underline'>booking form</a>.";
                 } else if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey')) {
                     return "Hello! 👋 How can I assist you today? I can help with booking, pricing, services, or any questions you have!";
                 } else if (msg.includes('thank')) {
@@ -3674,7 +3673,7 @@ app.get('/', (c) => {
                             response = "Pricing:<br>• Deep Alignment: AED 950<br>• Hypnotherapy: AED 850<br>• SKP Method: AED 1,200<br><br>Packages available! See <a href='#pricing' class='text-gold hover:underline'>pricing</a>";
                             break;
                         case 'contact':
-                            response = "Contact Susan:<br>📞 +971 55 177 0957<br>✉️ susankpearson@elementalskp.com<br>💬 <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br>📍 Dubai, UAE";
+                            response = "Contact Susan:<br>📞 +971 55 177 0957<br>✉️ susankpearson@elementalskp.com<br>💬 <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br>🌍 Worldwide Practice";
                             break;
                     }
                     
@@ -3901,7 +3900,7 @@ app.get('/blog/:id', (c) => {
                         <div>
                             <h3 class="text-2xl font-serif mb-2">About Susan K. Pearson</h3>
                             <p class="text-charcoal/70 mb-4">
-                                Susan is a Master-level Reiki practitioner, Certified Energy Medicine Specialist, and Clinical Hypnotherapist based in Dubai. With over 15 years of experience, she integrates ancient healing wisdom with contemporary understanding to support transformational healing.
+                                Susan is a Master-level Reiki practitioner, Certified Energy Medicine Specialist, and Clinical Hypnotherapist. With over 15 years of experience, she integrates ancient healing wisdom with contemporary understanding to support transformational healing worldwide.
                             </p>
                             <div class="flex gap-4">
                                 <a href="/#about" class="text-gold hover:text-champagne transition-colors font-medium">
