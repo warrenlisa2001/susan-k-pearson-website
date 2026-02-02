@@ -1243,21 +1243,19 @@ app.get('/', (c) => {
 
         <!-- Hero Section -->
         <section id="home" class="pt-20 relative overflow-hidden bg-black">
-            <div class="relative w-full" style="padding-bottom: 56.25%;">
-                <img src="/images/hero-main.jpg" alt="Elemental Guidance to awaken Your Healing Intelligence" class="absolute inset-0 w-full h-full object-cover">
-                
-                <!-- Interactive Book Button Overlay -->
-                <a href="#booking" class="absolute bottom-[15%] left-1/2 transform -translate-x-1/2 
-                    px-12 py-4 
-                    bg-transparent hover:bg-gold/10 
-                    border-2 border-transparent hover:border-gold/30
-                    rounded-sm
-                    transition-all duration-300
-                    cursor-pointer
-                    w-[200px] h-[60px]
-                    flex items-center justify-center">
-                    <span class="sr-only">Book a Session</span>
-                </a>
+            <div class="relative w-full py-32 md:py-40 flex items-center justify-center">
+                <div class="max-w-5xl mx-auto px-4 text-center">
+                    <h1 class="text-5xl md:text-7xl font-serif font-light text-cream mb-6 tracking-wide">
+                        Susan K. Pearson
+                    </h1>
+                    <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
+                    <p class="text-2xl md:text-3xl text-gold/90 font-light mb-12 leading-relaxed">
+                        Elemental Guidance to awaken Your Healing Intelligence
+                    </p>
+                    <a href="#booking" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg">
+                        Book a Session
+                    </a>
+                </div>
             </div>
         </section>
 
