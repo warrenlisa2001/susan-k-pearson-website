@@ -1243,10 +1243,9 @@ app.get('/', (c) => {
 
         <!-- Hero Section -->
         <section id="home" class="pt-20 relative overflow-hidden bg-black">
-            <div class="relative w-full py-16 md:py-20 flex items-center justify-center">
+            <div class="relative w-full py-16 md:py-24 flex items-center justify-center">
                 <div class="max-w-5xl mx-auto px-4 text-center">
-                    <img src="/images/susan-name-white.png" alt="Susan K. Pearson" class="mx-auto mb-6" style="height: 80px; width: auto;">
-                    <div class="w-32 h-1 bg-gold mx-auto mb-6"></div>
+                    <img src="/images/skp-logo-complete.png" alt="Susan K. Pearson - Energy. Body. Consciousness" class="mx-auto mb-8" style="max-width: 400px; width: 90%; height: auto;">
                     <p class="text-xl md:text-2xl text-gold/90 font-light mb-8 leading-relaxed">
                         Elemental Guidance to awaken Your Healing Intelligence
                     </p>
