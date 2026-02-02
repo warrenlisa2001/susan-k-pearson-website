@@ -1168,7 +1168,7 @@ app.get('/', (c) => {
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
                         <a href="#home" class="flex items-center">
-                            <img src="/images/skp-brand-logo-dark.png" alt="Susan K. Pearson - SKP - Energy, Body, Consciousness" class="h-16 md:h-20 w-auto">
+                            <img src="/images/skp-logo-menu.png" alt="Susan K. Pearson - SKP - Energy: Body: Consciousness" class="h-16 md:h-20 w-auto">
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
@@ -1243,13 +1243,12 @@ app.get('/', (c) => {
 
         <!-- Hero Section -->
         <section id="home" class="pt-20 relative overflow-hidden bg-black">
-            <div class="relative w-full py-16 md:py-24 flex items-center justify-center">
+            <div class="relative w-full py-24 md:py-32 flex items-center justify-center">
                 <div class="max-w-5xl mx-auto px-4 text-center">
-                    <img src="/images/skp-logo-complete.png" alt="Susan K. Pearson - Energy. Body. Consciousness" class="mx-auto mb-8" style="max-width: 400px; width: 90%; height: auto;">
-                    <p class="text-xl md:text-2xl text-gold/90 font-light mb-8 leading-relaxed">
+                    <p class="text-3xl md:text-4xl text-cream font-light mb-10 leading-relaxed">
                         Elemental Guidance to awaken Your Healing Intelligence
                     </p>
-                    <a href="#booking" class="inline-block bg-gold text-black px-10 py-3 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-base">
+                    <a href="#booking" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg">
                         Book a Session
                     </a>
                 </div>
