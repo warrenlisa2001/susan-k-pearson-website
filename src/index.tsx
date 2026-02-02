@@ -1244,11 +1244,44 @@ app.get('/', (c) => {
         <!-- Hero Section -->
         <section id="home" class="pt-20 relative overflow-hidden bg-black">
             <div class="relative w-full py-24 md:py-32 flex items-center justify-center">
-                <div class="max-w-5xl mx-auto px-4 text-center">
-                    <p class="text-3xl md:text-4xl text-cream font-light mb-10 leading-relaxed">
+                <!-- Subtle Lotus Pattern Background -->
+                <div class="absolute inset-0 opacity-5">
+                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                        <!-- Left Lotus Petals -->
+                        <ellipse cx="300" cy="200" rx="80" ry="120" fill="#C8A974" transform="rotate(-30 300 200)"/>
+                        <ellipse cx="280" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(-50 280 200)"/>
+                        <ellipse cx="320" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(-10 320 200)"/>
+                        <!-- Right Lotus Petals -->
+                        <ellipse cx="900" cy="200" rx="80" ry="120" fill="#C8A974" transform="rotate(30 900 200)"/>
+                        <ellipse cx="920" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(50 920 200)"/>
+                        <ellipse cx="880" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(10 880 200)"/>
+                    </svg>
+                </div>
+                
+                <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+                    <!-- Delicate Top Flourish -->
+                    <div class="mb-8 flex justify-center items-center gap-4">
+                        <div class="w-16 h-px bg-gradient-to-r from-transparent to-gold/40"></div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gold/60">
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                            <path d="M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M5 5 L8 8 M16 16 L19 19 M19 5 L16 8 M8 16 L5 19" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+                        </svg>
+                        <div class="w-16 h-px bg-gradient-to-l from-transparent to-gold/40"></div>
+                    </div>
+                    
+                    <p class="text-3xl md:text-4xl text-gold font-light mb-8 leading-relaxed tracking-wide" style="font-family: 'Cormorant Garamond', serif;">
                         Elemental Guidance to awaken Your Healing Intelligence
                     </p>
-                    <a href="#booking" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg">
+                    
+                    <!-- Subtle Divider -->
+                    <div class="flex justify-center items-center gap-3 mb-10">
+                        <div class="w-8 h-px bg-gold/30"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-gold/50"></div>
+                        <div class="w-8 h-px bg-gold/30"></div>
+                    </div>
+                    
+                    <a href="#booking" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-gold/20">
                         Book a Session
                     </a>
                 </div>
