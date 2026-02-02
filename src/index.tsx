@@ -377,7 +377,7 @@ const blogPosts = [
 
       <p>It's not recommended for people with certain mental health conditions (active psychosis, severe personality disorders) without coordination with their mental health provider.</p>
 
-      <p class="mt-6"><em>Ready to break free from limiting patterns? Book a Clinical Hypnotherapy session to access your subconscious mind's incredible capacity for transformation.</em></p>
+      <p class="mt-6"><em>Ready to break free from limiting patterns? Book a Hypnotherapy session to access your subconscious mind's incredible capacity for transformation.</em></p>
     `
   },
   {
@@ -1044,7 +1044,7 @@ app.get('/', (c) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Susan K. Pearson | Elemental Healing</title>
-        <meta name="description" content="Master-level Reiki, Energy Medicine, and Clinical Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
+        <meta name="description" content="Master-level Reiki, Energy Medicine, and Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1178,13 +1178,33 @@ app.get('/', (c) => {
                             <button class="text-black hover:text-gold transition-colors font-medium flex items-center">
                                 Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
-                            <div class="absolute left-0 mt-2 w-72 bg-white rounded-sm shadow-xl border border-gold/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <a href="/nir-levy-method" class="block px-6 py-4 hover:bg-cream/50 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-charcoal mb-1">The Nir Levy Method</div>
+                            <div class="absolute left-0 mt-2 w-80 bg-white rounded-sm shadow-xl border border-gold/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <a href="/nir-levy-method" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-charcoal">The Nir Levy Method</div>
                                     <div class="text-xs text-charcoal/60">Holistic bodywork with Five Elements</div>
                                 </a>
-                                <a href="#services" class="block px-6 py-3 hover:bg-cream/50 text-charcoal transition-colors">
-                                    View All Services
+                                <a href="/deep-alignment-therapy" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-charcoal">Deep Alignment Therapy</div>
+                                    <div class="text-xs text-charcoal/60">Full-spectrum healing journey</div>
+                                </a>
+                                <a href="/hara-release" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-charcoal">Hara Release</div>
+                                    <div class="text-xs text-charcoal/60">Anma & Ampuku bodywork</div>
+                                </a>
+                                <a href="/energetic-recalibration" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-charcoal">Energetic Recalibration</div>
+                                    <div class="text-xs text-charcoal/60">Reiki + Chakra harmonizing</div>
+                                </a>
+                                <a href="/subconscious-shift-therapy" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-charcoal">Subconscious Shift Therapy</div>
+                                    <div class="text-xs text-charcoal/60">Hypnotherapy + Nir Levy Method</div>
+                                </a>
+                                <a href="/full-frequency-session" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-charcoal">The Full Frequency Session</div>
+                                    <div class="text-xs text-charcoal/60">All modalities | One deep journey</div>
+                                </a>
+                                <a href="#services" class="block px-6 py-3 hover:bg-cream/50 text-charcoal transition-colors font-medium">
+                                    View All Services →
                                 </a>
                             </div>
                         </div>
@@ -1206,7 +1226,12 @@ app.get('/', (c) => {
                     <div class="border-l-2 border-gold/30 pl-3 space-y-2">
                         <div class="text-xs text-charcoal/60 uppercase tracking-wide mb-2">Services</div>
                         <a href="/nir-levy-method" class="block text-black hover:text-gold transition-colors text-sm">The Nir Levy Method</a>
-                        <a href="#services" class="block text-black hover:text-gold transition-colors text-sm">All Services</a>
+                        <a href="/deep-alignment-therapy" class="block text-black hover:text-gold transition-colors text-sm">Deep Alignment Therapy</a>
+                        <a href="/hara-release" class="block text-black hover:text-gold transition-colors text-sm">Hara Release</a>
+                        <a href="/energetic-recalibration" class="block text-black hover:text-gold transition-colors text-sm">Energetic Recalibration</a>
+                        <a href="/subconscious-shift-therapy" class="block text-black hover:text-gold transition-colors text-sm">Subconscious Shift Therapy</a>
+                        <a href="/full-frequency-session" class="block text-black hover:text-gold transition-colors text-sm">Full Frequency Session</a>
+                        <a href="#services" class="block text-black hover:text-gold transition-colors text-sm font-medium">All Services →</a>
                     </div>
                     <a href="#pricing" class="block text-black hover:text-gold transition-colors font-medium">Pricing</a>
                     <a href="#blog" class="block text-black hover:text-gold transition-colors font-medium">Blog</a>
@@ -1305,7 +1330,7 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Clinical Hypnotherapy Certification (NGH)</span>
+                                    <span>Hypnotherapy Certification (NGH)</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -1535,7 +1560,7 @@ app.get('/', (c) => {
                         </a>
                     </div>
 
-                    <!-- Clinical Hypnotherapy Pricing -->
+                    <!-- Hypnotherapy Pricing -->
                     <div class="bg-charcoal border-2 border-gold p-8 rounded-sm transform md:scale-105 shadow-2xl">
                         <div class="absolute top-0 right-0 bg-gold text-midnight text-xs font-bold px-3 py-1 rounded-bl-sm">
                             POPULAR
@@ -1930,7 +1955,7 @@ app.get('/', (c) => {
                                 <li><strong>Deep Alignment Session:</strong> 90 minutes - AED 950 (≈$260 USD)<br>
                                     <span class="text-sm text-charcoal/60">My signature integration of Reiki, energy medicine, and somatic work</span>
                                 </li>
-                                <li><strong>Clinical Hypnotherapy:</strong> 75 minutes - AED 850 (≈$230 USD)<br>
+                                <li><strong>Hypnotherapy:</strong> 75 minutes - AED 850 (≈$230 USD)<br>
                                     <span class="text-sm text-charcoal/60">Deep subconscious reprogramming and pattern interruption</span>
                                 </li>
                                 <li><strong>SKP Method:</strong> 120 minutes - AED 1,200 (≈$325 USD)<br>
@@ -2067,7 +2092,7 @@ app.get('/', (c) => {
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
                             <p class="mb-3"><strong>Let me dispel the myths immediately:</strong> You remain fully conscious and in complete control during hypnotherapy. You're not asleep, unconscious, or under anyone's control. You cannot be made to do anything against your will or values. Hypnosis is simply a deeply relaxed, focused state (similar to meditation or daydreaming) where your subconscious mind becomes more receptive to positive suggestions and healing.</p>
                             
-                            <p class="mb-3"><strong>What Clinical Hypnotherapy Really Is:</strong></p>
+                            <p class="mb-3"><strong>What Hypnotherapy Really Is:</strong></p>
                             <ul class="list-disc pl-6 space-y-2 mb-3">
                                 <li><strong>A Natural Brain State:</strong> Theta brainwave state (4-8 Hz) you enter naturally many times daily—when absorbed in a book, driving on autopilot, or in the moments before sleep</li>
                                 <li><strong>Heightened Suggestibility:</strong> Your critical conscious mind relaxes, allowing direct communication with the subconscious (where habits, beliefs, and patterns live)</li>
@@ -2368,7 +2393,7 @@ app.get('/', (c) => {
                                 
                                 <li><strong>Master-Level Reiki (Usui & Karuna):</strong> High-frequency energy healing for balancing, clearing, and activation</li>
                                 
-                                <li><strong>Clinical Hypnotherapy (Ericksonian):</strong> Subconscious reprogramming and belief system transformation</li>
+                                <li><strong>Hypnotherapy (Ericksonian):</strong> Subconscious reprogramming and belief system transformation</li>
                                 
                                 <li><strong>Energy Medicine:</strong> Chakra balancing, meridian clearing, biofield optimization</li>
                                 
@@ -2730,7 +2755,7 @@ app.get('/', (c) => {
                                 <li>Usui Reiki Master/Teacher</li>
                                 <li>Karuna Reiki® Master</li>
                                 <li>Certified Energy Medicine Specialist</li>
-                                <li>Clinical Hypnotherapy Certification (Ericksonian approach)</li>
+                                <li>Hypnotherapy Certification (Ericksonian approach)</li>
                             </ul>
                             <p class="mb-3"><strong>Specialized Training:</strong></p>
                             <ul class="list-disc pl-6 space-y-1 mb-3">
@@ -3113,7 +3138,7 @@ app.get('/', (c) => {
                                     class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
                                     <option value="">Select a service...</option>
                                     <option value="deep-alignment">Deep Alignment Session (90 min) - AED 950</option>
-                                    <option value="hypnotherapy">Clinical Hypnotherapy (75 min) - AED 850</option>
+                                    <option value="hypnotherapy">Hypnotherapy (75 min) - AED 850</option>
                                     <option value="skp-method">SKP Method (120 min) - AED 1,200</option>
                                     <option value="consultation">Free Consultation (15 min)</option>
                                 </select>
@@ -3205,7 +3230,7 @@ app.get('/', (c) => {
                             <label class="block text-sm font-medium text-charcoal mb-2">Service Interest</label>
                             <select class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
                                 <option>Deep Alignment Session</option>
-                                <option>Clinical Hypnotherapy</option>
+                                <option>Hypnotherapy</option>
                                 <option>SKP Method</option>
                                 <option>General Inquiry</option>
                             </select>
@@ -3717,6 +3742,520 @@ app.get('/', (c) => {
   `)
 })
 
+// Deep Alignment Therapy page
+app.get('/deep-alignment-therapy', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deep Alignment Therapy with Susan K Pearson</title>
+        <meta name="description" content="A full-spectrum healing journey combining energy alignment, hara work, meridian balancing, and subconscious transformation.">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+          body { font-family: 'Montserrat', sans-serif; }
+          h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <div class="flex space-x-6 items-center">
+                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-32 pb-16 bg-charcoal text-cream">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Deep Alignment Therapy</h1>
+                <p class="text-xl text-cream/80 mb-8">A Full-Spectrum Healing Journey</p>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                    <h2 class="text-3xl font-serif text-charcoal mb-6">What is Deep Alignment Therapy?</h2>
+                    <p class="text-lg text-charcoal/80 leading-relaxed mb-6">
+                        Deep Alignment Therapy is a comprehensive 90-minute session that addresses the full spectrum of your being—physical, energetic, emotional, and spiritual. This session combines energy alignment, hara work, meridian balancing, and subconscious transformation to restore clarity, guided breath, and inner spaciousness.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed mb-6">
+                        Each session is tailored intuitively to your body's intelligence, creating a safe container for profound shifts and lasting transformation.
+                    </p>
+                </div>
+
+                <h2 class="text-3xl font-serif text-charcoal mb-6 text-center">What to Expect</h2>
+                <div class="space-y-4 mb-12">
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Energy Alignment</h3>
+                        <p class="text-charcoal/80">Master-level Reiki and chakra balancing to clear blockages and restore energetic flow throughout your system.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Hara Work</h3>
+                        <p class="text-charcoal/80">Gentle abdominal therapy (Ampuku) to release emotional holdings stored in the belly and reconnect you to your center.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Meridian Balancing</h3>
+                        <p class="text-charcoal/80">Hands-on bodywork along energy meridians to support circulation, tension release, and vitality.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Subconscious Integration</h3>
+                        <p class="text-charcoal/80">Gentle integration work to help shifts settle into your conscious awareness and daily life.</p>
+                    </div>
+                </div>
+
+                <div class="bg-charcoal p-10 rounded-sm shadow-xl text-center">
+                    <h2 class="text-3xl font-serif text-cream mb-4">Investment</h2>
+                    <p class="text-2xl text-gold mb-2">90 minutes — AED 950</p>
+                    <p class="text-cream/70 mb-8">(approximately $260 USD)</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-charcoal py-8 text-cream/50 text-center text-sm">
+            <p>© 2026 Elemental Healing LLC. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+  `)
+})
+
+// Hara Release page
+app.get('/hara-release', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hara Release (Anma & Ampuku) with Susan K Pearson</title>
+        <meta name="description" content="Grounding. Opening. Releasing. Gentle abdominal unwinding that frees held emotional patterns and restores organ flow.">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+          body { font-family: 'Montserrat', sans-serif; }
+          h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <div class="flex space-x-6 items-center">
+                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-32 pb-16 bg-charcoal text-cream">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Hara Release</h1>
+                <p class="text-xl text-cream/80 mb-4">Anma & Ampuku</p>
+                <p class="text-2xl text-gold/90 mb-8 font-light">Grounding. Opening. Releasing.</p>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                    <h2 class="text-3xl font-serif text-charcoal mb-6">What is Hara Release?</h2>
+                    <p class="text-lg text-charcoal/80 leading-relaxed mb-6">
+                        Hara Release is gentle abdominal unwinding that frees held emotional patterns, restores organ flow, and reconnects you to your center. This session combines two ancient Japanese healing arts:
+                    </p>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-2xl font-serif text-charcoal mb-3">Anma (Traditional Japanese Bodywork)</h3>
+                            <p class="text-charcoal/80 leading-relaxed">
+                                Anma is a 1,000+ year-old Japanese massage tradition using rhythmic pressure and kneading along meridian pathways to release deep muscle tension, improve energy flow, promote circulation and vitality, and ground the body.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-serif text-charcoal mb-3">Ampuku (Abdominal Therapy)</h3>
+                            <p class="text-charcoal/80 leading-relaxed">
+                                Ampuku is abdominal therapy focusing on the hara—your energetic center. This work releases tension in the digestive system, addresses emotional holdings stored in the belly (fear, anxiety, grief), improves organ function, and restores connection to your core self.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone/30 p-8 rounded-sm mb-8">
+                    <h2 class="text-2xl font-serif text-charcoal mb-4">Why the Belly Matters</h2>
+                    <p class="text-charcoal/80 leading-relaxed">
+                        In Eastern medicine, the hara (belly) is considered your second brain—a place where emotions, intuition, and life force energy gather. When the hara is blocked or tense, it affects your entire being. Hara Release creates space for the body to remember its natural capacity for flow, ease, and resilience.
+                    </p>
+                </div>
+
+                <div class="bg-charcoal p-10 rounded-sm shadow-xl text-center">
+                    <h2 class="text-3xl font-serif text-cream mb-4">Investment</h2>
+                    <p class="text-2xl text-gold mb-2">60-75 minutes — AED 850</p>
+                    <p class="text-cream/70 mb-8">(approximately $230 USD)</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-charcoal py-8 text-cream/50 text-center text-sm">
+            <p>© 2026 Elemental Healing LLC. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+  `)
+})
+
+// Energetic Recalibration page
+app.get('/energetic-recalibration', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Energetic Recalibration (Reiki) with Susan K Pearson</title>
+        <meta name="description" content="Master-level Reiki (20+ years) combined with chakra balancing to clear energetic blockages and restore flow.">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+          body { font-family: 'Montserrat', sans-serif; }
+          h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <div class="flex space-x-6 items-center">
+                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-32 pb-16 bg-charcoal text-cream">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Energetic Recalibration</h1>
+                <p class="text-xl text-cream/80 mb-8">Reiki + Chakra Harmonizing</p>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                    <h2 class="text-3xl font-serif text-charcoal mb-6">What is Energetic Recalibration?</h2>
+                    <p class="text-lg text-charcoal/80 leading-relaxed mb-6">
+                        Energetic Recalibration is a session dedicated to clearing energetic blockages, restoring flow, and harmonizing your subtle body systems. Susan brings over 20 years of Reiki mastery (Usui & Karuna traditions) combined with chakra balancing to support deep energetic alignment.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed">
+                        This session is ideal for those feeling energetically depleted, stuck, or seeking to recalibrate after major life transitions.
+                    </p>
+                </div>
+
+                <h2 class="text-3xl font-serif text-charcoal mb-6 text-center">What You'll Experience</h2>
+                <div class="space-y-4 mb-8">
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Master-Level Reiki (20+ Years)</h3>
+                        <p class="text-charcoal/80">Susan channels universal life force energy through her hands, allowing energy to flow where it's most needed for healing on physical, emotional, mental, and spiritual levels.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Chakra Balancing</h3>
+                        <p class="text-charcoal/80">Clearing and harmonizing your seven main energy centers to restore balance, vitality, and alignment throughout your entire system.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Subtle Body Harmonization</h3>
+                        <p class="text-charcoal/80">Working with your aura and subtle energy layers to clear stagnation, repair energetic boundaries, and support overall well-being.</p>
+                    </div>
+                </div>
+
+                <div class="bg-stone/30 p-8 rounded-sm mb-8">
+                    <h2 class="text-2xl font-serif text-charcoal mb-4">What Makes Susan's Reiki Different</h2>
+                    <p class="text-charcoal/80 leading-relaxed mb-4">
+                        With over 20 years of practice, Susan integrates Reiki with somatic bodywork (Anma/Ampuku) for physical release and combines Reiki with hypnotherapy and the Nir Levy Method for enhanced effectiveness. This is not passive energy work—it's a full-spectrum healing experience.
+                    </p>
+                </div>
+
+                <div class="bg-charcoal p-10 rounded-sm shadow-xl text-center">
+                    <h2 class="text-3xl font-serif text-cream mb-4">Investment</h2>
+                    <p class="text-2xl text-gold mb-2">60 minutes — AED 800</p>
+                    <p class="text-cream/70 mb-8">(approximately $220 USD)</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-charcoal py-8 text-cream/50 text-center text-sm">
+            <p>© 2026 Elemental Healing LLC. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+  `)
+})
+
+// Subconscious Shift Therapy page  
+app.get('/subconscious-shift-therapy', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subconscious Shift Therapy with Susan K Pearson</title>
+        <meta name="description" content="Repattern your inner landscape. Hypnotherapy and the Nir Levy Method resolve emotional blocks and rewire conditioned responses.">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+          body { font-family: 'Montserrat', sans-serif; }
+          h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <div class="flex space-x-6 items-center">
+                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-32 pb-16 bg-charcoal text-cream">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Subconscious Shift Therapy</h1>
+                <p class="text-xl text-cream/80 mb-4">Hypnotherapy + Nir Levy Method</p>
+                <p class="text-2xl text-gold/90 mb-8 font-light">Repattern your inner landscape.</p>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                    <h2 class="text-3xl font-serif text-charcoal mb-6">What is Subconscious Shift Therapy?</h2>
+                    <p class="text-lg text-charcoal/80 leading-relaxed mb-6">
+                        Subconscious Shift Therapy is where Hypnotherapy and the Nir Levy Method work together to resolve emotional blocks and rewire conditioned responses. This session addresses the stories your body and mind are holding—often beneath conscious awareness—and supports you in creating new neural and somatic pathways.
+                    </p>
+                </div>
+
+                <h2 class="text-3xl font-serif text-charcoal mb-6 text-center">What This Session Includes</h2>
+                <div class="space-y-4 mb-8">
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Hypnotherapy (Ericksonian)</h3>
+                        <p class="text-charcoal/80">Gentle, conversational hypnotherapy to access the subconscious mind. You remain fully in control while addressing limiting beliefs, breaking patterns, and creating lasting behavioral change.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Nir Levy Method Integration</h3>
+                        <p class="text-charcoal/80">Advanced somatic and energetic healing to address where emotional patterns are held in the body. Combining Five Elements Body Reading with hands-on work to support release and recalibration.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-xl font-serif text-charcoal mb-3">Nervous System Regulation</h3>
+                        <p class="text-charcoal/80">Somatic techniques to help your nervous system move out of survival patterns and into regulation, safety, and resilience.</p>
+                    </div>
+                </div>
+
+                <div class="bg-stone/30 p-8 rounded-sm mb-8">
+                    <h2 class="text-2xl font-serif text-charcoal mb-4">Who This Is For</h2>
+                    <ul class="space-y-3 text-charcoal/80">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Those ready to break free from limiting patterns and beliefs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Clients seeking deep subconscious repatterning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Anyone feeling stuck in reactive or conditioned responses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Those wanting to address both mental and somatic holding patterns</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-charcoal p-10 rounded-sm shadow-xl text-center">
+                    <h2 class="text-3xl font-serif text-cream mb-4">Investment</h2>
+                    <p class="text-2xl text-gold mb-2">75 minutes — AED 850</p>
+                    <p class="text-cream/70 mb-8">(approximately $230 USD)</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-charcoal py-8 text-cream/50 text-center text-sm">
+            <p>© 2026 Elemental Healing LLC. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+  `)
+})
+
+// Full Frequency Session page
+app.get('/full-frequency-session', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Full Frequency Session with Susan K Pearson</title>
+        <meta name="description" content="All modalities. One deep journey. An immersive healing experience integrating every modality for profound transformation.">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+          body { font-family: 'Montserrat', sans-serif; }
+          h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+        </style>
+    </head>
+    <body class="bg-cream">
+        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <div class="flex space-x-6 items-center">
+                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-32 pb-16 bg-charcoal text-cream">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <div class="mb-6">
+                    <i class="fas fa-infinity text-gold text-5xl"></i>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">The Full Frequency Session</h1>
+                <p class="text-2xl text-gold/90 mb-8">All Modalities | One Deep Journey</p>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-cream">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                    <h2 class="text-3xl font-serif text-charcoal mb-6">What is The Full Frequency Session?</h2>
+                    <p class="text-lg text-charcoal/80 leading-relaxed mb-6">
+                        The Full Frequency Session is an immersive 2-hour journey integrating every modality Susan offers—Reiki, hara work, meridian balancing, chakra harmonizing, hypnotherapy, and the Nir Levy Method. This is for profound transformation and complete recalibration of body, mind, and spirit.
+                    </p>
+                    <p class="text-charcoal/80 leading-relaxed">
+                        This session is designed for clients seeking the deepest level of healing work, those at major life transitions, or anyone ready for a comprehensive reset on all levels of being.
+                    </p>
+                </div>
+
+                <h2 class="text-3xl font-serif text-charcoal mb-6 text-center">What's Included</h2>
+                <div class="grid md:grid-cols-2 gap-4 mb-8">
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-lg font-serif text-charcoal mb-2">Master-Level Reiki (20+ years)</h3>
+                        <p class="text-sm text-charcoal/80">Full energetic clearing and activation</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-lg font-serif text-charcoal mb-2">Hara Work (Anma & Ampuku)</h3>
+                        <p class="text-sm text-charcoal/80">Deep abdominal release and grounding</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-lg font-serif text-charcoal mb-2">Meridian Balancing</h3>
+                        <p class="text-sm text-charcoal/80">Full-body circulation and tension release</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-lg font-serif text-charcoal mb-2">Chakra Harmonizing</h3>
+                        <p class="text-sm text-charcoal/80">Complete subtle body alignment</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-lg font-serif text-charcoal mb-2">Hypnotherapy</h3>
+                        <p class="text-sm text-charcoal/80">Subconscious repatterning and integration</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-sm shadow border-l-4 border-gold">
+                        <h3 class="text-lg font-serif text-charcoal mb-2">Nir Levy Method</h3>
+                        <p class="text-sm text-charcoal/80">Five Elements Body Reading and somatic work</p>
+                    </div>
+                </div>
+
+                <div class="bg-stone/30 p-8 rounded-sm mb-8">
+                    <h2 class="text-2xl font-serif text-charcoal mb-4">Who This Is For</h2>
+                    <ul class="space-y-3 text-charcoal/80">
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Clients seeking the deepest level of transformational work</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Those at major life transitions or crossroads</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Anyone ready for complete recalibration on all levels</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-circle text-gold mr-3 mt-1 text-xs"></i>
+                            <span>Experienced healing clients seeking the most comprehensive session</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-charcoal p-10 rounded-sm shadow-xl text-center">
+                    <div class="mb-6">
+                        <i class="fas fa-infinity text-gold text-4xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-serif text-cream mb-4">Investment</h2>
+                    <p class="text-2xl text-gold mb-2">120 minutes — AED 1,200</p>
+                    <p class="text-cream/70 mb-8">(approximately $325 USD)</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-charcoal py-8 text-cream/50 text-center text-sm">
+            <p>© 2026 Elemental Healing LLC. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+  `)
+})
+
 // Nir Levy Method page
 app.get('/nir-levy-method', (c) => {
   return c.html(`
@@ -4209,7 +4748,7 @@ app.get('/blog/:id', (c) => {
                         <div>
                             <h3 class="text-2xl font-serif mb-2">About Susan K. Pearson</h3>
                             <p class="text-charcoal/70 mb-4">
-                                Susan is a Master-level Reiki practitioner (20+ years) and Clinical Hypnotherapist specializing in multidimensional healing. She integrates ancient wisdom with contemporary somatic practices to support transformational healing worldwide.
+                                Susan is a Master-level Reiki practitioner (20+ years) and Hypnotherapist specializing in multidimensional healing. She integrates ancient wisdom with contemporary somatic practices to support transformational healing worldwide.
                             </p>
                             <div class="flex gap-4">
                                 <a href="/#about" class="text-gold hover:text-champagne transition-colors font-medium">
