@@ -1163,79 +1163,79 @@ app.get('/', (c) => {
     </head>
     <body class="smooth-scroll">
         <!-- Navigation -->
-        <nav class="fixed w-full bg-cream backdrop-blur-sm shadow-lg z-50 border-b border-gold/30">
+        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/30">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
                         <a href="#home" class="flex items-center">
-                            <img src="/images/skp-brand-logo.png" alt="Susan K. Pearson - SKP - Energy, Body, Consciousness" class="h-16 md:h-20 w-auto">
+                            <img src="/images/skp-brand-logo-dark.png" alt="Susan K. Pearson - SKP - Energy, Body, Consciousness" class="h-16 md:h-20 w-auto">
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
-                        <a href="#home" class="text-black hover:text-gold transition-colors font-medium">Home</a>
-                        <a href="#about" class="text-black hover:text-gold transition-colors font-medium">About</a>
+                        <a href="#home" class="text-white hover:text-gold transition-colors font-medium">Home</a>
+                        <a href="#about" class="text-white hover:text-gold transition-colors font-medium">About</a>
                         <div class="relative group">
-                            <button class="text-black hover:text-gold transition-colors font-medium flex items-center">
+                            <button class="text-white hover:text-gold transition-colors font-medium flex items-center">
                                 Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
-                            <div class="absolute left-0 mt-2 w-80 bg-white rounded-sm shadow-xl border border-gold/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <a href="/nir-levy-method" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-charcoal">The Nir Levy Method</div>
-                                    <div class="text-xs text-charcoal/60">Holistic bodywork with Five Elements</div>
+                            <div class="absolute left-0 mt-2 w-80 bg-charcoal rounded-sm shadow-xl border border-gold/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <a href="/nir-levy-method" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-cream">The Nir Levy Method</div>
+                                    <div class="text-xs text-cream/60">Holistic bodywork with Five Elements</div>
                                 </a>
-                                <a href="/deep-alignment-therapy" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-charcoal">Deep Alignment Therapy</div>
-                                    <div class="text-xs text-charcoal/60">Full-spectrum healing journey</div>
+                                <a href="/deep-alignment-therapy" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-cream">Deep Alignment Therapy</div>
+                                    <div class="text-xs text-cream/60">Full-spectrum healing journey</div>
                                 </a>
-                                <a href="/hara-release" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-charcoal">Hara Release</div>
-                                    <div class="text-xs text-charcoal/60">Anma & Ampuku bodywork</div>
+                                <a href="/hara-release" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-cream">Hara Release</div>
+                                    <div class="text-xs text-cream/60">Anma & Ampuku bodywork</div>
                                 </a>
-                                <a href="/energetic-recalibration" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-charcoal">Energetic Recalibration</div>
-                                    <div class="text-xs text-charcoal/60">Reiki + Chakra harmonizing</div>
+                                <a href="/energetic-recalibration" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-cream">Energetic Recalibration</div>
+                                    <div class="text-xs text-cream/60">Reiki + Chakra harmonizing</div>
                                 </a>
-                                <a href="/subconscious-shift-therapy" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-charcoal">Subconscious Shift Therapy</div>
-                                    <div class="text-xs text-charcoal/60">Hypnotherapy + Nir Levy Method</div>
+                                <a href="/subconscious-shift-therapy" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-cream">Subconscious Shift Therapy</div>
+                                    <div class="text-xs text-cream/60">Hypnotherapy + Nir Levy Method</div>
                                 </a>
-                                <a href="/full-frequency-session" class="block px-6 py-3 hover:bg-cream/50 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-charcoal">The Full Frequency Session</div>
-                                    <div class="text-xs text-charcoal/60">All modalities | One deep journey</div>
+                                <a href="/full-frequency-session" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
+                                    <div class="font-medium text-cream">The Full Frequency Session</div>
+                                    <div class="text-xs text-cream/60">All modalities | One deep journey</div>
                                 </a>
-                                <a href="#services" class="block px-6 py-3 hover:bg-cream/50 text-charcoal transition-colors font-medium">
+                                <a href="#services" class="block px-6 py-3 hover:bg-gold/10 text-gold transition-colors font-medium">
                                     View All Services →
                                 </a>
                             </div>
                         </div>
-                        <a href="#pricing" class="text-black hover:text-gold transition-colors font-medium">Pricing</a>
-                        <a href="#blog" class="text-black hover:text-gold transition-colors font-medium">Blog</a>
-                        <a href="#faq" class="text-black hover:text-gold transition-colors font-medium">FAQ</a>
+                        <a href="#pricing" class="text-white hover:text-gold transition-colors font-medium">Pricing</a>
+                        <a href="#blog" class="text-white hover:text-gold transition-colors font-medium">Blog</a>
+                        <a href="#faq" class="text-white hover:text-gold transition-colors font-medium">FAQ</a>
                         <a href="#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
-                    <button id="mobileMenuBtn" class="md:hidden text-black">
+                    <button id="mobileMenuBtn" class="md:hidden text-white">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden bg-cream border-t border-gold/30">
+            <div id="mobileMenu" class="hidden md:hidden bg-charcoal border-t border-gold/30">
                 <div class="px-4 py-4 space-y-3">
-                    <a href="#home" class="block text-black hover:text-gold transition-colors font-medium">Home</a>
-                    <a href="#about" class="block text-black hover:text-gold transition-colors font-medium">About</a>
+                    <a href="#home" class="block text-white hover:text-gold transition-colors font-medium">Home</a>
+                    <a href="#about" class="block text-white hover:text-gold transition-colors font-medium">About</a>
                     <div class="border-l-2 border-gold/30 pl-3 space-y-2">
-                        <div class="text-xs text-charcoal/60 uppercase tracking-wide mb-2">Services</div>
-                        <a href="/nir-levy-method" class="block text-black hover:text-gold transition-colors text-sm">The Nir Levy Method</a>
-                        <a href="/deep-alignment-therapy" class="block text-black hover:text-gold transition-colors text-sm">Deep Alignment Therapy</a>
-                        <a href="/hara-release" class="block text-black hover:text-gold transition-colors text-sm">Hara Release</a>
-                        <a href="/energetic-recalibration" class="block text-black hover:text-gold transition-colors text-sm">Energetic Recalibration</a>
-                        <a href="/subconscious-shift-therapy" class="block text-black hover:text-gold transition-colors text-sm">Subconscious Shift Therapy</a>
-                        <a href="/full-frequency-session" class="block text-black hover:text-gold transition-colors text-sm">Full Frequency Session</a>
-                        <a href="#services" class="block text-black hover:text-gold transition-colors text-sm font-medium">All Services →</a>
+                        <div class="text-xs text-cream/60 uppercase tracking-wide mb-2">Services</div>
+                        <a href="/nir-levy-method" class="block text-cream hover:text-gold transition-colors text-sm">The Nir Levy Method</a>
+                        <a href="/deep-alignment-therapy" class="block text-cream hover:text-gold transition-colors text-sm">Deep Alignment Therapy</a>
+                        <a href="/hara-release" class="block text-cream hover:text-gold transition-colors text-sm">Hara Release</a>
+                        <a href="/energetic-recalibration" class="block text-cream hover:text-gold transition-colors text-sm">Energetic Recalibration</a>
+                        <a href="/subconscious-shift-therapy" class="block text-cream hover:text-gold transition-colors text-sm">Subconscious Shift Therapy</a>
+                        <a href="/full-frequency-session" class="block text-cream hover:text-gold transition-colors text-sm">Full Frequency Session</a>
+                        <a href="#services" class="block text-gold hover:text-champagne transition-colors text-sm font-medium">All Services →</a>
                     </div>
-                    <a href="#pricing" class="block text-black hover:text-gold transition-colors font-medium">Pricing</a>
-                    <a href="#blog" class="block text-black hover:text-gold transition-colors font-medium">Blog</a>
-                    <a href="#faq" class="block text-black hover:text-gold transition-colors font-medium">FAQ</a>
+                    <a href="#pricing" class="block text-white hover:text-gold transition-colors font-medium">Pricing</a>
+                    <a href="#blog" class="block text-white hover:text-gold transition-colors font-medium">Blog</a>
+                    <a href="#faq" class="block text-white hover:text-gold transition-colors font-medium">FAQ</a>
                     <a href="#booking" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center">Book Session</a>
                 </div>
             </div>
