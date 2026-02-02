@@ -1243,16 +1243,14 @@ app.get('/', (c) => {
 
         <!-- Hero Section -->
         <section id="home" class="pt-20 relative overflow-hidden bg-black">
-            <div class="relative w-full py-32 md:py-40 flex items-center justify-center">
+            <div class="relative w-full py-16 md:py-20 flex items-center justify-center">
                 <div class="max-w-5xl mx-auto px-4 text-center">
-                    <h1 class="text-5xl md:text-7xl font-serif font-light text-cream mb-6 tracking-wide">
-                        Susan K. Pearson
-                    </h1>
-                    <div class="w-32 h-1 bg-gold mx-auto mb-8"></div>
-                    <p class="text-2xl md:text-3xl text-gold/90 font-light mb-12 leading-relaxed">
+                    <img src="/images/susan-name-white.png" alt="Susan K. Pearson" class="mx-auto mb-6" style="height: 80px; width: auto;">
+                    <div class="w-32 h-1 bg-gold mx-auto mb-6"></div>
+                    <p class="text-xl md:text-2xl text-gold/90 font-light mb-8 leading-relaxed">
                         Elemental Guidance to awaken Your Healing Intelligence
                     </p>
-                    <a href="#booking" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg">
+                    <a href="#booking" class="inline-block bg-gold text-black px-10 py-3 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-base">
                         Book a Session
                     </a>
                 </div>
