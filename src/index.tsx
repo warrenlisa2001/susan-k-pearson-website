@@ -1226,7 +1226,7 @@ app.get('/', (c) => {
                 <div class="text-center mb-12">
                     <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6 shadow-2xl">
                     <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-2">Susan K. Pearson</h2>
-                    <p class="text-xl text-gold/90 font-medium mb-4">Energy Medicine Practitioner | Worldwide</p>
+                    <p class="text-xl text-gold/90 font-medium mb-4">Multidimensional Healing Practitioner | Worldwide</p>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                     <div class="flex justify-center gap-6 text-charcoal/70">
                         <a href="tel:+971551770957" class="hover:text-gold transition-colors">
@@ -1243,8 +1243,15 @@ app.get('/', (c) => {
                     <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                         <div class="space-y-6 text-charcoal/80 leading-relaxed">
                             <p class="text-xl font-medium text-charcoal mb-8">
-                                Susan K. Pearson is a practitioner of multidimensional healing, integrating energy medicine, 
+                                Susan K. Pearson is a practitioner of multidimensional healing, integrating Reiki, 
                                 the Nir Levy Method, hypnotherapy, Anma, Ampuku, and chakra balancing into a singular, elegant approach.
+                            </p>
+                            
+                            <p class="mb-6">
+                                Step into a space designed for transformation. In a room shaped by calm, depth, and beauty, 
+                                you are guided through a process of hara alignment, energetic clearing, and subconscious release. 
+                                Every session is tailored intuitively to your body's intelligence — a blend of ancient Japanese 
+                                bodywork, Reiki, and deep inner work.
                             </p>
                             
                             <p class="mb-6">
@@ -1277,11 +1284,7 @@ app.get('/', (c) => {
                             <ul class="space-y-2 text-sm text-charcoal/80">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Master-level Reiki Practitioner (Usui & Karuna)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Certified Energy Medicine Specialist</span>
+                                    <span>Master-level Reiki Practitioner (Usui & Karuna) — 20+ Years</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -1293,7 +1296,7 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Anma (Traditional Japanese Massage)</span>
+                                    <span>Anma & Ampuku (Traditional Japanese Bodywork)</span>
                                 </li>
                             </ul>
                         </div>
@@ -1350,108 +1353,114 @@ app.get('/', (c) => {
         <section id="services" class="py-20 bg-cream">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Core Offerings</h2>
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Core Sessions</h2>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Transformational healing modalities designed for lasting change
+                    <p class="text-lg text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
+                        Step into a space designed for transformation. In a room shaped by calm, depth, and beauty, 
+                        you are guided through a process of hara alignment, energetic clearing, and subconscious release.
                     </p>
                 </div>
                 
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Deep Alignment Session -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Deep Alignment Therapy -->
                     <div class="bg-white p-8 rounded-sm card-hover">
                         <div class="mb-6">
                             <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mb-4">
                                 <i class="fas fa-spa text-sage text-xl"></i>
                             </div>
-                            <h3 class="text-2xl font-serif text-charcoal mb-2">Deep Alignment Session</h3>
-                            <p class="text-sm text-gold mb-4">Flagship Integration</p>
+                            <h3 class="text-xl font-serif text-charcoal mb-2">Deep Alignment Therapy</h3>
+                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Full-Spectrum Healing</p>
                         </div>
-                        <p class="text-charcoal/70 mb-6 leading-relaxed">
-                            My signature integration of Reiki, energy medicine, and somatic touch. 
-                            This comprehensive session addresses the full spectrum of mind, body, and spirit.
+                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
+                            A full-spectrum healing journey. Combining energy alignment, hara work, meridian balancing, 
+                            and subconscious transformation, this session restores clarity, guided breath, and inner spaciousness.
                         </p>
-                        <ul class="space-y-2 text-sm text-charcoal/70 mb-6">
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Master-level Reiki energy work</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Somatic alignment techniques</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Energy medicine protocols</span>
-                            </li>
-                        </ul>
-                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium">
+                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
 
-                    <!-- Clinical Hypnotherapy -->
-                    <div class="bg-white p-8 rounded-sm card-hover">
-                        <div class="mb-6">
-                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-brain text-gold text-xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-serif text-charcoal mb-2">Clinical Hypnotherapy</h3>
-                            <p class="text-sm text-gold mb-4">Subconscious Transformation</p>
-                        </div>
-                        <p class="text-charcoal/70 mb-6 leading-relaxed">
-                            Access and reprogram limiting beliefs at the subconscious level. 
-                            Powerful work for breaking patterns and creating lasting behavioral change.
-                        </p>
-                        <ul class="space-y-2 text-sm text-charcoal/70 mb-6">
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Pattern interruption & release</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Belief system restructuring</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Nervous system regulation</span>
-                            </li>
-                        </ul>
-                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium">
-                            Book Now <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-
-                    <!-- SKP Method -->
+                    <!-- Hara Release Session -->
                     <div class="bg-white p-8 rounded-sm card-hover">
                         <div class="mb-6">
                             <div class="w-12 h-12 bg-earth/20 rounded-full flex items-center justify-center mb-4">
                                 <i class="fas fa-hands-helping text-earth text-xl"></i>
                             </div>
-                            <h3 class="text-2xl font-serif text-charcoal mb-2">SKP Method</h3>
-                            <p class="text-sm text-gold mb-4">Nir Levy Integration</p>
+                            <h3 class="text-xl font-serif text-charcoal mb-2">Hara Release</h3>
+                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Anma & Ampuku</p>
                         </div>
-                        <p class="text-charcoal/70 mb-6 leading-relaxed">
-                            Combining advanced somatic practices with energy medicine. 
-                            My unique approach to holistic healing informed by the Nir Levy Method.
+                        <p class="text-charcoal/70 mb-4 leading-relaxed text-sm">
+                            <strong>Grounding. Opening. Releasing.</strong>
                         </p>
-                        <ul class="space-y-2 text-sm text-charcoal/70 mb-6">
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Body-centered awareness</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Energetic realignment</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-circle text-gold mr-2 mt-1 text-xs"></i>
-                                <span>Conscious integration</span>
-                            </li>
-                        </ul>
-                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium">
-                            Coming February 2026 <i class="fas fa-arrow-right ml-2"></i>
+                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
+                            Gentle abdominal unwinding that frees held emotional patterns, restores organ flow, 
+                            and reconnects you to your center.
+                        </p>
+                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
+                    </div>
+
+                    <!-- Energetic Recalibration -->
+                    <div class="bg-white p-8 rounded-sm card-hover">
+                        <div class="mb-6">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-atom text-gold text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-serif text-charcoal mb-2">Energetic Recalibration</h3>
+                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Reiki + Chakra Harmonizing</p>
+                        </div>
+                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
+                            Master-level Reiki (20+ years) combined with chakra balancing to clear energetic blockages, 
+                            restore flow, and harmonize your subtle body systems.
+                        </p>
+                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Subconscious Shift Therapy -->
+                    <div class="bg-white p-8 rounded-sm card-hover">
+                        <div class="mb-6">
+                            <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-brain text-sage text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-serif text-charcoal mb-2">Subconscious Shift Therapy</h3>
+                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Hypnotherapy + Nir Levy Method</p>
+                        </div>
+                        <p class="text-charcoal/70 mb-4 leading-relaxed text-sm">
+                            <strong>Repattern your inner landscape.</strong>
+                        </p>
+                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
+                            Hypnotherapy and the Nir Levy Method work together to resolve emotional blocks 
+                            and rewire conditioned responses.
+                        </p>
+                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
+                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fifth Session - Full Frequency -->
+                <div class="mt-8 max-w-4xl mx-auto">
+                    <div class="bg-charcoal p-10 rounded-sm shadow-xl">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-infinity text-gold text-2xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-serif text-cream mb-2">The Full Frequency Session</h3>
+                            <p class="text-gold uppercase tracking-widest text-xs">All Modalities | One Deep Journey</p>
+                        </div>
+                        <p class="text-cream/90 leading-relaxed text-center max-w-2xl mx-auto">
+                            An immersive journey integrating every modality — Reiki, hara work, meridian balancing, 
+                            chakra harmonizing, hypnotherapy, and the Nir Levy Method. For profound transformation 
+                            and complete recalibration of body, mind, and spirit.
+                        </p>
+                        <div class="text-center mt-8">
+                            <a href="#booking" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                                Experience Full Frequency <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -3621,7 +3630,7 @@ app.get('/', (c) => {
                 } else if (msg.includes('price') || msg.includes('cost') || msg.includes('pricing')) {
                     return "Our session pricing:<br>• Deep Alignment (90 min): AED 950<br>• Hypnotherapy (75 min): AED 850<br>• SKP Method (120 min): AED 1,200<br><br>Check our <a href='#pricing' class='text-gold hover:underline'>pricing page</a> for packages!";
                 } else if (msg.includes('service') || msg.includes('what do you do')) {
-                    return "Susan offers:<br>• Master-level Reiki<br>• Clinical Hypnotherapy<br>• Energy Medicine<br>• Anma & Ampuku<br>• SKP Method<br><br>Learn more in our <a href='#services' class='text-gold hover:underline'>services section</a>!";
+                    return "Susan offers:<br>• Deep Alignment Therapy<br>• Hara Release (Anma & Ampuku)<br>• Energetic Recalibration (Reiki)<br>• Subconscious Shift Therapy<br>• The Full Frequency Session<br><br>Learn more in our <a href='#services' class='text-gold hover:underline'>services section</a>!";
                 } else if (msg.includes('location') || msg.includes('where')) {
                     return "Sessions available worldwide - both remote and in-person. Contact us at +971 55 177 0957 to discuss your preferred session format and location details.";
                 } else if (msg.includes('hour') || msg.includes('time') || msg.includes('schedule')) {
@@ -3667,7 +3676,7 @@ app.get('/', (c) => {
                             response = "Great! You can book a session by:<br>• Filling our <a href='#booking' class='text-gold hover:underline'>booking form</a><br>• Calling +971 55 177 0957<br>• <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br><br>What type of session interests you?";
                             break;
                         case 'services':
-                            response = "Our healing services include:<br>• <strong>Deep Alignment</strong> (90 min)<br>• <strong>Clinical Hypnotherapy</strong> (75 min)<br>• <strong>SKP Method</strong> (120 min)<br><br>Check <a href='#services' class='text-gold hover:underline'>services</a> for details!";
+                            response = "Our core healing sessions include:<br>• <strong>Deep Alignment Therapy</strong><br>• <strong>Hara Release</strong> (Anma & Ampuku)<br>• <strong>Energetic Recalibration</strong> (Reiki)<br>• <strong>Subconscious Shift Therapy</strong><br>• <strong>Full Frequency Session</strong><br><br>Check <a href='#services' class='text-gold hover:underline'>services</a> for details!";
                             break;
                         case 'pricing':
                             response = "Pricing:<br>• Deep Alignment: AED 950<br>• Hypnotherapy: AED 850<br>• SKP Method: AED 1,200<br><br>Packages available! See <a href='#pricing' class='text-gold hover:underline'>pricing</a>";
@@ -3900,7 +3909,7 @@ app.get('/blog/:id', (c) => {
                         <div>
                             <h3 class="text-2xl font-serif mb-2">About Susan K. Pearson</h3>
                             <p class="text-charcoal/70 mb-4">
-                                Susan is a Master-level Reiki practitioner, Certified Energy Medicine Specialist, and Clinical Hypnotherapist. With over 15 years of experience, she integrates ancient healing wisdom with contemporary understanding to support transformational healing worldwide.
+                                Susan is a Master-level Reiki practitioner (20+ years) and Clinical Hypnotherapist specializing in multidimensional healing. She integrates ancient wisdom with contemporary somatic practices to support transformational healing worldwide.
                             </p>
                             <div class="flex gap-4">
                                 <a href="/#about" class="text-gold hover:text-champagne transition-colors font-medium">
