@@ -993,6 +993,215 @@ const blogPosts = [
 
       <p class="mt-6"><em>Integration is an ongoing conversation between you and your healing process. I'm here to support you every step of the way. Together, we'll honor your unique timeline and create conditions for lasting transformation.</em></p>
     `
+  },
+  {
+    id: 7,
+    title: "The Nir Levy Method: When the Body Remembers What the Mind Forgot",
+    excerpt: "A transformational journey through ancient Anma bodywork and Five Elements Body Reading. One woman's story of returning to herself through the Nir Levy Method...",
+    date: "February 2, 2026",
+    category: "Nir Levy Method",
+    readTime: "12 min read",
+    content: `
+      <p class="lead">Elena sat across from me in our first consultation, her shoulders drawn forward, arms crossed protectively over her chest. "I don't know what's wrong with me," she said quietly. "I just... I can't seem to move forward."</p>
+
+      <p>She was a high-achieving executive who'd spent the last decade building a successful career. On paper, her life looked perfect. But inside, she felt frozen—stuck in patterns of overwork, perfectionism, and a persistent sense that she wasn't doing enough, being enough, <em>existing</em> enough.</p>
+
+      <p>"I've tried therapy," she told me. "I've tried meditation. I understand intellectually what's happening. But I can't seem to <em>change</em> it."</p>
+
+      <p>This is where the Nir Levy Method becomes profound. Because sometimes, the body carries stories the conscious mind has forgotten—or never fully processed in the first place.</p>
+
+      <h3>What is the Nir Levy Method?</h3>
+      
+      <p>The Nir Levy Method is a holistic bodywork modality rooted in <strong>Anma</strong>—a traditional Japanese form of therapeutic touch with origins in China dating back approximately 5,000 years. Unlike massage (which works primarily with muscles), Anma works with the body's meridian system—the energetic pathways through which life force (Qi) flows.</p>
+
+      <p>Nir Levy, an Israeli bodywork master, studied classical Anma in Japan and integrated it with:</p>
+      <ul>
+        <li><strong>Five Elements Body Reading</strong> — an assessment system that observes physical structure, posture, breath, and tissue quality to understand internal energetic states</li>
+        <li><strong>Taoist philosophy</strong> — principles of Yin and Yang, balance, and natural flow</li>
+        <li><strong>Somatic awareness</strong> — understanding that emotions, memories, and patterns live in the body's tissues and nervous system</li>
+      </ul>
+
+      <p>The result is a deeply intelligent treatment that addresses the <strong>whole person</strong>—not just physical tension, but the emotional and energetic blockages that create it.</p>
+
+      <h3>The Three Levels of Blockage</h3>
+
+      <p>In the Nir Levy Method, we understand that blockages exist on three interconnected levels:</p>
+
+      <h4>1. Physical Blockages</h4>
+      <p>These are the tangible manifestations we can feel and see:</p>
+      <ul>
+        <li>Chronic tension in shoulders, neck, or lower back</li>
+        <li>Restricted movement or flexibility</li>
+        <li>Digestive issues, shallow breathing</li>
+        <li>Postural imbalances (forward head, collapsed chest, locked knees)</li>
+        <li>Tissue that feels dense, rigid, or "stuck"</li>
+      </ul>
+
+      <h4>2. Energetic Blockages</h4>
+      <p>When Qi (life force) can't flow freely through meridians:</p>
+      <ul>
+        <li>Fatigue or depletion despite adequate rest</li>
+        <li>Feeling "disconnected" from your body</li>
+        <li>Numbness or hypersensitivity in specific areas</li>
+        <li>Difficulty grounding or feeling present</li>
+        <li>Sense of being "held" or constricted energetically</li>
+      </ul>
+
+      <h4>3. Emotional Blockages</h4>
+      <p>Unprocessed emotions and protective patterns stored in tissue:</p>
+      <ul>
+        <li>Chronic anxiety or hypervigilance</li>
+        <li>Difficulty expressing needs or emotions</li>
+        <li>Patterns of collapse or shutdown under stress</li>
+        <li>Grief, anger, or fear that "lives" in specific body areas</li>
+        <li>Protective armor that no longer serves but won't release</li>
+      </ul>
+
+      <p><em>Elena's body told the story before she did. Her collapsed chest protected a heart that had learned it wasn't safe to be open. Her rigid shoulders carried the weight of impossible standards. Her shallow breath kept big emotions at bay.</em></p>
+
+      <h3>Elena's First Session: The Body Reading</h3>
+
+      <p>In Nir Levy Method, we begin with <strong>Five Elements Body Reading</strong>—a comprehensive observation that reveals how the body is organizing itself and where it's holding patterns.</p>
+
+      <p>I observed Elena standing, walking, breathing. I noticed:</p>
+      <ul>
+        <li>Her shoulders rolled forward (protection around the heart)</li>
+        <li>Her breath was high and shallow (nervous system in low-grade fight-or-flight)</li>
+        <li>Her pelvis was tucked (disconnection from creative and emotional centers)</li>
+        <li>Her jaw was clenched (unexpressed words, unspoken truths)</li>
+        <li>Her lower back was rigid (inability to receive support, fear of letting go)</li>
+      </ul>
+
+      <p>"Your body is working so hard to keep you safe," I told her gently. "But the strategies that protected you once are now keeping you stuck."</p>
+
+      <p>She nodded, tears filling her eyes. "I didn't realize how much I've been holding."</p>
+
+      <h3>The Hands-On Work: Where Release Begins</h3>
+
+      <p>Anma is not a gentle, flowing massage. It's firm, intentional, and deeply penetrating. We work meridian by meridian, addressing blockages with:</p>
+      <ul>
+        <li><strong>Pressure and stretches</strong> to release fascial restrictions</li>
+        <li><strong>Rhythmic compression</strong> along energy pathways</li>
+        <li><strong>Joint mobilization</strong> to restore natural movement</li>
+        <li><strong>Breathwork</strong> to support nervous system regulation</li>
+      </ul>
+
+      <p>When I worked Elena's upper back and shoulders, I felt the tissue begin to soften. And then—suddenly—a wave of grief.</p>
+
+      <p>She began to cry, quietly at first, then with deep, shaking sobs.</p>
+
+      <p>"I don't even know what this is," she whispered.</p>
+
+      <p>"You don't need to know," I said. "Your body knows. Let it move."</p>
+
+      <p>This is the power of somatic work: <strong>the body releases what the mind can't always name.</strong></p>
+
+      <h3>Session Two: The Layers Beneath</h3>
+
+      <p>Elena returned two weeks later. She looked softer somehow—less braced.</p>
+
+      <p>"Something shifted after our first session," she said. "I've been sleeping better. And I actually set a boundary with my boss—something I've never been able to do."</p>
+
+      <p>In this session, we went deeper. I worked her hara (belly center) using <strong>Ampuku</strong>—a specialized form of abdominal therapy that addresses:</p>
+      <ul>
+        <li>Digestive stagnation</li>
+        <li>Emotional holding in the gut ("second brain")</li>
+        <li>Disconnection from personal power and instinct</li>
+        <li>Stored fear and unprocessed emotions</li>
+      </ul>
+
+      <p>As I applied slow, steady pressure to specific points on her abdomen, Elena's breathing deepened. Her whole body began to relax in a way it hadn't in our first session.</p>
+
+      <p>"I can feel my belly," she said with wonder. "I haven't felt this part of my body in... I don't know how long."</p>
+
+      <p>The hara is our center—our connection to instinct, intuition, and grounded presence. When it's shut down (often as a protective mechanism), we lose access to our deeper knowing. Ampuku helps restore that connection.</p>
+
+      <h3>The Integration: When Healing Becomes Life</h3>
+
+      <p>Over the next several months, Elena continued regular Nir Levy Method sessions. Each session revealed new layers:</p>
+
+      <ul>
+        <li>Release of chronic lower back pain that had been with her for 8 years</li>
+        <li>Reconnection with her creative expression (she started painting again)</li>
+        <li>Deeper capacity to feel and express emotions</li>
+        <li>Improved digestion and energy</li>
+        <li>A newfound ability to rest without guilt</li>
+      </ul>
+
+      <p>But the most profound shift wasn't physical. It was in how she inhabited her life.</p>
+
+      <p>"I feel like I'm <em>in</em> my body now," she told me in month four. "Before, I was always in my head, analyzing, trying to figure everything out. Now I can actually <em>feel</em> what I need. And I trust it."</p>
+
+      <h3>What Makes the Nir Levy Method Different</h3>
+
+      <p>There are many bodywork modalities. What makes Nir Levy Method unique is its integration of:</p>
+
+      <h4>1. Precision and Depth</h4>
+      <p>This isn't surface-level relaxation. Anma works deep into fascia, meridians, and holding patterns with focused intention.</p>
+
+      <h4>2. Energetic and Physical Integration</h4>
+      <p>We're not just releasing tight muscles—we're restoring energetic flow through the meridian system, which affects every aspect of health and vitality.</p>
+
+      <h4>3. Body Reading as Assessment</h4>
+      <p>Before we even begin hands-on work, the body reading reveals exactly where you're holding, why, and what needs support. This makes treatment highly targeted and effective.</p>
+
+      <h4>4. Somatic Intelligence</h4>
+      <p>Nir Levy Method recognizes that the body has its own wisdom. We're not imposing healing—we're supporting the body's natural capacity to release, reorganize, and return to balance.</p>
+
+      <h4>5. Emotional Release is Welcome</h4>
+      <p>Unlike modalities that focus only on physical structure, Nir Levy Method honors that emotion lives in the body. Tears, laughter, anger, grief—all are welcomed and supported as part of the healing process.</p>
+
+      <h3>Who is the Nir Levy Method For?</h3>
+
+      <p>This work is particularly powerful for:</p>
+      <ul>
+        <li><strong>People who feel chronically tense, braced, or "stuck"</strong> — Those who sense they're holding patterns but can't seem to release them through talk therapy or relaxation techniques alone</li>
+        <li><strong>High-achievers carrying stress in their bodies</strong> — Executives, entrepreneurs, and professionals who live in their heads and have lost connection with their body's signals</li>
+        <li><strong>Those with chronic pain or physical restrictions</strong> — Especially when the root cause isn't purely structural but has an emotional or energetic component</li>
+        <li><strong>People healing from trauma</strong> — Trauma lives in the body. Nir Levy Method offers a way to process what talk therapy can't always reach</li>
+        <li><strong>Anyone seeking deeper embodiment</strong> — Those who want to feel more present, grounded, and alive in their physical form</li>
+      </ul>
+
+      <h3>What to Expect in a Nir Levy Method Session</h3>
+
+      <h4>Step 1: Arrive and Settle</h4>
+      <p>We begin with a brief conversation about what's present for you—physically, emotionally, energetically. There's no need to "prepare" or analyze. Just arrive as you are.</p>
+
+      <h4>Step 2: Five Elements Body Reading</h4>
+      <p>I'll observe how your body is organizing itself: posture, breath, movement patterns, areas of holding or collapse. This reading informs the entire session and reveals exactly where support is needed.</p>
+
+      <h4>Step 3: Hands-On Work and Movement</h4>
+      <p>You'll lie on a comfortable treatment table (fully clothed) as I work specific meridians, release fascial restrictions, and support your body in letting go of what it's been holding. Sessions may include:</p>
+      <ul>
+        <li>Deep meridian-based compression and stretching</li>
+        <li>Ampuku (abdominal work) to release core holding</li>
+        <li>Joint mobilization and alignment</li>
+        <li>Breathwork to support nervous system regulation</li>
+      </ul>
+
+      <h4>Step 4: Integration</h4>
+      <p>After the hands-on work, we allow time for your system to integrate. This might include gentle movement, breath, or simply resting. Integration is not a passive step—it's where the body reorganizes around the new patterns we've supported.</p>
+
+      <h3>The Journey Continues</h3>
+
+      <p>Six months after her first session, Elena sent me a message:</p>
+
+      <blockquote class="border-l-4 border-gold pl-4 italic text-charcoal/70 my-6">
+        "I wanted to thank you. Not just for the sessions, but for helping me remember that I have a body—and that it's been trying to tell me things for years. I feel like I've come home to myself. The Nir Levy work didn't just release my physical pain. It gave me back access to my instincts, my emotions, and my life force. I didn't realize how much I'd been living in my head until I dropped back into my body. Everything has changed."
+      </blockquote>
+
+      <p>This is the gift of the Nir Levy Method. It's not a quick fix or a temporary relief. It's a <strong>return to embodied presence</strong>—a reconnection with the wisdom, intelligence, and vitality that lives in your physical form.</p>
+
+      <h3>Your Body Remembers</h3>
+
+      <p>Our bodies hold the full record of our lives—every joy, every loss, every moment we had to brace or protect or shut down to survive. And while the conscious mind may forget, <strong>the body remembers.</strong></p>
+
+      <p>The Nir Levy Method offers a way back—a way to listen to what the body has been trying to say, to release what it's been holding, and to restore the natural flow of energy, breath, and life force that is your birthright.</p>
+
+      <p>If you've been living in your head, if you feel stuck in patterns you can't think your way out of, if your body feels like a stranger you're dragging through life—this work is for you.</p>
+
+      <p class="mt-6"><em>The Nir Levy Method is available as a standalone session or integrated into the Deep Alignment and Full Frequency offerings. Book your first session and discover what your body has been waiting to tell you.</em></p>
+    `
   }
 ]
 
@@ -1979,14 +2188,23 @@ app.get('/', (c) => {
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
                             <p class="mb-3">Session lengths and investment vary by modality:</p>
                             <ul class="list-disc pl-6 space-y-3">
-                                <li><strong>Deep Alignment Session:</strong> 90 minutes - AED 950 (≈$260 USD)<br>
-                                    <span class="text-sm text-charcoal/60">My signature integration of Reiki, energy medicine, and somatic work</span>
+                                <li><strong>Deep Alignment Therapy:</strong> 90 minutes - AED 950 (≈$260 USD)<br>
+                                    <span class="text-sm text-charcoal/60">Full-spectrum healing: Energy alignment, hara work, meridian balancing, subconscious integration</span>
                                 </li>
-                                <li><strong>Hypnotherapy:</strong> 75 minutes - AED 850 (≈$230 USD)<br>
-                                    <span class="text-sm text-charcoal/60">Deep subconscious reprogramming and pattern interruption</span>
+                                <li><strong>Hara Release (Anma & Ampuku):</strong> 60-75 minutes - AED 850 (≈$230 USD)<br>
+                                    <span class="text-sm text-charcoal/60">Traditional Japanese bodywork for grounding, opening, and releasing</span>
                                 </li>
-                                <li><strong>SKP Method:</strong> 120 minutes - AED 1,200 (≈$325 USD)<br>
-                                    <span class="text-sm text-charcoal/60">Full-spectrum integration including Nir Levy Method</span>
+                                <li><strong>Energetic Recalibration (Reiki):</strong> 60 minutes - AED 800 (≈$220 USD)<br>
+                                    <span class="text-sm text-charcoal/60">Master-level Reiki (20+ years) with chakra harmonizing</span>
+                                </li>
+                                <li><strong>Subconscious Shift Therapy:</strong> 75 minutes - AED 850 (≈$230 USD)<br>
+                                    <span class="text-sm text-charcoal/60">Hypnotherapy + Nir Levy Method for emotional blocks and conditioned patterns</span>
+                                </li>
+                                <li><strong>The Nir Levy Method:</strong> 90 minutes - AED 950 (≈$260 USD)<br>
+                                    <span class="text-sm text-charcoal/60">Ancient Anma bodywork with Five Elements Body Reading</span>
+                                </li>
+                                <li><strong>The Full Frequency Session:</strong> 120 minutes - AED 1,200 (≈$325 USD)<br>
+                                    <span class="text-sm text-charcoal/60">All modalities integrated: Reiki, hara work, meridian balancing, chakra harmonizing, hypnotherapy, Nir Levy Method</span>
                                 </li>
                             </ul>
                             <p class="mt-3">Package discounts are available for multiple sessions. All sessions include pre-consultation and integration support.</p>
