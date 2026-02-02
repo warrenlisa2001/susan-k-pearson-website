@@ -1242,34 +1242,27 @@ app.get('/', (c) => {
                 <div class="max-w-4xl mx-auto">
                     <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                         <div class="space-y-6 text-charcoal/80 leading-relaxed">
-                            <p class="text-xl font-medium text-charcoal text-center mb-8">
-                                I work at the intersection of energy, body, and consciousness—combining Master-level Reiki, 
-                                Energy Medicine, and Clinical Hypnotherapy to create lasting shifts in the nervous system 
-                                and subconscious.
+                            <p class="text-xl font-medium text-charcoal mb-8">
+                                Susan K. Pearson is a practitioner of multidimensional healing, integrating energy medicine, 
+                                the Nir Levy Method, hypnotherapy, Anma, Ampuku, and chakra balancing into a singular, elegant approach.
                             </p>
                             
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div>
-                                    <p class="mb-4">
-                                        My practice is a sanctuary for high-end, discreet, results-oriented healing. Based in Dubai, 
-                                        I offer precise, transformational work that honors the holistic nature of true wellness.
-                                    </p>
-                                    <p>
-                                        With over 15 years of experience in the healing arts, I've had the privilege of working with 
-                                        clients from around the world—from corporate executives seeking stress relief to individuals 
-                                        navigating major life transitions.
-                                    </p>
-                                </div>
-                                <div>
-                                    <p class="mb-4">
-                                        My approach is grounded in both ancient wisdom and contemporary understanding of trauma, 
-                                        the nervous system, and the subconscious mind.
-                                    </p>
-                                    <p>
-                                        I am currently completing certification in the Nir Levy Method (February 2026), an advanced 
-                                        somatic and energetic healing modality that complements my existing toolkit.
-                                    </p>
-                                </div>
+                            <p class="mb-6">
+                                With a background rooted in both <em>somatic wisdom<sup>*</sup></em> and consciousness work, 
+                                Susan combines precision touch with energetic attunement, allowing clients to release emotional 
+                                density, reconnect with their center, and awaken the intelligence stored within the body.
+                            </p>
+                            
+                            <p class="mb-8">
+                                Her practice is guided by presence, intuition, and respect for the body's natural capacity to heal.
+                            </p>
+                            
+                            <div class="bg-cream/30 border-l-4 border-gold p-6 rounded-sm">
+                                <p class="text-sm text-charcoal/70 italic">
+                                    <sup>*</sup><strong>Somatic wisdom:</strong> the body as a deep source of intelligence, holding 
+                                    intuitive knowledge, emotions, and experiences. Listening to physical sensations, breath, and 
+                                    movement guides us toward wholeness and authentic living, rather than relying solely on the mind.
+                                </p>
                             </div>
                         </div>
                     </div>
