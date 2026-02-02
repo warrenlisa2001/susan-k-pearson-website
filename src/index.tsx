@@ -1254,6 +1254,151 @@ app.get('/', (c) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Susan K. Pearson | Elemental Healing</title>
         <meta name="description" content="Master-level Reiki, Energy Medicine, and Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
+        
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+        <!-- End Google Tag Manager -->
+        
+        <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        </script>
+        <!-- End Google Analytics 4 -->
+        
+        <!-- Schema.org Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Susan K. Pearson - Elemental Healing",
+          "image": "https://susankpearson.com/images/skp-logo-complete.png",
+          "@id": "https://susankpearson.com",
+          "url": "https://susankpearson.com",
+          "telephone": "+971551770957",
+          "email": "susankpearson@elementalskp.com",
+          "priceRange": "AED 800 - AED 1,200",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Worldwide",
+            "addressLocality": "Remote & In-Person Sessions"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 25.2048,
+            "longitude": 55.2708
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/susankpearson",
+            "https://www.instagram.com/susankpearson",
+            "https://wa.me/971551770957"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "6"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Healing Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Deep Alignment Therapy",
+                  "description": "Full-spectrum healing: Energy alignment, hara work, meridian balancing, subconscious integration",
+                  "provider": {
+                    "@type": "Person",
+                    "name": "Susan K. Pearson"
+                  }
+                },
+                "price": "950",
+                "priceCurrency": "AED"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "The Nir Levy Method",
+                  "description": "Ancient Anma bodywork with Five Elements Body Reading",
+                  "provider": {
+                    "@type": "Person",
+                    "name": "Susan K. Pearson"
+                  }
+                },
+                "price": "950",
+                "priceCurrency": "AED"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "The Full Frequency Session",
+                  "description": "All modalities integrated: Reiki, hara work, meridian balancing, chakra harmonizing, hypnotherapy, Nir Levy Method",
+                  "provider": {
+                    "@type": "Person",
+                    "name": "Susan K. Pearson"
+                  }
+                },
+                "price": "1200",
+                "priceCurrency": "AED"
+              }
+            ]
+          }
+        }
+        </script>
+        
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Susan K. Pearson",
+          "url": "https://susankpearson.com",
+          "image": "https://susankpearson.com/images/susan-professional.jpg",
+          "jobTitle": "Multidimensional Healing Practitioner",
+          "description": "Master-level Reiki practitioner (20+ years) and Clinical Hypnotherapist specializing in multidimensional healing",
+          "email": "susankpearson@elementalskp.com",
+          "telephone": "+971551770957",
+          "knowsAbout": [
+            "Reiki",
+            "Energy Medicine",
+            "Hypnotherapy",
+            "Nir Levy Method",
+            "Anma",
+            "Ampuku",
+            "Chakra Balancing",
+            "Somatic Healing"
+          ],
+          "sameAs": [
+            "https://www.facebook.com/susankpearson",
+            "https://www.instagram.com/susankpearson"
+          ]
+        }
+        </script>
+        <!-- End Schema.org Structured Data -->
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1371,6 +1516,11 @@ app.get('/', (c) => {
         </style>
     </head>
     <body class="smooth-scroll">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        
         <!-- Navigation -->
         <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/30">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
