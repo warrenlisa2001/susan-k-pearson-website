@@ -1377,7 +1377,7 @@ app.get('/', (c) => {
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
                         <a href="#home" class="flex items-center">
-                            <img src="/images/skp-logo-menu.png" alt="Susan K. Pearson - SKP - Energy: Body: Consciousness" class="h-16 md:h-20 w-auto">
+                            <img src="/images/skp-logo-complete.png" alt="Susan K. Pearson - SKP - Energy. Body. Consciousness" class="h-16 md:h-20 w-auto">
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
