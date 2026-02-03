@@ -2704,7 +2704,7 @@ app.get('/', (c) => {
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-8">
-                    ${blogPosts.map(post => `
+                    ${blogPosts.slice().reverse().map(post => `
                         <article class="blog-card">
                             <div class="p-6">
                                 <div class="flex items-center justify-between mb-4">
@@ -5456,7 +5456,7 @@ app.get('/blog', (c) => {
         <div class="max-w-7xl mx-auto px-4 py-16">
             <h1 class="text-5xl font-serif text-center mb-8">All Blog Posts</h1>
             <div class="grid md:grid-cols-3 gap-8">
-                ${blogPosts.map(post => `
+                ${blogPosts.slice().reverse().map(post => `
                     <article class="bg-white p-6 rounded shadow-sm">
                         <span class="text-xs text-gold font-medium">${post.category}</span>
                         <h3 class="text-xl font-serif mt-2 mb-3">${post.title}</h3>
