@@ -1252,7 +1252,7 @@ app.get('/', (c) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Susan K. Pearson | Elemental Healing</title>
+        <title>Susan K Pearson | Elemental Healing</title>
         <meta name="description" content="Master-level Reiki, Energy Medicine, and Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
         
         <!-- Google Tag Manager -->
@@ -1278,12 +1278,12 @@ app.get('/', (c) => {
         {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "Susan K. Pearson - Elemental Healing",
-          "image": "https://susankpearson.com/images/skp-logo-complete.png",
+          "name": "Susan K Pearson - Elemental Healing",
+          "image": "https://susankpearson.com/images/skp-logo-new.png",
           "@id": "https://susankpearson.com",
           "url": "https://susankpearson.com",
           "telephone": "+971551770957",
-          "email": "susankpearson@elementalskp.com",
+          "email": "susan@susankpearson.com",
           "priceRange": "AED 800 - AED 1,200",
           "address": {
             "@type": "PostalAddress",
@@ -1331,7 +1331,7 @@ app.get('/', (c) => {
                   "description": "Full-spectrum healing: Energy alignment, hara work, meridian balancing, subconscious integration",
                   "provider": {
                     "@type": "Person",
-                    "name": "Susan K. Pearson"
+                    "name": "Susan K Pearson"
                   }
                 },
                 "price": "950",
@@ -1345,7 +1345,7 @@ app.get('/', (c) => {
                   "description": "Ancient Anma bodywork with Five Elements Body Reading",
                   "provider": {
                     "@type": "Person",
-                    "name": "Susan K. Pearson"
+                    "name": "Susan K Pearson"
                   }
                 },
                 "price": "950",
@@ -1359,7 +1359,7 @@ app.get('/', (c) => {
                   "description": "All modalities integrated: Reiki, hara work, meridian balancing, chakra harmonizing, hypnotherapy, Nir Levy Method",
                   "provider": {
                     "@type": "Person",
-                    "name": "Susan K. Pearson"
+                    "name": "Susan K Pearson"
                   }
                 },
                 "price": "1200",
@@ -1374,12 +1374,12 @@ app.get('/', (c) => {
         {
           "@context": "https://schema.org",
           "@type": "Person",
-          "name": "Susan K. Pearson",
+          "name": "Susan K Pearson",
           "url": "https://susankpearson.com",
           "image": "https://susankpearson.com/images/susan-professional.jpg",
           "jobTitle": "Multidimensional Healing Practitioner",
           "description": "Master-level Reiki practitioner (20+ years) and Clinical Hypnotherapist specializing in multidimensional healing",
-          "email": "susankpearson@elementalskp.com",
+          "email": "susan@susankpearson.com",
           "telephone": "+971551770957",
           "knowsAbout": [
             "Reiki",
@@ -1527,7 +1527,7 @@ app.get('/', (c) => {
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
                         <a href="#home" class="flex items-center">
-                            <img src="/images/skp-logo-complete.png" alt="Susan K. Pearson - SKP - Energy. Body. Consciousness" class="h-16 md:h-20 w-auto">
+                            <img src="/images/skp-logo-new.png" alt="Susan K Pearson - Healing Therapies" class="h-16 md:h-20 w-auto">
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
@@ -1652,16 +1652,16 @@ app.get('/', (c) => {
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Header with Susan's Photo -->
                 <div class="text-center mb-12">
-                    <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" class="profile-image mx-auto mb-6 shadow-2xl">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-2">Susan K. Pearson</h2>
-                    <p class="text-xl text-gold/90 font-medium mb-4">Multidimensional Healing Practitioner | Worldwide</p>
+                    <img src="/images/susan-professional.jpg" alt="Susan K Pearson" class="profile-image mx-auto mb-6 shadow-2xl">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-2">Susan K Pearson</h2>
+                    <p class="text-xl text-gold/90 font-medium mb-4">Healing Therapies | Worldwide</p>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                     <div class="flex justify-center gap-6 text-charcoal/70">
                         <a href="tel:+971551770957" class="hover:text-gold transition-colors">
                             <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
                         </a>
-                        <a href="mailto:susankpearson@elementalskp.com" class="hover:text-gold transition-colors">
-                            <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                        <a href="mailto:susan@susankpearson.com" class="hover:text-gold transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>susan@susankpearson.com
                         </a>
                     </div>
                 </div>
@@ -1671,7 +1671,7 @@ app.get('/', (c) => {
                     <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                         <div class="space-y-6 text-charcoal/80 leading-relaxed">
                             <p class="text-xl font-medium text-charcoal mb-8">
-                                Susan K. Pearson is a practitioner of multidimensional healing, integrating Reiki, 
+                                Susan K Pearson is a practitioner of multidimensional healing, integrating Reiki, 
                                 the Nir Levy Method, hypnotherapy, Anma, Ampuku, and chakra balancing into a singular, elegant approach.
                             </p>
                             
@@ -1712,15 +1712,15 @@ app.get('/', (c) => {
                             <ul class="space-y-2 text-sm text-charcoal/80">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Master-level Reiki Practitioner (Usui & Karuna) — 20+ Years</span>
+                                    <span>Holy Fire® III Reiki Master</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Hypnotherapy Certification (NGH)</span>
+                                    <span>Holy Fire® III Karuna Reiki Master</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Somatic Alignment & Trauma-Informed Bodywork</span>
+                                    <span>Multi dimensional therapeutic practitioner</span>
                                 </li>
                             </ul>
                         </div>
@@ -3364,7 +3364,7 @@ app.get('/', (c) => {
                                 <li>Sudden illness</li>
                             </ul>
                             <p class="mt-3">Please contact me as soon as possible if you need to change your appointment. I hold sacred space for each client and often decline other bookings to accommodate your session, so timely notice is appreciated.</p>
-                            <p class="mt-2"><strong>To reschedule:</strong> Call/WhatsApp +971 55 177 0957 or email susankpearson@elementalskp.com</p>
+                            <p class="mt-2"><strong>To reschedule:</strong> Call/WhatsApp +971 55 177 0957 or email susan@susankpearson.com</p>
                         </div>
                     </div>
 
@@ -3466,7 +3466,7 @@ app.get('/', (c) => {
                             <ol class="list-decimal pl-6 space-y-2 mb-3">
                                 <li><strong>Use the booking form</strong> at the bottom of this page to request your preferred date and time</li>
                                 <li><strong>Call or WhatsApp:</strong> +971 55 177 0957</li>
-                                <li><strong>Email:</strong> susankpearson@elementalskp.com</li>
+                                <li><strong>Email:</strong> susan@susankpearson.com</li>
                             </ol>
                             <p class="mb-3">I'll respond within 24 hours to confirm your appointment. If you have questions before booking, feel free to reach out—I'm happy to discuss which modality might be best for your needs.</p>
                             <p class="mt-3">For your first session, I recommend scheduling when you have no major obligations afterward, allowing time for integration and rest.</p>
@@ -3485,7 +3485,7 @@ app.get('/', (c) => {
                             <i class="fas fa-phone-alt mr-2"></i>
                             Call +971 55 177 0957
                         </a>
-                        <a href="mailto:susankpearson@elementalskp.com" class="inline-flex items-center justify-center bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-gold hover:text-black transition-colors font-medium">
+                        <a href="mailto:susan@susankpearson.com" class="inline-flex items-center justify-center bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-gold hover:text-black transition-colors font-medium">
                             <i class="fas fa-envelope mr-2"></i>
                             Email Me
                         </a>
@@ -3585,8 +3585,8 @@ app.get('/', (c) => {
                             <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors font-medium">
                                 <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
                             </a>
-                            <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-champagne transition-colors font-medium">
-                                <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                            <a href="mailto:susan@susankpearson.com" class="text-gold hover:text-champagne transition-colors font-medium">
+                                <i class="fas fa-envelope mr-2"></i>susan@susankpearson.com
                             </a>
                         </div>
                     </div>
@@ -3645,7 +3645,7 @@ app.get('/', (c) => {
                 <div class="mt-12 text-center">
                     <p class="text-charcoal/70 mb-6">Connect With Us</p>
                     <div class="flex justify-center space-x-8">
-                        <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Email">
+                        <a href="mailto:susan@susankpearson.com" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Email">
                             <i class="fas fa-envelope text-2xl"></i>
                         </a>
                         <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Phone">
@@ -3672,13 +3672,13 @@ app.get('/', (c) => {
                     <div class="mb-6">
                         <span class="text-4xl font-serif font-light text-cream tracking-widest">SKP</span>
                     </div>
-                    <p class="mb-4 elegant-text text-lg">Susan K. Pearson | Elemental Healing</p>
+                    <p class="mb-4 elegant-text text-lg">Susan K Pearson | Elemental Healing</p>
                     <p class="text-sm mb-2">Energy Medicine • Reiki Master • Hypnotherapy • Somatic Alignment</p>
                     <p class="text-sm mb-2">
                         <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
                     </p>
                     <p class="text-sm mb-6">
-                        <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                        <i class="fas fa-envelope mr-2"></i>susan@susankpearson.com
                     </p>
                     <div class="flex justify-center space-x-6 mb-6">
                         <a href="https://wa.me/971551770957" target="_blank" rel="noopener noreferrer" class="text-cream/70 hover:text-gold transition-colors" title="WhatsApp">
@@ -3824,7 +3824,7 @@ app.get('/', (c) => {
                   }
                 } catch (error) {
                   formMessage.className = 'mt-4 p-4 rounded-sm bg-red-100 border border-red-400 text-red-700';
-                  formMessage.textContent = 'There was an error submitting your request. Please contact us directly at +971 55 177 0957 or susankpearson@elementalskp.com';
+                  formMessage.textContent = 'There was an error submitting your request. Please contact us directly at +971 55 177 0957 or susan@susankpearson.com';
                   formMessage.classList.remove('hidden');
                 }
                 
@@ -4002,7 +4002,7 @@ app.get('/', (c) => {
             // Contact form handling
             document.getElementById('contactForm').addEventListener('submit', (e) => {
                 e.preventDefault();
-                alert('Thank you for your interest. Your message has been received. I will respond within 24 hours.\\n\\nFor immediate assistance, please call +971 55 177 0957 or email susankpearson@elementalskp.com');
+                alert('Thank you for your interest. Your message has been received. I will respond within 24 hours.\\n\\nFor immediate assistance, please call +971 55 177 0957 or email susan@susankpearson.com');
                 e.target.reset();
             });
 
@@ -4077,7 +4077,7 @@ app.get('/', (c) => {
                 } else if (msg.includes('thank')) {
                     return "You're welcome! Feel free to reach out anytime. Have a wonderful day! 🌟";
                 } else {
-                    return "I'm here to help! For detailed information, please:<br>• Check our <a href='#faq' class='text-gold hover:underline'>FAQ section</a><br>• Call +971 55 177 0957<br>• Email susankpearson@elementalskp.com<br><br>What specific information can I help you find?";
+                    return "I'm here to help! For detailed information, please:<br>• Check our <a href='#faq' class='text-gold hover:underline'>FAQ section</a><br>• Call +971 55 177 0957<br>• Email susan@susankpearson.com<br><br>What specific information can I help you find?";
                 }
             }
 
@@ -4119,7 +4119,7 @@ app.get('/', (c) => {
                             response = "Pricing:<br>• Deep Alignment: AED 950<br>• Hypnotherapy: AED 850<br>• SKP Method: AED 1,200<br><br>Packages available! See <a href='#pricing' class='text-gold hover:underline'>pricing</a>";
                             break;
                         case 'contact':
-                            response = "Contact Susan:<br>📞 +971 55 177 0957<br>✉️ susankpearson@elementalskp.com<br>💬 <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br>🌍 Worldwide Practice";
+                            response = "Contact Susan:<br>📞 +971 55 177 0957<br>✉️ susan@susankpearson.com<br>💬 <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br>🌍 Worldwide Practice";
                             break;
                     }
                     
@@ -4159,7 +4159,7 @@ app.get('/deep-alignment-therapy', (c) => {
         <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
@@ -4215,7 +4215,7 @@ app.get('/deep-alignment-therapy', (c) => {
                     <p class="text-cream/70 mb-8">(approximately $260 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
                         <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
-                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                        <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
             </div>
@@ -4251,7 +4251,7 @@ app.get('/hara-release', (c) => {
         <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
@@ -4306,7 +4306,7 @@ app.get('/hara-release', (c) => {
                     <p class="text-cream/70 mb-8">(approximately $230 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
                         <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
-                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                        <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
             </div>
@@ -4342,7 +4342,7 @@ app.get('/energetic-recalibration', (c) => {
         <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
@@ -4401,7 +4401,7 @@ app.get('/energetic-recalibration', (c) => {
                     <p class="text-cream/70 mb-8">(approximately $220 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
                         <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
-                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                        <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
             </div>
@@ -4437,7 +4437,7 @@ app.get('/subconscious-shift-therapy', (c) => {
         <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
@@ -4509,7 +4509,7 @@ app.get('/subconscious-shift-therapy', (c) => {
                     <p class="text-cream/70 mb-8">(approximately $230 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
                         <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
-                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                        <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
             </div>
@@ -4545,7 +4545,7 @@ app.get('/full-frequency-session', (c) => {
         <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
@@ -4637,7 +4637,7 @@ app.get('/full-frequency-session', (c) => {
                     <p class="text-cream/70 mb-8">(approximately $325 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
                         <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
-                        <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
+                        <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
             </div>
@@ -4676,7 +4676,7 @@ app.get('/nir-levy-method', (c) => {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <a href="/#home" class="flex items-center">
-                        <img src="/images/skp-brand-logo.png" alt="Susan K. Pearson" class="h-14 w-auto">
+                        <img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto">
                     </a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
@@ -4911,7 +4911,7 @@ app.get('/nir-levy-method', (c) => {
                     <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium text-lg">
                         Book Now
                     </a>
-                    <a href="mailto:susankpearson@elementalskp.com" class="inline-block border-2 border-gold text-charcoal px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium text-lg">
+                    <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-charcoal px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium text-lg">
                         Questions? Contact Susan
                     </a>
                 </div>
@@ -4942,7 +4942,7 @@ app.get('/blog', (c) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog | Susan K. Pearson</title>
+        <title>Blog | Susan K Pearson</title>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
@@ -4994,7 +4994,7 @@ app.get('/blog/:id', (c) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${post.title} | Susan K. Pearson</title>
+        <title>${post.title} | Susan K Pearson</title>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
@@ -5090,7 +5090,7 @@ app.get('/blog/:id', (c) => {
                 <div class="flex justify-between items-center h-20">
                     <div class="flex items-center">
                         <a href="/" class="flex flex-col">
-                            <div class="text-cream font-serif text-xl md:text-2xl tracking-wide">Susan K. Pearson</div>
+                            <div class="text-cream font-serif text-xl md:text-2xl tracking-wide">Susan K Pearson</div>
                             <div class="text-gold text-xs md:text-sm tracking-widest font-light">ENERGY · BODY · CONSCIOUSNESS</div>
                         </a>
                     </div>
@@ -5123,7 +5123,7 @@ app.get('/blog/:id', (c) => {
                         <i class="far fa-calendar mr-2"></i>
                         <time datetime="${post.date}">${post.date}</time>
                         <span class="mx-3">•</span>
-                        <span>By Susan K. Pearson</span>
+                        <span>By Susan K Pearson</span>
                     </div>
                 </div>
                 
@@ -5138,10 +5138,10 @@ app.get('/blog/:id', (c) => {
                 <!-- Author Bio -->
                 <div class="mt-16 p-8 bg-white rounded-sm border-l-4 border-gold">
                     <div class="flex items-start gap-6">
-                        <img src="/images/susan-professional.jpg" alt="Susan K. Pearson" 
+                        <img src="/images/susan-professional.jpg" alt="Susan K Pearson" 
                             class="w-24 h-24 rounded-full object-cover border-2 border-gold">
                         <div>
-                            <h3 class="text-2xl font-serif mb-2">About Susan K. Pearson</h3>
+                            <h3 class="text-2xl font-serif mb-2">About Susan K Pearson</h3>
                             <p class="text-charcoal/70 mb-4">
                                 Susan is a Master-level Reiki practitioner (20+ years) and Hypnotherapist specializing in multidimensional healing. She integrates ancient wisdom with contemporary somatic practices to support transformational healing worldwide.
                             </p>
@@ -5188,13 +5188,13 @@ app.get('/blog/:id', (c) => {
         <!-- Footer -->
         <footer class="bg-charcoal text-cream py-12">
             <div class="max-w-7xl mx-auto px-4 text-center">
-                <p class="text-cream/60 mb-4">© 2026 Susan K. Pearson | Elemental Healing LLC</p>
+                <p class="text-cream/60 mb-4">© 2026 Susan K Pearson | Elemental Healing LLC</p>
                 <div class="flex justify-center gap-6">
                     <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors">
                         <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
                     </a>
-                    <a href="mailto:susankpearson@elementalskp.com" class="text-gold hover:text-champagne transition-colors">
-                        <i class="fas fa-envelope mr-2"></i>susankpearson@elementalskp.com
+                    <a href="mailto:susan@susankpearson.com" class="text-gold hover:text-champagne transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>susan@susankpearson.com
                     </a>
                 </div>
             </div>
