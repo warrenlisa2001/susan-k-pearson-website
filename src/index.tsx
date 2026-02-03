@@ -1753,7 +1753,7 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>15+ Years Professional Practice</span>
+                                    <span>20+ Years Professional Practice</span>
                                 </li>
                             </ul>
                         </div>
@@ -2780,7 +2780,7 @@ app.get('/', (c) => {
 
                             <p class="mb-3"><strong>THE SKP METHOD (SOUL KEY PROCESS™)</strong></p>
                             <p class="mb-2"><strong>My Signature Integration:</strong></p>
-                            <p class="mb-3">The SKP Method is my unique synthesis of the Nir Levy Method with all the modalities I've mastered over 15+ years of practice. It's designed for those seeking profound, lasting transformation—not just symptom relief.</p>
+                            <p class="mb-3">The SKP Method is my unique synthesis of the Nir Levy Method with all the modalities I've mastered over 20+ years of practice. It's designed for those seeking profound, lasting transformation—not just symptom relief.</p>
 
                             <p class="mb-3"><strong>What SKP Method Includes:</strong></p>
                             <ol class="list-decimal pl-6 space-y-3 mb-3">
@@ -3144,7 +3144,7 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">I bring 15+ years of experience and comprehensive training across multiple healing disciplines:</p>
+                            <p class="mb-3">I bring 20+ years of experience and comprehensive training across multiple healing disciplines:</p>
                             <p class="mb-3"><strong>Master-Level Certifications:</strong></p>
                             <ul class="list-disc pl-6 space-y-1 mb-3">
                                 <li>Usui Reiki Master/Teacher</li>
@@ -3176,7 +3176,7 @@ app.get('/', (c) => {
                             <i class="fas fa-chevron-down text-gold transition-transform"></i>
                         </button>
                         <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">I've been a professional healing practitioner for over 15 years, serving clients worldwide both in-person and remotely.</p>
+                            <p class="mb-3">I've been a professional healing practitioner for over 20 years, serving clients worldwide both in-person and remotely.</p>
                             <p class="mb-3">Over this time, I've:</p>
                             <ul class="list-disc pl-6 space-y-2">
                                 <li>Worked with hundreds of clients across 5 continents</li>
