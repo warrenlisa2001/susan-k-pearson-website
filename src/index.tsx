@@ -4876,26 +4876,33 @@ app.get('/nir-levy-method', (c) => {
             </div>
         </section>
 
-        <!-- Video Section (Optional) -->
+        <!-- Video Section -->
         <section class="section-spacing bg-charcoal">
-            <div class="max-w-4xl mx-auto px-4 text-center">
-                <h2 class="text-4xl font-serif text-cream mb-8">Experience the Nir Levy Method</h2>
-                <div class="bg-cream/10 p-6 rounded-sm">
-                    <p class="text-cream/70 mb-4">
-                        <i class="fas fa-play-circle text-gold text-2xl mr-2"></i>
-                        Learn more about this profound healing modality
-                    </p>
-                    <div class="flex flex-wrap gap-4 justify-center">
-                        <a href="https://www.youtube.com/watch?v=example1" target="_blank" rel="noopener" class="text-gold hover:text-champagne transition-colors">
-                            Bodywork - The Nir Levy Method →
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=example2" target="_blank" rel="noopener" class="text-gold hover:text-champagne transition-colors">
-                            Private Treatments →
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=example3" target="_blank" rel="noopener" class="text-gold hover:text-champagne transition-colors">
-                            Anma Ampuku →
-                        </a>
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-4xl font-serif text-cream mb-8 text-center">Experience the Nir Levy Method</h2>
+                
+                <!-- Embedded YouTube Video -->
+                <div class="mb-8">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full rounded-sm shadow-2xl" 
+                            src="https://www.youtube.com/embed/aA7Hzo5VuoY" 
+                            title="The Nir Levy Method" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
+                </div>
+                
+                <div class="bg-cream/10 p-6 rounded-sm text-center">
+                    <p class="text-cream/80 mb-4 text-lg">
+                        <i class="fas fa-play-circle text-gold text-2xl mr-2"></i>
+                        Watch this video to understand the profound healing approach of the Nir Levy Method
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=aA7Hzo5VuoY" target="_blank" rel="noopener" class="text-gold hover:text-champagne transition-colors inline-flex items-center">
+                        Watch on YouTube <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
                 </div>
             </div>
         </section>
