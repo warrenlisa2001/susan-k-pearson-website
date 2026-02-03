@@ -1378,7 +1378,7 @@ app.get('/', (c) => {
           "url": "https://susankpearson.com",
           "image": "https://susankpearson.com/images/susan-professional.jpg",
           "jobTitle": "Multidimensional Healing Practitioner",
-          "description": "Master-level Reiki practitioner (20+ years) and Clinical Hypnotherapist specializing in multidimensional healing",
+          "description": "Usui Reiki Ryoho Master, Holy Fire III Reiki Master, and Clinical Hypnotherapist specializing in multidimensional healing with 20+ years of professional practice",
           "email": "susan@susankpearson.com",
           "telephone": "+971551770957",
           "knowsAbout": [
@@ -1710,6 +1710,10 @@ app.get('/', (c) => {
                                 Credentials & Training
                             </h3>
                             <ul class="space-y-2 text-sm text-charcoal/80">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Usui Reiki Ryoho Master</span>
+                                </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
                                     <span>Holy Fire® III Reiki Master</span>
