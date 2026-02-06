@@ -2374,7 +2374,7 @@ app.get('/', (c) => {
                     <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">Investment in Your Wellness</h2>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                     <p class="text-lg text-cream/70 max-w-2xl mx-auto">
-                        Transparent pricing for transformational healing work
+                        Transparent pricing for depth-oriented, integrative work
                     </p>
                 </div>
                 
@@ -2385,7 +2385,7 @@ app.get('/', (c) => {
                             <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i class="fas fa-spa text-gold text-2xl"></i>
                             </div>
-                            <h3 class="text-2xl font-serif text-cream mb-2">Deep Alignment</h3>
+                            <h3 class="text-2xl font-serif text-cream mb-2">Deep Alignment Therapy</h3>
                             <p class="text-gold/80 text-sm mb-4">90-Minute Session</p>
                         </div>
                         <div class="text-center mb-6">
@@ -2395,7 +2395,7 @@ app.get('/', (c) => {
                         <ul class="space-y-3 text-sm text-cream/70 mb-8">
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Master-level Reiki energy work</span>
+                                <span>Reiki & subtle energy work</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -2403,7 +2403,7 @@ app.get('/', (c) => {
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Energy medicine protocols</span>
+                                <span>Meridian & hara-centered work</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -2438,15 +2438,15 @@ app.get('/', (c) => {
                         <ul class="space-y-3 text-sm text-cream/70 mb-8">
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Deep subconscious reprogramming</span>
+                                <span>Subconscious repatterning</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Pattern interruption work</span>
+                                <span>Pattern awareness work</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Belief system restructuring</span>
+                                <span>Belief system exploration</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -2454,7 +2454,7 @@ app.get('/', (c) => {
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Audio recording for home practice</span>
+                                <span>Audio recording for continued support</span>
                             </li>
                         </ul>
                         <a href="#booking" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
@@ -2468,7 +2468,7 @@ app.get('/', (c) => {
                             <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <i class="fas fa-infinity text-gold text-2xl"></i>
                             </div>
-                            <h3 class="text-2xl font-serif text-cream mb-2">SKP Method</h3>
+                            <h3 class="text-2xl font-serif text-cream mb-2">Full Frequency Session</h3>
                             <p class="text-gold/80 text-sm mb-4">120-Minute Session</p>
                         </div>
                         <div class="text-center mb-6">
@@ -2478,11 +2478,11 @@ app.get('/', (c) => {
                         <ul class="space-y-3 text-sm text-cream/70 mb-8">
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Full-spectrum integration</span>
+                                <span>Integrated, responsive work</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Nir Levy Method protocols</span>
+                                <span>Hara-centered bodywork</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -2490,7 +2490,7 @@ app.get('/', (c) => {
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Energy medicine & Reiki</span>
+                                <span>Reiki & chakra harmonizing</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -2505,12 +2505,12 @@ app.get('/', (c) => {
 
                 <!-- Package Options -->
                 <div class="bg-charcoal border border-gold/20 p-8 rounded-sm">
-                    <h3 class="text-2xl font-serif text-cream mb-6 text-center">Healing Packages</h3>
+                    <h3 class="text-2xl font-serif text-cream mb-6 text-center">Packages</h3>
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="bg-midnight p-6 rounded-sm">
                             <h4 class="text-xl font-serif text-gold mb-3">Foundation Package</h4>
                             <p class="text-3xl font-serif text-cream mb-2">AED 2,550 <span class="text-lg text-cream/60">/ 3 sessions</span></p>
-                            <p class="text-sm text-gold/80 mb-4">Save AED 300 • Best for: Initial transformation</p>
+                            <p class="text-sm text-gold/80 mb-4">Save AED 300 • Best for: Initial recalibration</p>
                             <ul class="space-y-2 text-sm text-cream/70 mb-4">
                                 <li class="flex items-start">
                                     <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
@@ -2533,7 +2533,7 @@ app.get('/', (c) => {
                         <div class="bg-midnight p-6 rounded-sm border-2 border-gold/50">
                             <h4 class="text-xl font-serif text-gold mb-3">Transformation Package</h4>
                             <p class="text-3xl font-serif text-cream mb-2">AED 5,100 <span class="text-lg text-cream/60">/ 6 sessions</span></p>
-                            <p class="text-sm text-gold/80 mb-4">Save AED 600 • Best for: Deep, lasting change</p>
+                            <p class="text-sm text-gold/80 mb-4">Save AED 600 • Best for: Deeper, sustained change</p>
                             <ul class="space-y-2 text-sm text-cream/70 mb-4">
                                 <li class="flex items-start">
                                     <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
