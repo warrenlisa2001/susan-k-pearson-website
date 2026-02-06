@@ -2247,6 +2247,13 @@ app.get('/', (c) => {
                         </div>
                     </div>
 
+                    <!-- Community Care -->
+                    <div class="bg-white p-6 rounded-sm mt-6 border-l-4 border-gold">
+                        <p class="text-charcoal/80 leading-relaxed">
+                            Susan is also committed to supporting abandoned and street cats in the UAE. A portion of session proceeds contributes to rescue, medical care, and rehoming efforts for vulnerable animals in the local community.
+                        </p>
+                    </div>
+
                     <!-- Philosophy Quote -->
                     <div class="bg-charcoal p-8 rounded-sm mt-8 text-center shadow-lg">
                         <div class="max-w-3xl mx-auto">
