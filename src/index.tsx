@@ -15,7 +15,7 @@ const testimonials = [
     name: "Lisa M.",
     location: "Ireland",
     rating: 5,
-    text: "Working with Susan has been nothing short of life-changing. I came to her feeling disconnected and carrying years of unresolved tension. From the very first session, I felt seen, heard, and held in a way I had never experienced before. Susan's mastery of energy work, combined with her intuitive understanding of exactly what I needed, created profound shifts that I can only describe as miraculous. Her Deep Alignment sessions helped me release patterns I didn't even know I was holding. The integration of Anma, Reiki, and the Nir Levy Method is seamless and extraordinary. I've recommended her to everyone I know - she is truly exceptional. If you're looking for genuine, transformational healing, Susan is the only practitioner you need.",
+    text: "Working with Susan has been nothing short of life-changing. I came to her feeling disconnected and carrying years of unresolved tension. From the very first session, I felt seen, heard, and held in a way I had never experienced before. Susan's depth of understanding, combined with her intuitive awareness of exactly what I needed, created profound shifts that I can only describe as miraculous. Her Deep Alignment sessions helped me release patterns I didn't even know I was holding. The integration of Anma, Reiki, and body-led awareness is seamless and extraordinary. I've recommended her to everyone I know - she is truly exceptional. If you're looking for genuine, transformational work, Susan is the practitioner you need.",
     image: "👩🏻"
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
     name: "Catherine R.",
     location: "New York, USA",
     rating: 5,
-    text: "As someone who's experienced healing modalities across Manhattan's finest wellness centers, I can confidently say Susan's work stands in a class of its own. Her treatment room reflects her practice - refined, intentional, powerful. The combination of hypnotherapy and Ampuku abdominal work released trauma I'd been holding for decades. Susan's elegance and depth create a sanctuary where true transformation happens. This is healing for the discerning client.",
+    text: "As someone who's experienced work across Manhattan's finest wellness centers, I can confidently say Susan's practice stands in a class of its own. Her treatment room reflects her approach - refined, intentional, powerful. The combination of hypnotherapy and Ampuku abdominal work released trauma I'd been holding for decades. Susan's elegance and depth create a sanctuary where true transformation happens. This is work for the discerning client.",
     image: "👩🏼"
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
     name: "James L.",
     location: "London, United Kingdom",
     rating: 5,
-    text: "As a skeptic and former attorney, I wasn't sure what to expect from energy healing. Susan's professional, grounded approach immediately put me at ease. The results speak for themselves - chronic pain I'd lived with for years has significantly reduced after her Anma sessions, and the hypnotherapy work helped me release decades of accumulated stress. I feel more present and balanced than I have in my entire adult life. Highly recommended for anyone seeking evidence-based yet spiritually intelligent healing.",
+    text: "As a skeptic and former attorney, I wasn't sure what to expect. Susan's professional, grounded approach immediately put me at ease. The results speak for themselves - chronic pain I'd lived with for years has significantly reduced after her Anma sessions, and the hypnotherapy work helped me release decades of accumulated stress. I feel more present and balanced than I have in my entire adult life. Highly recommended for anyone seeking evidence-based yet spiritually intelligent work.",
     image: "👨🏼"
   },
   {
@@ -39,7 +39,7 @@ const testimonials = [
     name: "Layla S.",
     location: "Abu Dhabi, UAE",
     rating: 5,
-    text: "Susan has a rare gift that transcends technique. Her Reiki sessions are deeply restorative, and I always leave feeling renewed on every level - physically, emotionally, and spiritually. She creates such a sacred, elegant space for healing. The chakra balancing work she does is the most profound I've experienced. I've worked with many practitioners over the years, and Susan stands out as truly exceptional. She is the healer other healers go to.",
+    text: "Susan has a rare gift that transcends technique. Her Reiki sessions are deeply restorative, and I always leave feeling renewed on every level - physically, emotionally, and spiritually. She creates such an elegant space for this work. The chakra balancing she offers is the most profound I've experienced. I've worked with many practitioners over the years, and Susan stands out as truly exceptional.",
     image: "👩🏻‍🦱"
   },
   {
@@ -47,7 +47,7 @@ const testimonials = [
     name: "Michael Chen",
     location: "Sydney, Australia",
     rating: 5,
-    text: "The SKP Method is unlike anything I've experienced across three continents. Susan's integration of somatic work, energy medicine, and the Nir Levy Method helped me reconnect with my body in a way I never thought possible after years of disconnection following a traumatic accident. Her wisdom, professionalism, and genuine care for her clients' wellbeing shine through in every session. The Ampuku work alone was worth the investment, but combined with everything else she offers, it's truly transformational. Worth every dirham.",
+    text: "Susan's integrative approach is unlike anything I've experienced across three continents. Her combination of somatic work and subtle-energy practices helped me reconnect with my body in a way I never thought possible after years of disconnection following a traumatic accident. Her wisdom, professionalism, and genuine care for her clients' wellbeing shine through in every session. The Ampuku work alone was worth the investment, but combined with everything else she offers, it's truly transformational. Worth every dirham.",
     image: "👨🏻"
   },
   {
@@ -55,7 +55,7 @@ const testimonials = [
     name: "Sophia Martinez",
     location: "Barcelona, Spain",
     rating: 5,
-    text: "I came to Susan after trying everything - traditional therapy, medication, various alternative treatments. Nothing prepared me for the depth of her work. The way she combines Japanese healing arts with modern consciousness techniques is revolutionary. Her Anma sessions released tension I didn't know I was holding, and the hypnotherapy helped me finally break free from anxiety patterns that had controlled my life. Susan's space is a sanctuary of elegance and healing power. She is a true master of her craft.",
+    text: "I came to Susan after trying everything - traditional therapy, medication, various alternative treatments. Nothing prepared me for the depth of her work. The way she combines Japanese healing arts with consciousness-based practices is remarkable. Her Anma sessions released tension I didn't know I was holding, and the hypnotherapy helped me finally break free from anxiety patterns that had controlled my life. Susan's space is a sanctuary of elegance and depth. She is a true master of her craft.",
     image: "👩🏽"
   }
 ]
@@ -2285,8 +2285,7 @@ app.get('/', (c) => {
                             <p class="text-xs text-gold mb-4 uppercase tracking-wide">Full-Spectrum Healing</p>
                         </div>
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            A full-spectrum healing journey. Combining energy alignment, hara work, meridian balancing, 
-                            and subconscious transformation, this session restores clarity, guided breath, and inner spaciousness.
+                            A comprehensive session supporting the body, nervous system, and energy field in reorganizing toward balance. Through a blend of hara-centered bodywork, meridian balancing, subtle-energy work, and subconscious facilitation, the system is invited into clarity, regulated breath, and inner spaciousness.
                         </p>
                         <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
@@ -2302,12 +2301,8 @@ app.get('/', (c) => {
                             <h3 class="text-xl font-serif text-charcoal mb-2">Hara Release</h3>
                             <p class="text-xs text-gold mb-4 uppercase tracking-wide">Anma & Ampuku</p>
                         </div>
-                        <p class="text-charcoal/70 mb-4 leading-relaxed text-sm">
-                            <strong>Grounding. Opening. Releasing.</strong>
-                        </p>
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            Gentle abdominal unwinding that frees held emotional patterns, restores organ flow, 
-                            and reconnects you to your center.
+                            A grounding, body-led process focused on the abdominal center. Gentle, attentive touch supports the release of held patterns, improves internal communication, and restores connection to the body's core.
                         </p>
                         <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
@@ -2324,8 +2319,7 @@ app.get('/', (c) => {
                             <p class="text-xs text-gold mb-4 uppercase tracking-wide">Reiki + Chakra Harmonizing</p>
                         </div>
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            Master-level Reiki (20+ years) combined with chakra balancing to clear energetic blockages, 
-                            restore flow, and harmonize your subtle body systems.
+                            Reiki combined with chakra balancing to clear energetic congestion, restore flow, and support regulation across subtle body systems.
                         </p>
                         <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
@@ -2339,14 +2333,10 @@ app.get('/', (c) => {
                                 <i class="fas fa-brain text-sage text-xl"></i>
                             </div>
                             <h3 class="text-xl font-serif text-charcoal mb-2">Subconscious Shift Therapy</h3>
-                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Hypnotherapy + Nir Levy Method</p>
+                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Hypnotherapy & Consciousness-Based Work</p>
                         </div>
-                        <p class="text-charcoal/70 mb-4 leading-relaxed text-sm">
-                            <strong>Repattern your inner landscape.</strong>
-                        </p>
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            Hypnotherapy and the Nir Levy Method work together to resolve emotional blocks 
-                            and rewire conditioned responses.
+                            A collaborative process working with the subconscious as an ally rather than an obstacle. Sessions support the system in updating outdated patterns, allowing new responses to emerge organically and sustainably.
                         </p>
                         <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
@@ -2362,12 +2352,10 @@ app.get('/', (c) => {
                                 <i class="fas fa-infinity text-gold text-2xl"></i>
                             </div>
                             <h3 class="text-3xl font-serif text-cream mb-2">The Full Frequency Session</h3>
-                            <p class="text-gold uppercase tracking-widest text-xs">All Modalities | One Deep Journey</p>
+                            <p class="text-gold uppercase tracking-widest text-xs">Integrated Work | One Deep Experience</p>
                         </div>
                         <p class="text-cream/90 leading-relaxed text-center max-w-2xl mx-auto">
-                            An immersive journey integrating every modality — Reiki, hara work, meridian balancing, 
-                            chakra harmonizing, hypnotherapy, and the Nir Levy Method. For profound transformation 
-                            and complete recalibration of body, mind, and spirit.
+                            An immersive session integrating Reiki, hara-centered bodywork, meridian balancing, chakra harmonizing, and subconscious facilitation. Designed for those seeking comprehensive recalibration across body, mind, and energetic layers.
                         </p>
                         <div class="text-center mt-8">
                             <a href="#booking" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
