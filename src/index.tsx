@@ -2114,7 +2114,7 @@ app.get('/', (c) => {
                     </div>
                     
                     <p class="text-3xl md:text-4xl text-gold font-light mb-8 leading-relaxed tracking-wide" style="font-family: 'Cormorant Garamond', serif;">
-                        Elemental Guidance to awaken Your Healing Intelligence
+                        Awaken Your Healing Intelligence
                     </p>
                     
                     <!-- Subtle Divider -->
@@ -2138,7 +2138,7 @@ app.get('/', (c) => {
                 <div class="text-center mb-12">
                     <img src="/images/susan-professional.jpg" alt="Susan K Pearson" class="profile-image mx-auto mb-6 shadow-2xl">
                     <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-2">Susan K Pearson</h2>
-                    <p class="text-xl text-gold/90 font-medium mb-4">Healing Therapies | Worldwide</p>
+                    <p class="text-xl text-gold/90 font-medium mb-4">Multidimensional Healing | Worldwide</p>
                     <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
                     <div class="flex justify-center gap-6 text-charcoal/70">
                         <a href="tel:+971551770957" class="hover:text-gold transition-colors">
@@ -2155,32 +2155,28 @@ app.get('/', (c) => {
                     <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                         <div class="space-y-6 text-charcoal/80 leading-relaxed">
                             <p class="text-xl font-medium text-charcoal mb-8">
-                                Susan K Pearson is a practitioner of multidimensional healing, integrating Reiki, 
-                                the Nir Levy Method, hypnotherapy, Anma, Ampuku, and chakra balancing into a singular, elegant approach.
+                                Susan K Pearson is a practitioner of multidimensional healing, integrating Reiki, hypnotherapy, Anma, Ampuku, chakra balancing, and consciousness-based practices into a singular, elegant approach.
                             </p>
                             
                             <p class="mb-6">
-                                Step into a space designed for transformation. In a room shaped by calm, depth, and beauty, 
-                                you are guided through a process of hara alignment, energetic clearing, and subconscious release. 
-                                Every session is tailored intuitively to your body's intelligence — a blend of ancient Japanese 
-                                bodywork, Reiki, and deep inner work.
+                                Her work is grounded in the understanding that the body, energy field, and subconscious mind already hold the intelligence required for meaningful change. Susan's role is to listen deeply, create safety, and support clients in reconnecting with their own innate capacity for healing.
                             </p>
                             
                             <p class="mb-6">
-                                With a background rooted in both <em>somatic wisdom<sup>*</sup></em> and consciousness work, 
-                                Susan combines precision touch with energetic attunement, allowing clients to release emotional 
-                                density, reconnect with their center, and awaken the intelligence stored within the body.
+                                In an environment shaped by calm, depth, and beauty, clients are guided through a process of hara alignment, energetic clearing, and subconscious release. Each session unfolds responsively, informed by what the body reveals in the moment.
+                            </p>
+                            
+                            <p class="mb-6">
+                                With a foundation rooted in somatic wisdom and consciousness work, Susan combines precise, attuned touch with psychological insight and energetic awareness. Patterns soften, emotional density releases, and clarity emerges naturally.
                             </p>
                             
                             <p class="mb-8">
-                                Her practice is guided by presence, intuition, and respect for the body's natural capacity to heal.
+                                Her practice is guided by presence, curiosity, and deep respect for the body's inherent ability to reorganize toward balance when given the right conditions.
                             </p>
                             
                             <div class="bg-cream/30 border-l-4 border-gold p-6 rounded-sm">
                                 <p class="text-sm text-charcoal/70 italic">
-                                    <sup>*</sup><strong>Somatic wisdom:</strong> the body as a deep source of intelligence, holding 
-                                    intuitive knowledge, emotions, and experiences. Listening to physical sensations, breath, and 
-                                    movement guides us toward wholeness and authentic living, rather than relying solely on the mind.
+                                    <sup>*</sup><strong>Somatic wisdom:</strong> Somatic wisdom recognizes the body as a profound source of intelligence. Sensations, breath, posture, and movement carry information shaped by lived experience, emotion, and adaptation. By listening to the body—rather than relying solely on cognitive analysis—clients gain access to deeper regulation, insight, and choice.
                                 </p>
                             </div>
                         </div>
@@ -2208,7 +2204,11 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Multi dimensional therapeutic practitioner</span>
+                                    <span>Multidimensional Therapeutic Practitioner</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Nir Levy Certification (February 2026)</span>
                                 </li>
                             </ul>
                         </div>
@@ -2216,24 +2216,24 @@ app.get('/', (c) => {
                         <div class="bg-white p-6 rounded-sm shadow-lg border-l-4 border-gold">
                             <h3 class="text-xl font-serif text-charcoal mb-4 flex items-center">
                                 <i class="fas fa-certificate text-gold mr-3"></i>
-                                Specializations
+                                Areas of Focus
                             </h3>
                             <ul class="space-y-2 text-sm text-charcoal/80">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Anma (Traditional Japanese Bodywork)</span>
+                                    <span>Anma — Traditional Japanese Bodywork</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Ampuku (Japanese Abdominal Therapy)</span>
+                                    <span>Ampuku — Japanese Abdominal Therapy</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Chakra Balancing & Energy Clearing</span>
+                                    <span>Chakra Balancing & Energetic Clearing</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Nir Levy Method Certification (February 2026)</span>
+                                    <span>Hypnotherapy & Subconscious Repatterning</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
@@ -2241,7 +2241,7 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>20+ Years Professional Practice</span>
+                                    <span>20+ Years of Professional Experience</span>
                                 </li>
                             </ul>
                         </div>
@@ -2252,10 +2252,7 @@ app.get('/', (c) => {
                         <div class="max-w-3xl mx-auto">
                             <i class="fas fa-quote-left text-gold text-3xl mb-4 block"></i>
                             <p class="text-cream/90 text-lg italic leading-relaxed mb-4">
-                                True healing happens when we address not just the symptoms, but the root causes held 
-                                in the body, energy field, and subconscious mind. My work creates a safe, sacred space 
-                                for transformation—where ancient wisdom meets contemporary understanding, and where 
-                                lasting change becomes possible.
+                                True healing occurs when we address not only symptoms, but the underlying patterns held within the body, energy field, and subconscious mind. My work centers on creating a safe, intelligent space for exploration and change—where ancient wisdom meets contemporary understanding, and where the client's own capacity for transformation leads the way.
                             </p>
                             <i class="fas fa-quote-right text-gold text-3xl block"></i>
                         </div>
