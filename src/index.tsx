@@ -2087,20 +2087,6 @@ app.get('/', (c) => {
         <!-- Hero Section -->
         <section id="home" class="pt-28 md:pt-32 relative overflow-hidden bg-black">
             <div class="relative w-full py-24 md:py-32 flex items-center justify-center">
-                <!-- Subtle Lotus Pattern Background -->
-                <div class="absolute inset-0 opacity-5">
-                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
-                        <!-- Left Lotus Petals -->
-                        <ellipse cx="300" cy="200" rx="80" ry="120" fill="#C8A974" transform="rotate(-30 300 200)"/>
-                        <ellipse cx="280" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(-50 280 200)"/>
-                        <ellipse cx="320" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(-10 320 200)"/>
-                        <!-- Right Lotus Petals -->
-                        <ellipse cx="900" cy="200" rx="80" ry="120" fill="#C8A974" transform="rotate(30 900 200)"/>
-                        <ellipse cx="920" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(50 920 200)"/>
-                        <ellipse cx="880" cy="200" rx="70" ry="110" fill="#C8A974" transform="rotate(10 880 200)"/>
-                    </svg>
-                </div>
-                
                 <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
                     <!-- Delicate Top Flourish -->
                     <div class="mb-8 flex justify-center items-center gap-4">
