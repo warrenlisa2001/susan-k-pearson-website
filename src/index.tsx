@@ -2002,11 +2002,7 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Multidimensional Therapeutic Practitioner</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Nir Levy Certification (February 2026)</span>
+                                    <span>Nir Levy Method Therapist (February 2026)</span>
                                 </li>
                             </ul>
                         </div>
@@ -2035,6 +2031,10 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Multidimensional Therapeutic Practice</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
                                     <span>Worldwide Practice | Remote & In-Person Sessions</span>
                                 </li>
                                 <li class="flex items-start">
@@ -2043,13 +2043,6 @@ app.get('/', (c) => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-
-                    <!-- Community Care -->
-                    <div class="bg-white p-6 rounded-sm mt-6 border-l-4 border-gold">
-                        <p class="text-charcoal/80 leading-relaxed">
-                            Susan is also committed to supporting abandoned and street cats in the UAE. A portion of session proceeds contributes to rescue, medical care, and rehoming efforts for vulnerable animals in the local community.
-                        </p>
                     </div>
 
                     <!-- Philosophy Quote -->
@@ -2238,7 +2231,7 @@ app.get('/', (c) => {
                             </li>
                         </ul>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            Book Now
+                            Explore Working Together
                         </a>
                     </div>
 
@@ -2283,7 +2276,7 @@ app.get('/', (c) => {
                             </li>
                         </ul>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            Book Now
+                            Explore Working Together
                         </a>
                     </div>
 
@@ -2325,7 +2318,7 @@ app.get('/', (c) => {
                             </li>
                         </ul>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            Book Now
+                            Explore Working Together
                         </a>
                     </div>
                 </div>
@@ -3967,6 +3960,21 @@ app.get('/', (c) => {
             </div>
         </section>
 
+        <!-- Anthropic Work Section -->
+        <section class="py-16 bg-cream">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg border-l-4 border-gold">
+                    <h3 class="text-2xl font-serif text-charcoal mb-6 text-center flex items-center justify-center">
+                        <i class="fas fa-heart text-gold mr-3"></i>
+                        Anthropic Work
+                    </h3>
+                    <p class="text-charcoal/80 leading-relaxed text-center">
+                        Susan is also committed to supporting abandoned and street cats in the UAE. A portion of session proceeds contributes to rescue, medical care, and rehoming efforts for vulnerable animals in the local community.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="bg-charcoal text-cream/70 py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -4465,7 +4473,7 @@ app.get('/deep-alignment-therapy', (c) => {
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                     </div>
                 </div>
             </div>
@@ -4516,7 +4524,7 @@ app.get('/deep-alignment-therapy', (c) => {
                     <p class="text-2xl text-gold mb-2">90 minutes — AED 950</p>
                     <p class="text-cream/70 mb-8">(approximately $260 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
-                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                         <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
@@ -4557,7 +4565,7 @@ app.get('/hara-release', (c) => {
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                     </div>
                 </div>
             </div>
@@ -4607,7 +4615,7 @@ app.get('/hara-release', (c) => {
                     <p class="text-2xl text-gold mb-2">60-75 minutes — AED 850</p>
                     <p class="text-cream/70 mb-8">(approximately $230 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
-                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                         <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
@@ -4648,7 +4656,7 @@ app.get('/energetic-recalibration', (c) => {
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                     </div>
                 </div>
             </div>
@@ -4702,7 +4710,7 @@ app.get('/energetic-recalibration', (c) => {
                     <p class="text-2xl text-gold mb-2">60 minutes — AED 800</p>
                     <p class="text-cream/70 mb-8">(approximately $220 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
-                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                         <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
@@ -4743,7 +4751,7 @@ app.get('/subconscious-shift-therapy', (c) => {
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                     </div>
                 </div>
             </div>
@@ -4810,7 +4818,7 @@ app.get('/subconscious-shift-therapy', (c) => {
                     <p class="text-2xl text-gold mb-2">75 minutes — AED 850</p>
                     <p class="text-cream/70 mb-8">(approximately $230 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
-                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                         <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
@@ -4851,7 +4859,7 @@ app.get('/full-frequency-session', (c) => {
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                     </div>
                 </div>
             </div>
@@ -4938,7 +4946,7 @@ app.get('/full-frequency-session', (c) => {
                     <p class="text-2xl text-gold mb-2">120 minutes — AED 1,200</p>
                     <p class="text-cream/70 mb-8">(approximately $325 USD)</p>
                     <div class="flex flex-wrap gap-4 justify-center">
-                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                         <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-cream px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium">Questions? Contact Susan</a>
                     </div>
                 </div>
@@ -4984,7 +4992,7 @@ app.get('/nir-levy-method', (c) => {
                         <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
                         <a href="/#about" class="text-black hover:text-gold transition-colors">About</a>
                         <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Now</a>
+                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
                     </div>
                 </div>
             </div>
@@ -5218,7 +5226,7 @@ app.get('/nir-levy-method', (c) => {
                 </p>
                 <div class="flex flex-wrap gap-4 justify-center">
                     <a href="/#booking" class="inline-block bg-gold text-black px-8 py-4 rounded-sm hover:bg-champagne transition-colors font-medium text-lg">
-                        Book Now
+                        Explore Working Together
                     </a>
                     <a href="mailto:susan@susankpearson.com" class="inline-block border-2 border-gold text-charcoal px-8 py-4 rounded-sm hover:bg-gold/10 transition-colors font-medium text-lg">
                         Questions? Contact Susan
