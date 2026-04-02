@@ -1791,7 +1791,7 @@ app.get('/', (c) => {
         <!-- End Google Tag Manager (noscript) -->
         
         <!-- Navigation -->
-        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/40">
+        <nav class="fixed w-full bg-white backdrop-blur-sm shadow-lg z-50 border-b border-gold/40">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-32 md:h-36">
                     <div class="flex items-center">
@@ -1800,10 +1800,10 @@ app.get('/', (c) => {
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
-                        <a href="#home" class="text-gold hover:text-champagne transition-colors font-medium">Home</a>
-                        <a href="#about" class="text-gold hover:text-champagne transition-colors font-medium">About</a>
+                        <a href="#home" class="text-charcoal hover:text-gold transition-colors font-medium">Home</a>
+                        <a href="#about" class="text-charcoal hover:text-gold transition-colors font-medium">About</a>
                         <div class="relative group">
-                            <button class="text-gold hover:text-champagne transition-colors font-medium flex items-center">
+                            <button class="text-charcoal hover:text-gold transition-colors font-medium flex items-center">
                                 Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute left-0 mt-2 w-80 bg-charcoal rounded-sm shadow-xl border border-gold/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -1836,34 +1836,34 @@ app.get('/', (c) => {
                                 </a>
                             </div>
                         </div>
-                        <a href="#pricing" class="text-gold hover:text-champagne transition-colors font-medium">Pricing</a>
-                        <a href="#blog" class="text-gold hover:text-champagne transition-colors font-medium">Blog</a>
-                        <a href="#faq" class="text-gold hover:text-champagne transition-colors font-medium">FAQ</a>
+                        <a href="#pricing" class="text-charcoal hover:text-gold transition-colors font-medium">Pricing</a>
+                        <a href="#blog" class="text-charcoal hover:text-gold transition-colors font-medium">Blog</a>
+                        <a href="#faq" class="text-charcoal hover:text-gold transition-colors font-medium">FAQ</a>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">Book Session</a>
                     </div>
-                    <button id="mobileMenuBtn" class="md:hidden text-gold">
+                    <button id="mobileMenuBtn" class="md:hidden text-charcoal">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden bg-charcoal border-t border-gold/40">
+            <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gold/40">
                 <div class="px-4 py-4 space-y-3">
-                    <a href="#home" class="block text-gold hover:text-champagne transition-colors font-medium">Home</a>
-                    <a href="#about" class="block text-gold hover:text-champagne transition-colors font-medium">About</a>
+                    <a href="#home" class="block text-charcoal hover:text-gold transition-colors font-medium">Home</a>
+                    <a href="#about" class="block text-charcoal hover:text-gold transition-colors font-medium">About</a>
                     <div class="border-l-2 border-gold/40 pl-3 space-y-2">
-                        <div class="text-xs text-gold/80 uppercase tracking-wide mb-2">Services</div>
-                        <a href="/nir-levy-method" class="block text-cream hover:text-gold transition-colors text-sm">The Nir Levy Method</a>
-                        <a href="/deep-alignment-therapy" class="block text-cream hover:text-gold transition-colors text-sm">Deep Alignment Therapy</a>
-                        <a href="/hara-release" class="block text-cream hover:text-gold transition-colors text-sm">Hara Release</a>
-                        <a href="/energetic-recalibration" class="block text-cream hover:text-gold transition-colors text-sm">Energetic Recalibration</a>
-                        <a href="/subconscious-shift-therapy" class="block text-cream hover:text-gold transition-colors text-sm">Subconscious Shift Therapy</a>
-                        <a href="/full-frequency-session" class="block text-cream hover:text-gold transition-colors text-sm">Full Frequency Session</a>
+                        <div class="text-xs text-charcoal/80 uppercase tracking-wide mb-2">Services</div>
+                        <a href="/nir-levy-method" class="block text-charcoal hover:text-gold transition-colors text-sm">The Nir Levy Method</a>
+                        <a href="/deep-alignment-therapy" class="block text-charcoal hover:text-gold transition-colors text-sm">Deep Alignment Therapy</a>
+                        <a href="/hara-release" class="block text-charcoal hover:text-gold transition-colors text-sm">Hara Release</a>
+                        <a href="/energetic-recalibration" class="block text-charcoal hover:text-gold transition-colors text-sm">Energetic Recalibration</a>
+                        <a href="/subconscious-shift-therapy" class="block text-charcoal hover:text-gold transition-colors text-sm">Subconscious Shift Therapy</a>
+                        <a href="/full-frequency-session" class="block text-charcoal hover:text-gold transition-colors text-sm">Full Frequency Session</a>
                         <a href="#services" class="block text-gold hover:text-champagne transition-colors text-sm font-medium">All Services →</a>
                     </div>
-                    <a href="#pricing" class="block text-gold hover:text-champagne transition-colors font-medium">Pricing</a>
-                    <a href="#blog" class="block text-gold hover:text-champagne transition-colors font-medium">Blog</a>
-                    <a href="#faq" class="block text-gold hover:text-champagne transition-colors font-medium">FAQ</a>
+                    <a href="#pricing" class="block text-charcoal hover:text-gold transition-colors font-medium">Pricing</a>
+                    <a href="#blog" class="block text-charcoal hover:text-gold transition-colors font-medium">Blog</a>
+                    <a href="#faq" class="block text-charcoal hover:text-gold transition-colors font-medium">FAQ</a>
                     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center shadow-lg">Book Session</a>
                 </div>
             </div>
