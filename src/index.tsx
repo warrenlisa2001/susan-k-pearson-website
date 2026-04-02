@@ -2002,7 +2002,11 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Nir Levy Method Therapist (February 2026)</span>
+                                    <span>Nir Levy Method Therapist</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
+                                    <span>Certified Hypnotherapist</span>
                                 </li>
                             </ul>
                         </div>
@@ -2053,6 +2057,16 @@ app.get('/', (c) => {
                                 True healing occurs when we address not only symptoms, but the underlying patterns held within the body, energy field, and subconscious mind. My work centers on creating a safe, intelligent space for exploration and change—where ancient wisdom meets contemporary understanding, and where the client's own capacity for transformation leads the way.
                             </p>
                             <i class="fas fa-quote-right text-gold text-3xl block"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Office Space -->
+                    <div class="mt-8 rounded-sm overflow-hidden shadow-2xl">
+                        <img src="/images/office-space.jpg" alt="Susan K Pearson Healing Space" class="w-full h-auto">
+                        <div class="bg-white p-6 text-center">
+                            <p class="text-charcoal/70 text-sm italic">
+                                A space designed for calm, depth, and beauty—where transformation unfolds naturally.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -2159,9 +2173,28 @@ app.get('/', (c) => {
                             <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                                 Explore This Experience <i class="fas fa-arrow-right ml-2"></i>
                             </a>
-                                Experience Full Frequency <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intake Form Section -->
+        <section class="py-16 bg-cream">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg text-center">
+                    <i class="fas fa-file-alt text-gold text-4xl mb-6"></i>
+                    <h3 class="text-3xl font-serif text-charcoal mb-4">Begin Your Journey</h3>
+                    <p class="text-charcoal/70 leading-relaxed mb-6 max-w-2xl mx-auto">
+                        This intake form helps me understand how to best support you. Please answer only what feels relevant and comfortable. You'll receive this form after booking, or you may download and complete it in advance.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="/files/intake-form.pdf" download class="inline-block bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-charcoal/90 transition-colors font-medium">
+                            <i class="fas fa-download mr-2"></i>Download Intake Form
+                        </a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                            <i class="fas fa-calendar-check mr-2"></i>Book a Session
+                        </a>
                     </div>
                 </div>
             </div>
