@@ -1793,10 +1793,10 @@ app.get('/', (c) => {
         <!-- Navigation -->
         <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/40">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-28 md:h-32">
+                <div class="flex justify-between items-center h-32 md:h-36">
                     <div class="flex items-center">
-                        <a href="#home" class="flex items-center py-2">
-                            <img src="/images/skp-logo-new.png" alt="Susan K Pearson - Healing Therapies" class="h-24 md:h-28 w-auto">
+                        <a href="#home" class="flex items-center py-3">
+                            <img src="/images/skp-logo-new.png" alt="Susan K Pearson" class="h-28 md:h-32 w-auto transition-transform hover:scale-105 drop-shadow-[0_0_15px_rgba(200,169,116,0.3)]">
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
@@ -1870,7 +1870,7 @@ app.get('/', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="pt-28 md:pt-32 relative overflow-hidden bg-black">
+        <section id="home" class="pt-32 md:pt-36 relative overflow-hidden bg-black">
             <div class="relative w-full py-24 md:py-32 flex items-center justify-center">
                 <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
                     <!-- Delicate Top Flourish -->
