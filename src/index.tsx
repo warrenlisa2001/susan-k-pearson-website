@@ -1998,6 +1998,11 @@ app.get('/', (c) => {
             border-bottom: 1px solid rgba(200, 169, 116, 0.1);
           }
         </style>
+        
+        <!-- Calendly Badge Widget Begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <!-- Calendly Badge Widget End -->
     </head>
     <body class="smooth-scroll">
         <!-- Google Tag Manager (noscript) -->
@@ -2054,7 +2059,7 @@ app.get('/', (c) => {
                         <a href="#pricing" class="text-gold hover:text-champagne transition-colors font-medium">Pricing</a>
                         <a href="#blog" class="text-gold hover:text-champagne transition-colors font-medium">Blog</a>
                         <a href="#faq" class="text-gold hover:text-champagne transition-colors font-medium">FAQ</a>
-                        <a href="#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">Book Session</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">Book Session</a>
                     </div>
                     <button id="mobileMenuBtn" class="md:hidden text-gold">
                         <i class="fas fa-bars text-2xl"></i>
@@ -2079,7 +2084,7 @@ app.get('/', (c) => {
                     <a href="#pricing" class="block text-gold hover:text-champagne transition-colors font-medium">Pricing</a>
                     <a href="#blog" class="block text-gold hover:text-champagne transition-colors font-medium">Blog</a>
                     <a href="#faq" class="block text-gold hover:text-champagne transition-colors font-medium">FAQ</a>
-                    <a href="#booking" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center shadow-lg">Book Session</a>
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center shadow-lg">Book Session</a>
                 </div>
             </div>
         </nav>
@@ -2110,7 +2115,7 @@ app.get('/', (c) => {
                         <div class="w-8 h-px bg-gold/30"></div>
                     </div>
                     
-                    <a href="#booking" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-gold/20">
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-gold/20">
                         Book a Session
                     </a>
                 </div>
@@ -2280,7 +2285,7 @@ app.get('/', (c) => {
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
                             A comprehensive session supporting the body, nervous system, and energy field in reorganizing toward balance. Through a blend of hara-centered bodywork, meridian balancing, subtle-energy work, and subconscious facilitation, the system is invited into clarity, regulated breath, and inner spaciousness.
                         </p>
-                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -2297,7 +2302,7 @@ app.get('/', (c) => {
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
                             A grounding, body-led process focused on the abdominal center. Gentle, attentive touch supports the release of held patterns, improves internal communication, and restores connection to the body's core.
                         </p>
-                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -2314,7 +2319,7 @@ app.get('/', (c) => {
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
                             Reiki combined with chakra balancing to clear energetic congestion, restore flow, and support regulation across subtle body systems.
                         </p>
-                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -2331,7 +2336,7 @@ app.get('/', (c) => {
                         <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
                             A collaborative process working with the subconscious as an ally rather than an obstacle. Sessions support the system in updating outdated patterns, allowing new responses to emerge organically and sustainably.
                         </p>
-                        <a href="#booking" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
                             Book Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -2351,7 +2356,7 @@ app.get('/', (c) => {
                             An immersive session integrating Reiki, hara-centered bodywork, meridian balancing, chakra harmonizing, and subconscious facilitation. Designed for those seeking comprehensive recalibration across body, mind, and energetic layers.
                         </p>
                         <div class="text-center mt-8">
-                            <a href="#booking" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                                 Experience Full Frequency <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -2407,7 +2412,7 @@ app.get('/', (c) => {
                                 <span>Integration guidance</span>
                             </li>
                         </ul>
-                        <a href="#booking" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                             Book Now
                         </a>
                     </div>
@@ -2450,7 +2455,7 @@ app.get('/', (c) => {
                                 <span>Audio recording for continued support</span>
                             </li>
                         </ul>
-                        <a href="#booking" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                             Book Now
                         </a>
                     </div>
@@ -2490,7 +2495,7 @@ app.get('/', (c) => {
                                 <span>Personalized integration plan</span>
                             </li>
                         </ul>
-                        <a href="#booking" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                             Book Now
                         </a>
                     </div>
@@ -2518,7 +2523,7 @@ app.get('/', (c) => {
                                     <span>Valid for 3 months</span>
                                 </li>
                             </ul>
-                            <a href="#booking" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
+                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
                                 Inquire About Package <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -2545,7 +2550,7 @@ app.get('/', (c) => {
                                     <span>Valid for 6 months</span>
                                 </li>
                             </ul>
-                            <a href="#booking" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
+                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
                                 Inquire About Package <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -2629,7 +2634,7 @@ app.get('/', (c) => {
                 
                 <div class="mt-12 text-center">
                     <p class="text-cream/70 mb-6">Ready to begin your healing journey?</p>
-                    <a href="#booking" class="inline-block bg-gold text-midnight px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="inline-block bg-gold text-midnight px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                         Book Your Session
                     </a>
                 </div>
