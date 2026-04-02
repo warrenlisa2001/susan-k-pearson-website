@@ -1896,7 +1896,7 @@ app.get('/', (c) => {
                     </div>
                     
                     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-gold/20">
-                        Book a Session
+                        Explore Working Together
                     </a>
                 </div>
             </div>
@@ -1944,16 +1944,43 @@ app.get('/', (c) => {
                             <p class="mb-8">
                                 Her practice is guided by presence, curiosity, and deep respect for the body's inherent ability to reorganize toward balance when given the right conditions.
                             </p>
-                            
-                            <div class="bg-cream/30 border-l-4 border-gold p-6 rounded-sm">
-                                <p class="text-sm text-charcoal/70 italic">
-                                    <sup>*</sup><strong>Somatic wisdom:</strong> Somatic wisdom recognizes the body as a profound source of intelligence. Sensations, breath, posture, and movement carry information shaped by lived experience, emotion, and adaptation. By listening to the body—rather than relying solely on cognitive analysis—clients gain access to deeper regulation, insight, and choice.
-                                </p>
-                            </div>
                         </div>
                     </div>
                     
-                    <!-- Credentials -->
+                    <!-- Somatic Wisdom Section -->
+                    <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                        <h3 class="text-2xl font-serif text-charcoal mb-6 text-center">Somatic Wisdom</h3>
+                        <div class="space-y-4 text-charcoal/80 leading-relaxed">
+                            <p>
+                                Somatic wisdom recognizes the body as a profound source of intelligence. Sensations, breath, posture, and movement carry information shaped by lived experience, emotion, and adaptation.
+                            </p>
+                            <p>
+                                By listening to the body—rather than relying solely on cognitive analysis—clients gain access to deeper regulation, insight, and choice. Change unfolds not through force, but through awareness, responsiveness, and trust in the body's natural capacity for integration.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Why Work With Me Section -->
+                    <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
+                        <h3 class="text-2xl font-serif text-charcoal mb-6 text-center">Why Work With Me</h3>
+                        <div class="space-y-4 text-charcoal/80 leading-relaxed">
+                            <p>
+                                Clients often arrive at this work not seeking to be "fixed," but wanting clarity, grounding, and a deeper sense of coherence within themselves.
+                            </p>
+                            <p>
+                                Susan brings together extensive professional training, lived life experience, and a sustained curiosity about human behavior, the nervous system, and mind–body dynamics. Her approach is informed rather than formulaic, responsive rather than prescriptive.
+                            </p>
+                            <p>
+                                Sessions are guided by what emerges through the body and subconscious, not imposed protocols. This allows change to unfold in a way that is sustainable, respectful, and aligned with each individual's pace and readiness.
+                            </p>
+                            <p>
+                                Susan works as a knowledgeable guide—offering structure, presence, and insight—while honoring the client as the true authority of their own experience. The work is collaborative, grounded, and oriented toward lasting integration rather than temporary relief.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Credentials Section Title -->
+                    <h3 class="text-3xl font-serif text-charcoal mb-8 text-center">Credentials & Professional Experience</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-white p-6 rounded-sm shadow-lg border-l-4 border-gold">
                             <h3 class="text-xl font-serif text-charcoal mb-4 flex items-center">
@@ -2066,7 +2093,7 @@ app.get('/', (c) => {
                             A comprehensive session supporting the body, nervous system, and energy field in reorganizing toward balance. Through a blend of hara-centered bodywork, meridian balancing, subtle-energy work, and subconscious facilitation, the system is invited into clarity, regulated breath, and inner spaciousness.
                         </p>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                            Schedule a Session <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
 
@@ -2083,7 +2110,7 @@ app.get('/', (c) => {
                             A grounding, body-led process focused on the abdominal center. Gentle, attentive touch supports the release of held patterns, improves internal communication, and restores connection to the body's core.
                         </p>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
 
@@ -2100,7 +2127,7 @@ app.get('/', (c) => {
                             Reiki combined with chakra balancing to clear energetic congestion, restore flow, and support regulation across subtle body systems.
                         </p>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                            Explore This Session <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
 
@@ -2117,7 +2144,7 @@ app.get('/', (c) => {
                             A collaborative process working with the subconscious as an ally rather than an obstacle. Sessions support the system in updating outdated patterns, allowing new responses to emerge organically and sustainably.
                         </p>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Book Now <i class="fas fa-arrow-right ml-2"></i>
+                            Request an Appointment <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
@@ -2137,6 +2164,8 @@ app.get('/', (c) => {
                         </p>
                         <div class="text-center mt-8">
                             <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankpearson'});return false;" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                                Explore This Experience <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
                                 Experience Full Frequency <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
