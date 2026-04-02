@@ -1543,7 +1543,7 @@ app.get('/', (c) => {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "Susan K Pearson - Elemental Healing",
-          "image": "https://susankpearson.com/images/skp-logo-new.png",
+          "image": "https://susankpearson.com/images/skp-logo-complete.png",
           "@id": "https://susankpearson.com",
           "url": "https://susankpearson.com",
           "telephone": "+971551770957",
@@ -1796,7 +1796,7 @@ app.get('/', (c) => {
                 <div class="flex justify-between items-center h-32 md:h-36">
                     <div class="flex items-center">
                         <a href="#home" class="flex items-center py-3">
-                            <img src="/images/skp-logo-new.png" alt="Susan K Pearson" class="h-28 md:h-32 w-auto transition-transform hover:scale-105 drop-shadow-[0_0_15px_rgba(200,169,116,0.3)]">
+                            <img src="/images/skp-logo-complete.png" alt="Susan K Pearson - Elemental Healing" class="h-32 md:h-40 w-auto transition-transform hover:scale-105 drop-shadow-[0_0_15px_rgba(200,169,116,0.3)]">
                         </a>
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
