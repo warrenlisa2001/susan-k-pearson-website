@@ -2,12 +2,15 @@
 
 ## ✅ What's Already Done
 
-Your website now has **Calendly booking integration** installed:
+Your website now has **Calendly booking integration** installed and configured:
 - ✅ Calendly widget script loaded on every page
-- ✅ All "Book a Session" buttons trigger Calendly popup
-- ✅ Navigation "Book Session" button opens Calendly
+- ✅ All booking buttons trigger Calendly popup
+- ✅ Calendly URL configured: **https://calendly.com/susankatrynpearson**
+- ✅ Navigation buttons open Calendly
 - ✅ Mobile menu booking button works
 - ✅ Service page CTAs all connected to Calendly
+
+**Your Calendly booking page:** https://calendly.com/susankatrynpearson
 
 ---
 
