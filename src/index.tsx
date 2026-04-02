@@ -2374,6 +2374,20 @@ app.get('/', (c) => {
                     <p class="text-lg text-cream/70 max-w-2xl mx-auto">
                         Transparent pricing for depth-oriented, integrative work
                     </p>
+                    
+                    <!-- Crisis Consideration Banner -->
+                    <div class="mt-8 bg-gold/10 border-2 border-gold/40 p-6 rounded-sm max-w-3xl mx-auto">
+                        <div class="flex items-center justify-center mb-3">
+                            <i class="fas fa-heart text-gold text-2xl mr-3"></i>
+                            <h3 class="text-2xl font-serif text-gold">Crisis Consideration</h3>
+                        </div>
+                        <p class="text-cream/90 text-base leading-relaxed mb-2">
+                            In recognition of ongoing geopolitical challenges and their impact on wellbeing, all sessions and packages are offered at <strong class="text-gold">40% off regular pricing</strong>.
+                        </p>
+                        <p class="text-cream/70 text-sm italic">
+                            Supporting your journey toward balance during uncertain times.
+                        </p>
+                    </div>
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
@@ -2387,8 +2401,10 @@ app.get('/', (c) => {
                             <p class="text-gold/80 text-sm mb-4">90-Minute Session</p>
                         </div>
                         <div class="text-center mb-6">
-                            <div class="text-4xl font-serif text-gold mb-2">AED 950</div>
-                            <p class="text-cream/60 text-sm">≈ $260 USD</p>
+                            <div class="text-cream/50 text-2xl font-serif line-through mb-1">AED 950</div>
+                            <div class="text-4xl font-serif text-gold mb-2">AED 570</div>
+                            <p class="text-cream/60 text-sm">≈ $155 USD</p>
+                            <p class="text-gold/80 text-xs mt-1 font-medium">40% Crisis Consideration</p>
                         </div>
                         <ul class="space-y-3 text-sm text-cream/70 mb-8">
                             <li class="flex items-start">
@@ -2430,8 +2446,10 @@ app.get('/', (c) => {
                             <p class="text-gold/80 text-sm mb-4">75-Minute Session</p>
                         </div>
                         <div class="text-center mb-6">
-                            <div class="text-4xl font-serif text-gold mb-2">AED 850</div>
-                            <p class="text-cream/60 text-sm">≈ $230 USD</p>
+                            <div class="text-cream/50 text-2xl font-serif line-through mb-1">AED 850</div>
+                            <div class="text-4xl font-serif text-gold mb-2">AED 510</div>
+                            <p class="text-cream/60 text-sm">≈ $139 USD</p>
+                            <p class="text-gold/80 text-xs mt-1 font-medium">40% Crisis Consideration</p>
                         </div>
                         <ul class="space-y-3 text-sm text-cream/70 mb-8">
                             <li class="flex items-start">
@@ -2470,8 +2488,10 @@ app.get('/', (c) => {
                             <p class="text-gold/80 text-sm mb-4">120-Minute Session</p>
                         </div>
                         <div class="text-center mb-6">
-                            <div class="text-4xl font-serif text-gold mb-2">AED 1,200</div>
-                            <p class="text-cream/60 text-sm">≈ $325 USD</p>
+                            <div class="text-cream/50 text-2xl font-serif line-through mb-1">AED 1,200</div>
+                            <div class="text-4xl font-serif text-gold mb-2">AED 720</div>
+                            <p class="text-cream/60 text-sm">≈ $196 USD</p>
+                            <p class="text-gold/80 text-xs mt-1 font-medium">40% Crisis Consideration</p>
                         </div>
                         <ul class="space-y-3 text-sm text-cream/70 mb-8">
                             <li class="flex items-start">
@@ -2507,8 +2527,9 @@ app.get('/', (c) => {
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="bg-midnight p-6 rounded-sm">
                             <h4 class="text-xl font-serif text-gold mb-3">Foundation Package</h4>
-                            <p class="text-3xl font-serif text-cream mb-2">AED 2,550 <span class="text-lg text-cream/60">/ 3 sessions</span></p>
-                            <p class="text-sm text-gold/80 mb-4">Save AED 300 • Best for: Initial recalibration</p>
+                            <p class="text-cream/50 text-xl font-serif line-through mb-1">AED 2,550</p>
+                            <p class="text-3xl font-serif text-cream mb-2">AED 1,530 <span class="text-lg text-cream/60">/ 3 sessions</span></p>
+                            <p class="text-sm text-gold/80 mb-4">Save AED 1,020 with Crisis Consideration • Best for: Initial recalibration</p>
                             <ul class="space-y-2 text-sm text-cream/70 mb-4">
                                 <li class="flex items-start">
                                     <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
@@ -2530,8 +2551,9 @@ app.get('/', (c) => {
                         
                         <div class="bg-midnight p-6 rounded-sm border-2 border-gold/50">
                             <h4 class="text-xl font-serif text-gold mb-3">Transformation Package</h4>
-                            <p class="text-3xl font-serif text-cream mb-2">AED 5,100 <span class="text-lg text-cream/60">/ 6 sessions</span></p>
-                            <p class="text-sm text-gold/80 mb-4">Save AED 600 • Best for: Deeper, sustained change</p>
+                            <p class="text-cream/50 text-xl font-serif line-through mb-1">AED 5,100</p>
+                            <p class="text-3xl font-serif text-cream mb-2">AED 3,060 <span class="text-lg text-cream/60">/ 6 sessions</span></p>
+                            <p class="text-sm text-gold/80 mb-4">Save AED 2,040 with Crisis Consideration • Best for: Deeper, sustained change</p>
                             <ul class="space-y-2 text-sm text-cream/70 mb-4">
                                 <li class="flex items-start">
                                     <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
