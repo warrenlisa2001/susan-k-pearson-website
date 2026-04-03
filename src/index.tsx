@@ -29,6 +29,14 @@ const testimonials = [
     rating: 5,
     text: "Receiving a session from Susan felt something unique - each and every time. There's a softness and ease in how she works, but at the same time you can feel the depth and experience behind it. What I love with Susan's sessions most is how she blends energy work with the Nir Levi Method body work in her own unique way - no two sessions feel the same. She really tunes into what you and your soul need in that moment. Bonus is the elegance of her space which is carefully curated, allowing you to feel safe, ease and drop in. Thank you dear Susan!",
     image: "👩🏻"
+  },
+  {
+    id: 3,
+    name: "Carole Damour",
+    location: "France",
+    rating: 5,
+    text: "I want to share my experience with the Reiki sessions I've been fortunate to attend with this practitioner for several years, and it continues. The sessions took place in various formats - in person, via video call, and outdoors in nature. All these sessions have been an opportunity for profound learning in letting go and experiencing total well-being. Susan's voice, her expertise, her gentleness, and her kindness carry you toward serenity. This has significantly increased my ability to manage my emotions, and as a result, the quality of my sleep has improved. I highly recommend these Reiki sessions with Susan to anyone seeking to reconnect with themselves and stimulate their vital energy.",
+    image: "👩🏼"
   }
 ]
 
