@@ -20,7 +20,8 @@ const testimonials = [
     location: "Ireland",
     rating: 5,
     text: "Working with Susan has been nothing short of life-changing. I came to her feeling disconnected and carrying years of unresolved tension. From the very first session, I felt seen, heard, and held in a way I had never experienced before. Susan's depth of understanding, combined with her intuitive awareness of exactly what I needed, created profound shifts that I can only describe as miraculous. Her Deep Alignment sessions helped me release patterns I didn't even know I was holding. The integration of Anma, Reiki, and body-led awareness is seamless and extraordinary. I've recommended her to everyone I know - she is truly exceptional. If you're looking for genuine, transformational work, Susan is the practitioner you need.",
-    image: "👩🏻"
+    image: "/images/lisa-ireland.jpg",
+    isPhoto: true
   },
   {
     id: 2,
