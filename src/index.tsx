@@ -2195,8 +2195,11 @@ app.get('/', (c) => {
                         This intake form helps me understand how to best support you. Please answer only what feels relevant and comfortable. You'll receive this form after booking, or you may download and complete it in advance.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="/intake-form" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
+                            <i class="fas fa-edit mr-2"></i>Complete Intake Form
+                        </a>
                         <a href="/files/intake-form.pdf" download class="inline-block bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-charcoal/90 transition-colors font-medium">
-                            <i class="fas fa-download mr-2"></i>Download Intake Form
+                            <i class="fas fa-download mr-2"></i>Download PDF
                         </a>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
                             <i class="fas fa-calendar-check mr-2"></i>Book a Session
