@@ -1839,6 +1839,7 @@ app.get('/', (c) => {
                         <a href="#pricing" class="text-white hover:text-gold transition-colors font-medium">Pricing</a>
                         <a href="#blog" class="text-white hover:text-gold transition-colors font-medium">Blog</a>
                         <a href="#faq" class="text-white hover:text-gold transition-colors font-medium">FAQ</a>
+                        <a href="/intake-form" class="text-white hover:text-gold transition-colors font-medium">Intake Form</a>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">Book Session</a>
                     </div>
                     <button id="mobileMenuBtn" class="md:hidden text-white">
@@ -1864,6 +1865,7 @@ app.get('/', (c) => {
                     <a href="#pricing" class="block text-white hover:text-gold transition-colors font-medium">Pricing</a>
                     <a href="#blog" class="block text-white hover:text-gold transition-colors font-medium">Blog</a>
                     <a href="#faq" class="block text-white hover:text-gold transition-colors font-medium">FAQ</a>
+                    <a href="/intake-form" class="block text-white hover:text-gold transition-colors font-medium">Intake Form</a>
                     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center shadow-lg">Book Session</a>
                 </div>
             </div>
@@ -5552,6 +5554,279 @@ app.get('/blog/:id', (c) => {
     </body>
     </html>
   `)
+})
+
+// Intake Form Page
+app.get('/intake-form', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client Intake Form - Susan K Pearson</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            midnight: '#0A0A0A',
+                            charcoal: '#1A1A1A',
+                            obsidian: '#000000',
+                            gold: '#C8A974',
+                            champagne: '#D4AF37',
+                            cream: '#FAF7F3',
+                            bone: '#F4F2EF',
+                            taupe: '#7C7165'
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="bg-cream text-charcoal">
+        <!-- Navigation -->
+        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center">
+                        <a href="/" class="flex items-center py-3">
+                            <img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-16 w-auto">
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <a href="/" class="text-white hover:text-gold transition-colors">Back to Home</a>
+                        <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors">
+                            <i class="fas fa-phone mr-2"></i>+971 55 177 0957
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Form Content -->
+        <div class="pt-24 pb-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Header -->
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-serif text-charcoal mb-4">Client Intake Form</h1>
+                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
+                        This form helps me understand how to best support you. Please answer only what feels relevant and comfortable.
+                    </p>
+                </div>
+
+                <!-- Form -->
+                <form id="intakeForm" class="bg-white rounded-lg shadow-xl p-8 md:p-12 space-y-8">
+                    <!-- Personal Information -->
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">1. Personal Information</h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Full Name *</label>
+                                <input type="text" name="fullName" required 
+                                    class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Date of Birth *</label>
+                                <input type="date" name="dateOfBirth" required 
+                                    class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Email *</label>
+                                <input type="email" name="email" required 
+                                    class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Phone / WhatsApp *</label>
+                                <input type="tel" name="phone" required 
+                                    class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Location</label>
+                            <input type="text" name="location" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold">
+                        </div>
+                    </div>
+
+                    <!-- What Brings You Here -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">2. What Brings You Here</h2>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">What has led you to seek this work at this time?</label>
+                            <textarea name="reasonForSeeking" rows="4" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Current Experience -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">3. Current Experience</h2>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">How would you describe what you are currently experiencing?</label>
+                            <textarea name="currentExperience" rows="4" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Previous Experience -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">4. Previous Experience</h2>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Have you experienced energy work, hypnotherapy, or bodywork before?</label>
+                            <textarea name="previousExperience" rows="3" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Health & Wellbeing -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">5. Health & Wellbeing</h2>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Are you under medical care?</label>
+                            <textarea name="medicalCare" rows="2" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Are you taking medication?</label>
+                            <textarea name="medication" rows="2" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Any injuries or sensitivities?</label>
+                            <textarea name="injuriesOrSensitivities" rows="2" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Nervous System -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">6. Nervous System</h2>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">How do you respond to stress?</label>
+                            <textarea name="stressResponse" rows="3" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Are you comfortable with touch?</label>
+                            <div class="flex space-x-6">
+                                <label class="flex items-center">
+                                    <input type="radio" name="comfortableWithTouch" value="yes" class="mr-2">
+                                    <span>Yes</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="comfortableWithTouch" value="no" class="mr-2">
+                                    <span>No</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="comfortableWithTouch" value="sometimes" class="mr-2">
+                                    <span>Sometimes</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emotional Patterns -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">7. Emotional Patterns</h2>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Any patterns you would like to shift?</label>
+                            <textarea name="emotionalPatterns" rows="4" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Intentions -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-serif text-gold border-b border-gold/20 pb-2">8. Intentions</h2>
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">What are you hoping to experience or discover?</label>
+                            <textarea name="intentions" rows="4" 
+                                class="w-full px-4 py-3 border border-charcoal/20 rounded-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex flex-col items-center space-y-4 pt-6">
+                        <button type="submit" 
+                            class="bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-colors font-medium text-lg shadow-lg">
+                            Submit Intake Form
+                        </button>
+                        <p class="text-sm text-charcoal/60 text-center">
+                            Your information is confidential and will only be used to support your healing journey.
+                        </p>
+                    </div>
+                </form>
+
+                <!-- Success Message (Hidden) -->
+                <div id="successMessage" class="hidden bg-green-50 border border-green-200 rounded-lg p-8 text-center mt-8">
+                    <i class="fas fa-check-circle text-green-600 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-serif text-green-800 mb-2">Thank You!</h3>
+                    <p class="text-green-700">Your intake form has been submitted successfully. I look forward to working with you.</p>
+                    <a href="/" class="inline-block mt-6 bg-gold text-black px-8 py-3 rounded-sm hover:bg-champagne transition-colors">
+                        Return to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('intakeForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = new FormData(e.target);
+                const data = Object.fromEntries(formData.entries());
+                
+                try {
+                    const response = await fetch('/api/intake-form', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                    
+                    if (response.ok) {
+                        document.getElementById('intakeForm').classList.add('hidden');
+                        document.getElementById('successMessage').classList.remove('hidden');
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                } catch (error) {
+                    alert('There was an error submitting your form. Please try again or contact susan@susankpearson.com');
+                }
+            });
+        </script>
+    </body>
+    </html>
+  `)
+})
+
+// API endpoint to handle form submission
+app.post('/api/intake-form', async (c) => {
+  const data = await c.req.json()
+  
+  // Log the submission (in production, you would save this to a database)
+  console.log('Intake Form Submission:', {
+    timestamp: new Date().toISOString(),
+    ...data
+  })
+  
+  // In production, you would:
+  // 1. Save to Cloudflare D1 database
+  // 2. Send email notification to you
+  // 3. Send confirmation email to client
+  
+  return c.json({ success: true, message: 'Form submitted successfully' })
 })
 
 export default app
