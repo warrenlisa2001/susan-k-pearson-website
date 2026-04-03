@@ -2186,7 +2186,7 @@ app.get('/', (c) => {
         </section>
 
         <!-- Intake Form Section -->
-        <section class="py-16 bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg text-center">
                     <i class="fas fa-file-alt text-gold text-4xl mb-6"></i>
@@ -4000,7 +4000,7 @@ app.get('/', (c) => {
         </section>
 
         <!-- Anthropic Work Section -->
-        <section class="py-16 bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg border-l-4 border-gold">
                     <h3 class="text-2xl font-serif text-charcoal mb-6 text-center flex items-center justify-center">
@@ -4520,15 +4520,15 @@ app.get('/deep-alignment-therapy', (c) => {
             </div>
         </nav>
 
-        <section class="pt-20 pb-10 bg-charcoal text-cream">
+        <section class="pt-20 pb-6 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
-                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Deep Alignment Therapy</h1>
-                <p class="text-xl text-cream/80 mb-8">A Full-Spectrum Healing Journey</p>
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-4">Deep Alignment Therapy</h1>
+                <p class="text-xl text-cream/80 mb-4">A Full-Spectrum Healing Journey</p>
                 <div class="w-24 h-1 bg-gold mx-auto"></div>
             </div>
         </section>
 
-        <section class="py-16 bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                     <h2 class="text-3xl font-serif text-charcoal mb-6">What is Deep Alignment Therapy?</h2>
@@ -4614,16 +4614,16 @@ app.get('/hara-release', (c) => {
             </div>
         </nav>
 
-        <section class="pt-20 pb-10 bg-charcoal text-cream">
+        <section class="pt-20 pb-6 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
-                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Hara Release</h1>
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-4">Hara Release</h1>
                 <p class="text-xl text-cream/80 mb-4">Anma & Ampuku</p>
                 <p class="text-2xl text-gold/90 mb-8 font-light">Grounding. Opening. Releasing.</p>
                 <div class="w-24 h-1 bg-gold mx-auto"></div>
             </div>
         </section>
 
-        <section class="py-16 bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                     <h2 class="text-3xl font-serif text-charcoal mb-6">What is Hara Release?</h2>
@@ -4707,15 +4707,15 @@ app.get('/energetic-recalibration', (c) => {
             </div>
         </nav>
 
-        <section class="pt-20 pb-10 bg-charcoal text-cream">
+        <section class="pt-20 pb-6 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
-                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Energetic Recalibration</h1>
-                <p class="text-xl text-cream/80 mb-8">Reiki + Chakra Harmonizing</p>
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-4">Energetic Recalibration</h1>
+                <p class="text-xl text-cream/80 mb-4">Reiki + Chakra Harmonizing</p>
                 <div class="w-24 h-1 bg-gold mx-auto"></div>
             </div>
         </section>
 
-        <section class="py-16 bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                     <h2 class="text-3xl font-serif text-charcoal mb-6">What is Energetic Recalibration?</h2>
@@ -4804,16 +4804,16 @@ app.get('/subconscious-shift-therapy', (c) => {
             </div>
         </nav>
 
-        <section class="pt-20 pb-10 bg-charcoal text-cream">
+        <section class="pt-20 pb-6 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
-                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Subconscious Shift Therapy</h1>
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-4">Subconscious Shift Therapy</h1>
                 <p class="text-xl text-cream/80 mb-4">Hypnotherapy + Nir Levy Method</p>
                 <p class="text-2xl text-gold/90 mb-8 font-light">Repattern your inner landscape.</p>
                 <div class="w-24 h-1 bg-gold mx-auto"></div>
             </div>
         </section>
 
-        <section class="py-16 bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                     <h2 class="text-3xl font-serif text-charcoal mb-6">What is Subconscious Shift Therapy?</h2>
@@ -4925,7 +4925,7 @@ app.get('/full-frequency-session', (c) => {
             </div>
         </section>
 
-        <section class="py-16 bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                     <h2 class="text-3xl font-serif text-charcoal mb-6">What is The Full Frequency Session?</h2>
@@ -5050,16 +5050,16 @@ app.get('/nir-levy-method', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section class="pt-20 pb-10 bg-charcoal text-cream">
+        <section class="pt-20 pb-6 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
-                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">The Nir Levy Method</h1>
-                <p class="text-xl text-cream/80 mb-8">with Susan K Pearson</p>
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-4">The Nir Levy Method</h1>
+                <p class="text-xl text-cream/80 mb-4">with Susan K Pearson</p>
                 <div class="w-24 h-1 bg-gold mx-auto"></div>
             </div>
         </section>
 
         <!-- Introduction -->
-        <section class="section-spacing bg-cream">
+        <section class="py-8 bg-cream">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
                     <p class="text-lg text-charcoal/80 leading-relaxed mb-6">
