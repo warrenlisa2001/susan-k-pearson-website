@@ -4520,7 +4520,7 @@ app.get('/deep-alignment-therapy', (c) => {
             </div>
         </nav>
 
-        <section class="pt-32 pb-16 bg-charcoal text-cream">
+        <section class="pt-24 pb-12 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Deep Alignment Therapy</h1>
                 <p class="text-xl text-cream/80 mb-8">A Full-Spectrum Healing Journey</p>
@@ -4614,7 +4614,7 @@ app.get('/hara-release', (c) => {
             </div>
         </nav>
 
-        <section class="pt-32 pb-16 bg-charcoal text-cream">
+        <section class="pt-24 pb-12 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Hara Release</h1>
                 <p class="text-xl text-cream/80 mb-4">Anma & Ampuku</p>
@@ -4707,7 +4707,7 @@ app.get('/energetic-recalibration', (c) => {
             </div>
         </nav>
 
-        <section class="pt-32 pb-16 bg-charcoal text-cream">
+        <section class="pt-24 pb-12 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Energetic Recalibration</h1>
                 <p class="text-xl text-cream/80 mb-8">Reiki + Chakra Harmonizing</p>
@@ -4804,7 +4804,7 @@ app.get('/subconscious-shift-therapy', (c) => {
             </div>
         </nav>
 
-        <section class="pt-32 pb-16 bg-charcoal text-cream">
+        <section class="pt-24 pb-12 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Subconscious Shift Therapy</h1>
                 <p class="text-xl text-cream/80 mb-4">Hypnotherapy + Nir Levy Method</p>
@@ -4914,7 +4914,7 @@ app.get('/full-frequency-session', (c) => {
             </div>
         </nav>
 
-        <section class="pt-32 pb-16 bg-charcoal text-cream">
+        <section class="pt-24 pb-12 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <div class="mb-6">
                     <i class="fas fa-infinity text-gold text-5xl"></i>
@@ -5050,7 +5050,7 @@ app.get('/nir-levy-method', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section class="pt-32 pb-16 bg-charcoal text-cream">
+        <section class="pt-24 pb-12 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">The Nir Levy Method</h1>
                 <p class="text-xl text-cream/80 mb-8">with Susan K Pearson</p>
