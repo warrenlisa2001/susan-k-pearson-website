@@ -4499,20 +4499,22 @@ app.get('/deep-alignment-therapy', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
           body { font-family: 'Montserrat', sans-serif; }
           h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
         </style>
     </head>
     <body class="bg-cream">
-        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+        <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
-                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
-                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
+                        <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                 </div>
             </div>
@@ -4591,20 +4593,22 @@ app.get('/hara-release', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
           body { font-family: 'Montserrat', sans-serif; }
           h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
         </style>
     </head>
     <body class="bg-cream">
-        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+        <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
-                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
-                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
+                        <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                 </div>
             </div>
@@ -4682,20 +4686,22 @@ app.get('/energetic-recalibration', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
           body { font-family: 'Montserrat', sans-serif; }
           h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
         </style>
     </head>
     <body class="bg-cream">
-        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+        <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
-                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
-                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
+                        <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                 </div>
             </div>
@@ -4777,20 +4783,22 @@ app.get('/subconscious-shift-therapy', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
           body { font-family: 'Montserrat', sans-serif; }
           h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
         </style>
     </head>
     <body class="bg-cream">
-        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+        <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
-                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
-                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
+                        <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                 </div>
             </div>
@@ -4885,20 +4893,22 @@ app.get('/full-frequency-session', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
           body { font-family: 'Montserrat', sans-serif; }
           h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
         </style>
     </head>
     <body class="bg-cream">
-        <nav class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/20 z-50 shadow-sm">
+        <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-brand-logo.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
                     <div class="flex space-x-6 items-center">
-                        <a href="/#home" class="text-black hover:text-gold transition-colors">Home</a>
-                        <a href="/#services" class="text-black hover:text-gold transition-colors">Services</a>
-                        <a href="/#booking" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Explore Working Together</a>
+                        <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
+                        <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium">Book Session</a>
                     </div>
                 </div>
             </div>
@@ -5013,6 +5023,8 @@ app.get('/nir-levy-method', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
           body { font-family: 'Montserrat', sans-serif; }
           h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
@@ -5302,6 +5314,8 @@ app.get('/blog', (c) => {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <style>
           body { font-family: 'Montserrat', sans-serif; background-color: #F5F1E8; }
           h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
