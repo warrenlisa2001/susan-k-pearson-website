@@ -40,6 +40,15 @@ const testimonials = [
     text: "I want to share my experience with the Reiki sessions I've been fortunate to attend with this practitioner for several years, and it continues. The sessions took place in various formats - in person, via video call, and outdoors in nature. All these sessions have been an opportunity for profound learning in letting go and experiencing total well-being. Susan's voice, her expertise, her gentleness, and her kindness carry you toward serenity. This has significantly increased my ability to manage my emotions, and as a result, the quality of my sleep has improved. I highly recommend these Reiki sessions with Susan to anyone seeking to reconnect with themselves and stimulate their vital energy.",
     image: "/images/carole-france.jpg",
     isPhoto: true
+  },
+  {
+    id: 4,
+    name: "Fatima",
+    location: "Canada (based in Dubai)",
+    rating: 5,
+    text: "I'm originally from Canada, 46 years old, and have been based in Dubai for the past 23 years. I recently experienced a session with Susan that integrates Nir Levi Method alongside energy healing components, and I can honestly say it was exceptional. I went into the session carrying a fair amount of stress, and left feeling deeply elevated, grounded, and restored. What stood out most was the profound sense of safety she creates. I rarely allow myself to fully let go in sessions, yet I found myself completely relaxed - I even fell asleep, which almost never happens for me. That, in itself, speaks volumes about the space she holds. Susan has a very calming, genuine, and reassuring presence. Her energy allows your nervous system to truly unwind and reset. After the session, I felt fully regulated, clear, and at ease. This is someone I would return to consistently and confidently recommend.",
+    image: "/images/fatima-canada.jpg",
+    isPhoto: true
   }
 ]
 
