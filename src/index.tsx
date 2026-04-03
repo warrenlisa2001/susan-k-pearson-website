@@ -24,46 +24,6 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Catherine R.",
-    location: "New York, USA",
-    rating: 5,
-    text: "As someone who's experienced work across Manhattan's finest wellness centers, I can confidently say Susan's practice stands in a class of its own. Her treatment room reflects her approach - refined, intentional, powerful. The combination of hypnotherapy and Ampuku abdominal work released trauma I'd been holding for decades. Susan's elegance and depth create a sanctuary where true transformation happens. This is work for the discerning client.",
-    image: "👩🏼"
-  },
-  {
-    id: 3,
-    name: "James L.",
-    location: "London, United Kingdom",
-    rating: 5,
-    text: "As a skeptic and former attorney, I wasn't sure what to expect. Susan's professional, grounded approach immediately put me at ease. The results speak for themselves - chronic pain I'd lived with for years has significantly reduced after her Anma sessions, and the hypnotherapy work helped me release decades of accumulated stress. I feel more present and balanced than I have in my entire adult life. Highly recommended for anyone seeking evidence-based yet spiritually intelligent work.",
-    image: "👨🏼"
-  },
-  {
-    id: 4,
-    name: "Layla S.",
-    location: "Abu Dhabi, UAE",
-    rating: 5,
-    text: "Susan has a rare gift that transcends technique. Her Reiki sessions are deeply restorative, and I always leave feeling renewed on every level - physically, emotionally, and spiritually. She creates such an elegant space for this work. The chakra balancing she offers is the most profound I've experienced. I've worked with many practitioners over the years, and Susan stands out as truly exceptional.",
-    image: "👩🏻‍🦱"
-  },
-  {
-    id: 5,
-    name: "Michael Chen",
-    location: "Sydney, Australia",
-    rating: 5,
-    text: "Susan's integrative approach is unlike anything I've experienced across three continents. Her combination of somatic work and subtle-energy practices helped me reconnect with my body in a way I never thought possible after years of disconnection following a traumatic accident. Her wisdom, professionalism, and genuine care for her clients' wellbeing shine through in every session. The Ampuku work alone was worth the investment, but combined with everything else she offers, it's truly transformational. Worth every dirham.",
-    image: "👨🏻"
-  },
-  {
-    id: 6,
-    name: "Sophia Martinez",
-    location: "Barcelona, Spain",
-    rating: 5,
-    text: "I came to Susan after trying everything - traditional therapy, medication, various alternative treatments. Nothing prepared me for the depth of her work. The way she combines Japanese healing arts with consciousness-based practices is remarkable. Her Anma sessions released tension I didn't know I was holding, and the hypnotherapy helped me finally break free from anxiety patterns that had controlled my life. Susan's space is a sanctuary of elegance and depth. She is a true master of her craft.",
-    image: "👩🏽"
-  },
-  {
-    id: 7,
     name: "Pırıl",
     location: "Istanbul, Turkey",
     rating: 5,
