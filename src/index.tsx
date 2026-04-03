@@ -2,7 +2,11 @@ import { Hono } from 'hono'
 import { serveStatic } from 'hono/cloudflare-workers'
 import { cors } from 'hono/cors'
 
-const app = new Hono()
+type Bindings = {
+  DB: D1Database
+}
+
+const app = new Hono<{ Bindings: Bindings }>()
 
 app.use('/api/*', cors())
 app.use('/static/*', serveStatic({ root: './public' }))
@@ -5813,20 +5817,136 @@ app.get('/intake-form', (c) => {
 
 // API endpoint to handle form submission
 app.post('/api/intake-form', async (c) => {
-  const data = await c.req.json()
-  
-  // Log the submission (in production, you would save this to a database)
-  console.log('Intake Form Submission:', {
-    timestamp: new Date().toISOString(),
-    ...data
-  })
-  
-  // In production, you would:
-  // 1. Save to Cloudflare D1 database
-  // 2. Send email notification to you
-  // 3. Send confirmation email to client
-  
-  return c.json({ success: true, message: 'Form submitted successfully' })
+  try {
+    const data = await c.req.json()
+    const timestamp = new Date().toISOString()
+    
+    // 1. Save to Cloudflare D1 Database
+    const db = c.env.DB
+    if (db) {
+      try {
+        await db.prepare(`
+          INSERT INTO intake_forms (
+            full_name, email, phone, date_of_birth, location,
+            reason_for_seeking, current_experience, previous_experience,
+            medical_care, medication, injuries_or_sensitivities,
+            stress_response, comfortable_with_touch, emotional_patterns, intentions
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `).bind(
+          data.fullName,
+          data.email,
+          data.phone,
+          data.dateOfBirth || null,
+          data.location || null,
+          data.reasonForSeeking || null,
+          data.currentExperience || null,
+          data.previousExperience || null,
+          data.medicalCare || null,
+          data.medication || null,
+          data.injuriesOrSensitivities || null,
+          data.stressResponse || null,
+          data.comfortableWithTouch || null,
+          data.emotionalPatterns || null,
+          data.intentions || null
+        ).run()
+        
+        console.log('✅ Saved to database:', data.email)
+      } catch (dbError) {
+        console.error('❌ Database error:', dbError)
+      }
+    }
+    
+    // 2. Send email notification using Resend API
+    try {
+      // Format the email body
+      const emailBody = `
+New Intake Form Submission
+Time: ${new Date(timestamp).toLocaleString()}
+
+PERSONAL INFORMATION:
+- Name: ${data.fullName}
+- Email: ${data.email}
+- Phone: ${data.phone}
+- Date of Birth: ${data.dateOfBirth || 'Not provided'}
+- Location: ${data.location || 'Not provided'}
+
+WHAT BRINGS YOU HERE:
+${data.reasonForSeeking || 'Not provided'}
+
+CURRENT EXPERIENCE:
+${data.currentExperience || 'Not provided'}
+
+PREVIOUS EXPERIENCE:
+${data.previousExperience || 'Not provided'}
+
+HEALTH & WELLBEING:
+- Medical Care: ${data.medicalCare || 'Not provided'}
+- Medication: ${data.medication || 'Not provided'}
+- Injuries/Sensitivities: ${data.injuriesOrSensitivities || 'Not provided'}
+
+NERVOUS SYSTEM:
+- Stress Response: ${data.stressResponse || 'Not provided'}
+- Comfortable with Touch: ${data.comfortableWithTouch || 'Not provided'}
+
+EMOTIONAL PATTERNS:
+${data.emotionalPatterns || 'Not provided'}
+
+INTENTIONS:
+${data.intentions || 'Not provided'}
+
+---
+View all submissions in your admin dashboard.
+      `.trim()
+      
+      // Send email via Resend (you'll need to add RESEND_API_KEY to secrets)
+      const resendApiKey = c.env.RESEND_API_KEY
+      if (resendApiKey) {
+        const emailResponse = await fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${resendApiKey}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            from: 'Intake Forms <noreply@susankpearson.com>',
+            to: 'susankatrynpearson@gmail.com',
+            subject: `New Intake Form: ${data.fullName}`,
+            text: emailBody
+          })
+        })
+        
+        if (emailResponse.ok) {
+          console.log('✅ Email sent to susankatrynpearson@gmail.com')
+        } else {
+          console.error('❌ Email send failed:', await emailResponse.text())
+        }
+      } else {
+        console.log('⚠️ No RESEND_API_KEY found - email not sent')
+      }
+    } catch (emailError) {
+      console.error('❌ Email error:', emailError)
+    }
+    
+    // 3. Log for debugging
+    console.log('📋 Intake Form Submission:', {
+      timestamp,
+      name: data.fullName,
+      email: data.email
+    })
+    
+    return c.json({ 
+      success: true, 
+      message: 'Form submitted successfully',
+      timestamp 
+    })
+    
+  } catch (error) {
+    console.error('❌ Form submission error:', error)
+    return c.json({ 
+      success: false, 
+      message: 'Error submitting form' 
+    }, 500)
+  }
 })
 
 export default app
