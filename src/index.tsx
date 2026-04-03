@@ -61,6 +61,14 @@ const testimonials = [
     rating: 5,
     text: "I came to Susan after trying everything - traditional therapy, medication, various alternative treatments. Nothing prepared me for the depth of her work. The way she combines Japanese healing arts with consciousness-based practices is remarkable. Her Anma sessions released tension I didn't know I was holding, and the hypnotherapy helped me finally break free from anxiety patterns that had controlled my life. Susan's space is a sanctuary of elegance and depth. She is a true master of her craft.",
     image: "👩🏽"
+  },
+  {
+    id: 7,
+    name: "Pırıl",
+    location: "Istanbul, Turkey",
+    rating: 5,
+    text: "Receiving a session from Susan felt something unique - each and every time. There's a softness and ease in how she works, but at the same time you can feel the depth and experience behind it. What I love with Susan's sessions most is how she blends energy work with the Nir Levi Method body work in her own unique way - no two sessions feel the same. She really tunes into what you and your soul need in that moment. Bonus is the elegance of her space which is carefully curated, allowing you to feel safe, ease and drop in. Thank you dear Susan!",
+    image: "👩🏻"
   }
 ]
 
