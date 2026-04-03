@@ -28,7 +28,8 @@ const testimonials = [
     location: "Istanbul, Turkey",
     rating: 5,
     text: "Receiving a session from Susan felt something unique - each and every time. There's a softness and ease in how she works, but at the same time you can feel the depth and experience behind it. What I love with Susan's sessions most is how she blends energy work with the Nir Levi Method body work in her own unique way - no two sessions feel the same. She really tunes into what you and your soul need in that moment. Bonus is the elegance of her space which is carefully curated, allowing you to feel safe, ease and drop in. Thank you dear Susan!",
-    image: "👩🏻"
+    image: "/images/piril-turkey.jpg",
+    isPhoto: true
   },
   {
     id: 3,
@@ -36,7 +37,8 @@ const testimonials = [
     location: "France",
     rating: 5,
     text: "I want to share my experience with the Reiki sessions I've been fortunate to attend with this practitioner for several years, and it continues. The sessions took place in various formats - in person, via video call, and outdoors in nature. All these sessions have been an opportunity for profound learning in letting go and experiencing total well-being. Susan's voice, her expertise, her gentleness, and her kindness carry you toward serenity. This has significantly increased my ability to manage my emotions, and as a result, the quality of my sleep has improved. I highly recommend these Reiki sessions with Susan to anyone seeking to reconnect with themselves and stimulate their vital energy.",
-    image: "👩🏼"
+    image: "/images/carole-france.jpg",
+    isPhoto: true
   }
 ]
 
@@ -2445,7 +2447,12 @@ app.get('/', (c) => {
                                         
                                         <!-- Client Info -->
                                         <div class="flex flex-col items-center">
-                                            <div class="text-5xl mb-4">${testimonial.image}</div>
+                                            ${testimonial.isPhoto 
+                                                ? `<div class="w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-gold shadow-lg">
+                                                    <img src="${testimonial.image}" alt="${testimonial.name}" class="w-full h-full object-cover" />
+                                                   </div>`
+                                                : `<div class="text-5xl mb-4">${testimonial.image}</div>`
+                                            }
                                             <h4 class="font-serif text-2xl text-gold mb-1">${testimonial.name}</h4>
                                             <p class="text-sm text-cream/60 mb-3">${testimonial.location}</p>
                                             <div class="flex gap-1">
