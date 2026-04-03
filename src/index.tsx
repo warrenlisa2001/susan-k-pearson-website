@@ -4509,8 +4509,8 @@ app.get('/deep-alignment-therapy', (c) => {
     <body class="bg-cream">
         <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                <div class="flex justify-between items-center h-16">
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-12 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
@@ -4520,7 +4520,7 @@ app.get('/deep-alignment-therapy', (c) => {
             </div>
         </nav>
 
-        <section class="pt-24 pb-12 bg-charcoal text-cream">
+        <section class="pt-20 pb-10 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Deep Alignment Therapy</h1>
                 <p class="text-xl text-cream/80 mb-8">A Full-Spectrum Healing Journey</p>
@@ -4603,8 +4603,8 @@ app.get('/hara-release', (c) => {
     <body class="bg-cream">
         <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                <div class="flex justify-between items-center h-16">
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-12 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
@@ -4614,7 +4614,7 @@ app.get('/hara-release', (c) => {
             </div>
         </nav>
 
-        <section class="pt-24 pb-12 bg-charcoal text-cream">
+        <section class="pt-20 pb-10 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Hara Release</h1>
                 <p class="text-xl text-cream/80 mb-4">Anma & Ampuku</p>
@@ -4696,8 +4696,8 @@ app.get('/energetic-recalibration', (c) => {
     <body class="bg-cream">
         <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                <div class="flex justify-between items-center h-16">
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-12 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
@@ -4707,7 +4707,7 @@ app.get('/energetic-recalibration', (c) => {
             </div>
         </nav>
 
-        <section class="pt-24 pb-12 bg-charcoal text-cream">
+        <section class="pt-20 pb-10 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Energetic Recalibration</h1>
                 <p class="text-xl text-cream/80 mb-8">Reiki + Chakra Harmonizing</p>
@@ -4793,8 +4793,8 @@ app.get('/subconscious-shift-therapy', (c) => {
     <body class="bg-cream">
         <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                <div class="flex justify-between items-center h-16">
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-12 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
@@ -4804,7 +4804,7 @@ app.get('/subconscious-shift-therapy', (c) => {
             </div>
         </nav>
 
-        <section class="pt-24 pb-12 bg-charcoal text-cream">
+        <section class="pt-20 pb-10 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Subconscious Shift Therapy</h1>
                 <p class="text-xl text-cream/80 mb-4">Hypnotherapy + Nir Levy Method</p>
@@ -4903,8 +4903,8 @@ app.get('/full-frequency-session', (c) => {
     <body class="bg-cream">
         <nav class="fixed top-0 left-0 right-0 bg-black border-b border-gold/20 z-50 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-14 w-auto"></a>
+                <div class="flex justify-between items-center h-16">
+                    <a href="/#home"><img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-12 w-auto"></a>
                     <div class="flex space-x-6 items-center">
                         <a href="/#home" class="text-white hover:text-gold transition-colors">Home</a>
                         <a href="/#services" class="text-white hover:text-gold transition-colors">Services</a>
@@ -4914,7 +4914,7 @@ app.get('/full-frequency-session', (c) => {
             </div>
         </nav>
 
-        <section class="pt-24 pb-12 bg-charcoal text-cream">
+        <section class="pt-20 pb-10 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <div class="mb-6">
                     <i class="fas fa-infinity text-gold text-5xl"></i>
@@ -5050,7 +5050,7 @@ app.get('/nir-levy-method', (c) => {
         </nav>
 
         <!-- Hero Section -->
-        <section class="pt-24 pb-12 bg-charcoal text-cream">
+        <section class="pt-20 pb-10 bg-charcoal text-cream">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">The Nir Levy Method</h1>
                 <p class="text-xl text-cream/80 mb-8">with Susan K Pearson</p>
