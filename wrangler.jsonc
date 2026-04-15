@@ -1,16 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "elemental-healing",
+  "name": "susan-k-pearson-website",
   "compatibility_date": "2026-01-17",
   "pages_build_output_dir": "./dist",
   "compatibility_flags": [
     "nodejs_compat"
-  ],
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "elemental-healing-db",
-      "database_id": "PLACEHOLDER_DB_ID"
-    }
   ]
 }
