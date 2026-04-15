@@ -2062,16 +2062,6 @@ app.get('/', (c) => {
                             <i class="fas fa-quote-right text-gold text-3xl block"></i>
                         </div>
                     </div>
-                    
-                    <!-- Office Space -->
-                    <div class="mt-8 rounded-sm overflow-hidden shadow-2xl">
-                        <img src="/images/office-space.jpg" alt="Susan K Pearson Healing Space" class="w-full h-auto">
-                        <div class="bg-white p-6 text-center">
-                            <p class="text-charcoal/70 text-sm italic">
-                                A space designed for calm, depth, and beauty—where transformation unfolds naturally.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
