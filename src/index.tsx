@@ -3,7 +3,7 @@ import { serveStatic } from 'hono/cloudflare-workers'
 import { cors } from 'hono/cors'
 
 type Bindings = {
-  DB: D1Database
+  DB?: D1Database
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
