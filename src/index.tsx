@@ -49,6 +49,15 @@ const testimonials = [
     text: "I'm originally from Canada, 46 years old, and have been based in Dubai for the past 23 years. I recently experienced a session with Susan that integrates Nir Levi Method alongside energy healing components, and I can honestly say it was exceptional. I went into the session carrying a fair amount of stress, and left feeling deeply elevated, grounded, and restored. What stood out most was the profound sense of safety she creates. I rarely allow myself to fully let go in sessions, yet I found myself completely relaxed - I even fell asleep, which almost never happens for me. That, in itself, speaks volumes about the space she holds. Susan has a very calming, genuine, and reassuring presence. Her energy allows your nervous system to truly unwind and reset. After the session, I felt fully regulated, clear, and at ease. This is someone I would return to consistently and confidently recommend.",
     image: "/images/fatima-canada.jpg",
     isPhoto: true
+  },
+  {
+    id: 5,
+    name: "Matthieu",
+    location: "Dubai",
+    rating: 5,
+    text: "With a background in tennis, squash, and now padel, I've occasionally experienced some back discomfort over time. My session with Susan was a standout experience. She creates a calm, grounded environment where you immediately feel at ease. Her approach is intuitive and tailored, combining different techniques in a way that feels both seamless and highly effective. I was able to fully switch off during the session, which is not always easy for me. I left feeling deeply relaxed, rebalanced, and lighter overall. A truly refined and restorative experience. I would return without hesitation.",
+    image: "/images/matthieu-dubai.jpg",
+    isPhoto: true
   }
 ]
 
