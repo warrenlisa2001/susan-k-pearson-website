@@ -1840,6 +1840,7 @@ app.get('/', (c) => {
                         <a href="#pricing" class="text-white hover:text-gold transition-colors font-medium">Pricing</a>
                         <a href="#blog" class="text-white hover:text-gold transition-colors font-medium">Blog</a>
                         <a href="#faq" class="text-white hover:text-gold transition-colors font-medium">FAQ</a>
+                        <a href="/cat-rescue" class="text-white hover:text-gold transition-colors font-medium">Cat Rescue</a>
                         <a href="/intake-form" class="text-white hover:text-gold transition-colors font-medium">Intake Form</a>
                         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">Book Session</a>
                     </div>
@@ -1866,6 +1867,7 @@ app.get('/', (c) => {
                     <a href="#pricing" class="block text-white hover:text-gold transition-colors font-medium">Pricing</a>
                     <a href="#blog" class="block text-white hover:text-gold transition-colors font-medium">Blog</a>
                     <a href="#faq" class="block text-white hover:text-gold transition-colors font-medium">FAQ</a>
+                    <a href="/cat-rescue" class="block text-white hover:text-gold transition-colors font-medium">Cat Rescue</a>
                     <a href="/intake-form" class="block text-white hover:text-gold transition-colors font-medium">Intake Form</a>
                     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center shadow-lg">Book Session</a>
                 </div>
@@ -5956,6 +5958,235 @@ View all submissions in your admin dashboard.
       message: 'Error submitting form' 
     }, 500)
   }
+})
+
+// Cat Rescue Page Route
+app.get('/cat-rescue', (c) => {
+  return c.html(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dubai Street Cat Rescue | Susan K Pearson</title>
+        <meta name="description" content="Susan rescues, rehabilitates, and rehomes abandoned street cats in Dubai. Meet the cats looking for loving forever homes and support our rescue mission.">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="/static/style.css" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            cream: '#F5F1E8',
+                            charcoal: '#2C2C2C',
+                            gold: '#D4AF37',
+                            champagne: '#F7E7CE'
+                        }
+                    }
+                }
+            }
+        </script>
+        <!-- Calendly Badge Widget Begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <!-- Calendly Badge Widget End -->
+    </head>
+    <body class="bg-cream text-charcoal">
+        <!-- Navigation -->
+        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-24 md:h-28">
+                    <div class="flex items-center">
+                        <a href="/" class="flex items-center py-2">
+                            <img src="/images/skp-logo-white.png" alt="Susan K Pearson - Elemental Healing" class="h-16 md:h-20 w-auto transition-transform hover:scale-105">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a href="/" class="text-white hover:text-gold transition-colors font-medium">Home</a>
+                        <a href="/#about" class="text-white hover:text-gold transition-colors font-medium">About</a>
+                        <a href="/cat-rescue" class="text-gold font-medium">Cat Rescue</a>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">Book Session</a>
+                    </div>
+                    <button id="mobileMenuBtn" class="md:hidden text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="pt-32 md:pt-36 pb-20 bg-gradient-to-b from-charcoal to-black text-white">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <div class="mb-8 flex justify-center items-center gap-4">
+                    <div class="w-16 h-px bg-gradient-to-r from-transparent to-gold/40"></div>
+                    <i class="fas fa-heart text-gold text-2xl"></i>
+                    <div class="w-16 h-px bg-gradient-to-l from-transparent to-gold/40"></div>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-serif font-light mb-6">Dubai Street Cat Rescue</h1>
+                <p class="text-xl md:text-2xl text-cream/80 max-w-3xl mx-auto mb-8">
+                    Giving abandoned and vulnerable cats a second chance at life, love, and belonging
+                </p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="#cats" class="bg-gold text-black px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">
+                        <i class="fas fa-paw mr-2"></i>Meet the Cats
+                    </a>
+                    <a href="#donate" class="border-2 border-gold text-gold px-8 py-3 rounded-sm hover:bg-gold hover:text-black transition-colors font-medium">
+                        <i class="fas fa-hand-holding-heart mr-2"></i>Support Our Mission
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="py-20 bg-cream">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="bg-white rounded-sm shadow-2xl p-8 md:p-12 border-l-4 border-gold">
+                    <h2 class="text-3xl md:text-4xl font-serif font-light mb-6 text-charcoal">Susan's Mission</h2>
+                    <div class="prose prose-lg max-w-none text-charcoal/80 space-y-4">
+                        <p class="text-lg leading-relaxed">
+                            Beyond my healing practice, I am deeply committed to supporting the most vulnerable beings in our community—the abandoned and street cats of Dubai. These beautiful souls deserve safety, care, and the chance to find loving forever homes.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Every cat I rescue receives complete veterinary care, rehabilitation, and is spayed or neutered before finding their forever family. This work is entirely self-funded and driven by compassion. A portion of my session proceeds helps support these rescues, but the need is constant.
+                        </p>
+                        <p class="text-lg leading-relaxed font-medium text-gold">
+                            Each cat has a story. Each one deserves a chance at the life they were meant to live—safe, loved, and cherished.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cats Available for Adoption -->
+        <section id="cats" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif font-light mb-4">Meet the Cats Looking for Home</h2>
+                    <p class="text-xl text-charcoal/60 max-w-2xl mx-auto">
+                        Each of these precious souls is ready to bring love, joy, and companionship into their forever home
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cat Profile Template - Repeated for each cat -->
+                    ${[
+                      { name: "Luna", age: "2 years", gender: "Female", personality: "Gentle and affectionate, loves to curl up in sunny spots", story: "Found as a tiny kitten under a car in the summer heat. Now thriving and ready for her forever family." },
+                      { name: "Shadow", age: "3 years", gender: "Male", personality: "Playful and curious, excellent with children", story: "Rescued from a construction site. Despite his rough start, he's incredibly loving and trusts humans completely." },
+                      { name: "Whiskers", age: "1 year", gender: "Male", personality: "Energetic and social, loves interactive toys", story: "Abandoned in a cardboard box at a mall. He's overcome his fear and is now a confident, happy young cat." },
+                      { name: "Pearl", age: "4 years", gender: "Female", personality: "Calm and elegant, perfect lap cat", story: "Lived on the streets for years before being rescued. She's now spayed, healthy, and craves the comfort of a loving home." },
+                      { name: "Tiger", age: "2 years", gender: "Male", personality: "Bold and adventurous, loves climbing", story: "Found with an injured paw that has now fully healed. He's ready to explore a safe indoor environment." },
+                      { name: "Bella", age: "5 years", gender: "Female", personality: "Sweet and quiet, ideal for a peaceful home", story: "Spent years surviving near a restaurant. Now she's ready to retire from street life and enjoy being pampered." },
+                      { name: "Oliver", age: "1 year", gender: "Male", personality: "Affectionate and vocal, loves conversation", story: "Rescued from a busy highway. This brave boy has so much love to give and seeks a family who will cherish him." },
+                      { name: "Cleo", age: "3 years", gender: "Female", personality: "Independent yet loving, enjoys her own space", story: "Found pregnant on the streets. Her kittens have all found homes, and now it's her turn for happiness." },
+                      { name: "Max", age: "2 years", gender: "Male", personality: "Friendly and outgoing, great with other pets", story: "Abandoned when his family left Dubai. He's forgiving and ready to trust again with the right family." },
+                      { name: "Daisy", age: "1 year", gender: "Female", personality: "Playful kitten energy, loves feather toys", story: "Rescued from under a building where she was trapped. Now healthy and full of life, ready for adventures." },
+                      { name: "Simba", age: "4 years", gender: "Male", personality: "Majestic and dignified, loves head scratches", story: "Lived in a colony for years. He's tested, vaccinated, and neutered—ready for indoor luxury." },
+                      { name: "Misty", age: "2 years", gender: "Female", personality: "Shy at first, then incredibly loyal", story: "Found hiding in bushes, terrified. With patience and love, she's blossomed into a trusting companion." },
+                      { name: "Leo", age: "3 years", gender: "Male", personality: "Confident and charismatic, loves attention", story: "Rescued from a parking lot where he was struggling to survive. He's now healthy and ready to be someone's best friend." },
+                      { name: "Rosie", age: "1 year", gender: "Female", personality: "Sweet and gentle, purrs constantly", story: "Found as a young kitten with an eye infection, now fully recovered and looking for a caring home." },
+                      { name: "Milo", age: "2 years", gender: "Male", personality: "Intelligent and curious, loves puzzle toys", story: "Abandoned in a villa when tenants moved out. He's adaptable and will thrive in a loving environment." },
+                      { name: "Ginger", age: "5 years", gender: "Female", personality: "Mature and calm, excellent companion", story: "Spent years as a community cat. She's earned her retirement and deserves a soft bed and endless cuddles." },
+                      { name: "Charlie", age: "1 year", gender: "Male", personality: "Playful and energetic, loves to chase", story: "Rescued from a busy street. This lucky boy survived and is now ready to bring joy to his forever family." },
+                      { name: "Nala", age: "3 years", gender: "Female", personality: "Affectionate and food-motivated, easy to train", story: "Found near a restaurant, always hungry. Now well-fed and healthy, she's ready for a home where she'll never worry about food again." },
+                      { name: "Oscar", age: "4 years", gender: "Male", personality: "Laid-back and easygoing, perfect for first-time cat owners", story: "Lived in a warehouse before rescue. He's grateful for every moment of comfort and shows it with endless affection." },
+                      { name: "Lily", age: "2 years", gender: "Female", personality: "Sweet-natured and gentle, loves being brushed", story: "Rescued from a construction zone. Despite her difficult past, she's optimistic, loving, and ready to find her person." }
+                    ].map(cat => `
+                      <div class="bg-cream rounded-sm shadow-lg overflow-hidden border border-gold/20 hover:shadow-2xl transition-shadow">
+                        <div class="h-64 bg-gradient-to-br from-gold/20 to-champagne/30 flex items-center justify-center">
+                          <i class="fas fa-cat text-gold/40 text-8xl"></i>
+                        </div>
+                        <div class="p-6">
+                          <h3 class="text-2xl font-serif mb-2 text-gold">${cat.name}</h3>
+                          <div class="flex gap-4 text-sm text-charcoal/60 mb-4">
+                            <span><i class="fas fa-calendar-alt mr-1"></i>${cat.age}</span>
+                            <span><i class="fas fa-${cat.gender === 'Female' ? 'venus' : 'mars'} mr-1"></i>${cat.gender}</span>
+                          </div>
+                          <p class="text-sm text-charcoal/80 mb-3"><strong>Personality:</strong> ${cat.personality}</p>
+                          <p class="text-sm text-charcoal/70 mb-4 italic">"${cat.story}"</p>
+                          <div class="flex gap-2">
+                            <a href="mailto:susankatrynpearson@gmail.com?subject=Adoption Inquiry: ${cat.name}" class="flex-1 bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors text-center text-sm font-medium">
+                              <i class="fas fa-envelope mr-1"></i>Adopt ${cat.name}
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    `).join('')}
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section id="donate" class="py-20 bg-charcoal text-white">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-serif font-light mb-6">Support Our Rescue Mission</h2>
+                <p class="text-xl text-cream/80 mb-12 max-w-3xl mx-auto">
+                    Every donation helps provide medical care, food, shelter, and hope to cats in need. Your support makes rescue and rehabilitation possible.
+                </p>
+                
+                <div class="bg-white/5 backdrop-blur-sm rounded-sm p-8 md:p-12 border border-gold/20 mb-12">
+                    <h3 class="text-2xl font-serif mb-6 text-gold">How Your Support Helps</h3>
+                    <div class="grid md:grid-cols-3 gap-8 text-left">
+                        <div>
+                            <i class="fas fa-stethoscope text-gold text-3xl mb-4"></i>
+                            <h4 class="text-lg font-medium mb-2">Veterinary Care</h4>
+                            <p class="text-cream/70 text-sm">Vaccinations, spaying/neutering, treatment for injuries and illnesses</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-utensils text-gold text-3xl mb-4"></i>
+                            <h4 class="text-lg font-medium mb-2">Nutrition & Shelter</h4>
+                            <p class="text-cream/70 text-sm">Quality food, safe housing, and comfortable bedding during recovery</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-home text-gold text-3xl mb-4"></i>
+                            <h4 class="text-lg font-medium mb-2">Rehoming Support</h4>
+                            <p class="text-cream/70 text-sm">Transport, documentation, and support to help cats find loving homes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gold/10 rounded-sm p-8 border-l-4 border-gold">
+                    <p class="text-lg mb-6 text-cream">
+                        <strong class="text-gold">100% of donations</strong> go directly to cat rescue and care. This is a labor of love with no administrative costs.
+                    </p>
+                    <p class="text-cream/80 mb-8">
+                        GoFundMe campaign coming soon. For now, please email to arrange direct support or to inquire about adoption.
+                    </p>
+                    <a href="mailto:susankatrynpearson@gmail.com?subject=Support for Cat Rescue" class="inline-block bg-gold text-black px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">
+                        <i class="fas fa-envelope mr-2"></i>Contact Susan
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black text-cream py-12">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <img src="/images/skp-logo-white.png" alt="Susan K Pearson" class="h-16 mx-auto mb-6">
+                <div class="flex justify-center gap-6 mb-6">
+                    <a href="/" class="hover:text-gold transition-colors">Home</a>
+                    <a href="/#about" class="hover:text-gold transition-colors">About</a>
+                    <a href="/cat-rescue" class="hover:text-gold transition-colors">Cat Rescue</a>
+                    <a href="mailto:susankatrynpearson@gmail.com" class="hover:text-gold transition-colors">Contact</a>
+                </div>
+                <p class="text-cream/60 text-sm">
+                    © ${new Date().getFullYear()} Susan K Pearson. All rights reserved. | Dubai Street Cat Rescue
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            // Mobile menu toggle
+            document.getElementById('mobileMenuBtn')?.addEventListener('click', function() {
+                const menu = document.getElementById('mobileMenu');
+                if (menu) {
+                    menu.classList.toggle('hidden');
+                }
+            });
+        </script>
+    </body>
+    </html>
+  `)
 })
 
 export default app

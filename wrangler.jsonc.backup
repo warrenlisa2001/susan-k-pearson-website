@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "susan-k-pearson-website",
+  "main": "dist/_worker.js",
+  "compatibility_date": "2026-01-17",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  }
+}
