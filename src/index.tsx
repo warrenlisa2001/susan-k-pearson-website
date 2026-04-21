@@ -6068,6 +6068,58 @@ app.get('/cat-rescue', (c) => {
                     </p>
                 </div>
 
+                <!-- Featured Bonded Pair: Beo & Foxy -->
+                <div class="mb-16 bg-gradient-to-br from-gold/5 to-champagne/10 rounded-sm border-2 border-gold/30 overflow-hidden shadow-2xl">
+                    <div class="grid md:grid-cols-2 gap-0">
+                        <div class="h-96 md:h-auto">
+                            <img src="/images/beo-and-foxy.jpg" alt="Beo and Foxy - Bonded Pair" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8 md:p-12 flex flex-col justify-center">
+                            <div class="inline-block bg-gold/20 text-gold px-4 py-2 rounded-sm text-sm font-medium mb-4 w-fit">
+                                <i class="fas fa-heart mr-2"></i>Bonded Pair - Must Be Adopted Together
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-serif mb-3 text-charcoal">Beo & Foxy</h3>
+                            <p class="text-lg text-gold font-medium mb-4">Best Friends | Soul Mates | Friends for Life</p>
+                            
+                            <div class="space-y-3 mb-6">
+                                <p class="text-charcoal/80 flex items-start">
+                                    <i class="fas fa-heart text-gold mr-3 mt-1"></i>
+                                    <span><strong>Affectionate and loving</strong> - Always looking for a cuddle and ready to shower you with love</span>
+                                </p>
+                                <p class="text-charcoal/80 flex items-start">
+                                    <i class="fas fa-play text-gold mr-3 mt-1"></i>
+                                    <span><strong>Curious and playful</strong> - Keep each other entertained and will bring joy to your home</span>
+                                </p>
+                                <p class="text-charcoal/80 flex items-start">
+                                    <i class="fas fa-child text-gold mr-3 mt-1"></i>
+                                    <span><strong>Great with kids</strong> - Gentle, patient, and wonderful family companions</span>
+                                </p>
+                                <p class="text-charcoal/80 flex items-start">
+                                    <i class="fas fa-users text-gold mr-3 mt-1"></i>
+                                    <span><strong>Looking for a caring family</strong> - These two inseparable friends dream of finding their forever home together</span>
+                                </p>
+                            </div>
+
+                            <div class="bg-white/80 rounded-sm p-4 mb-6 border-l-4 border-gold">
+                                <p class="text-sm text-charcoal/70 italic">
+                                    "Beo and Foxy are bonded soul mates who have been through everything together. Separating them would break their hearts. They need a family who understands the magic of their friendship and will give them both the loving home they deserve."
+                                </p>
+                            </div>
+
+                            <div class="flex gap-3">
+                                <a href="mailto:susankatrynpearson@gmail.com?subject=Adoption Inquiry: Beo and Foxy (Bonded Pair)" class="flex-1 bg-gold text-black px-6 py-3 rounded-sm hover:bg-champagne transition-colors text-center font-medium shadow-lg">
+                                    <i class="fas fa-envelope mr-2"></i>Adopt This Bonded Pair
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-serif font-light text-charcoal mb-2">More Cats Looking for Love</h3>
+                    <div class="w-24 h-px bg-gold/40 mx-auto"></div>
+                </div>
+
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Cat Profile Template - Repeated for each cat -->
                     ${[
