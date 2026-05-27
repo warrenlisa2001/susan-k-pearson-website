@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susan K. Pearson - Premium Wellness Redesign Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sage: #B8C5B8;
+            --rose: #F4A89B;
+            --taupe: #9C9A8B;
+            --charcoal: #2C2C2C;
+            --cream: #FAF7F3;
+            --gold: #C8A974;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 4rem;
+            --spacing-2xl: 6rem;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
+        h2 { font-size: clamp(2rem, 6vw, 3rem); }
+        h3 { font-size: 1.5rem; }
+
+        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+
+        button {
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f1ed 0%, #eee9e3 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-lg);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(180, 197, 184, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            top: -100px;
+            left: 10%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(244, 168, 155, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+            bottom: -80px;
+            right: 5%;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            color: var(--charcoal);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--taupe);
+            margin-bottom: var(--spacing-xl);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--sage);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            border-radius: 0;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary:hover {
+            background: var(--taupe);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(156, 154, 139, 0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--sage);
+            padding: 1rem 2.5rem;
+            border: 2px solid var(--sage);
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--sage);
+            color: white;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ============ FLOWER DIVIDER ============ */
+        .flower-divider {
+            text-align: center;
+            padding: var(--spacing-xl) 0;
+            font-size: 2rem;
+            color: var(--rose);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+
+        /* ============ SECTION INTRO ============ */
+        .section {
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-intro {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .section-intro h2 {
+            color: var(--charcoal);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .divider-line {
+            width: 60px;
+            height: 2px;
+            background: var(--rose);
+            margin: var(--spacing-md) auto;
+        }
+
+        .section-intro p {
+            color: var(--taupe);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ============ EXPANDABLE SECTION ============ */
+        .expandable {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: 2px;
+            margin: var(--spacing-lg) 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .expandable:hover {
+            box-shadow: 0 8px 25px rgba(184, 197, 184, 0.15);
+        }
+
+        .expandable-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .expandable-header h3 {
+            margin: 0;
+            color: var(--charcoal);
+        }
+
+        .expand-icon {
+            font-size: 1.2rem;
+            color: var(--rose);
+            transition: transform 0.5s ease;
+        }
+
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .expandable-content.active {
+            max-height: 500px;
+            margin-top: var(--spacing-md);
+        }
+
+        .expandable-content p {
+            color: var(--taupe);
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* ============ SERVICE CARDS ============ */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .card {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: 2px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(184, 197, 184, 0.2);
+            border-left-color: var(--rose);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--sage);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .card h3 {
+            color: var(--charcoal);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .card-tag {
+            display: inline-block;
+            background: var(--sage);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.75rem;
+            border-radius: 20px;
+            margin-bottom: var(--spacing-md);
+            letter-spacing: 0.5px;
+        }
+
+        .card p {
+            color: var(--taupe);
+            margin-bottom: var(--spacing-md);
+            font-size: 0.95rem;
+        }
+
+        .card-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .card-details.active {
+            max-height: 300px;
+        }
+
+        .card-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-details li {
+            color: var(--taupe);
+            margin-bottom: var(--spacing-sm);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-details li::before {
+            content: '✓';
+            color: var(--rose);
+            margin-right: var(--spacing-sm);
+            font-weight: bold;
+        }
+
+        /* ============ IMAGE PLACEHOLDERS ============ */
+        .image-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: linear-gradient(135deg, #eee9e3 0%, #e0d5ca 100%);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--taupe);
+            font-size: 1rem;
+            margin: var(--spacing-lg) 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .image-placeholder:hover {
+            box-shadow: 0 8px 25px rgba(184, 197, 184, 0.15);
+        }
+
+        .image-placeholder i {
+            font-size: 3rem;
+            opacity: 0.3;
+        }
+
+        /* ============ ALTERNATING LAYOUT ============ */
+        .alternating-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .alternating-section.reverse {
+            direction: rtl;
+        }
+
+        .alternating-section.reverse > * {
+            direction: ltr;
+        }
+
+        .alternating-text h3 {
+            color: var(--charcoal);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .alternating-text p {
+            color: var(--taupe);
+            margin-bottom: var(--spacing-md);
+        }
+
+        @media (max-width: 768px) {
+            .alternating-section {
+                grid-template-columns: 1fr;
+            }
+            .alternating-section.reverse {
+                direction: ltr;
+            }
+        }
+
+        /* ============ GALLERY STRIP ============ */
+        .gallery-strip {
+            overflow-x: auto;
+            padding: var(--spacing-lg) 0;
+            scrollbar-width: thin;
+            scrollbar-color: var(--rose) transparent;
+        }
+
+        .gallery-strip::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .gallery-strip::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .gallery-strip::-webkit-scrollbar-thumb {
+            background: var(--rose);
+            border-radius: 3px;
+        }
+
+        .gallery-items {
+            display: flex;
+            gap: var(--spacing-lg);
+            flex-wrap: nowrap;
+        }
+
+        .gallery-item {
+            flex: 0 0 300px;
+            aspect-ratio: 1 / 1;
+            background: linear-gradient(135deg, #eee9e3 0%, #e0d5ca 100%);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--taupe);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(184, 197, 184, 0.2);
+        }
+
+        .gallery-item i {
+            font-size: 3rem;
+            opacity: 0.3;
+        }
+
+        /* ============ QUOTE BLOCK ============ */
+        .quote-block {
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: var(--spacing-xl);
+            border-radius: 2px;
+            text-align: center;
+            margin: var(--spacing-xl) 0;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .quote-icon {
+            font-size: 2rem;
+            color: var(--rose);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin: var(--spacing-md) 0;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .quote-author {
+            font-size: 0.95rem;
+            color: var(--rose);
+            margin-top: var(--spacing-md);
+            font-weight: 500;
+        }
+
+        /* ============ CTA SECTION ============ */
+        .cta-section {
+            background: linear-gradient(135deg, var(--sage) 0%, var(--taupe) 100%);
+            color: white;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            text-align: center;
+            border-radius: 2px;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto var(--spacing-lg);
+        }
+
+        .cta-button {
+            background: var(--cream);
+            color: var(--sage);
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 2px;
+            margin: 0 var(--spacing-sm);
+        }
+
+        .cta-button:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            :root {
+                --spacing-2xl: 3rem;
+                --spacing-xl: 2rem;
+                --spacing-lg: 1.5rem;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding: var(--spacing-md);
+            }
+
+            .section {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+
+            .gallery-item {
+                flex: 0 0 250px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+            }
+        }
+
+        /* ============ FOOTER ============ */
+        .footer {
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: var(--spacing-xl) var(--spacing-lg);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* ============ UTILITY ============ */
+        .section-bg-alt {
+            background: #f9f7f4;
+        }
+
+        .max-width {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =============== HERO SECTION =============== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Susan K. Pearson</h1>
+            <p class="hero-subtitle">Elemental Healing | Energy Medicine | Clinical Hypnotherapy</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Book a Session</button>
+                <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== FLOWER DIVIDER =============== -->
+    <div class="flower-divider">✿</div>
+
+    <!-- =============== SECTION INTRO =============== -->
+    <section class="section">
+        <div class="section-intro">
+            <h2>About My Practice</h2>
+            <div class="divider-line"></div>
+            <p>Master-level healing combining energy medicine, clinical hypnotherapy, and somatic alignment</p>
+        </div>
+
+        <!-- Large Image Placeholder -->
+        <div class="image-placeholder">
+            <i class="fas fa-image"></i>
+            <span style="margin-left: 1rem;">Hero Image (1200x675px)</span>
+        </div>
+
+        <!-- Expandable Section -->
+        <div class="expandable">
+            <div class="expandable-header" onclick="toggleExpand(this)">
+                <h3>My Philosophy</h3>
+                <i class="fas fa-chevron-down expand-icon"></i>
+            </div>
+            <div class="expandable-content">
+                <p>
+                    I work at the intersection of energy, body, and consciousness—combining Master-level Reiki, 
+                    Energy Medicine, and Clinical Hypnotherapy to create lasting shifts in the nervous system 
+                    and subconscious mind. My practice is a sanctuary for high-end, discreet, results-oriented healing. 
+                    Based in Dubai, I offer precise, transformational work that honors the holistic nature of true wellness.
+                </p>
+                <br>
+                <p>
+                    With over 15 years of experience in the healing arts, I've had the privilege of working with 
+                    clients from around the world—from corporate executives seeking stress relief to individuals 
+                    navigating major life transitions. My approach is grounded in both ancient wisdom and 
+                    contemporary understanding of trauma, the nervous system, and the subconscious mind.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== FLOWER DIVIDER =============== -->
+    <div class="flower-divider">✿</div>
+
+    <!-- =============== ALTERNATING SECTION (Image + Text) =============== -->
+    <section class="section section-bg-alt">
+        <div class="alternating-section">
+            <div class="image-placeholder">
+                <i class="fas fa-leaf"></i>
+                <span style="margin-left: 1rem;">Service Image</span>
+            </div>
+            <div class="alternating-text">
+                <h3>Deep Alignment Sessions</h3>
+                <p>My signature integration of Reiki, energy medicine, and somatic touch. This comprehensive session addresses the full spectrum of mind, body, and spirit.</p>
+                <p style="color: var(--rose); font-size: 0.9rem; font-weight: 500;">Includes • Master-level Reiki • Somatic Alignment • Energy Medicine Protocols</p>
+                <button class="btn-primary" style="background: var(--rose);">Explore Service →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== FLOWER DIVIDER =============== -->
+    <div class="flower-divider">✿</div>
+
+    <!-- =============== SERVICE CARDS =============== -->
+    <section class="section">
+        <div class="section-intro">
+            <h2>Core Services</h2>
+            <div class="divider-line"></div>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card" onclick="toggleCardDetails(this)">
+                <div class="card-icon"><i class="fas fa-spa"></i></div>
+                <span class="card-tag">Flagship</span>
+                <h3>Deep Alignment</h3>
+                <p>90-Minute Integration</p>
+                <p style="font-weight: 600; color: var(--sage);">AED 950</p>
+                <p>Reiki, somatic alignment, and energy medicine protocols for comprehensive healing.</p>
+                <div class="card-details">
+                    <ul>
+                        <li>Master-level Reiki energy work</li>
+                        <li>Somatic alignment techniques</li>
+                        <li>Energy medicine protocols</li>
+                        <li>Chakra balancing & clearing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" onclick="toggleCardDetails(this)">
+                <div class="card-icon"><i class="fas fa-brain"></i></div>
+                <span class="card-tag">Popular</span>
+                <h3>Clinical Hypnotherapy</h3>
+                <p>75-Minute Session</p>
+                <p style="font-weight: 600; color: var(--sage);">AED 850</p>
+                <p>Access and reprogram limiting beliefs at the subconscious level.</p>
+                <div class="card-details">
+                    <ul>
+                        <li>Pattern interruption & release</li>
+                        <li>Belief system restructuring</li>
+                        <li>Nervous system regulation</li>
+                        <li>Audio recording for practice</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" onclick="toggleCardDetails(this)">
+                <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                <span class="card-tag">Advanced</span>
+                <h3>SKP Method</h3>
+                <p>120-Minute Session</p>
+                <p style="font-weight: 600; color: var(--sage);">AED 1,200</p>
+                <p>Full-spectrum somatic and energetic healing integration.</p>
+                <div class="card-details">
+                    <ul>
+                        <li>Body-centered awareness</li>
+                        <li>Energetic realignment</li>
+                        <li>Nir Levy protocols</li>
+                        <li>Personalized integration plan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== FLOWER DIVIDER =============== -->
+    <div class="flower-divider">✿</div>
+
+    <!-- =============== ALTERNATING SECTION (Text + Image) =============== -->
+    <section class="section section-bg-alt">
+        <div class="alternating-section reverse">
+            <div class="image-placeholder">
+                <i class="fas fa-hands"></i>
+                <span style="margin-left: 1rem;">Testimonial Image</span>
+            </div>
+            <div class="alternating-text">
+                <h3>Transformational Results</h3>
+                <p>Clients from around the world experience profound shifts through my integrated healing approach.</p>
+                <p><strong>"Life-changing work"</strong> - Lisa M., Ireland</p>
+                <p><strong>"Professional excellence"</strong> - Catherine R., New York</p>
+                <button class="btn-primary" style="background: var(--rose);">View More Stories →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== FLOWER DIVIDER =============== -->
+    <div class="flower-divider">✿</div>
+
+    <!-- =============== GALLERY STRIP =============== -->
+    <section class="section">
+        <div class="section-intro">
+            <h2>Visual Gallery</h2>
+            <div class="divider-line"></div>
+            <p>Scroll through images of healing spaces and environments</p>
+        </div>
+
+        <div class="gallery-strip">
+            <div class="gallery-items">
+                <div class="gallery-item"><i class="fas fa-image"></i></div>
+                <div class="gallery-item"><i class="fas fa-image"></i></div>
+                <div class="gallery-item"><i class="fas fa-image"></i></div>
+                <div class="gallery-item"><i class="fas fa-image"></i></div>
+                <div class="gallery-item"><i class="fas fa-image"></i></div>
+                <div class="gallery-item"><i class="fas fa-image"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== FLOWER DIVIDER =============== -->
+    <div class="flower-divider">✿</div>
+
+    <!-- =============== QUOTE BLOCK =============== -->
+    <section class="section">
+        <div class="quote-block">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="quote-text">
+                True healing happens when we address not just the symptoms, but the root causes held 
+                in the body, energy field, and subconscious mind.
+            </p>
+            <p class="quote-author">— Susan K. Pearson</p>
+        </div>
+    </section>
+
+    <!-- =============== CTA SECTION =============== -->
+    <section class="section">
+        <div class="cta-section">
+            <h2>Ready to Begin Your Healing Journey?</h2>
+            <p>Book a personalized session and experience the transformational power of integrated healing.</p>
+            <button class="cta-button">Book Your Session</button>
+            <button class="cta-button" style="background: transparent; color: white; border: 2px solid white;">Contact Me</button>
+        </div>
+    </section>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <p>&copy; 2026 Susan K. Pearson | Elemental Healing | Dubai</p>
+        <p>✉ susankpearson@elementalskp.com | ☎ +971 55 177 0957</p>
+    </footer>
+
+    <script>
+        function toggleExpand(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.expand-icon');
+            
+            content.classList.toggle('active');
+            icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        function toggleCardDetails(card) {
+            const details = card.querySelector('.card-details');
+            details.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
