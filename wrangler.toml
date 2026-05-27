@@ -1,0 +1,22 @@
+name = "susan-k-pearson-wellness"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[env.production]
+route = "susankpearson.com/*"
+
+[[routes]]
+pattern = "susankpearson.com/"
+zone_name = "susankpearson.com"
+
+[build]
+command = "npm run build"
+cwd = "./"
+watch_paths = ["src/**/*.ts", "src/**/*.html", "src/**/*.css"]
+
+[build.upload]
+directory = "public"
+format = "service-worker"
+
+[env.staging]
+route = "staging.susankpearson.com/*"
