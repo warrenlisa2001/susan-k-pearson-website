@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Susan K. Pearson · Elemental Healing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --black: #0a0a0a; --dark: #111111; --dark2: #1a1a1a;
+    --gold: #c9a96e; --gold-light: #e8d5a3; --gold-dim: rgba(201,169,110,0.15);
+    --cream: #f5f0e8; --white: #ffffff; --gray: #888888; --gray-light: #cccccc;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Raleway', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--black); color: var(--cream); font-family: var(--font-body); font-weight: 300; line-height: 1.8; overflow-x: hidden; }
+h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0.02em; }
+a { color: inherit; }
+nav { position: fixed; top:0; left:0; right:0; z-index:1000; padding:1rem 3rem; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,10,0.95); backdrop-filter:blur(12px); border-bottom:1px solid rgba(201,169,110,0.15); }
+.logo-box { width:56px; height:56px; background:var(--dark2); border:1px solid var(--gold); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; text-decoration:none; }
+.logo-skp { font-family:var(--font-display); font-size:1rem; color:var(--gold); letter-spacing:0.2em; font-weight:500; }
+.logo-lotus { font-size:1.1rem; color:var(--gold); line-height:1; }
+.logo-name { font-family:var(--font-body); font-size:0.5rem; color:var(--gold); letter-spacing:0.25em; text-transform:uppercase; }
+.nav-links { display:flex; align-items:center; gap:1.8rem; list-style:none; }
+.nav-links a { text-decoration:none; color:var(--cream); font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:400; transition:color 0.3s; }
+.nav-links a:hover, .nav-links a.active { color:var(--gold); }
+.nav-dropdown { position:relative; }
+.dropdown-menu { position:absolute; top:calc(100% + 0.5rem); left:50%; transform:translateX(-50%); background:var(--dark2); border:1px solid rgba(201,169,110,0.2); min-width:220px; padding:0.8rem 0; opacity:0; pointer-events:none; transition:all 0.3s; z-index:100; }
+.nav-dropdown:hover .dropdown-menu { opacity:1; pointer-events:all; }
+.dropdown-menu a { display:block; padding:0.6rem 1.5rem; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--gray-light); transition:all 0.2s; }
+.dropdown-menu a:hover { color:var(--gold); background:var(--gold-dim); padding-left:2rem; }
+.btn-book { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:0.55rem 1.6rem; font-family:var(--font-body); font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; cursor:pointer; transition:all 0.3s; }
+.btn-book:hover { background:var(--gold); color:var(--black); }
+.page-hero { padding:10rem 5vw 5rem; background:var(--dark); border-bottom:1px solid rgba(201,169,110,0.1); }
+.page-hero-inner { max-width:1300px; margin:0 auto; }
+.section-label { font-family:var(--font-body); font-size:0.65rem; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
+.section-title { font-size:clamp(2rem,4vw,3.5rem); font-weight:300; color:var(--white); line-height:1.2; margin-bottom:1.5rem; }
+.section-title em { font-style:italic; color:var(--gold); }
+.gold-line { width:50px; height:1px; background:var(--gold); margin-bottom:2rem; }
+.reveal { opacity:0; transform:translateY(30px); transition:opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+footer { background:var(--dark2); border-top:1px solid rgba(201,169,110,0.1); padding:2.5rem 5vw; text-align:center; }
+footer p { font-size:0.75rem; color:var(--gray); margin:0.4rem 0; }
+footer .footer-gold { color:var(--gold); }
+@media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .btn-book { display:none; } }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo-box">
+        <span class="logo-skp">SKP</span>
+        <span class="logo-lotus">✿</span>
+        <span class="logo-name">Susan K Pearson</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li class="nav-dropdown">
+            <a href="index.html#services">Services <span style="font-size:0.6rem;color:var(--gold);">▾</span></a>
+            <div class="dropdown-menu">
+                <a href="index.html#services">Deep Alignment Therapy</a>
+                <a href="index.html#services">Hara Release</a>
+                <a href="index.html#services">Energetic Recalibration</a>
+                <a href="index.html#services">Subconscious Shift Therapy</a>
+            </div>
+        </li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="blog.html" class="">Blog</a></li>
+        <li><a href="faq.html" class="">FAQ</a></li>
+        <li><a href="cat-rescue.html" class="">Cat Rescue</a></li>
+        <li><a href="intake.html" class="">Intake Form</a></li>
+    </ul>
+    <button class="btn-book" onclick="window.location='index.html#contact'">Book Session</button>
+</nav>
+
+
+<div class="page-hero">
+    <div class="page-hero-inner">
+        <p class="section-label reveal">Investment</p>
+        <h1 class="section-title reveal">Session <em>Pricing</em></h1>
+        <div class="gold-line reveal"></div>
+        <p class="reveal" style="font-size:0.95rem;color:var(--gray);max-width:600px;line-height:1.9;">Each session is an investment in your wellbeing. All sessions are available in-person in Dubai or via distance healing worldwide.</p>
+    </div>
+</div>
+
+<section style="padding:6rem 5vw;background:var(--black);">
+    <div style="max-width:900px;margin:0 auto;">
+
+        <!-- Individual Sessions -->
+        <div class="reveal" style="margin-bottom:4rem;">
+            <p class="section-label">Individual Sessions</p>
+            <div style="display:flex;flex-direction:column;gap:2px;">
+
+                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
+                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
+                    <div>
+                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Deep Alignment Therapy</p>
+                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Full-Spectrum Healing</p>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">90 min</p>
+                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 950</p>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
+                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
+                    <div>
+                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Hara Release</p>
+                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Anma &amp; Ampuku</p>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">75 min</p>
+                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 800</p>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
+                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
+                    <div>
+                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Energetic Recalibration</p>
+                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Reiki + Chakra Harmonizing</p>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">75 min</p>
+                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 850</p>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
+                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
+                    <div>
+                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Subconscious Shift Therapy</p>
+                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Hypnotherapy &amp; Consciousness Work</p>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">75 min</p>
+                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 850</p>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
+                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
+                    <div>
+                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Distance Healing</p>
+                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Remote · Worldwide</p>
+                    </div>
+                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">60 min</p>
+                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 650</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Packages -->
+        <div class="reveal" style="margin-bottom:4rem;">
+            <p class="section-label">Packages &amp; Series</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
+
+                <div style="padding:3rem;background:var(--dark2);border-top:1px solid var(--gold);">
+                    <p style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Most Popular</p>
+                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--white);margin-bottom:0.5rem;">3-Session Series</p>
+                    <p style="font-size:0.8rem;color:var(--gray);margin-bottom:2rem;line-height:1.7;">Three sessions of your choice, used within 60 days. Ideal for targeted work on a specific area.</p>
+                    <p style="font-family:var(--font-display);font-size:2.2rem;color:var(--gold);font-weight:300;margin-bottom:0.5rem;">AED 2,550</p>
+                    <p style="font-size:0.7rem;color:var(--gray);">Save AED 300 vs individual sessions</p>
+                </div>
+
+                <div style="padding:3rem;background:var(--dark2);border-top:1px solid var(--gold);">
+                    <p style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Transformation</p>
+                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--white);margin-bottom:0.5rem;">6-Week Journey</p>
+                    <p style="font-size:0.8rem;color:var(--gray);margin-bottom:2rem;line-height:1.7;">Six curated sessions combining all modalities with integration support between sessions.</p>
+                    <p style="font-family:var(--font-display);font-size:2.2rem;color:var(--gold);font-weight:300;margin-bottom:0.5rem;">AED 4,800</p>
+                    <p style="font-size:0.7rem;color:var(--gray);">Includes intake session + WhatsApp support</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Note -->
+        <div class="reveal" style="padding:2.5rem;background:var(--dark2);border-left:2px solid var(--gold);margin-bottom:4rem;">
+            <p style="font-size:0.85rem;color:var(--gray-light);line-height:1.9;">Prices are in AED. Corporate wellness and retreat packages available on request. A non-refundable deposit is required to secure your booking. Please complete the <a href="intake.html" style="color:var(--gold);text-decoration:none;">intake form</a> before your first session.</p>
+        </div>
+
+        <div class="reveal" style="text-align:center;">
+            <button onclick="window.location='index.html#contact'" style="background:var(--gold);color:var(--black);padding:1rem 3rem;font-family:var(--font-body);font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.3s;font-weight:500;">Book Your Session</button>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <p class="footer-gold">Susan K. Pearson · Elemental Healing</p>
+    <p>Dubai, UAE · Available Worldwide</p>
+    <p style="margin-top:1rem;">© 2026 Susan K. Pearson | Elemental Healing. All rights reserved.</p>
+</footer>
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

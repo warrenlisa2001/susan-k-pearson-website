@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Rescue | Susan K. Pearson · Elemental Healing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --black: #0a0a0a; --dark: #111111; --dark2: #1a1a1a;
+    --gold: #c9a96e; --gold-light: #e8d5a3; --gold-dim: rgba(201,169,110,0.15);
+    --cream: #f5f0e8; --white: #ffffff; --gray: #888888; --gray-light: #cccccc;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Raleway', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--black); color: var(--cream); font-family: var(--font-body); font-weight: 300; line-height: 1.8; overflow-x: hidden; }
+h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0.02em; }
+a { color: inherit; }
+nav { position: fixed; top:0; left:0; right:0; z-index:1000; padding:1rem 3rem; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,10,0.95); backdrop-filter:blur(12px); border-bottom:1px solid rgba(201,169,110,0.15); }
+.logo-box { width:56px; height:56px; background:var(--dark2); border:1px solid var(--gold); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; text-decoration:none; }
+.logo-skp { font-family:var(--font-display); font-size:1rem; color:var(--gold); letter-spacing:0.2em; font-weight:500; }
+.logo-lotus { font-size:1.1rem; color:var(--gold); line-height:1; }
+.logo-name { font-family:var(--font-body); font-size:0.5rem; color:var(--gold); letter-spacing:0.25em; text-transform:uppercase; }
+.nav-links { display:flex; align-items:center; gap:1.8rem; list-style:none; }
+.nav-links a { text-decoration:none; color:var(--cream); font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:400; transition:color 0.3s; }
+.nav-links a:hover, .nav-links a.active { color:var(--gold); }
+.nav-dropdown { position:relative; }
+.dropdown-menu { position:absolute; top:calc(100% + 0.5rem); left:50%; transform:translateX(-50%); background:var(--dark2); border:1px solid rgba(201,169,110,0.2); min-width:220px; padding:0.8rem 0; opacity:0; pointer-events:none; transition:all 0.3s; z-index:100; }
+.nav-dropdown:hover .dropdown-menu { opacity:1; pointer-events:all; }
+.dropdown-menu a { display:block; padding:0.6rem 1.5rem; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--gray-light); transition:all 0.2s; }
+.dropdown-menu a:hover { color:var(--gold); background:var(--gold-dim); padding-left:2rem; }
+.btn-book { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:0.55rem 1.6rem; font-family:var(--font-body); font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; cursor:pointer; transition:all 0.3s; }
+.btn-book:hover { background:var(--gold); color:var(--black); }
+.page-hero { padding:10rem 5vw 5rem; background:var(--dark); border-bottom:1px solid rgba(201,169,110,0.1); }
+.page-hero-inner { max-width:1300px; margin:0 auto; }
+.section-label { font-family:var(--font-body); font-size:0.65rem; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
+.section-title { font-size:clamp(2rem,4vw,3.5rem); font-weight:300; color:var(--white); line-height:1.2; margin-bottom:1.5rem; }
+.section-title em { font-style:italic; color:var(--gold); }
+.gold-line { width:50px; height:1px; background:var(--gold); margin-bottom:2rem; }
+.reveal { opacity:0; transform:translateY(30px); transition:opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+footer { background:var(--dark2); border-top:1px solid rgba(201,169,110,0.1); padding:2.5rem 5vw; text-align:center; }
+footer p { font-size:0.75rem; color:var(--gray); margin:0.4rem 0; }
+footer .footer-gold { color:var(--gold); }
+@media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .btn-book { display:none; } }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo-box">
+        <span class="logo-skp">SKP</span>
+        <span class="logo-lotus">✿</span>
+        <span class="logo-name">Susan K Pearson</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li class="nav-dropdown">
+            <a href="index.html#services">Services <span style="font-size:0.6rem;color:var(--gold);">▾</span></a>
+            <div class="dropdown-menu">
+                <a href="index.html#services">Deep Alignment Therapy</a>
+                <a href="index.html#services">Hara Release</a>
+                <a href="index.html#services">Energetic Recalibration</a>
+                <a href="index.html#services">Subconscious Shift Therapy</a>
+            </div>
+        </li>
+        <li><a href="pricing.html" class="">Pricing</a></li>
+        <li><a href="blog.html" class="">Blog</a></li>
+        <li><a href="faq.html" class="">FAQ</a></li>
+        <li><a href="cat-rescue.html" class="active">Cat Rescue</a></li>
+        <li><a href="intake.html" class="">Intake Form</a></li>
+    </ul>
+    <button class="btn-book" onclick="window.location='index.html#contact'">Book Session</button>
+</nav>
+
+
+<div class="page-hero">
+    <div class="page-hero-inner">
+        <p class="section-label reveal">With Love</p>
+        <h1 class="section-title reveal">Cat <em>Rescue</em></h1>
+        <div class="gold-line reveal"></div>
+        <p class="reveal" style="font-size:0.95rem;color:var(--gray);max-width:600px;line-height:1.9;">Alongside my healing practice, I am deeply committed to the welfare of cats in Dubai and beyond. This page is dedicated to that work.</p>
+    </div>
+</div>
+
+<section style="padding:6rem 5vw;background:var(--black);">
+    <div style="max-width:1000px;margin:0 auto;">
+
+        <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:2px;">
+            <div style="background:var(--dark2);padding:4rem 3.5rem;">
+                <p class="section-label">The Mission</p>
+                <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--white);font-weight:300;line-height:1.3;margin-bottom:1.5rem;">Every animal deserves <em style="color:var(--gold);font-style:italic;">safety</em> and love</h2>
+                <div class="gold-line"></div>
+                <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;">Dubai's streets are home to many cats in need of care, medical attention, and rehoming. I work with local volunteers and rescue networks to trap, neuter, and rehome cats whenever possible.</p>
+            </div>
+            <div style="background:var(--dark2);padding:4rem 3.5rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+                <p style="font-size:5rem;margin-bottom:1rem;">🐾</p>
+                <p style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--gray-light);line-height:1.7;">"The greatness of a nation can be judged by the way its animals are treated."</p>
+                <p style="font-size:0.7rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-top:1rem;">— Mahatma Gandhi</p>
+            </div>
+        </div>
+
+        <div class="reveal" style="background:var(--dark2);padding:4rem 3.5rem;margin-bottom:2px;">
+            <p class="section-label">How You Can Help</p>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:1rem;">
+                <div style="border-top:1px solid rgba(201,169,110,0.2);padding-top:1.5rem;">
+                    <p style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin-bottom:0.8rem;">Adopt</p>
+                    <p style="font-size:0.85rem;color:var(--gray);line-height:1.8;">Give a rescued cat a forever home. Reach out to learn about cats currently available for adoption.</p>
+                </div>
+                <div style="border-top:1px solid rgba(201,169,110,0.2);padding-top:1.5rem;">
+                    <p style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin-bottom:0.8rem;">Foster</p>
+                    <p style="font-size:0.85rem;color:var(--gray);line-height:1.8;">Provide temporary care while a cat awaits adoption. Even a few weeks makes an enormous difference.</p>
+                </div>
+                <div style="border-top:1px solid rgba(201,169,110,0.2);padding-top:1.5rem;">
+                    <p style="font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin-bottom:0.8rem;">Donate</p>
+                    <p style="font-size:0.85rem;color:var(--gray);line-height:1.8;">Support vet bills, neutering programmes, and food supplies for cats in our care.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal" style="background:var(--dark2);padding:3rem 3.5rem;border-left:2px solid var(--gold);">
+            <p style="font-size:0.9rem;color:var(--gray-light);line-height:1.9;">To enquire about adoption, fostering, or supporting the rescue work, please get in touch: <a href="mailto:susankpearson@elementalskp.com" style="color:var(--gold);text-decoration:none;">susankpearson@elementalskp.com</a></p>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <p class="footer-gold">Susan K. Pearson · Elemental Healing</p>
+    <p>Dubai, UAE · Available Worldwide</p>
+    <p style="margin-top:1rem;">© 2026 Susan K. Pearson | Elemental Healing. All rights reserved.</p>
+</footer>
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
