@@ -1,1 +1,16 @@
-/ /index.html 200
+/index.html /index.html 200
+/blog /blog.html 200
+/blog.html /blog.html 200
+/pricing /pricing.html 200
+/pricing.html /pricing.html 200
+/faq /faq.html 200
+/faq.html /faq.html 200
+/cat-rescue /cat-rescue.html 200
+/cat-rescue.html /cat-rescue.html 200
+/intake /intake.html 200
+/intake.html /intake.html 200
+/blog-cat-rescue /blog-cat-rescue.html 200
+/blog-cat-rescue.html /blog-cat-rescue.html 200
+/blog-working-with-susan /blog-working-with-susan.html 200
+/blog-working-with-susan.html /blog-working-with-susan.html 200
+/* /index.html 200
