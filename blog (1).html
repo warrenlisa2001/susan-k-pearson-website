@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Susan K. Pearson · Elemental Healing</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{--black:#0a0a0a;--dark:#111111;--dark2:#1a1a1a;--gold:#c9a96e;--gold-light:#e8d5a3;--gold-dim:rgba(201,169,110,0.15);--cream:#f5f0e8;--white:#ffffff;--gray:#888888;--gray-light:#cccccc;--font-display:'Cormorant Garamond',Georgia,serif;--font-body:'Raleway',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--cream);font-family:var(--font-body);font-weight:300;line-height:1.8;overflow-x:hidden;}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.2rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s;background:transparent;}
+nav.scrolled{background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,169,110,0.15);}
+.nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+.nav-links a{text-decoration:none;color:var(--cream);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;transition:color 0.3s;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold);transition:width 0.3s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-links a:hover::after{width:100%;}
+.nav-dropdown{position:relative;}
+.nav-dropdown>a::after{display:none;}
+.dropdown-menu{position:absolute;top:calc(100% + 1rem);left:50%;transform:translateX(-50%);background:var(--dark2);border:1px solid rgba(201,169,110,0.2);min-width:220px;padding:0.8rem 0;opacity:0;pointer-events:none;transition:all 0.3s;z-index:100;}
+.nav-dropdown:hover .dropdown-menu{opacity:1;pointer-events:all;top:calc(100% + 0.5rem);}
+.dropdown-menu a{display:block;padding:0.6rem 1.5rem;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-light);transition:all 0.2s;}
+.dropdown-menu a:hover{color:var(--gold);background:var(--gold-dim);}
+.dropdown-menu a::after{display:none;}
+.nav-caret{font-size:0.6rem;margin-left:0.3rem;color:var(--gold);}
+.btn-book{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:0.6rem 1.8rem;font-family:var(--font-body);font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;text-decoration:none;display:inline-block;}
+.btn-book:hover{background:var(--gold);color:var(--black);}
+.page-hero{padding:10rem 5vw 5rem;text-align:center;position:relative;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(201,169,110,0.06) 0%,transparent 70%);}
+.eyebrow{font-size:0.7rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.eyebrow::before,.eyebrow::after{content:'';width:40px;height:1px;background:var(--gold);opacity:0.5;}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2.5rem;max-width:1200px;margin:0 auto;}
+.blog-card{background:var(--dark2);border:1px solid rgba(201,169,110,0.1);transition:all 0.3s;cursor:pointer;text-decoration:none;display:block;color:inherit;}
+.blog-card:hover{border-color:var(--gold);transform:translateY(-4px);}
+.blog-card-img{height:220px;background:var(--dark);overflow:hidden;position:relative;}
+.blog-card-img-inner{width:100%;height:100%;background-size:cover;background-position:center;transition:transform 0.5s;}
+.blog-card:hover .blog-card-img-inner{transform:scale(1.05);}
+.blog-tag{position:absolute;top:1rem;left:1rem;background:var(--gold);color:var(--black);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.3rem 0.8rem;font-weight:500;}
+.blog-card-body{padding:2rem;}
+.blog-meta{font-size:0.65rem;color:var(--gray);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.8rem;}
+.blog-card-body h3{font-family:var(--font-display);font-size:1.5rem;color:var(--white);font-weight:400;margin-bottom:0.8rem;line-height:1.3;transition:color 0.3s;}
+.blog-card:hover h3{color:var(--gold);}
+.blog-card-body p{font-size:0.83rem;color:var(--gray-light);line-height:1.8;}
+.read-more{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-top:1.5rem;transition:gap 0.3s;}
+.blog-card:hover .read-more{gap:0.9rem;}
+@media(max-width:768px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.btn-book{display:none;}.page-hero{padding:8rem 1.5rem 4rem;}section{padding:4rem 1.5rem;}.blog-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav id="mainNav">
+  <a href="index.html" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:5px;">
+    <svg width="44" height="42" viewBox="0 0 88 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(44,52)">
+        <path d="M0,-48 C-4,-32 -4,-16 0,0 C4,-16 4,-32 0,-48Z" fill="#c9a96e"/>
+        <path d="M0,0 C-5,-20 -18,-38 -28,-48 C-18,-34 -8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+        <path d="M0,0 C5,-20 18,-38 28,-48 C18,-34 8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+        <path d="M0,0 C-10,-16 -28,-30 -44,-38 C-30,-26 -16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+        <path d="M0,0 C10,-16 28,-30 44,-38 C30,-26 16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+        <path d="M0,0 C-16,-8 -40,-12 -58,-12 C-40,-6 -20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+        <path d="M0,0 C16,-8 40,-12 58,-12 C40,-6 20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+        <line x1="-62" y1="0" x2="62" y2="0" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+        <circle cx="8" cy="-52" r="2" fill="#c9a96e"/>
+        <circle cx="-12" cy="-42" r="1.5" fill="#c0392b"/>
+      </g>
+    </svg>
+    <span style="font-family:'Raleway',sans-serif;font-size:0.55rem;color:#c9a96e;letter-spacing:0.3em;text-transform:uppercase;font-weight:500;">Susan K Pearson</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="index.html#about">About</a></li>
+    <li class="nav-dropdown"><a href="index.html#services">Services <span class="nav-caret">▾</span></a>
+      <div class="dropdown-menu"><a href="index.html#services">The Nir Levy Method</a><a href="index.html#services">Deep Alignment Therapy</a><a href="index.html#services">Hara Release</a><a href="index.html#services">Energetic Recalibration</a><a href="index.html#services">Subconscious Shift Therapy</a><a href="index.html#services">The Full Frequency Session</a></div>
+    </li>
+    <li><a href="pricing.html">Pricing</a></li><li><a href="blog.html" style="color:var(--gold);">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="cat-rescue.html">Cat Rescue</a></li><li><a href="intake.html">Intake Form</a></li>
+  </ul>
+  <a href="intake.html" class="btn-book">Book Session</a>
+</nav>
+
+<div class="page-hero">
+  <div class="eyebrow">Wisdom &amp; Reflections</div>
+  <h1 style="font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--white);margin-bottom:1rem;">The Healing <em style="font-style:italic;color:var(--gold);">Journal</em></h1>
+  <p style="color:var(--gray-light);font-size:1.05rem;max-width:560px;margin:0 auto;">Insights on energy medicine, consciousness, and the art of living in alignment.</p>
+</div>
+
+<section style="padding:4rem 5vw 6rem;">
+  <div class="blog-grid">
+    <a href="blog-working-with-susan.html" class="blog-card">
+      <div class="blog-card-img">
+        <div class="blog-card-img-inner" style="background:linear-gradient(135deg,#1a1a1a,#2a1a0a);display:flex;align-items:center;justify-content:center;">
+          <svg width="60" height="54" viewBox="0 0 64 54" fill="none" opacity="0.3"><path d="M32 4 C32 4 26 14 26 22 C26 28 29 32 32 34 C35 32 38 28 38 22 C38 14 32 4 32 4Z" fill="#c9a96e"/><path d="M24 8 C24 8 16 16 15 24 C14 30 17 34 21 35 C24 32 25 27 25 22 C25 16 24 8 24 8Z" fill="#c9a96e"/><path d="M40 8 C40 8 48 16 49 24 C50 30 47 34 43 35 C40 32 39 27 39 22 C39 16 40 8 40 8Z" fill="#c9a96e"/></svg>
+        </div>
+        <span class="blog-tag">Energy Medicine</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-meta">June 2026 · 8 min read</div>
+        <h3>What It's Really Like to Work With Susan</h3>
+        <p>Clients often arrive not knowing quite what to expect. Here's an honest look at what a healing journey with Susan involves — the preparation, the session, and the days that follow.</p>
+        <span class="read-more">Read Article →</span>
+      </div>
+    </a>
+    <a href="blog-cat-rescue.html" class="blog-card">
+      <div class="blog-card-img">
+        <div class="blog-card-img-inner" style="background:linear-gradient(135deg,#0a1a1a,#1a2a1a);display:flex;align-items:center;justify-content:center;">
+          <span style="font-size:4rem;opacity:0.4;">🐾</span>
+        </div>
+        <span class="blog-tag">Cat Rescue</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-meta">May 2026 · 6 min read</div>
+        <h3>The Street Cats of Dubai: A Healing Mission</h3>
+        <p>Susan's commitment to healing extends beyond the human. Here she shares the story behind her cat rescue work and what these animals have taught her about unconditional presence.</p>
+        <span class="read-more">Read Article →</span>
+      </div>
+    </a>
+    <div class="blog-card" style="cursor:default;opacity:0.6;">
+      <div class="blog-card-img">
+        <div class="blog-card-img-inner" style="background:linear-gradient(135deg,#1a1a2a,#0a0a1a);display:flex;align-items:center;justify-content:center;">
+          <span style="font-size:0.7rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);">Coming Soon</span>
+        </div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-meta">Coming Soon</div>
+        <h3>The Science Behind Energy Healing</h3>
+        <p>An exploration of what modern research tells us about biofields, energy medicine, and why ancient practices have found a new home in contemporary wellness.</p>
+        <span class="read-more" style="opacity:0.5;">Coming Soon</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:600px;margin:5rem auto 0;text-align:center;padding:3rem;background:var(--dark2);border:1px solid rgba(201,169,110,0.15);">
+    <p style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Stay Connected</p>
+    <h3 style="font-family:var(--font-display);font-size:1.8rem;color:var(--white);font-weight:300;margin-bottom:0.8rem;">New articles, <em style="font-style:italic;color:var(--gold);">first</em></h3>
+    <p style="color:var(--gray-light);font-size:0.83rem;margin-bottom:2rem;">Subscribe to receive new articles and healing insights directly to your inbox.</p>
+    <div style="display:flex;gap:0;max-width:400px;margin:0 auto;">
+      <input type="email" placeholder="Your email address" style="flex:1;padding:0.9rem 1.2rem;background:var(--black);border:1px solid rgba(201,169,110,0.2);color:var(--cream);font-family:var(--font-body);font-size:0.82rem;outline:none;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(201,169,110,0.2)'">
+      <button style="background:var(--gold);color:var(--black);border:none;padding:0.9rem 1.5rem;font-family:var(--font-body);font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;font-weight:500;white-space:nowrap;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--dark2);border-top:1px solid rgba(201,169,110,0.12);">
+  <div style="max-width:1300px;margin:0 auto;padding:4rem 5vw 2rem;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:4rem;">
+    <div><p style="font-size:0.85rem;color:var(--gray);line-height:1.9;margin-bottom:1rem;max-width:280px;">Master-level Reiki · Energy Medicine · Clinical Hypnotherapy. Dubai, UAE &amp; Worldwide.</p><p><a href="mailto:susankpearson@elementalskp.com" style="color:var(--gold);text-decoration:none;font-size:0.78rem;">susankpearson@elementalskp.com</a></p><p><a href="tel:+971551770957" style="color:var(--gray-light);text-decoration:none;font-size:0.78rem;">+971 55 177 0957</a></p></div>
+    <div><p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">Navigation</p><div style="display:flex;flex-direction:column;gap:0.7rem;"><a href="index.html" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Home</a><a href="pricing.html" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Pricing</a><a href="blog.html" style="font-size:0.82rem;color:var(--gold);text-decoration:none;font-weight:500;">Blog</a><a href="faq.html" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">FAQ</a><a href="cat-rescue.html" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Cat Rescue</a><a href="intake.html" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Intake Form</a></div></div>
+    <div><p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">Services</p><div style="display:flex;flex-direction:column;gap:0.7rem;"><a href="index.html#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">The Nir Levy Method</a><a href="index.html#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Deep Alignment Therapy</a><a href="index.html#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Energetic Recalibration</a><a href="index.html#services" style="font-size:0.82rem;color:var(--gold);text-decoration:none;font-weight:500;">The Full Frequency Session</a></div></div>
+  </div>
+  <div style="border-top:1px solid rgba(201,169,110,0.1);padding:1.5rem 5vw;"><p style="font-size:0.72rem;color:var(--gray);text-align:center;">© 2026 Susan K. Pearson | Elemental Healing. All rights reserved.</p></div>
+</footer>
+<div style="position:fixed;bottom:2rem;right:2rem;z-index:9999;"><a href="https://wa.me/971551770957" target="_blank" style="width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:transform 0.2s;text-decoration:none;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></div>
+<script>const nav=document.getElementById('mainNav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>80));</script>
+</body></html>
