@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing | Susan K. Pearson · Elemental Healing</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <style>
+
+<style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
     --black: #0a0a0a; --dark: #111111; --dark2: #1a1a1a;
-    --gold: #c9a96e; --gold-light: #e8d5a3; --gold-dim: rgba(201,169,110,0.15);
+    --gold: #c9a96e; --gold-light: #e8d5a3; --gold-dim: rgba(201,169,110,0.12);
     --cream: #f5f0e8; --white: #ffffff; --gray: #888888; --gray-light: #cccccc;
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Raleway', sans-serif;
@@ -17,14 +18,12 @@
 html { scroll-behavior: smooth; }
 body { background: var(--black); color: var(--cream); font-family: var(--font-body); font-weight: 300; line-height: 1.8; overflow-x: hidden; }
 h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0.02em; }
-a { color: inherit; }
+a { color: inherit; text-decoration: none; }
+
+/* NAV */
 nav { position: fixed; top:0; left:0; right:0; z-index:1000; padding:1rem 3rem; display:flex; align-items:center; justify-content:space-between; background:rgba(10,10,10,0.95); backdrop-filter:blur(12px); border-bottom:1px solid rgba(201,169,110,0.15); }
-.logo-box { width:56px; height:56px; background:var(--dark2); border:1px solid var(--gold); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; text-decoration:none; }
-.logo-skp { font-family:var(--font-display); font-size:1rem; color:var(--gold); letter-spacing:0.2em; font-weight:500; }
-.logo-lotus { font-size:1.1rem; color:var(--gold); line-height:1; }
-.logo-name { font-family:var(--font-body); font-size:0.5rem; color:var(--gold); letter-spacing:0.25em; text-transform:uppercase; }
 .nav-links { display:flex; align-items:center; gap:1.8rem; list-style:none; }
-.nav-links a { text-decoration:none; color:var(--cream); font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:400; transition:color 0.3s; }
+.nav-links a { font-family:var(--font-body); font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:400; color:var(--cream); transition:color 0.3s; }
 .nav-links a:hover, .nav-links a.active { color:var(--gold); }
 .nav-dropdown { position:relative; }
 .dropdown-menu { position:absolute; top:calc(100% + 0.5rem); left:50%; transform:translateX(-50%); background:var(--dark2); border:1px solid rgba(201,169,110,0.2); min-width:220px; padding:0.8rem 0; opacity:0; pointer-events:none; transition:all 0.3s; z-index:100; }
@@ -33,26 +32,158 @@ nav { position: fixed; top:0; left:0; right:0; z-index:1000; padding:1rem 3rem; 
 .dropdown-menu a:hover { color:var(--gold); background:var(--gold-dim); padding-left:2rem; }
 .btn-book { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:0.55rem 1.6rem; font-family:var(--font-body); font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; cursor:pointer; transition:all 0.3s; }
 .btn-book:hover { background:var(--gold); color:var(--black); }
-.page-hero { padding:10rem 5vw 5rem; background:var(--dark); border-bottom:1px solid rgba(201,169,110,0.1); }
-.page-hero-inner { max-width:1300px; margin:0 auto; }
-.section-label { font-family:var(--font-body); font-size:0.65rem; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
-.section-title { font-size:clamp(2rem,4vw,3.5rem); font-weight:300; color:var(--white); line-height:1.2; margin-bottom:1.5rem; }
+@media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .btn-book { display:none; } }
+
+/* PAGE HERO */
+.page-hero { padding:9rem 5vw 5rem; background:var(--dark); border-bottom:1px solid rgba(201,169,110,0.1); }
+.page-hero-inner { max-width:780px; margin:0 auto; }
+.section-label { font-family:var(--font-body); font-size:0.62rem; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
+.section-title { font-size:clamp(2rem,4.5vw,3.8rem); font-weight:300; color:var(--white); line-height:1.2; margin-bottom:1.5rem; }
 .section-title em { font-style:italic; color:var(--gold); }
 .gold-line { width:50px; height:1px; background:var(--gold); margin-bottom:2rem; }
+
+/* REVEAL */
 .reveal { opacity:0; transform:translateY(30px); transition:opacity 0.8s ease, transform 0.8s ease; }
 .reveal.visible { opacity:1; transform:translateY(0); }
+
+/* PRICING SECTION */
+.pricing-section { padding:6rem 5vw 8rem; }
+.pricing-inner { max-width:1100px; margin:0 auto; }
+
+/* SERVICE CARD */
+.service-card {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    border:1px solid rgba(201,169,110,0.2);
+    margin-bottom:2.5rem;
+    background:var(--dark2);
+    transition:border-color 0.3s;
+    overflow:hidden;
+}
+.service-card:hover { border-color:rgba(201,169,110,0.5); }
+.service-card.featured { border-color:rgba(201,169,110,0.45); }
+.service-card.featured .card-left { background: linear-gradient(135deg, rgba(201,169,110,0.08) 0%, rgba(201,169,110,0.03) 100%); }
+
+.card-left {
+    padding:3rem 3.5rem;
+    border-right:1px solid rgba(201,169,110,0.15);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.card-right {
+    padding:3rem 3.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.service-tag { font-family:var(--font-body); font-size:0.58rem; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold); margin-bottom:0.8rem; }
+.service-name { font-family:var(--font-display); font-size:1.8rem; font-weight:400; color:var(--white); line-height:1.2; margin-bottom:0.5rem; }
+.service-subtitle { font-family:var(--font-display); font-style:italic; font-size:1rem; color:rgba(201,169,110,0.7); margin-bottom:1.5rem; }
+
+.service-description { font-size:0.88rem; color:var(--gray); line-height:1.9; margin-bottom:2rem; }
+
+.service-includes { list-style:none; margin-bottom:2.5rem; }
+.service-includes li { font-size:0.78rem; color:var(--gray-light); letter-spacing:0.05em; padding:0.4rem 0; border-bottom:1px solid rgba(201,169,110,0.08); display:flex; align-items:center; gap:0.7rem; }
+.service-includes li::before { content:'—'; color:var(--gold); font-size:0.65rem; flex-shrink:0; }
+
+.price-block { margin-bottom:2rem; }
+.price-amount { font-family:var(--font-display); font-size:3rem; font-weight:300; color:var(--white); line-height:1; }
+.price-currency { font-size:1.2rem; color:var(--gold); vertical-align:top; margin-top:0.4rem; display:inline-block; }
+.price-duration { font-family:var(--font-body); font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gray); margin-top:0.4rem; }
+
+.card-cta-group { display:flex; flex-direction:column; gap:0.8rem; }
+.btn-primary-gold {
+    display:block; text-align:center;
+    background:var(--gold); color:var(--black);
+    padding:0.9rem 1.5rem;
+    font-family:var(--font-body); font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:500;
+    transition:all 0.3s; cursor:pointer;
+}
+.btn-primary-gold:hover { background:var(--gold-light); }
+.btn-outline-gold {
+    display:block; text-align:center;
+    background:transparent; color:var(--gold);
+    border:1px solid rgba(201,169,110,0.4);
+    padding:0.85rem 1.5rem;
+    font-family:var(--font-body); font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:400;
+    transition:all 0.3s; cursor:pointer;
+}
+.btn-outline-gold:hover { border-color:var(--gold); background:rgba(201,169,110,0.07); }
+
+.featured-badge {
+    display:inline-block; font-family:var(--font-body); font-size:0.58rem;
+    letter-spacing:0.3em; text-transform:uppercase;
+    background:rgba(201,169,110,0.15); color:var(--gold);
+    border:1px solid rgba(201,169,110,0.3);
+    padding:0.35rem 0.9rem; margin-bottom:1.2rem;
+}
+
+/* PACKAGES SECTION */
+.packages-section { padding:0 5vw 8rem; }
+.packages-inner { max-width:1100px; margin:0 auto; }
+.section-heading { font-family:var(--font-display); font-size:clamp(1.6rem,3vw,2.4rem); font-weight:300; color:var(--white); margin-bottom:0.5rem; }
+.section-heading em { color:var(--gold); font-style:italic; }
+.section-intro { font-size:0.88rem; color:var(--gray); max-width:560px; line-height:1.9; margin-bottom:3.5rem; }
+
+.packages-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+.pkg-card {
+    background:var(--dark2); border:1px solid rgba(201,169,110,0.2);
+    padding:2.5rem;
+    transition:border-color 0.3s;
+}
+.pkg-card:hover { border-color:rgba(201,169,110,0.45); }
+.pkg-tag { font-family:var(--font-body); font-size:0.58rem; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold); margin-bottom:0.8rem; }
+.pkg-name { font-family:var(--font-display); font-size:1.5rem; color:var(--white); margin-bottom:0.4rem; }
+.pkg-sessions { font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gray); margin-bottom:1.2rem; }
+.pkg-desc { font-size:0.85rem; color:var(--gray); line-height:1.9; margin-bottom:1.8rem; }
+.pkg-price { font-family:var(--font-display); font-size:2.2rem; color:var(--white); margin-bottom:0.3rem; }
+.pkg-price span { font-size:1rem; color:var(--gold); }
+.pkg-saving { font-size:0.72rem; letter-spacing:0.1em; color:rgba(201,169,110,0.7); margin-bottom:2rem; }
+
+/* POLICY NOTE */
+.policy-note {
+    margin-top:4rem;
+    padding:2rem 2.5rem;
+    border-left:2px solid rgba(201,169,110,0.3);
+    background:rgba(201,169,110,0.03);
+}
+.policy-note p { font-size:0.82rem; color:var(--gray); line-height:1.9; }
+.policy-note strong { color:var(--gray-light); font-weight:400; }
+
+/* FOOTER */
 footer { background:var(--dark2); border-top:1px solid rgba(201,169,110,0.1); padding:2.5rem 5vw; text-align:center; }
 footer p { font-size:0.75rem; color:var(--gray); margin:0.4rem 0; }
 footer .footer-gold { color:var(--gold); }
-@media (max-width:768px) { nav { padding:1rem 1.5rem; } .nav-links { display:none; } .btn-book { display:none; } }
-    </style>
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .service-card { grid-template-columns:1fr; }
+    .card-left { border-right:none; border-bottom:1px solid rgba(201,169,110,0.15); padding:2rem; }
+    .card-right { padding:2rem; }
+    .packages-grid { grid-template-columns:1fr; }
+}
+</style>
 </head>
 <body>
+
 <nav>
-    <a href="index.html" class="logo-box">
-        <span class="logo-skp">SKP</span>
-        <span class="logo-lotus">✿</span>
-        <span class="logo-name">Susan K Pearson</span>
+    <a href="index.html" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;">
+        <svg width="46" height="42" viewBox="0 0 88 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(44,52)">
+            <path d="M0,-48 C-4,-32 -4,-16 0,0 C4,-16 4,-32 0,-48Z" fill="#c9a96e"/>
+            <path d="M0,0 C-5,-20 -18,-38 -28,-48 C-18,-34 -8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+            <path d="M0,0 C5,-20 18,-38 28,-48 C18,-34 8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+            <path d="M0,0 C-10,-16 -28,-30 -44,-38 C-30,-26 -16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+            <path d="M0,0 C10,-16 28,-30 44,-38 C30,-26 16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+            <path d="M0,0 C-16,-8 -40,-12 -58,-12 C-40,-6 -20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+            <path d="M0,0 C16,-8 40,-12 58,-12 C40,-6 20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+            <line x1="-62" y1="0" x2="62" y2="0" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+          </g>
+        </svg>
+        <span style="font-family:'Raleway',sans-serif;font-size:0.45rem;color:#c9a96e;letter-spacing:0.28em;text-transform:uppercase;font-weight:500;white-space:nowrap;">Susan K Pearson</span>
     </a>
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -67,133 +198,286 @@ footer .footer-gold { color:var(--gold); }
             </div>
         </li>
         <li><a href="pricing.html" class="active">Pricing</a></li>
-        <li><a href="blog.html" class="">Blog</a></li>
-        <li><a href="faq.html" class="">FAQ</a></li>
-        <li><a href="cat-rescue.html" class="">Cat Rescue</a></li>
-        <li><a href="intake.html" class="">Intake Form</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="cat-rescue.html">Cat Rescue</a></li>
+        <li><a href="intake.html">Intake Form</a></li>
     </ul>
     <button class="btn-book" onclick="window.location='index.html#contact'">Book Session</button>
 </nav>
 
-
+<!-- PAGE HERO -->
 <div class="page-hero">
     <div class="page-hero-inner">
-        <p class="section-label reveal">Investment</p>
+        <p class="section-label reveal">Investment · Dubai & Worldwide</p>
         <h1 class="section-title reveal">Session <em>Pricing</em></h1>
         <div class="gold-line reveal"></div>
-        <p class="reveal" style="font-size:0.95rem;color:var(--gray);max-width:600px;line-height:1.9;">Each session is an investment in your wellbeing. All sessions are available in-person in Dubai or via distance healing worldwide.</p>
+        <p class="reveal" style="font-size:0.95rem;color:var(--gray);max-width:600px;line-height:1.9;">
+            Each session is a carefully held space. Prices reflect the depth, time, and expertise brought to each encounter. All sessions are available in person in Dubai or via distance healing worldwide.
+        </p>
     </div>
 </div>
 
-<section style="padding:6rem 5vw;background:var(--black);">
-    <div style="max-width:900px;margin:0 auto;">
+<!-- INDIVIDUAL SESSIONS -->
+<section class="pricing-section">
+    <div class="pricing-inner">
 
-        <!-- Individual Sessions -->
-        <div class="reveal" style="margin-bottom:4rem;">
-            <p class="section-label">Individual Sessions</p>
-            <div style="display:flex;flex-direction:column;gap:2px;">
-
-                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
-                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
-                    <div>
-                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Deep Alignment Therapy</p>
-                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Full-Spectrum Healing</p>
-                    </div>
-                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">90 min</p>
-                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 950</p>
+        <!-- 1. DEEP ALIGNMENT THERAPY -->
+        <div class="service-card featured reveal">
+            <div class="card-left">
+                <div>
+                    <div class="featured-badge">Signature Session</div>
+                    <p class="service-tag">Full-Spectrum Healing</p>
+                    <h2 class="service-name">Deep Alignment Therapy</h2>
+                    <p class="service-subtitle">Comprehensive · Body · Energy · Mind</p>
+                    <p class="service-description">
+                        A comprehensive session supporting the body, nervous system, and energy field in reorganising toward balance. Through a blend of hara-centred bodywork, meridian balancing, subtle-energy work, and subconscious facilitation, the system is invited into clarity, regulated breath, and inner spaciousness.
+                    </p>
+                    <p class="service-description" style="margin-bottom:0;">
+                        This is Susan's most complete offering — bringing together every dimension of her practice in a single, deeply integrative session. Suited to those ready for profound and lasting change.
+                    </p>
                 </div>
-
-                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
-                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
-                    <div>
-                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Hara Release</p>
-                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Anma &amp; Ampuku</p>
+                <ul class="service-includes" style="margin-top:2rem;margin-bottom:0;">
+                    <li>Hara-centred bodywork & meridian balancing</li>
+                    <li>Subtle energy medicine & Reiki</li>
+                    <li>Subconscious facilitation</li>
+                    <li>Nervous system regulation support</li>
+                    <li>Pre & post session guidance</li>
+                </ul>
+            </div>
+            <div class="card-right">
+                <div>
+                    <div class="price-block">
+                        <div class="price-amount"><span class="price-currency">AED </span>800</div>
+                        <div class="price-duration">90 minutes</div>
                     </div>
-                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">75 min</p>
-                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 800</p>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.9;margin-bottom:2rem;">
+                        Susan's signature session — the fullest expression of her work. Recommended for new clients seeking deep, lasting transformation.
+                    </p>
                 </div>
-
-                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
-                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
-                    <div>
-                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Energetic Recalibration</p>
-                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Reiki + Chakra Harmonizing</p>
-                    </div>
-                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">75 min</p>
-                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 850</p>
+                <div class="card-cta-group">
+                    <a href="intake.html" class="btn-primary-gold">Book This Session</a>
+                    <a href="index.html#services" class="btn-outline-gold">Learn About This Work</a>
                 </div>
-
-                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
-                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
-                    <div>
-                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Subconscious Shift Therapy</p>
-                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Hypnotherapy &amp; Consciousness Work</p>
-                    </div>
-                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">75 min</p>
-                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 850</p>
-                </div>
-
-                <div style="display:grid;grid-template-columns:1fr auto auto;gap:2rem;align-items:center;padding:2rem 2.5rem;background:var(--dark2);border-left:2px solid transparent;transition:border-color 0.3s;"
-                     onmouseover="this.style.borderLeftColor='var(--gold)'" onmouseout="this.style.borderLeftColor='transparent'">
-                    <div>
-                        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:0.3rem;">Distance Healing</p>
-                        <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);">Remote · Worldwide</p>
-                    </div>
-                    <p style="font-size:0.75rem;color:var(--gray);white-space:nowrap;">60 min</p>
-                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:300;white-space:nowrap;">AED 650</p>
-                </div>
-
             </div>
         </div>
 
-        <!-- Packages -->
-        <div class="reveal" style="margin-bottom:4rem;">
-            <p class="section-label">Packages &amp; Series</p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
-
-                <div style="padding:3rem;background:var(--dark2);border-top:1px solid var(--gold);">
-                    <p style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Most Popular</p>
-                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--white);margin-bottom:0.5rem;">3-Session Series</p>
-                    <p style="font-size:0.8rem;color:var(--gray);margin-bottom:2rem;line-height:1.7;">Three sessions of your choice, used within 60 days. Ideal for targeted work on a specific area.</p>
-                    <p style="font-family:var(--font-display);font-size:2.2rem;color:var(--gold);font-weight:300;margin-bottom:0.5rem;">AED 2,550</p>
-                    <p style="font-size:0.7rem;color:var(--gray);">Save AED 300 vs individual sessions</p>
+        <!-- 2. HARA RELEASE -->
+        <div class="service-card reveal">
+            <div class="card-left">
+                <div>
+                    <p class="service-tag">Anma & Ampuku</p>
+                    <h2 class="service-name">Hara Release</h2>
+                    <p class="service-subtitle">Grounding · Body-Led · Core Restoration</p>
+                    <p class="service-description">
+                        A grounding, body-led process focused on the abdominal centre — in Japanese healing tradition, the seat of life force and vitality. Gentle, attentive touch supports the release of held patterns, improves internal communication, and restores connection to the body's core.
+                    </p>
+                    <p class="service-description" style="margin-bottom:0;">
+                        Those who carry tension in the belly, struggle with digestive sensitivity, or feel disconnected from their centre often find this work profoundly settling and clarifying.
+                    </p>
                 </div>
-
-                <div style="padding:3rem;background:var(--dark2);border-top:1px solid var(--gold);">
-                    <p style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Transformation</p>
-                    <p style="font-family:var(--font-display);font-size:1.6rem;color:var(--white);margin-bottom:0.5rem;">6-Week Journey</p>
-                    <p style="font-size:0.8rem;color:var(--gray);margin-bottom:2rem;line-height:1.7;">Six curated sessions combining all modalities with integration support between sessions.</p>
-                    <p style="font-family:var(--font-display);font-size:2.2rem;color:var(--gold);font-weight:300;margin-bottom:0.5rem;">AED 4,800</p>
-                    <p style="font-size:0.7rem;color:var(--gray);">Includes intake session + WhatsApp support</p>
+                <ul class="service-includes" style="margin-top:2rem;margin-bottom:0;">
+                    <li>Hara diagnosis & assessment</li>
+                    <li>Abdominal bodywork (Anma & Ampuku)</li>
+                    <li>Meridian activation</li>
+                    <li>Nervous system grounding</li>
+                </ul>
+            </div>
+            <div class="card-right">
+                <div>
+                    <div class="price-block">
+                        <div class="price-amount"><span class="price-currency">AED </span>700</div>
+                        <div class="price-duration">75 minutes</div>
+                    </div>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.9;margin-bottom:2rem;">
+                        Ideal for those feeling disconnected from their body, carrying abdominal tension, or seeking a grounded, tactile healing experience.
+                    </p>
                 </div>
-
+                <div class="card-cta-group">
+                    <a href="intake.html" class="btn-primary-gold">Book This Session</a>
+                    <a href="index.html#services" class="btn-outline-gold">Learn About This Work</a>
+                </div>
             </div>
         </div>
 
-        <!-- Note -->
-        <div class="reveal" style="padding:2.5rem;background:var(--dark2);border-left:2px solid var(--gold);margin-bottom:4rem;">
-            <p style="font-size:0.85rem;color:var(--gray-light);line-height:1.9;">Prices are in AED. Corporate wellness and retreat packages available on request. A non-refundable deposit is required to secure your booking. Please complete the <a href="intake.html" style="color:var(--gold);text-decoration:none;">intake form</a> before your first session.</p>
+        <!-- 3. ENERGETIC RECALIBRATION -->
+        <div class="service-card reveal">
+            <div class="card-left">
+                <div>
+                    <p class="service-tag">Reiki + Chakra Harmonising</p>
+                    <h2 class="service-name">Energetic Recalibration</h2>
+                    <p class="service-subtitle">Flow · Clarity · Subtle Body Harmony</p>
+                    <p class="service-description">
+                        Reiki combined with chakra balancing to clear energetic congestion, restore flow, and support regulation across subtle body systems. A deeply restful session that works at the level of the energy body — clearing what has accumulated, opening what has closed, and bringing the whole system back into coherence.
+                    </p>
+                    <p class="service-description" style="margin-bottom:0;">
+                        Often chosen by those experiencing burnout, emotional heaviness, or a sense of being "off" — and by those who simply wish to maintain clarity and energetic wellbeing.
+                    </p>
+                </div>
+                <ul class="service-includes" style="margin-top:2rem;margin-bottom:0;">
+                    <li>Master-level Reiki treatment</li>
+                    <li>Chakra assessment & harmonising</li>
+                    <li>Energetic congestion clearing</li>
+                    <li>Post-session integration support</li>
+                </ul>
+            </div>
+            <div class="card-right">
+                <div>
+                    <div class="price-block">
+                        <div class="price-amount"><span class="price-currency">AED </span>650</div>
+                        <div class="price-duration">60 minutes</div>
+                    </div>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.9;margin-bottom:2rem;">
+                        Suited to those new to energy work, those in maintenance, or anyone seeking a deeply restorative reset — in person or at distance.
+                    </p>
+                </div>
+                <div class="card-cta-group">
+                    <a href="intake.html" class="btn-primary-gold">Book This Session</a>
+                    <a href="index.html#services" class="btn-outline-gold">Learn About This Work</a>
+                </div>
+            </div>
         </div>
 
-        <div class="reveal" style="text-align:center;">
-            <button onclick="window.location='index.html#contact'" style="background:var(--gold);color:var(--black);padding:1rem 3rem;font-family:var(--font-body);font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.3s;font-weight:500;">Book Your Session</button>
+        <!-- 4. SUBCONSCIOUS SHIFT THERAPY -->
+        <div class="service-card reveal">
+            <div class="card-left">
+                <div>
+                    <p class="service-tag">Hypnotherapy & Consciousness-Based Work</p>
+                    <h2 class="service-name">Subconscious Shift Therapy</h2>
+                    <p class="service-subtitle">Pattern Release · Deep Rewiring · Lasting Change</p>
+                    <p class="service-description">
+                        A collaborative process working with the subconscious as an ally rather than an obstacle. Sessions support the system in updating outdated patterns, allowing new responses to emerge organically and sustainably. This is not performance-based hypnosis — it is a gentle, intelligent conversation with the deeper layers of the self.
+                    </p>
+                    <p class="service-description" style="margin-bottom:0;">
+                        Particularly effective for anxiety, sleep disruption, self-limiting beliefs, chronic stress responses, and patterns that feel resistant to change through conscious effort alone.
+                    </p>
+                </div>
+                <ul class="service-includes" style="margin-top:2rem;margin-bottom:0;">
+                    <li>Clinical hypnotherapy</li>
+                    <li>Subconscious pattern identification</li>
+                    <li>Consciousness-based facilitation</li>
+                    <li>Integration & anchoring techniques</li>
+                    <li>Between-session support materials</li>
+                </ul>
+            </div>
+            <div class="card-right">
+                <div>
+                    <div class="price-block">
+                        <div class="price-amount"><span class="price-currency">AED </span>750</div>
+                        <div class="price-duration">90 minutes</div>
+                    </div>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.9;margin-bottom:2rem;">
+                        Best experienced as a series of sessions for lasting rewiring. A standalone session is also deeply valuable as a first step.
+                    </p>
+                </div>
+                <div class="card-cta-group">
+                    <a href="intake.html" class="btn-primary-gold">Book This Session</a>
+                    <a href="index.html#services" class="btn-outline-gold">Learn About This Work</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. DISTANCE HEALING -->
+        <div class="service-card reveal">
+            <div class="card-left">
+                <div>
+                    <p class="service-tag">Available Worldwide</p>
+                    <h2 class="service-name">Distance Healing</h2>
+                    <p class="service-subtitle">Remote · Reiki · Energetic Support</p>
+                    <p class="service-description">
+                        Energy is not bound by physical location. Distance Reiki and energetic support sessions are available to clients anywhere in the world. Many clients who have experienced in-person sessions continue their work remotely — and many begin their journey with Susan entirely at distance.
+                    </p>
+                    <p class="service-description" style="margin-bottom:0;">
+                        Sessions include a pre-session call to discuss intention, a dedicated period of distance energy work, and a post-session summary shared by voice note or email.
+                    </p>
+                </div>
+                <ul class="service-includes" style="margin-top:2rem;margin-bottom:0;">
+                    <li>Pre-session intention call (15 min)</li>
+                    <li>Distance Reiki & energy work</li>
+                    <li>Chakra harmonising</li>
+                    <li>Post-session summary & guidance</li>
+                </ul>
+            </div>
+            <div class="card-right">
+                <div>
+                    <div class="price-block">
+                        <div class="price-amount"><span class="price-currency">AED </span>550</div>
+                        <div class="price-duration">45 min active work</div>
+                    </div>
+                    <p style="font-size:0.8rem;color:var(--gray);line-height:1.9;margin-bottom:2rem;">
+                        Available to clients worldwide. Sessions are conducted at a mutually agreed time — you rest comfortably at home while Susan works.
+                    </p>
+                </div>
+                <div class="card-cta-group">
+                    <a href="intake.html" class="btn-primary-gold">Book Distance Session</a>
+                    <a href="faq.html" class="btn-outline-gold">Distance Healing FAQ</a>
+                </div>
+            </div>
         </div>
 
     </div>
 </section>
 
+<!-- PACKAGES -->
+<section class="packages-section">
+    <div class="packages-inner">
+        <div class="gold-line reveal"></div>
+        <h2 class="section-heading reveal">Session <em>Packages</em></h2>
+        <p class="section-intro reveal">For those committed to a deeper journey. Packages offer continuity, integration time between sessions, and a sustained commitment to change.</p>
+
+        <div class="packages-grid">
+
+            <div class="pkg-card reveal">
+                <div>
+                    <p class="pkg-tag">Series</p>
+                    <h3 class="pkg-name">3-Session Series</h3>
+                    <p class="pkg-sessions">Any combination of modalities</p>
+                    <p class="pkg-desc">Three sessions to be used within 6 weeks. Ideal as an introduction to working with Susan consistently, or to explore more than one modality. Sessions can be mixed — for example, one Deep Alignment, one Hara Release, one Energetic Recalibration.</p>
+                </div>
+                <div>
+                    <div class="pkg-price"><span>AED </span>2,100</div>
+                    <p class="pkg-saving">Save AED 150 versus individual sessions</p>
+                    <a href="intake.html" class="btn-primary-gold" style="display:block;text-align:center;padding:0.9rem;font-family:var(--font-body);font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;background:var(--gold);color:var(--black);transition:all 0.3s;">Enquire About This Package</a>
+                </div>
+            </div>
+
+            <div class="pkg-card reveal" style="border-color:rgba(201,169,110,0.4);">
+                <div>
+                    <p class="pkg-tag">Immersion</p>
+                    <h3 class="pkg-name">6-Week Healing Journey</h3>
+                    <p class="pkg-sessions">6 sessions · Curated progression</p>
+                    <p class="pkg-desc">Six sessions designed as a complete arc — each building on the last, with Susan curating the progression based on what emerges. This is the format in which the deepest and most sustained change tends to occur. Includes email support between sessions.</p>
+                </div>
+                <div>
+                    <div class="pkg-price"><span>AED </span>4,200</div>
+                    <p class="pkg-saving">Save AED 600 · Includes between-session support</p>
+                    <a href="intake.html" class="btn-primary-gold" style="display:block;text-align:center;padding:0.9rem;font-family:var(--font-body);font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;background:var(--gold);color:var(--black);transition:all 0.3s;">Enquire About This Package</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- POLICY NOTE -->
+        <div class="policy-note reveal">
+            <p><strong>Booking & Cancellation.</strong> A 50% deposit is required to confirm all sessions. Cancellations made with less than 24 hours' notice forfeit the deposit. Packages are non-refundable once commenced but are fully transferable. <strong>Not sure which session is right for you?</strong> Complete the <a href="intake.html" style="color:var(--gold);text-decoration:underline;">intake form</a> and Susan will recommend the most suitable starting point.</p>
+        </div>
+
+    </div>
+</section>
 
 <footer>
     <p class="footer-gold">Susan K. Pearson · Elemental Healing</p>
     <p>Dubai, UAE · Available Worldwide</p>
     <p style="margin-top:1rem;">© 2026 Susan K. Pearson | Elemental Healing. All rights reserved.</p>
 </footer>
+
 <script>
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 revealEls.forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
