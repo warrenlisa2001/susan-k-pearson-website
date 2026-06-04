@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distance Healing: How It Works and Why It Does | Susan K. Pearson</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{--black:#0a0a0a;--dark:#111111;--dark2:#1a1a1a;--gold:#c9a96e;--gold-light:#e8d5a3;--gold-dim:rgba(201,169,110,0.15);--cream:#f5f0e8;--white:#ffffff;--gray:#888888;--gray-light:#cccccc;--font-display:'Cormorant Garamond',Georgia,serif;--font-body:'Raleway',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--cream);font-family:var(--font-body);font-weight:300;line-height:1.8;overflow-x:hidden;}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,169,110,0.15);}
+.nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none;}
+.nav-links a{text-decoration:none;color:var(--cream);font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:400;transition:color 0.3s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-dropdown{position:relative;}
+.dropdown-menu{position:absolute;top:calc(100% + 0.5rem);left:50%;transform:translateX(-50%);background:var(--dark2);border:1px solid rgba(201,169,110,0.2);min-width:220px;padding:0.8rem 0;opacity:0;pointer-events:none;transition:all 0.3s;z-index:100;}
+.nav-dropdown:hover .dropdown-menu{opacity:1;pointer-events:all;}
+.dropdown-menu a{display:block;padding:0.6rem 1.5rem;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-light);transition:all 0.2s;}
+.dropdown-menu a:hover{color:var(--gold);background:var(--gold-dim);}
+.btn-book{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:0.55rem 1.6rem;font-family:var(--font-body);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;transition:all 0.3s;text-decoration:none;}
+.btn-book:hover{background:var(--gold);color:var(--black);}
+.article-hero{padding:9rem 5vw 4rem;background:var(--dark);border-bottom:1px solid rgba(201,169,110,0.1);}
+.article-body{max-width:780px;margin:0 auto;padding:5rem 5vw;}
+.article-body h2{font-family:var(--font-display);font-size:1.8rem;color:var(--white);font-weight:300;margin:3rem 0 1.2rem;}
+.article-body p{font-size:0.95rem;color:var(--gray);line-height:2;margin-bottom:1.8rem;}
+.article-body p em{color:var(--gray-light);}
+.pullquote{background:rgba(201,169,110,0.06);border-left:2px solid var(--gold);padding:1.5rem 2rem;margin:2.5rem 0;}
+.pullquote p{font-family:var(--font-display);font-style:italic;font-size:1.1rem;color:var(--gray-light);line-height:1.7;margin:0;}
+@media(max-width:768px){nav{padding:1rem 1.5rem;}.nav-links{display:none;}.btn-book{display:none;}.article-hero{padding:7rem 1.5rem 3rem;}.article-body{padding:3rem 1.5rem;}}
+</style>
+</head>
+<body>
+<nav id="mainNav">
+  <a href="index.html" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px;">
+    <svg width="46" height="42" viewBox="0 0 88 84" fill="none" xmlns="http://www.w3.org/2000/svg"><g transform="translate(44,52)"><path d="M0,-48 C-4,-32 -4,-16 0,0 C4,-16 4,-32 0,-48Z" fill="#c9a96e"/><path d="M0,0 C-5,-20 -18,-38 -28,-48 C-18,-34 -8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/><path d="M0,0 C5,-20 18,-38 28,-48 C18,-34 8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/><path d="M0,0 C-10,-16 -28,-30 -44,-38 C-30,-26 -16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/><path d="M0,0 C10,-16 28,-30 44,-38 C30,-26 16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/><path d="M0,0 C-16,-8 -40,-12 -58,-12 C-40,-6 -20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/><path d="M0,0 C16,-8 40,-12 58,-12 C40,-6 20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/><line x1="-62" y1="0" x2="62" y2="0" stroke="#c9a96e" stroke-width="1" opacity="0.7"/><circle cx="8" cy="-52" r="2" fill="#c9a96e"/><circle cx="-12" cy="-42" r="1.5" fill="#c0392b"/></g></svg>
+    <span style="font-family:'Raleway',sans-serif;font-size:0.45rem;color:#c9a96e;letter-spacing:0.28em;text-transform:uppercase;font-weight:500;">Susan K Pearson</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="index.html#about">About</a></li>
+    <li class="nav-dropdown"><a href="index.html#services">Services <span style="font-size:0.6rem;color:var(--gold);">▾</span></a>
+      <div class="dropdown-menu"><a href="index.html#services">The Nir Levy Method</a><a href="index.html#services">Deep Alignment Therapy</a><a href="index.html#services">Hara Release</a><a href="index.html#services">Energetic Recalibration</a><a href="index.html#services">Subconscious Shift Therapy</a><a href="index.html#services">The Full Frequency Session</a></div>
+    </li>
+    <li><a href="pricing.html">Pricing</a></li><li><a href="blog.html" style="color:var(--gold);">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="cat-rescue.html">Cat Rescue</a></li><li><a href="intake.html">Intake Form</a></li>
+  </ul>
+  <a href="intake.html" class="btn-book">Book Session</a>
+</nav>
+
+<div class="article-hero">
+  <div style="max-width:780px;margin:0 auto;">
+    <p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;">Distance Healing · Worldwide Sessions</p>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.5rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.5rem;">Distance Healing: How It Works and Why It Does</h1>
+    <p style="font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:rgba(201,169,110,0.8);line-height:1.6;">The most common question Susan receives from international clients — answered honestly, with everything she's learned from years of working across continents.</p>
+    <div style="width:50px;height:1px;background:var(--gold);margin-top:2rem;"></div>
+    <p style="font-size:0.72rem;color:var(--gray);margin-top:1.2rem;letter-spacing:0.1em;">By Susan K. Pearson &nbsp;·&nbsp; April 2026 &nbsp;·&nbsp; 8 min read</p>
+  </div>
+</div>
+
+<div class="article-body">
+  <p>"I'd love to work with you, but I'm not in Dubai."</p>
+
+  <p>I hear this regularly. And my answer is always the same: that's fine. Distance is not the barrier you think it is.</p>
+
+  <p>Distance healing is, I understand, the part of energy work that sounds most like science fiction to the sceptical mind. If someone can't physically touch you, how can anything be transmitted? If there's no physical contact, what is actually happening?</p>
+
+  <p>These are fair questions, and I'd rather answer them honestly than ask you to simply believe.</p>
+
+  <h2>What Distance Healing Is</h2>
+
+  <p>Distance healing is a practice in which a practitioner works with a client's energy field without physical proximity. At the agreed time, the client lies down in a comfortable, quiet space wherever they are in the world. The practitioner, in their own space, enters a focused state of intention and connects with the client's energy field, working through it in the same way they would in a hands-on session.</p>
+
+  <p>The client typically experiences sensations during the session — warmth, tingling, waves of relaxation, emotional releases, visual impressions — without being told in advance what the practitioner is doing or where they are focusing. The specificity of these experiences, and their consistent alignment with what the practitioner is working on, is difficult to explain through coincidence alone.</p>
+
+  <div class="pullquote"><p>"After my first distance session with Susan, I felt warmth moving through my left shoulder for about forty minutes — exactly where I'd been carrying tension for months. She mentioned it in her report before I told her anything."</p><p style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-top:1rem;font-style:normal;">— M.T., London</p></div>
+
+  <h2>The Framework I Work Within</h2>
+
+  <p>The framework that makes most sense to me — and that aligns with both my training and the emerging science — is that consciousness and intention are not confined to the body. The energy field that surrounds and interpenetrates the body is not bounded by the skin. It extends outward, and it can be perceived and influenced from a distance by a skilled and focused practitioner.</p>
+
+  <p>This isn't unique to energy healing. We accept, without much thought, that a radio signal can travel across continents. We understand that electromagnetic fields are not blocked by walls. The idea that intention — which also has energetic correlates — can operate at a distance is consistent with these understandings, even if it sits at the edges of what current science can fully measure.</p>
+
+  <p>What I can tell you from practice is simpler than theory: it works. Consistently, reliably, and often with a specificity that cannot be attributed to chance.</p>
+
+  <h2>How a Distance Session Unfolds</h2>
+
+  <p>Before the session, we speak briefly — usually a short message exchange or a quick call — so I can understand what's present for you, what you're working with, what your intention is. This isn't always necessary; some clients simply say "do what the body needs" and that's a valid instruction.</p>
+
+  <p>At the agreed time, you lie down somewhere comfortable, warm and quiet. You don't need to meditate or try to feel anything. You don't need to think about Susan or focus on the session. You simply rest and allow.</p>
+
+  <p>During the session — typically sixty to ninety minutes — I work through your energy field systematically, addressing what presents itself, clearing what is stagnant, supporting what needs support. I keep notes as I work.</p>
+
+  <p>Afterwards, I send you a detailed written report: what I observed, where I worked, what arose. Many clients find this report illuminating — it often mirrors experiences or emotions they had during the session without knowing I was focused there.</p>
+
+  <h2>What Clients Experience</h2>
+
+  <p>The range of experiences during distance sessions is remarkably consistent with what people experience in person. Warmth — sometimes localised, sometimes moving through the whole body. A sense of heaviness followed by lightness. Tears, sometimes, for no identifiable reason — which almost always means something is releasing. Sleep, sometimes deep and immediate. Vivid imagery or colours. A feeling of hands, even though none are present.</p>
+
+  <p>Some clients feel nothing during the session itself and only notice the effects afterwards — sleeping more deeply, feeling lighter, finding that a particular pattern of thought or tension has shifted. The absence of strong sensation during the session does not mean nothing happened.</p>
+
+  <div class="pullquote"><p>"I was sceptical, but I'd been carrying grief that I couldn't seem to shift through anything else. After two distance sessions, something fundamental changed. I can't explain it, but I also don't need to."</p><p style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-top:1rem;font-style:normal;">— A.B., Dublin</p></div>
+
+  <h2>Who Distance Healing Is For</h2>
+
+  <p>Distance healing is for anyone who cannot come to Dubai in person and wants to work with me. It is equally suitable for first-time clients and those who have worked with me in person before. Many of my long-term clients now split their sessions between in-person when they're visiting or I'm travelling, and distance when they're not.</p>
+
+  <p>It is particularly powerful for people going through major transitions — grief, illness, relocation, the end or beginning of significant relationships — where the body is carrying a great deal and the nervous system needs support that geography makes complicated.</p>
+
+  <p>If you're reading this from London or Dublin or Sydney or New York, and something in this resonates — you don't have to wait until you're in Dubai. Your body doesn't need to travel for this work to reach it.</p>
+
+  <div style="margin-top:4rem;padding:2.5rem;background:var(--dark2);border:1px solid rgba(201,169,110,0.15);text-align:center;">
+    <p style="font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Available worldwide</p>
+    <h3 style="font-family:var(--font-display);font-size:1.6rem;color:var(--white);font-weight:300;margin-bottom:1rem;">Book a <em style="font-style:italic;color:var(--gold);">distance session</em></h3>
+    <a href="intake.html" style="display:inline-block;background:var(--gold);color:var(--black);padding:0.9rem 2.5rem;font-family:var(--font-body);font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;font-weight:500;margin-top:0.5rem;">Begin Your Journey</a>
+  </div>
+
+  <div style="margin-top:3rem;">
+    <a href="blog.html" style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;">← Back to Blog</a>
+  </div>
+</div>
+
+<footer style="background:var(--dark2);border-top:1px solid rgba(201,169,110,0.1);padding:2.5rem 5vw;text-align:center;">
+  <p style="color:var(--gold);font-size:0.75rem;margin-bottom:0.4rem;">Susan K. Pearson · Elemental Healing</p>
+  <p style="color:var(--gray);font-size:0.75rem;">Dubai, UAE · Available Worldwide</p>
+  <p style="color:var(--gray);font-size:0.72rem;margin-top:1rem;">© 2026 Susan K. Pearson | Elemental Healing. All rights reserved.</p>
+</footer>
+<div style="position:fixed;bottom:2rem;right:2rem;z-index:9999;"><a href="https://wa.me/971551770957" target="_blank" style="width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:transform 0.2s;text-decoration:none;"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></div>
+</body></html>
