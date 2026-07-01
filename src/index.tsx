@@ -8,6 +8,115 @@ type Bindings = {
 
 const app = new Hono<{ Bindings: Bindings }>()
 
+function daisyIcon(size: number, stroke: string, center: string) {
+  const angles = [0, 45, 90, 135, 180, 225, 270, 315]
+  const petals = angles.map(a =>
+    `<path d="M0 0 C-4 -11,-5 -24,0 -35 C5 -24,4 -11,0 0 Z" transform="translate(50,50) rotate(${a})" fill="none" stroke="${stroke}" stroke-width="1.1" stroke-linejoin="round"/>`
+  ).join('')
+  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">${petals}<circle cx="50" cy="50" r="3" fill="${center}"/></svg>`
+}
+
+function renderInitiativeSection() {
+  const principles: [string, string][] = [
+    ['Honor Life', 'Every living being possesses inherent value.'],
+    ['Respect All Creatures', 'Compassion extends beyond species to every living being.'],
+    ['Act With Integrity', 'We lead with transparency, responsibility, and care.'],
+    ['Build Sustainability', 'We create systems of care that endure generations.'],
+    ['Leave a Legacy', 'We invest in a future where life can flourish with dignity.'],
+  ]
+  return `
+        <section id="initiative" class="bg-[#050505] text-[#FAF7F3] py-24 md:py-32 border-b border-[#C8A974]/20">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+              <div class="mb-8 flex justify-center">${daisyIcon(72, '#FAF7F3', '#D4AF37')}</div>
+              <p class="text-[11px] tracking-[0.35em] uppercase text-[#C8A974] mb-5 font-['Montserrat',sans-serif]">An Initiative by Susan K. Pearson</p>
+              <h2 class="font-['Cormorant_Garamond',serif] font-light text-4xl md:text-6xl mb-5 tracking-wide">Animal Advocate Initiative</h2>
+              <p class="font-['Cormorant_Garamond',serif] italic text-xl md:text-2xl text-[#D4AF37]">Honoring Life. Respecting All Creatures.</p>
+            </div>
+
+            <div class="grid md:grid-cols-[auto_1fr] gap-8 md:gap-16 items-start mb-20 pb-20 border-b border-[#C8A974]/15">
+              <div class="font-['Cormorant_Garamond',serif] text-[#C8A974] text-2xl">01</div>
+              <div>
+                <h3 class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl mb-6 tracking-wide">A Founder's Vision</h3>
+                <p class="font-['Cormorant_Garamond',serif] italic text-lg text-[#D4AF37] mb-6">I am building something.</p>
+                <p class="text-[#EDE7DD]/85 leading-relaxed mb-6 max-w-2xl">
+                  Not just a response to need, but a sustainable framework of compassion, stewardship, and respect &mdash;
+                  where every being has the opportunity to live with dignity and every voice has the chance to be heard.
+                </p>
+                <p class="text-[#EDE7DD]/85 leading-relaxed max-w-2xl">This is the beginning of a legacy of care.</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-[auto_1fr] gap-8 md:gap-16 items-start mb-20 pb-20 border-b border-[#C8A974]/15">
+              <div class="font-['Cormorant_Garamond',serif] text-[#C8A974] text-2xl">02</div>
+              <div>
+                <h3 class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl mb-6 tracking-wide">Our Purpose</h3>
+                <p class="text-[#EDE7DD]/85 leading-relaxed mb-4 max-w-2xl">We exist to honor life and respect all creatures.</p>
+                <p class="text-[#EDE7DD]/85 leading-relaxed mb-4 max-w-2xl">We believe every life has inherent value and deserves compassion, protection, and the opportunity to thrive.</p>
+                <p class="text-[#EDE7DD]/85 leading-relaxed max-w-2xl">Our purpose is to create the conditions in which life &mdash; in all its forms &mdash; can flourish with dignity.</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-[auto_1fr] gap-8 md:gap-16 items-start mb-20 pb-20 border-b border-[#C8A974]/15">
+              <div class="font-['Cormorant_Garamond',serif] text-[#C8A974] text-2xl">03</div>
+              <div>
+                <h3 class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl mb-10 tracking-wide">Our Guiding Principles</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
+                  ${principles.map(([title, desc]) => `
+                  <div>
+                    <div class="mb-4">${daisyIcon(40, '#EDE7DD', '#D4AF37')}</div>
+                    <h4 class="font-['Cormorant_Garamond',serif] text-lg mb-2 tracking-wide">${title}</h4>
+                    <p class="text-[#EDE7DD]/70 text-sm leading-relaxed">${desc}</p>
+                  </div>`).join('')}
+                </div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-[auto_1fr] gap-8 md:gap-16 items-start mb-16">
+              <div class="font-['Cormorant_Garamond',serif] text-[#C8A974] text-2xl">04</div>
+              <div>
+                <h3 class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl mb-6 tracking-wide">Our Commitment</h3>
+                <p class="font-['Cormorant_Garamond',serif] italic text-lg text-[#D4AF37] mb-6">We collaborate. We educate. We advocate. We create.</p>
+                <p class="text-[#EDE7DD]/85 leading-relaxed max-w-2xl">
+                  Together, we build a world where compassion is active, stewardship is enduring, and life is honored in all its forms.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-[11px] tracking-[0.25em] uppercase text-[#C8A974]/80 border-t border-[#C8A974]/15 pt-10">
+              <span>Presence</span><span class="text-[#C8A974]/40">&bull;</span>
+              <span>Curiosity</span><span class="text-[#C8A974]/40">&bull;</span>
+              <span>Respect</span><span class="text-[#C8A974]/40">&bull;</span>
+              <span>Attention</span><span class="text-[#C8A974]/40">&bull;</span>
+              <span>Possibility</span>
+            </div>
+            <p class="text-center text-[#C8A974]/60 text-xs tracking-[0.2em] uppercase mt-8">Founded by Susan K. Pearson &nbsp;&middot;&nbsp; Version 1.0 &mdash; This is the beginning.</p>
+          </div>
+        </section>
+`
+}
+
+function renderInitiativeTeaser() {
+  return `
+        <!-- Animal Advocate Initiative -->
+        <section class="py-24 bg-[#050505] text-[#FAF7F3] text-center">
+          <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8 flex justify-center">${daisyIcon(64, '#FAF7F3', '#D4AF37')}</div>
+            <p class="text-[11px] tracking-[0.35em] uppercase text-[#C8A974] mb-5 font-['Montserrat',sans-serif]">An Initiative by Susan K. Pearson</p>
+            <h2 class="font-['Cormorant_Garamond',serif] font-light text-3xl md:text-5xl mb-5 tracking-wide">Animal Advocate Initiative</h2>
+            <p class="font-['Cormorant_Garamond',serif] italic text-lg md:text-xl text-[#D4AF37] mb-8">Honoring Life. Respecting All Creatures.</p>
+            <p class="text-[#EDE7DD]/80 leading-relaxed max-w-xl mx-auto mb-10">
+              To create the conditions in which life &mdash; in all its forms &mdash; can flourish with dignity.
+              A sustainable framework of compassion, stewardship, and respect for every being.
+            </p>
+            <a href="/cat-rescue#initiative" class="inline-block border border-[#C8A974]/60 text-[#FAF7F3] px-10 py-4 text-xs tracking-[0.3em] uppercase hover:bg-[#C8A974]/10 hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all">
+              Meet the Cats We're Rescuing
+            </a>
+          </div>
+        </section>
+`
+}
+
 app.use('/api/*', cors())
 app.use('/static/*', serveStatic({ root: './public' }))
 app.use('/images/*', serveStatic({ root: './public' }))
@@ -4321,21 +4430,7 @@ app.get('/', (c) => {
                 </div>
             </div>
         </section>
-
-        <!-- Anthropic Work Section -->
-        <section class="py-8 bg-cream">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg border-l-4 border-gold">
-                    <h3 class="text-2xl font-serif text-charcoal mb-6 text-center flex items-center justify-center">
-                        <i class="fas fa-heart text-gold mr-3"></i>
-                        Anthropic Work
-                    </h3>
-                    <p class="text-charcoal/80 leading-relaxed text-center">
-                        Susan is also committed to supporting abandoned and street cats in the UAE. A portion of session proceeds contributes to rescue, medical care, and rehoming efforts for vulnerable animals in the local community.
-                    </p>
-                </div>
-            </div>
-        </section>
+        ${renderInitiativeTeaser()}
 
         <!-- Footer -->
         <footer class="bg-charcoal text-cream/70 py-12">
@@ -6296,6 +6391,9 @@ app.get('/cat-rescue', (c) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dubai Street Cat Rescue | Susan K Pearson</title>
         <meta name="description" content="Susan rescues, rehabilitates, and rehomes abandoned street cats in Dubai. Meet the cats looking for loving forever homes and support our rescue mission.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
         <link href="/static/style.css" rel="stylesheet">
@@ -6363,7 +6461,7 @@ app.get('/cat-rescue', (c) => {
                 </div>
             </div>
         </section>
-
+        ${renderInitiativeSection()}
         <!-- Mission Statement -->
         <section class="py-20 bg-cream">
             <div class="max-w-5xl mx-auto px-4">
