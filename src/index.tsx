@@ -1628,6 +1628,69 @@ app.get('/', (c) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Susan K Pearson | Elemental Healing</title>
         <meta name="description" content="Master-level Reiki, Energy Medicine, and Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
+
+        <!-- Tailwind loads first, before anything else that could slow the page down -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  'midnight': '#0A0A0A',
+                  'charcoal': '#1A1A1A',
+                  'obsidian': '#000000',
+                  'gold': '#C8A974',
+                  'champagne': '#D4AF37',
+                  'cream': '#FAF7F3',
+                  'bone': '#F4F2EF',
+                  'taupe': '#7C7165',
+                },
+                fontFamily: {
+                  'serif': ['Cormorant Garamond', 'serif'],
+                  'sans': ['Montserrat', 'sans-serif'],
+                }
+              }
+            }
+          }
+        </script>
+        <script>
+          // Watchdog: if Tailwind's CDN script failed to load or execute (flaky network,
+          // ad-blocker, slow connection), retry once with a fresh script tag so the page
+          // never gets stuck fully unstyled.
+          (function () {
+            function tailwindMissing() {
+              return typeof window.tailwind === 'undefined';
+            }
+            window.addEventListener('load', function () {
+              setTimeout(function () {
+                if (tailwindMissing()) {
+                  var retry = document.createElement('script');
+                  retry.src = 'https://cdn.tailwindcss.com?retry=' + Date.now();
+                  retry.onload = function () {
+                    if (window.tailwind && window.tailwind.config) {
+                      window.tailwind.config = {
+                        theme: {
+                          extend: {
+                            colors: {
+                              midnight: '#0A0A0A', charcoal: '#1A1A1A', obsidian: '#000000',
+                              gold: '#C8A974', champagne: '#D4AF37', cream: '#FAF7F3',
+                              bone: '#F4F2EF', taupe: '#7C7165'
+                            },
+                            fontFamily: {
+                              serif: ['Cormorant Garamond', 'serif'],
+                              sans: ['Montserrat', 'sans-serif']
+                            }
+                          }
+                        }
+                      };
+                    }
+                  };
+                  document.head.appendChild(retry);
+                }
+              }, 1200);
+            });
+          })();
+        </script>
         
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -1776,32 +1839,8 @@ app.get('/', (c) => {
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
         
-        
-        <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  'midnight': '#0A0A0A',
-                  'charcoal': '#1A1A1A',
-                  'obsidian': '#000000',
-                  'gold': '#C8A974',
-                  'champagne': '#D4AF37',
-                  'cream': '#FAF7F3',
-                  'bone': '#F4F2EF',
-                  'taupe': '#7C7165',
-                },
-                fontFamily: {
-                  'serif': ['Cormorant Garamond', 'serif'],
-                  'sans': ['Montserrat', 'sans-serif'],
-                }
-              }
-            }
-          }
-        </script>
         <style>
           body {
             font-family: 'Montserrat', sans-serif;
@@ -1914,8 +1953,10 @@ app.get('/', (c) => {
             display: none;
           }
           body.gate-open {
+            position: fixed;
+            inset: 0;
+            width: 100%;
             overflow: hidden;
-            height: 100vh;
           }
           .splash-content {
             max-width: 620px;
@@ -1924,28 +1965,28 @@ app.get('/', (c) => {
             align-items: center;
           }
           .splash-daisy {
-            width: 260px;
-            height: 260px;
-            margin-bottom: 24px;
-            perspective: 900px;
+            width: 320px;
+            height: 320px;
+            margin-bottom: 20px;
+            perspective: 1000px;
           }
           .splash-daisy-svg {
             width: 100%;
             height: 100%;
             display: block;
             overflow: visible;
-            animation: splashDaisyIn 1.4s cubic-bezier(0.19, 1, 0.22, 1) both;
+            animation: splashDaisyIn 1.5s cubic-bezier(0.19, 1, 0.22, 1) both;
           }
           @keyframes splashDaisyIn {
-            0% { opacity: 0; transform: scale(0.5) rotateX(52deg); }
+            0% { opacity: 0; transform: scale(0.5) rotateX(58deg); }
             55% { opacity: 1; }
-            100% { opacity: 1; transform: scale(1) rotateX(0deg); }
+            100% { opacity: 1; transform: scale(1) rotateX(11deg); }
           }
           .daisy-spin {
             transform-box: view-box;
             transform-origin: 250px 250px;
-            animation: splashRotate 90s linear infinite;
-            animation-delay: 1.6s;
+            animation: splashRotate 100s linear infinite;
+            animation-delay: 2s;
           }
           @keyframes splashRotate {
             from { transform: rotate(0deg); }
@@ -1953,7 +1994,7 @@ app.get('/', (c) => {
           }
           .daisy-glow {
             opacity: 0;
-            animation: daisyGlowIn 2.4s ease-out 0.1s both;
+            animation: daisyGlowIn 2.6s ease-out 0.1s both;
           }
           @keyframes daisyGlowIn {
             0% { opacity: 0; }
@@ -1978,7 +2019,7 @@ app.get('/', (c) => {
             transform-box: view-box;
             transform-origin: 250px 250px;
             opacity: 0;
-            animation: sphereBloom 0.7s ease-out 0.9s both;
+            animation: sphereBloom 0.7s ease-out 1s both;
           }
           @keyframes sphereBloom {
             0% { opacity: 0; transform: scale(0.15); }
@@ -1989,8 +2030,8 @@ app.get('/', (c) => {
             animation: splashBreathe 7s ease-in-out infinite;
           }
           @keyframes splashBreathe {
-            0%, 100% { transform: scale(1); opacity: 0.97; }
-            50% { transform: scale(1.04); opacity: 1; }
+            0%, 100% { transform: scale(1) rotateX(11deg); opacity: 0.97; }
+            50% { transform: scale(1.035) rotateX(11deg); opacity: 1; }
           }
           .splash-eyebrow {
             font-family: 'Montserrat', sans-serif;
@@ -2081,115 +2122,170 @@ app.get('/', (c) => {
               <svg class="splash-daisy-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <radialGradient id="splashGlow" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.32"/>
+                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.34"/>
                     <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
                   </radialGradient>
-                  <linearGradient id="splashPetalOuter" x1="0%" y1="100%" x2="0%" y2="0%">
-                    <stop offset="0%" stop-color="#FAF7F3" stop-opacity="0.22"/>
-                    <stop offset="55%" stop-color="#FAF7F3" stop-opacity="0.06"/>
-                    <stop offset="100%" stop-color="#FAF7F3" stop-opacity="0"/>
+                  <linearGradient id="outerFill" x1="20%" y1="100%" x2="80%" y2="0%">
+                    <stop offset="0%" stop-color="#0A0906" stop-opacity="0.55"/>
+                    <stop offset="45%" stop-color="#3A3226" stop-opacity="0.55"/>
+                    <stop offset="75%" stop-color="#FAF7F3" stop-opacity="0.55"/>
+                    <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0.75"/>
                   </linearGradient>
-                  <linearGradient id="splashPetalInner" x1="0%" y1="100%" x2="0%" y2="0%">
-                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.5"/>
-                    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+                  <linearGradient id="midFill" x1="20%" y1="100%" x2="80%" y2="0%">
+                    <stop offset="0%" stop-color="#5C4A22" stop-opacity="0.65"/>
+                    <stop offset="50%" stop-color="#C8A974" stop-opacity="0.7"/>
+                    <stop offset="100%" stop-color="#F3DFAE" stop-opacity="0.85"/>
                   </linearGradient>
-                  <radialGradient id="splashCenterSphere" cx="35%" cy="32%" r="70%">
-                    <stop offset="0%" stop-color="#FFF6DE"/>
-                    <stop offset="45%" stop-color="#D4AF37"/>
-                    <stop offset="100%" stop-color="#B8863B"/>
+                  <linearGradient id="innerFill" x1="20%" y1="100%" x2="80%" y2="0%">
+                    <stop offset="0%" stop-color="#8A5A16" stop-opacity="0.8"/>
+                    <stop offset="55%" stop-color="#D4AF37" stop-opacity="0.9"/>
+                    <stop offset="100%" stop-color="#FFF3CE" stop-opacity="1"/>
+                  </linearGradient>
+                  <radialGradient id="splashCenterSphere" cx="32%" cy="28%" r="75%">
+                    <stop offset="0%" stop-color="#FFFCF2"/>
+                    <stop offset="30%" stop-color="#FFE9A8"/>
+                    <stop offset="65%" stop-color="#D4AF37"/>
+                    <stop offset="100%" stop-color="#8A5D1E"/>
                   </radialGradient>
+                  <filter id="petalShadow" x="-60%" y="-60%" width="220%" height="220%">
+                    <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000000" flood-opacity="0.45"/>
+                  </filter>
+                  <filter id="softGlint" x="-100%" y="-100%" width="300%" height="300%">
+                    <feGaussianBlur stdDeviation="2.2"/>
+                  </filter>
                 </defs>
                 <g class="daisy-spin">
-                  <circle class="daisy-glow" cx="250" cy="250" r="201" fill="url(#splashGlow)"/>
+                  <circle class="daisy-glow" cx="250" cy="250" r="215" fill="url(#splashGlow)"/>
                   <g transform="translate(250,250) rotate(0)">
                     <g class="petal petal-outer" style="animation-delay:0.05s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(45)">
-                    <g class="petal petal-outer" style="animation-delay:0.1s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    <g class="petal petal-outer" style="animation-delay:0.095s">
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(90)">
-                    <g class="petal petal-outer" style="animation-delay:0.15s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    <g class="petal petal-outer" style="animation-delay:0.14s">
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(135)">
-                    <g class="petal petal-outer" style="animation-delay:0.2s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    <g class="petal petal-outer" style="animation-delay:0.185s">
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(180)">
-                    <g class="petal petal-outer" style="animation-delay:0.25s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    <g class="petal petal-outer" style="animation-delay:0.23s">
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(225)">
-                    <g class="petal petal-outer" style="animation-delay:0.3s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    <g class="petal petal-outer" style="animation-delay:0.275s">
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(270)">
-                    <g class="petal petal-outer" style="animation-delay:0.35s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    <g class="petal petal-outer" style="animation-delay:0.32s">
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(315)">
-                    <g class="petal petal-outer" style="animation-delay:0.4s">
-                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    <g class="petal petal-outer" style="animation-delay:0.365s">
+                      <path d="M 0 0 C -20 -58.24, -29 -123.76, 0 -182 C 29 -123.76, 20 -58.24, 0 0 Z" fill="url(#outerFill)" stroke="#FAF7F3" stroke-width="1.1" stroke-linejoin="round" opacity="0.92" filter="url(#petalShadow)"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(22.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.5s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.42s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(67.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.545s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.455s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(112.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.59s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.49s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(157.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.635s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.525s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(202.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.68s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.56s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(247.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.725s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.595s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(292.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.77s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.63s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
                   <g transform="translate(250,250) rotate(337.5)">
-                    <g class="petal petal-inner" style="animation-delay:0.815s">
-                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    <g class="petal petal-mid" style="animation-delay:0.665s">
+                      <path d="M 0 0 C -15 -42.24, -22 -89.76, 0 -132 C 22 -89.76, 15 -42.24, 0 0 Z" fill="url(#midFill)" stroke="#E9CE93" stroke-width="0.9" stroke-linejoin="round" opacity="0.95"/>
                     </g>
                   </g>
-                  <circle class="daisy-sphere" cx="250" cy="250" r="12.5" fill="url(#splashCenterSphere)"/>
-                  <circle class="daisy-sphere" cx="250" cy="250" r="19" fill="none" stroke="#D4AF37" stroke-width="0.8" opacity="0.45"/>
+                  <g transform="translate(250,250) rotate(11.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.7s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(56.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.73s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(101.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.76s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(146.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.79s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(191.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.82s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(236.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.85s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(281.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.88s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(326.25)">
+                    <g class="petal petal-inner" style="animation-delay:0.91s">
+                      <path d="M 0 0 C -10 -27.52, -15 -58.480000000000004, 0 -86 C 15 -58.480000000000004, 10 -27.52, 0 0 Z" fill="url(#innerFill)" stroke="#FFE9A8" stroke-width="0.7" stroke-linejoin="round" opacity="1"/>
+                    </g>
+                  </g>
+                  <circle class="daisy-sphere" cx="250" cy="250" r="15" fill="url(#splashCenterSphere)"/>
+                  <ellipse class="daisy-sphere daisy-glint" cx="244" cy="244" rx="5.5" ry="3.5" fill="#FFFFFF" opacity="0.85" filter="url(#softGlint)"/>
+                  <circle class="daisy-sphere" cx="250" cy="250" r="22" fill="none" stroke="#D4AF37" stroke-width="0.8" opacity="0.4"/>
                 </g>
               </svg>
             </div>
             <p class="splash-eyebrow">Susan K. Pearson</p>
             <h1 class="splash-headline">Stop carrying what was never yours to hold.</h1>
             <p class="splash-subline">One session can shift what years of thinking couldn't.</p>
-            <button id="splash-enter-btn" class="splash-enter" type="button">Enter</button>
+            <button id="splash-enter-btn" class="splash-enter" type="button">Enter the Site</button>
           </div>
         </div>
         <script>
@@ -2202,7 +2298,10 @@ app.get('/', (c) => {
             }
             document.body.classList.add('gate-open');
             var btn = document.getElementById('splash-enter-btn');
+            var entered = false;
             function openSite() {
+              if (entered) return;
+              entered = true;
               gate.classList.add('splash-gate-hide');
               document.body.classList.remove('gate-open');
               try { sessionStorage.setItem('skpEntered', '1'); } catch (e) {}
@@ -2216,7 +2315,7 @@ app.get('/', (c) => {
             setTimeout(function () { if (btn) btn.focus(); }, 350);
             var daisyEl = gate.querySelector('.splash-daisy');
             if (daisyEl) {
-              setTimeout(function () { daisyEl.classList.add('is-idle'); }, 1650);
+              setTimeout(function () { daisyEl.classList.add('is-idle'); }, 2050);
             }
           })();
         </script>
