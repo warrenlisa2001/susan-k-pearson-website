@@ -1627,247 +1627,1101 @@ app.get('/', (c) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Susan K Pearson | Elemental Healing</title>
-        <meta name="description" content="Master-level Reiki, Energy Medicine, and Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
+        <meta name="description" content="Susan K. Pearson — practitioner, facilitator, and witness. A space to listen, explore, and reconnect with your own capacity for balance and change. Dubai and worldwide.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
-        <!-- Styling is now compiled into the site permanently at build time -->
-        <!-- (previously loaded live from an external CDN on every page view, which could fail) -->
-        <link href="/static/site.css" rel="stylesheet">
-        
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        new Date().getTime(),event:'gtm.start'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
         <!-- End Google Tag Manager -->
-        
-        <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
-        </script>
-        <!-- End Google Analytics 4 -->
-        
-        <!-- Schema.org Structured Data -->
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Susan K Pearson - Elemental Healing",
-          "image": "https://susankpearson.com/images/skp-logo-white.png",
-          "@id": "https://susankpearson.com",
-          "url": "https://susankpearson.com",
-          "telephone": "+971551770957",
-          "email": "susan@susankpearson.com",
-          "priceRange": "AED 800 - AED 1,200",
-          "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "Worldwide",
-            "addressLocality": "Remote & In-Person Sessions"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 25.2048,
-            "longitude": 55.2708
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday",
-              "Sunday"
-            ],
-            "opens": "09:00",
-            "closes": "20:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/susankpearson",
-            "https://www.instagram.com/susankpearson",
-            "https://wa.me/971551770957"
-          ],
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "6"
-          },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Healing Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Deep Alignment Therapy",
-                  "description": "Full-spectrum healing: Energy alignment, hara work, meridian balancing, subconscious integration",
-                  "provider": {
-                    "@type": "Person",
-                    "name": "Susan K Pearson"
-                  }
-                },
-                "price": "950",
-                "priceCurrency": "AED"
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "The Nir Levy Method",
-                  "description": "Ancient Anma bodywork with Five Elements Body Reading",
-                  "provider": {
-                    "@type": "Person",
-                    "name": "Susan K Pearson"
-                  }
-                },
-                "price": "950",
-                "priceCurrency": "AED"
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "The Full Frequency Session",
-                  "description": "All modalities integrated: Reiki, hara work, meridian balancing, chakra harmonizing, hypnotherapy, Nir Levy Method",
-                  "provider": {
-                    "@type": "Person",
-                    "name": "Susan K Pearson"
-                  }
-                },
-                "price": "1200",
-                "priceCurrency": "AED"
-              }
-            ]
-          }
-        }
-        </script>
-        
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Susan K Pearson",
-          "url": "https://susankpearson.com",
-          "image": "https://susankpearson.com/images/susan-professional.jpg",
-          "jobTitle": "Multidimensional Healing Practitioner",
-          "description": "Usui Reiki Ryoho Master, Holy Fire III Reiki Master, and Clinical Hypnotherapist specializing in multidimensional healing with 20+ years of professional practice",
-          "email": "susan@susankpearson.com",
-          "telephone": "+971551770957",
-          "knowsAbout": [
-            "Reiki",
-            "Energy Medicine",
-            "Hypnotherapy",
-            "Nir Levy Method",
-            "Anma",
-            "Ampuku",
-            "Chakra Balancing",
-            "Somatic Healing"
-          ],
-          "sameAs": [
-            "https://www.facebook.com/susankpearson",
-            "https://www.instagram.com/susankpearson"
-          ]
-        }
-        </script>
-        <!-- End Schema.org Structured Data -->
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
-        
-        <style>
-          body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #0A0A0A;
-            color: #FAF7F3;
-          }
-          h1, h2, h3, h4, h5, h6 {
-            font-family: 'Cormorant Garamond', serif;
-          }
-          .elegant-text {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 300;
-          }
-          .smooth-scroll {
-            scroll-behavior: smooth;
-          }
-          .hero-gradient {
-            background: linear-gradient(135deg, #000000 0%, #1A1A1A 100%);
-            position: relative;
-          }
-          .hero-gradient::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(200, 169, 116, 0.1), transparent 70%);
-          }
-          .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-          }
-          .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(200, 169, 116, 0.2);
-          }
-          .section-divider {
-            height: 1px;
-            background: linear-gradient(to right, transparent, #C8A974, transparent);
-            margin: 4rem 0;
-          }
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translateY(30px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-          .fade-in-up {
-            animation: fadeInUp 0.8s ease-out;
-          }
-          .profile-image {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #C8A974;
-            box-shadow: 0 20px 40px rgba(200, 169, 116, 0.3);
-          }
-          .blog-card {
-            background: #1A1A1A;
-            border: 1px solid rgba(200, 169, 116, 0.2);
-            border-radius: 0.25rem;
-            overflow: hidden;
-            transition: all 0.3s ease;
-          }
-          .blog-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(200, 169, 116, 0.3);
-            border-color: rgba(200, 169, 116, 0.5);
-          }
-          .gold-accent {
-            background: linear-gradient(135deg, #C8A974 0%, #D4AF37 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-          }
-          nav {
-            backdrop-filter: blur(20px);
-            background: rgba(10, 10, 10, 0.95);
-            border-bottom: 1px solid rgba(200, 169, 116, 0.1);
-          }
 
+        <style>
+    <style>
+/* ===== RESET & ROOT ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --black: #0a0a0a;
+    --dark: #111111;
+    --dark2: #1a1a1a;
+    --gold: #c9a96e;
+    --gold-light: #e8d5a3;
+    --gold-dim: rgba(201,169,110,0.15);
+    --cream: #f5f0e8;
+    --white: #ffffff;
+    --gray: #888888;
+    --gray-light: #cccccc;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Raleway', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-weight: 300;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 1.2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    background: transparent;
+}
+
+nav.scrolled {
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,169,110,0.15);
+    padding: 0.8rem 3rem;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 2px;
+}
+
+.logo-box {
+    width: 64px;
+    height: 64px;
+    background: var(--dark2);
+    border: 1px solid var(--gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    transition: all 0.3s ease;
+}
+.logo-box:hover { background: var(--gold-dim); }
+
+.logo-skp {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+
+.logo-lotus {
+    font-size: 1.2rem;
+    color: var(--gold);
+    line-height: 1;
+}
+
+.logo-name {
+    font-family: var(--font-body);
+    font-size: 0.55rem;
+    color: var(--gold);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--cream);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s;
+    position: relative;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; left: 0;
+    width: 0; height: 1px;
+    background: var(--gold);
+    transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-dropdown { position: relative; }
+.nav-dropdown > a::after { display: none; }
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark2);
+    border: 1px solid rgba(201,169,110,0.2);
+    min-width: 220px;
+    padding: 0.8rem 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    z-index: 100;
+}
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: all;
+    top: calc(100% + 0.5rem);
+}
+.dropdown-menu a {
+    display: block;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-light);
+    transition: all 0.2s;
+}
+.dropdown-menu a:hover {
+    color: var(--gold);
+    background: var(--gold-dim);
+    padding-left: 2rem;
+}
+.dropdown-menu a::after { display: none; }
+
+.nav-caret {
+    font-size: 0.6rem;
+    margin-left: 0.3rem;
+    color: var(--gold);
+}
+
+.btn-book {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.6rem 1.8rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 400;
+}
+.btn-book:hover {
+    background: var(--gold);
+    color: var(--black);
+}
+
+/* ===== HERO ===== */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--black);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center 20%;
+    opacity: 0.92;
+    transform: scale(1.05);
+    animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+    from { transform: scale(1.05); }
+    to { transform: scale(1.12); }
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(10,10,10,0.05) 0%,
+        rgba(10,10,10,0.05) 60%,
+        rgba(10,10,10,0.35) 85%,
+        rgba(10,10,10,0.65) 100%
+    );
+}
+
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: particleFloat linear infinite;
+}
+
+@keyframes particleFloat {
+    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.4; }
+    100% { transform: translateY(-10vh) translateX(30px); opacity: 0; }
+}
+
+.hero-ornament {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(201,169,110,0.08);
+    border-radius: 50%;
+    animation: rotateSlow 40s linear infinite;
+    pointer-events: none;
+}
+.hero-ornament::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border: 1px solid rgba(201,169,110,0.05);
+    border-radius: 50%;
+}
+
+@keyframes rotateSlow { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 2rem 2rem 5rem;
+    margin-top: 0;
+}
+
+.hero-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.8s;
+}
+.hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+}
+
+.hero-tagline {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: var(--gray-light);
+    letter-spacing: 0.08em;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1.1s;
+}
+
+.hero-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1.3s;
+}
+.hero-divider span { width: 60px; height: 1px; background: rgba(201,169,110,0.4); }
+.hero-divider i { color: var(--gold); font-size: 0.6rem; }
+
+.hero-cta {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1.5s;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: var(--black);
+    padding: 1rem 3rem;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+.btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(201,169,110,0.3);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--cream);
+    padding: 1rem 3rem;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 400;
+}
+.btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gold);
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 2s;
+}
+.scroll-line {
+    width: 1px;
+    height: 50px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(1.1); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== SECTION BASE ===== */
+section { position: relative; }
+
+.section-label {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+.section-title em { font-style: italic; color: var(--gold); }
+
+.gold-line {
+    width: 50px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 2rem;
+}
+
+.section-text {
+    color: var(--gray-light);
+    font-size: 0.95rem;
+    line-height: 1.9;
+    font-weight: 300;
+    max-width: 520px;
+}
+
+/* ===== STRIP DIVIDER ===== */
+.strip-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+}
+.strip-divider span { width: 80px; height: 1px; background: rgba(201,169,110,0.25); }
+.strip-divider .lotus { color: var(--gold); font-size: 1.2rem; opacity: 0.6; }
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    padding: 8rem 5vw;
+    background: var(--dark);
+}
+
+.about-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.about-img-container {
+    position: relative;
+}
+
+.about-img-main {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.about-img-accent {
+    position: absolute;
+    bottom: -3rem;
+    right: -2rem;
+    width: 55%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid var(--dark);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.about-img-frame {
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    border: 1px solid rgba(201,169,110,0.2);
+    pointer-events: none;
+}
+
+.about-text { padding-bottom: 3rem; }
+
+.credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(201,169,110,0.15);
+}
+
+.credential-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--gray-light);
+    letter-spacing: 0.05em;
+}
+.credential-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services-section {
+    padding: 8rem 5vw;
+    background: var(--black);
+}
+
+.services-header {
+    max-width: 1300px;
+    margin: 0 auto 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: end;
+}
+
+.services-header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+
+.services-header-right p {
+    font-size: 0.85rem;
+    color: var(--gray);
+    max-width: 320px;
+    text-align: right;
+    line-height: 1.8;
+}
+
+.services-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.service-card {
+    background: var(--dark2);
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-top: 1px solid transparent;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 0;
+    background: var(--gold-dim);
+    transition: height 0.4s ease;
+    z-index: 0;
+}
+
+.service-card:hover {
+    border-top-color: var(--gold);
+}
+
+.service-card:hover::before { height: 100%; }
+.service-card > * { position: relative; z-index: 1; }
+
+.service-number {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    color: rgba(201,169,110,0.1);
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    transition: color 0.4s;
+}
+
+.service-card:hover .service-number { color: rgba(201,169,110,0.25); }
+
+.service-name {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+.service-duration {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+}
+
+.service-desc {
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.service-price {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--gold);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.service-includes {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+.service-includes li {
+    font-size: 0.75rem;
+    color: var(--gray-light);
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.service-includes li::before {
+    content: '—';
+    color: var(--gold);
+    font-size: 0.6rem;
+}
+
+.service-link {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.3s;
+}
+.service-card:hover .service-link { gap: 1rem; }
+
+/* ===== HEALING PHILOSOPHY (with full-width image) ===== */
+.philosophy-section {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.philosophy-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/philosophy-bg.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    opacity: 0.45;
+}
+
+.philosophy-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(10,10,10,0.92) 0%,
+        rgba(10,10,10,0.75) 40%,
+        rgba(10,10,10,0.4) 70%,
+        rgba(10,10,10,0.2) 100%
+    );
+}
+
+.philosophy-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 6rem 5vw;
+    max-width: 700px;
+}
+
+.philosophy-quote {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--white);
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.philosophy-quote span { color: var(--gold); }
+
+.philosophy-attr {
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+/* ===== SESSION PHOTOS (Healing in action) ===== */
+.healing-section {
+    padding: 8rem 5vw;
+    background: var(--dark);
+}
+
+.healing-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.healing-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.healing-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.healing-photo {
+    overflow: hidden;
+}
+.healing-photo img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+.healing-photo:hover img { transform: scale(1.04); }
+.healing-photo.tall img { height: 380px; }
+
+/* ===== STUDIO / SPACE SECTION ===== */
+.studio-section {
+    padding: 0;
+    background: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.studio-image {
+    overflow: hidden;
+    min-height: 600px;
+}
+.studio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+.studio-image:hover img { transform: scale(1.03); }
+
+.studio-text {
+    padding: 6rem 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--dark2);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-section {
+    padding: 8rem 5vw;
+    background: var(--black);
+}
+
+.testimonials-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.testimonials-header .gold-line { margin: 0 auto 2rem; }
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 5rem;
+}
+
+.testimonial-card {
+    background: var(--dark2);
+    padding: 3rem 2.5rem;
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-family: var(--font-display);
+    font-size: 5rem;
+    color: rgba(201,169,110,0.1);
+    line-height: 1;
+}
+
+.testimonial-text {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--gray-light);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.testimonial-author {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.testimonial-location {
+    font-size: 0.7rem;
+    color: var(--gray);
+    margin-top: 0.3rem;
+    letter-spacing: 0.05em;
+}
+
+.testimonial-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    overflow: hidden;
+}
+
+.testimonial-feature-img {
+    overflow: hidden;
+}
+.testimonial-feature-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.6s ease;
+}
+.testimonial-feature-img:hover img { transform: scale(1.04); }
+
+.testimonial-feature-text {
+    background: var(--dark2);
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-feature-text blockquote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    color: var(--white);
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+/* ===== GALLERY ===== */
+.gallery-section {
+    padding: 8rem 5vw;
+    background: var(--dark);
+}
+
+.gallery-inner { max-width: 1300px; margin: 0 auto; }
+
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 320px;
+    gap: 4px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: var(--dark2);
+}
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(201,169,110,0);
+    transition: background 0.3s;
+    pointer-events: none;
+}
+.gallery-item:hover::after { background: rgba(201,169,110,0.1); }
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+.gallery-item:hover img { transform: scale(1.06); }
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+    padding: 8rem 5vw;
+    background: var(--black);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(201,169,110,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-section .section-title { font-size: clamp(2.2rem, 5vw, 4rem); }
+
+.cta-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.cta-contact-item {
+    font-size: 0.8rem;
+    color: var(--gray);
+    letter-spacing: 0.05em;
+}
+.cta-contact-item a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.cta-contact-item a:hover { color: var(--gold-light); }
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--dark2);
+    border-top: 1px solid rgba(201,169,110,0.1);
+    padding: 3rem 5vw;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.75rem;
+    color: var(--gray);
+    letter-spacing: 0.05em;
+    margin: 0.4rem 0;
+}
+
+footer .footer-gold { color: var(--gold); }
+
+/* ===== ANIMATIONS ON SCROLL ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    nav { padding: 1rem 2rem; }
+    .nav-links { gap: 1.2rem; }
+    .about-grid, .healing-top, .studio-section { grid-template-columns: 1fr; }
+    .about-img-accent { display: none; }
+    .about-img-frame { display: none; }
+    .services-grid, .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    .testimonial-feature { grid-template-columns: 1fr; }
+    .testimonial-feature-img img { height: 300px; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-item.tall img, .gallery-item img { height: 220px; }
+    .services-header { grid-template-columns: 1fr; gap: 1rem; }
+    .services-header-right { justify-content: flex-start; }
+    .services-header-right p { text-align: left; }
+    .service-card { padding: 2.2rem 1.8rem; }
+}
+
+@media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .btn-book { display: none; }
+    .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .healing-photos { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-ornament { width: 300px; height: 300px; }
+    .cta-contacts { gap: 1.5rem; }
+    .studio-text { padding: 3rem 1.5rem; }
+    .hero-content { margin-top: 58vh; }
+    .service-card { padding: 2rem 1.5rem; }
+    .service-number { font-size: 2.5rem; }
+    #services { padding: 5rem 1.2rem !important; }
+    .services-grid { gap: 2px; }
+}
+    </style>
+
+        </style>
+        <style>
           /* ===== Entrance / Splash Gate ===== */
           #splash-gate {
             position: fixed;
@@ -1975,7 +2829,7 @@ app.get('/', (c) => {
             50% { transform: scale(1.035) rotateX(11deg); opacity: 1; }
           }
           .splash-eyebrow {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Raleway', sans-serif;
             font-size: 11px;
             font-weight: 500;
             letter-spacing: 0.35em;
@@ -2005,7 +2859,7 @@ app.get('/', (c) => {
             background: transparent;
             border: 1px solid rgba(200, 169, 116, 0.55);
             color: #FAF7F3;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Raleway', sans-serif;
             font-size: 12px;
             font-weight: 500;
             letter-spacing: 0.32em;
@@ -2039,13 +2893,10 @@ app.get('/', (c) => {
             #splash-gate { transition: none; }
           }
         </style>
-        
-        <!-- Calendly Badge Widget Begin -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <!-- Calendly Badge Widget End -->
+
+        </style>
     </head>
-    <body class="smooth-scroll">
+    <body>
         <script>
           (function () {
             try {
@@ -2261,2689 +3112,997 @@ app.get('/', (c) => {
           })();
         </script>
 
+
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        
-        <!-- Navigation -->
-        <nav class="fixed w-full bg-black backdrop-blur-sm shadow-lg z-50 border-b border-gold/40">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-24 md:h-28">
-                    <div class="flex items-center">
-                        <a href="#home" class="flex items-center py-2">
-                            <img src="/images/skp-logo-white.png" alt="Susan K Pearson - Elemental Healing" class="h-16 md:h-20 w-auto transition-transform hover:scale-105">
-                        </a>
-                    </div>
-                    <div class="hidden md:flex space-x-8 items-center">
-                        <a href="#home" class="text-white hover:text-gold transition-colors font-medium">Home</a>
-                        <a href="#about" class="text-white hover:text-gold transition-colors font-medium">About</a>
-                        <div class="relative group">
-                            <button class="text-white hover:text-gold transition-colors font-medium flex items-center">
-                                Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                            </button>
-                            <div class="absolute left-0 mt-2 w-80 bg-charcoal rounded-sm shadow-xl border border-gold/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <a href="/nir-levy-method" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-cream">The Nir Levy Method</div>
-                                    <div class="text-xs text-cream/60">Holistic bodywork with Five Elements</div>
-                                </a>
-                                <a href="/deep-alignment-therapy" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-cream">Deep Alignment Therapy</div>
-                                    <div class="text-xs text-cream/60">Full-spectrum healing journey</div>
-                                </a>
-                                <a href="/hara-release" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-cream">Hara Release</div>
-                                    <div class="text-xs text-cream/60">Anma & Ampuku bodywork</div>
-                                </a>
-                                <a href="/energetic-recalibration" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-cream">Energetic Recalibration</div>
-                                    <div class="text-xs text-cream/60">Reiki + Chakra harmonizing</div>
-                                </a>
-                                <a href="/subconscious-shift-therapy" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-cream">Subconscious Shift Therapy</div>
-                                    <div class="text-xs text-cream/60">Hypnotherapy + Nir Levy Method</div>
-                                </a>
-                                <a href="/full-frequency-session" class="block px-6 py-3 hover:bg-gold/10 border-b border-gold/10 transition-colors">
-                                    <div class="font-medium text-cream">The Full Frequency Session</div>
-                                    <div class="text-xs text-cream/60">All modalities | One deep journey</div>
-                                </a>
-                                <a href="#services" class="block px-6 py-3 hover:bg-gold/10 text-gold transition-colors font-medium">
-                                    View All Services →
-                                </a>
-                            </div>
-                        </div>
-                        <a href="#pricing" class="text-white hover:text-gold transition-colors font-medium">Pricing</a>
-                        <a href="#blog" class="text-white hover:text-gold transition-colors font-medium">Blog</a>
-                        <a href="#faq" class="text-white hover:text-gold transition-colors font-medium">FAQ</a>
-                        <a href="/cat-rescue" class="text-white hover:text-gold transition-colors font-medium">Cat Rescue</a>
-                        <a href="/intake-form" class="text-white hover:text-gold transition-colors font-medium">Intake Form</a>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="bg-gold text-black px-6 py-2 rounded-sm hover:bg-champagne transition-colors font-medium shadow-lg">Book Session</a>
-                    </div>
-                    <button id="mobileMenuBtn" class="md:hidden text-white">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden bg-black border-t border-gold/40">
-                <div class="px-4 py-4 space-y-3">
-                    <a href="#home" class="block text-white hover:text-gold transition-colors font-medium">Home</a>
-                    <a href="#about" class="block text-white hover:text-gold transition-colors font-medium">About</a>
-                    <div class="border-l-2 border-gold/40 pl-3 space-y-2">
-                        <div class="text-xs text-white/60 uppercase tracking-wide mb-2">Services</div>
-                        <a href="/nir-levy-method" class="block text-white hover:text-gold transition-colors text-sm">The Nir Levy Method</a>
-                        <a href="/deep-alignment-therapy" class="block text-white hover:text-gold transition-colors text-sm">Deep Alignment Therapy</a>
-                        <a href="/hara-release" class="block text-white hover:text-gold transition-colors text-sm">Hara Release</a>
-                        <a href="/energetic-recalibration" class="block text-white hover:text-gold transition-colors text-sm">Energetic Recalibration</a>
-                        <a href="/subconscious-shift-therapy" class="block text-white hover:text-gold transition-colors text-sm">Subconscious Shift Therapy</a>
-                        <a href="/full-frequency-session" class="block text-white hover:text-gold transition-colors text-sm">Full Frequency Session</a>
-                        <a href="#services" class="block text-gold hover:text-champagne transition-colors text-sm font-medium">All Services →</a>
-                    </div>
-                    <a href="#pricing" class="block text-white hover:text-gold transition-colors font-medium">Pricing</a>
-                    <a href="#blog" class="block text-white hover:text-gold transition-colors font-medium">Blog</a>
-                    <a href="#faq" class="block text-white hover:text-gold transition-colors font-medium">FAQ</a>
-                    <a href="/cat-rescue" class="block text-white hover:text-gold transition-colors font-medium">Cat Rescue</a>
-                    <a href="/intake-form" class="block text-white hover:text-gold transition-colors font-medium">Intake Form</a>
-                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="block bg-gold text-black px-4 py-2 rounded-sm hover:bg-champagne transition-colors font-medium text-center shadow-lg">Book Session</a>
-                </div>
-            </div>
-        </nav>
 
-        <!-- Hero Section -->
-        <section id="home" class="pt-24 md:pt-28 relative overflow-hidden bg-black">
-            <div class="relative w-full py-24 md:py-32 flex items-center justify-center">
-                <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-                    <!-- Delicate Top Flourish -->
-                    <div class="mb-8 flex justify-center items-center gap-4">
-                        <div class="w-16 h-px bg-gradient-to-r from-transparent to-gold/40"></div>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gold/60">
-                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
-                            <path d="M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M5 5 L8 8 M16 16 L19 19 M19 5 L16 8 M8 16 L5 19" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
-                        </svg>
-                        <div class="w-16 h-px bg-gradient-to-l from-transparent to-gold/40"></div>
-                    </div>
-                    
-                    <p class="text-3xl md:text-4xl text-gold font-light mb-8 leading-relaxed tracking-wide" style="font-family: 'Cormorant Garamond', serif;">
-                        Awaken Your Healing Intelligence
-                    </p>
-                    
-                    <!-- Subtle Divider -->
-                    <div class="flex justify-center items-center gap-3 mb-10">
-                        <div class="w-8 h-px bg-gold/30"></div>
-                        <div class="w-1.5 h-1.5 rounded-full bg-gold/50"></div>
-                        <div class="w-8 h-px bg-gold/30"></div>
-                    </div>
-                    
-                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="inline-block bg-gold text-black px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-lg hover:shadow-gold/20">
-                        Explore Working Together
+<nav id="mainNav">
+    <a href="#home" class="nav-logo" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:5px;">
+        <svg width="44" height="42" viewBox="0 0 88 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(44,52)">
+            <path d="M0,-48 C-4,-32 -4,-16 0,0 C4,-16 4,-32 0,-48Z" fill="#c9a96e"/>
+            <path d="M0,0 C-5,-20 -18,-38 -28,-48 C-18,-34 -8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+            <path d="M0,0 C5,-20 18,-38 28,-48 C18,-34 8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+            <path d="M0,0 C-10,-16 -28,-30 -44,-38 C-30,-26 -16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+            <path d="M0,0 C10,-16 28,-30 44,-38 C30,-26 16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+            <path d="M0,0 C-16,-8 -40,-12 -58,-12 C-40,-6 -20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+            <path d="M0,0 C16,-8 40,-12 58,-12 C40,-6 20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+            <line x1="-62" y1="0" x2="62" y2="0" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+            <circle cx="0" cy="-52" r="2" fill="#c9a96e"/>
+          </g>
+        </svg>
+        <span style="font-family:'Raleway',sans-serif;font-size:0.55rem;color:#c9a96e;letter-spacing:0.3em;text-transform:uppercase;font-weight:500;line-height:1;">Susan K Pearson</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="nav-dropdown">
+            <a href="#services">Services <span class="nav-caret">▾</span></a>
+            <div class="dropdown-menu" style="min-width:280px;">
+                <div style="padding:0.8rem 1.5rem 0.3rem;">
+                    <a href="#services" style="display:block;padding:0.6rem 0;text-decoration:none;border-bottom:none;transition:all 0.2s;" onmouseover="this.querySelector('p').style.color='var(--gold)'" onmouseout="this.querySelector('p').style.color='var(--white)'">
+                        <p style="font-size:0.78rem;color:var(--white);font-weight:500;margin:0 0 0.2rem;letter-spacing:0.05em;transition:color 0.2s;">The Nir Levy Method</p>
+                        <p style="font-size:0.68rem;color:var(--gray);margin:0;font-weight:300;">Holistic bodywork with Five Elements</p>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-20 bg-cream">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Section Header with Susan's Photo -->
-                <div class="text-center mb-12">
-                    <img src="/images/susan-professional.jpg" alt="Susan K Pearson" class="profile-image mx-auto mb-6 shadow-2xl">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-2">Susan K Pearson</h2>
-                    <p class="text-xl text-gold/90 font-medium mb-4">Multidimensional Healing | Worldwide</p>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <div class="flex justify-center gap-6 text-charcoal/70">
-                        <a href="tel:+971551770957" class="hover:text-gold transition-colors">
-                            <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
-                        </a>
-                        <a href="mailto:susan@susankpearson.com" class="hover:text-gold transition-colors">
-                            <i class="fas fa-envelope mr-2"></i>susan@susankpearson.com
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Bio Content -->
-                <div class="max-w-4xl mx-auto">
-                    <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
-                        <div class="space-y-6 text-charcoal/80 leading-relaxed">
-                            <p class="text-xl font-medium text-charcoal mb-8">
-                                Susan K Pearson is a practitioner of multidimensional healing, integrating Reiki, hypnotherapy, Anma, Ampuku, chakra balancing, and consciousness-based practices into a singular, elegant approach.
-                            </p>
-                            
-                            <p class="mb-6">
-                                Her work is grounded in the understanding that the body, energy field, and subconscious mind already hold the intelligence required for meaningful change. Susan's role is to listen deeply, create safety, and support clients in reconnecting with their own innate capacity for healing.
-                            </p>
-                            
-                            <p class="mb-6">
-                                In an environment shaped by calm, depth, and beauty, clients are guided through a process of hara alignment, energetic clearing, and subconscious release. Each session unfolds responsively, informed by what the body reveals in the moment.
-                            </p>
-                            
-                            <p class="mb-6">
-                                With a foundation rooted in somatic wisdom and consciousness work, Susan combines precise, attuned touch with psychological insight and energetic awareness. Patterns soften, emotional density releases, and clarity emerges naturally.
-                            </p>
-                            
-                            <p class="mb-8">
-                                Her practice is guided by presence, curiosity, and deep respect for the body's inherent ability to reorganize toward balance when given the right conditions.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Somatic Wisdom Section -->
-                    <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
-                        <h3 class="text-2xl font-serif text-charcoal mb-6 text-center">Somatic Wisdom</h3>
-                        <div class="space-y-4 text-charcoal/80 leading-relaxed">
-                            <p>
-                                Somatic wisdom recognizes the body as a profound source of intelligence. Sensations, breath, posture, and movement carry information shaped by lived experience, emotion, and adaptation.
-                            </p>
-                            <p>
-                                By listening to the body—rather than relying solely on cognitive analysis—clients gain access to deeper regulation, insight, and choice. Change unfolds not through force, but through awareness, responsiveness, and trust in the body's natural capacity for integration.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Why Work With Me Section -->
-                    <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg mb-8">
-                        <h3 class="text-2xl font-serif text-charcoal mb-6 text-center">Why Work With Me</h3>
-                        <div class="space-y-4 text-charcoal/80 leading-relaxed">
-                            <p>
-                                Clients often arrive at this work not seeking to be "fixed," but wanting clarity, grounding, and a deeper sense of coherence within themselves.
-                            </p>
-                            <p>
-                                Susan brings together extensive professional training, lived life experience, and a sustained curiosity about human behavior, the nervous system, and mind–body dynamics. Her approach is informed rather than formulaic, responsive rather than prescriptive.
-                            </p>
-                            <p>
-                                Sessions are guided by what emerges through the body and subconscious, not imposed protocols. This allows change to unfold in a way that is sustainable, respectful, and aligned with each individual's pace and readiness.
-                            </p>
-                            <p>
-                                Susan works as a knowledgeable guide—offering structure, presence, and insight—while honoring the client as the true authority of their own experience. The work is collaborative, grounded, and oriented toward lasting integration rather than temporary relief.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Credentials Section Title -->
-                    <h3 class="text-3xl font-serif text-charcoal mb-8 text-center">Credentials & Professional Experience</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-white p-6 rounded-sm shadow-lg border-l-4 border-gold">
-                            <h3 class="text-xl font-serif text-charcoal mb-4 flex items-center">
-                                <i class="fas fa-award text-gold mr-3"></i>
-                                Credentials & Training
-                            </h3>
-                            <ul class="space-y-2 text-sm text-charcoal/80">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Usui Reiki Ryoho Master</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Holy Fire® III Reiki Master</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Holy Fire® III Karuna Reiki Master</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Nir Levy Method Therapist</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Certified Hypnotherapist</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-sm shadow-lg border-l-4 border-gold">
-                            <h3 class="text-xl font-serif text-charcoal mb-4 flex items-center">
-                                <i class="fas fa-certificate text-gold mr-3"></i>
-                                Areas of Focus
-                            </h3>
-                            <ul class="space-y-2 text-sm text-charcoal/80">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Anma — Traditional Japanese Bodywork</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Ampuku — Japanese Abdominal Therapy</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Chakra Balancing & Energetic Clearing</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Hypnotherapy & Subconscious Repatterning</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Multidimensional Therapeutic Practice</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>Worldwide Practice | Remote & In-Person Sessions</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                    <span>20+ Years of Professional Experience</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Philosophy Quote -->
-                    <div class="bg-charcoal p-8 rounded-sm mt-8 text-center shadow-lg">
-                        <div class="max-w-3xl mx-auto">
-                            <i class="fas fa-quote-left text-gold text-3xl mb-4 block"></i>
-                            <p class="text-cream/90 text-lg italic leading-relaxed mb-4">
-                                True healing occurs when we address not only symptoms, but the underlying patterns held within the body, energy field, and subconscious mind. My work centers on creating a safe, intelligent space for exploration and change—where ancient wisdom meets contemporary understanding, and where the client's own capacity for transformation leads the way.
-                            </p>
-                            <i class="fas fa-quote-right text-gold text-3xl block"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Services Section -->
-        <section id="services" class="py-20 bg-cream">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Core Sessions</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
-                        Step into a space designed for transformation. In a room shaped by calm, depth, and beauty, 
-                        you are guided through a process of hara alignment, energetic clearing, and subconscious release.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Deep Alignment Therapy -->
-                    <div class="bg-white p-8 rounded-sm card-hover">
-                        <div class="mb-6">
-                            <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-spa text-sage text-xl"></i>
-                            </div>
-                            <h3 class="text-xl font-serif text-charcoal mb-2">Deep Alignment Therapy</h3>
-                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Full-Spectrum Healing</p>
-                        </div>
-                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            A comprehensive session supporting the body, nervous system, and energy field in reorganizing toward balance. Through a blend of hara-centered bodywork, meridian balancing, subtle-energy work, and subconscious facilitation, the system is invited into clarity, regulated breath, and inner spaciousness.
-                        </p>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Schedule a Session <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-
-                    <!-- Hara Release Session -->
-                    <div class="bg-white p-8 rounded-sm card-hover">
-                        <div class="mb-6">
-                            <div class="w-12 h-12 bg-earth/20 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-hands-helping text-earth text-xl"></i>
-                            </div>
-                            <h3 class="text-xl font-serif text-charcoal mb-2">Hara Release</h3>
-                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Anma & Ampuku</p>
-                        </div>
-                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            A grounding, body-led process focused on the abdominal center. Gentle, attentive touch supports the release of held patterns, improves internal communication, and restores connection to the body's core.
-                        </p>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Learn More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-
-                    <!-- Energetic Recalibration -->
-                    <div class="bg-white p-8 rounded-sm card-hover">
-                        <div class="mb-6">
-                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-atom text-gold text-xl"></i>
-                            </div>
-                            <h3 class="text-xl font-serif text-charcoal mb-2">Energetic Recalibration</h3>
-                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Reiki + Chakra Harmonizing</p>
-                        </div>
-                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            Reiki combined with chakra balancing to clear energetic congestion, restore flow, and support regulation across subtle body systems.
-                        </p>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Explore This Session <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-
-                    <!-- Subconscious Shift Therapy -->
-                    <div class="bg-white p-8 rounded-sm card-hover">
-                        <div class="mb-6">
-                            <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-brain text-sage text-xl"></i>
-                            </div>
-                            <h3 class="text-xl font-serif text-charcoal mb-2">Subconscious Shift Therapy</h3>
-                            <p class="text-xs text-gold mb-4 uppercase tracking-wide">Hypnotherapy & Consciousness-Based Work</p>
-                        </div>
-                        <p class="text-charcoal/70 mb-6 leading-relaxed text-sm">
-                            A collaborative process working with the subconscious as an ally rather than an obstacle. Sessions support the system in updating outdated patterns, allowing new responses to emerge organically and sustainably.
-                        </p>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="text-gold hover:text-gold/80 transition-colors font-medium text-sm">
-                            Request an Appointment <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Fifth Session - Full Frequency -->
-                <div class="mt-8 max-w-4xl mx-auto">
-                    <div class="bg-charcoal p-10 rounded-sm shadow-xl">
-                        <div class="text-center mb-6">
-                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-infinity text-gold text-2xl"></i>
-                            </div>
-                            <h3 class="text-3xl font-serif text-cream mb-2">The Full Frequency Session</h3>
-                            <p class="text-gold uppercase tracking-widest text-xs">Integrated Work | One Deep Experience</p>
-                        </div>
-                        <p class="text-cream/90 leading-relaxed text-center max-w-2xl mx-auto">
-                            An immersive session integrating Reiki, hara-centered bodywork, meridian balancing, chakra harmonizing, and subconscious facilitation. Designed for those seeking comprehensive recalibration across body, mind, and energetic layers.
-                        </p>
-                        <div class="text-center mt-8">
-                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                                Explore This Experience <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Intake Form Section -->
-        <section class="py-8 bg-cream">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-white p-8 md:p-12 rounded-sm shadow-lg text-center">
-                    <i class="fas fa-file-alt text-gold text-4xl mb-6"></i>
-                    <h3 class="text-3xl font-serif text-charcoal mb-4">Begin Your Journey</h3>
-                    <p class="text-charcoal/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-                        This intake form helps me understand how to best support you. Please answer only what feels relevant and comfortable. You'll receive this form after booking, or you may download and complete it in advance.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <a href="/intake-form" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            <i class="fas fa-edit mr-2"></i>Complete Intake Form
-                        </a>
-                        <a href="/files/intake-form.pdf" download class="inline-block bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-charcoal/90 transition-colors font-medium">
-                            <i class="fas fa-download mr-2"></i>Download PDF
-                        </a>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="inline-block bg-gold text-charcoal px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            <i class="fas fa-calendar-check mr-2"></i>Book a Session
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="py-20 bg-midnight">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">Investment in Your Wellness</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-cream/70 max-w-2xl mx-auto">
-                        Transparent pricing for depth-oriented, integrative work
-                    </p>
-                    
-                    <!-- Crisis Consideration Banner -->
-                    <div class="mt-8 bg-gold/10 border-2 border-gold/40 p-6 rounded-sm max-w-3xl mx-auto">
-                        <div class="flex items-center justify-center mb-3">
-                            <i class="fas fa-heart text-gold text-2xl mr-3"></i>
-                            <h3 class="text-2xl font-serif text-gold">Crisis Consideration</h3>
-                        </div>
-                        <p class="text-cream/90 text-base leading-relaxed mb-2">
-                            In recognition of ongoing geopolitical challenges and their impact on wellbeing, all sessions and packages are offered at <strong class="text-gold">40% off regular pricing</strong>.
-                        </p>
-                        <p class="text-cream/70 text-sm italic">
-                            Supporting your journey toward balance during uncertain times.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <!-- Deep Alignment Session Pricing -->
-                    <div class="bg-charcoal border-2 border-gold/30 p-8 rounded-sm hover:border-gold transition-all duration-300">
-                        <div class="text-center mb-6">
-                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-spa text-gold text-2xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-serif text-cream mb-2">Deep Alignment Therapy</h3>
-                            <p class="text-gold/80 text-sm mb-4">90-Minute Session</p>
-                        </div>
-                        <div class="text-center mb-6">
-                            <div class="text-cream/50 text-2xl font-serif line-through mb-1">AED 950</div>
-                            <div class="text-4xl font-serif text-gold mb-2">AED 570</div>
-                            <p class="text-cream/60 text-sm">≈ $155 USD</p>
-                            <p class="text-gold/80 text-xs mt-1 font-medium">40% Crisis Consideration</p>
-                        </div>
-                        <ul class="space-y-3 text-sm text-cream/70 mb-8">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Reiki & subtle energy work</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Somatic alignment & bodywork</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Meridian & hara-centered work</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Chakra balancing & clearing</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Integration guidance</span>
-                            </li>
-                        </ul>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            Explore Working Together
-                        </a>
-                    </div>
-
-                    <!-- Hypnotherapy Pricing -->
-                    <div class="bg-charcoal border-2 border-gold p-8 rounded-sm transform md:scale-105 shadow-2xl">
-                        <div class="absolute top-0 right-0 bg-gold text-midnight text-xs font-bold px-3 py-1 rounded-bl-sm">
-                            POPULAR
-                        </div>
-                        <div class="text-center mb-6">
-                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-brain text-gold text-2xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-serif text-cream mb-2">Hypnotherapy</h3>
-                            <p class="text-gold/80 text-sm mb-4">75-Minute Session</p>
-                        </div>
-                        <div class="text-center mb-6">
-                            <div class="text-cream/50 text-2xl font-serif line-through mb-1">AED 850</div>
-                            <div class="text-4xl font-serif text-gold mb-2">AED 510</div>
-                            <p class="text-cream/60 text-sm">≈ $139 USD</p>
-                            <p class="text-gold/80 text-xs mt-1 font-medium">40% Crisis Consideration</p>
-                        </div>
-                        <ul class="space-y-3 text-sm text-cream/70 mb-8">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Subconscious repatterning</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Pattern awareness work</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Belief system exploration</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Nervous system regulation</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Audio recording for continued support</span>
-                            </li>
-                        </ul>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            Explore Working Together
-                        </a>
-                    </div>
-
-                    <!-- SKP Method Pricing -->
-                    <div class="bg-charcoal border-2 border-gold/30 p-8 rounded-sm hover:border-gold transition-all duration-300">
-                        <div class="text-center mb-6">
-                            <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-infinity text-gold text-2xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-serif text-cream mb-2">Full Frequency Session</h3>
-                            <p class="text-gold/80 text-sm mb-4">120-Minute Session</p>
-                        </div>
-                        <div class="text-center mb-6">
-                            <div class="text-cream/50 text-2xl font-serif line-through mb-1">AED 1,200</div>
-                            <div class="text-4xl font-serif text-gold mb-2">AED 720</div>
-                            <p class="text-cream/60 text-sm">≈ $196 USD</p>
-                            <p class="text-gold/80 text-xs mt-1 font-medium">40% Crisis Consideration</p>
-                        </div>
-                        <ul class="space-y-3 text-sm text-cream/70 mb-8">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Integrated, responsive work</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Hara-centered bodywork</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Advanced somatic techniques</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Reiki & chakra harmonizing</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-gold mr-3 mt-1"></i>
-                                <span>Personalized integration plan</span>
-                            </li>
-                        </ul>
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="block w-full bg-gold text-midnight text-center py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            Explore Working Together
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Package Options -->
-                <div class="bg-charcoal border border-gold/20 p-8 rounded-sm">
-                    <h3 class="text-2xl font-serif text-cream mb-6 text-center">Packages</h3>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-midnight p-6 rounded-sm">
-                            <h4 class="text-xl font-serif text-gold mb-3">Foundation Package</h4>
-                            <p class="text-cream/50 text-xl font-serif line-through mb-1">AED 2,550</p>
-                            <p class="text-3xl font-serif text-cream mb-2">AED 1,530 <span class="text-lg text-cream/60">/ 3 sessions</span></p>
-                            <p class="text-sm text-gold/80 mb-4">Save AED 1,020 with Crisis Consideration • Best for: Initial recalibration</p>
-                            <ul class="space-y-2 text-sm text-cream/70 mb-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
-                                    <span>Choice of any modality</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
-                                    <span>Email support between sessions</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
-                                    <span>Valid for 3 months</span>
-                                </li>
-                            </ul>
-                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
-                                Inquire About Package <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                        
-                        <div class="bg-midnight p-6 rounded-sm border-2 border-gold/50">
-                            <h4 class="text-xl font-serif text-gold mb-3">Transformation Package</h4>
-                            <p class="text-cream/50 text-xl font-serif line-through mb-1">AED 5,100</p>
-                            <p class="text-3xl font-serif text-cream mb-2">AED 3,060 <span class="text-lg text-cream/60">/ 6 sessions</span></p>
-                            <p class="text-sm text-gold/80 mb-4">Save AED 2,040 with Crisis Consideration • Best for: Deeper, sustained change</p>
-                            <ul class="space-y-2 text-sm text-cream/70 mb-4">
-                                <li class="flex items-start">
-                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
-                                    <span>Mix & match any modalities</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
-                                    <span>Priority scheduling</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
-                                    <span>Ongoing email & WhatsApp support</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-star text-gold mr-3 mt-1 text-xs"></i>
-                                    <span>Valid for 6 months</span>
-                                </li>
-                            </ul>
-                            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
-                                Inquire About Package <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Payment & Policies -->
-                <div class="mt-12 text-center">
-                    <p class="text-cream/60 text-sm mb-4">
-                        <i class="fas fa-info-circle text-gold mr-2"></i>
-                        All sessions include pre-session consultation and post-session integration support
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-6 text-sm text-cream/60">
-                        <span><i class="fas fa-credit-card text-gold mr-2"></i>Cash & Bank Transfer Accepted</span>
-                        <span><i class="fas fa-calendar-check text-gold mr-2"></i>48-Hour Cancellation Policy</span>
-                        <span><i class="fas fa-globe text-gold mr-2"></i>Worldwide Practice</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="py-20 bg-charcoal">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">Client Experiences</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-cream/70 max-w-2xl mx-auto">
-                        Real stories from clients around the world
-                    </p>
-                </div>
-                
-                <!-- Testimonials Carousel -->
-                <div class="relative max-w-5xl mx-auto">
-                    <!-- Carousel Container -->
-                    <div class="overflow-hidden rounded-sm">
-                        <div id="testimonialCarousel" class="flex transition-transform duration-500 ease-in-out">
-                            ${testimonials.map((testimonial, index) => `
-                                <div class="min-w-full px-4">
-                                    <div class="bg-midnight border-2 border-gold/30 p-8 md:p-12 rounded-sm">
-                                        <!-- Quote Icon -->
-                                        <div class="text-center mb-6">
-                                            <i class="fas fa-quote-left text-gold text-4xl opacity-50"></i>
-                                        </div>
-                                        
-                                        <!-- Testimonial Text -->
-                                        <p class="text-cream/90 text-lg md:text-xl leading-relaxed italic text-center mb-8">
-                                            "${testimonial.text}"
-                                        </p>
-                                        
-                                        <!-- Client Info -->
-                                        <div class="flex flex-col items-center">
-                                            ${testimonial.isPhoto 
-                                                ? `<div class="w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-gold shadow-lg">
-                                                    <img src="${testimonial.image}" alt="${testimonial.name}" class="w-full h-full object-cover" />
-                                                   </div>`
-                                                : `<div class="text-5xl mb-4">${testimonial.image}</div>`
-                                            }
-                                            <h4 class="font-serif text-2xl text-gold mb-1">${testimonial.name}</h4>
-                                            <p class="text-sm text-cream/60 mb-3">${testimonial.location}</p>
-                                            <div class="flex gap-1">
-                                                ${Array(testimonial.rating).fill('').map(() => '<i class="fas fa-star text-gold"></i>').join('')}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                    
-                    <!-- Navigation Arrows -->
-                    <button id="prevTestimonial" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-gold hover:bg-champagne text-midnight w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:scale-110">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button id="nextTestimonial" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-gold hover:bg-champagne text-midnight w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:scale-110">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                    
-                    <!-- Dots Indicator -->
-                    <div class="flex justify-center gap-3 mt-8">
-                        ${testimonials.map((_, index) => `
-                            <button class="testimonial-dot w-3 h-3 rounded-full transition-all duration-300 ${index === 0 ? 'bg-gold w-8' : 'bg-cream/30 hover:bg-cream/50'}" data-index="${index}"></button>
-                        `).join('')}
-                    </div>
-                </div>
-                
-                <div class="mt-12 text-center">
-                    <p class="text-cream/70 mb-6">Ready to begin your healing journey?</p>
-                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/susankatrynpearson'});return false;" class="inline-block bg-gold text-midnight px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                        Book Your Session
+                <div style="padding:0.3rem 1.5rem;">
+                    <a href="#services" style="display:block;padding:0.6rem 0;text-decoration:none;" onmouseover="this.querySelector('p').style.color='var(--gold)'" onmouseout="this.querySelector('p').style.color='var(--white)'">
+                        <p style="font-size:0.78rem;color:var(--white);font-weight:500;margin:0 0 0.2rem;letter-spacing:0.05em;transition:color 0.2s;">Deep Alignment Therapy</p>
+                        <p style="font-size:0.68rem;color:var(--gray);margin:0;font-weight:300;">Body, energy &amp; subconscious together</p>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Approach Section -->
-        <section id="approach" class="py-20 bg-charcoal">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">What to Expect</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="text-center bg-midnight border border-gold/20 p-8 rounded-sm card-hover">
-                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl font-serif text-gold">1</span>
-                        </div>
-                        <h4 class="font-medium text-cream mb-3">Initial Consultation</h4>
-                        <p class="text-sm text-cream/70">We'll discuss your intentions and create a personalized healing plan</p>
-                    </div>
-                    <div class="text-center bg-midnight border border-gold/20 p-8 rounded-sm card-hover">
-                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl font-serif text-gold">2</span>
-                        </div>
-                        <h4 class="font-medium text-cream mb-3">Healing Session</h4>
-                        <p class="text-sm text-cream/70">Experience deep work tailored to your unique needs and goals</p>
-                    </div>
-                    <div class="text-center bg-midnight border border-gold/20 p-8 rounded-sm card-hover">
-                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl font-serif text-gold">3</span>
-                        </div>
-                        <h4 class="font-medium text-cream mb-3">Integration Support</h4>
-                        <p class="text-sm text-cream/70">Guidance for integrating your experience into daily life</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog" class="py-20 bg-midnight">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-cream mb-4">Insights & Wisdom</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-cream/70 max-w-2xl mx-auto">
-                        Articles on energy medicine, healing practices, and conscious living
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    ${blogPosts.slice().reverse().map(post => `
-                        <article class="blog-card">
-                            <div class="p-6">
-                                <div class="flex items-center justify-between mb-4">
-                                    <span class="text-xs text-gold font-medium uppercase tracking-wider">${post.category}</span>
-                                    <span class="text-xs text-cream/60">${post.readTime}</span>
-                                </div>
-                                <h3 class="text-xl font-serif text-cream mb-3 leading-tight">${post.title}</h3>
-                                <p class="text-sm text-cream/70 mb-4 leading-relaxed">${post.excerpt}</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-cream/60"><i class="far fa-calendar mr-2"></i>${post.date}</span>
-                                    <a href="/blog/${post.id}" class="text-gold hover:text-champagne transition-colors text-sm font-medium">
-                                        Read More <i class="fas fa-arrow-right ml-1"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                    `).join('')}
-                </div>
-                
-                <div class="text-center mt-12">
-                    <a href="/blog" class="inline-block bg-gold text-midnight px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                        View All Articles
+                <div style="padding:0.3rem 1.5rem;">
+                    <a href="#services" style="display:block;padding:0.6rem 0;text-decoration:none;" onmouseover="this.querySelector('p').style.color='var(--gold)'" onmouseout="this.querySelector('p').style.color='var(--white)'">
+                        <p style="font-size:0.78rem;color:var(--white);font-weight:500;margin:0 0 0.2rem;letter-spacing:0.05em;transition:color 0.2s;">Hara Release</p>
+                        <p style="font-size:0.68rem;color:var(--gray);margin:0;font-weight:300;">Anma &amp; Ampuku bodywork</p>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Q&A / FAQ Section -->
-        <section id="faq" class="py-20 bg-cream">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Frequently Asked Questions</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Everything you need to know about sessions, healing modalities, and what to expect
-                    </p>
+                <div style="padding:0.3rem 1.5rem;">
+                    <a href="#services" style="display:block;padding:0.6rem 0;text-decoration:none;" onmouseover="this.querySelector('p').style.color='var(--gold)'" onmouseout="this.querySelector('p').style.color='var(--white)'">
+                        <p style="font-size:0.78rem;color:var(--white);font-weight:500;margin:0 0 0.2rem;letter-spacing:0.05em;transition:color 0.2s;">Energetic Recalibration</p>
+                        <p style="font-size:0.68rem;color:var(--gray);margin:0;font-weight:300;">Reiki + Chakra harmonizing</p>
+                    </a>
                 </div>
-
-                <!-- FAQ Categories -->
-                <div class="mb-12 flex flex-wrap justify-center gap-4">
-                    <button class="faq-category-btn active px-6 py-2 rounded-sm bg-gold text-black font-medium transition-all" data-category="all">
-                        All Questions
-                    </button>
-                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="general">
-                        General
-                    </button>
-                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="sessions">
-                        Sessions
-                    </button>
-                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="modalities">
-                        Modalities
-                    </button>
-                    <button class="faq-category-btn px-6 py-2 rounded-sm bg-white border border-gold/30 text-charcoal hover:bg-gold/10 font-medium transition-all" data-category="practical">
-                        Practical Info
-                    </button>
+                <div style="padding:0.3rem 1.5rem;">
+                    <a href="#services" style="display:block;padding:0.6rem 0;text-decoration:none;" onmouseover="this.querySelector('p').style.color='var(--gold)'" onmouseout="this.querySelector('p').style.color='var(--white)'">
+                        <p style="font-size:0.78rem;color:var(--white);font-weight:500;margin:0 0 0.2rem;letter-spacing:0.05em;transition:color 0.2s;">Subconscious Shift Therapy</p>
+                        <p style="font-size:0.68rem;color:var(--gray);margin:0;font-weight:300;">Subconscious · Pattern · Nir Levy Method</p>
+                    </a>
                 </div>
-
-                <!-- FAQ Items -->
-                <div class="space-y-4" id="faqContainer">
-                    <!-- General Questions -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What makes your approach different from traditional therapy or massage?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">My work integrates multiple healing modalities to address the whole person—physical, emotional, energetic, and spiritual. Unlike traditional massage, which focuses primarily on muscle tension, or talk therapy, which works with the conscious mind, I work with:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Energy systems:</strong> Chakras, meridians, and the subtle body</li>
-                                <li><strong>The subconscious mind:</strong> Through hypnotherapy to address root causes</li>
-                                <li><strong>The nervous system:</strong> Using somatic techniques to release trauma held in the body</li>
-                                <li><strong>The physical body:</strong> Through Anma, Ampuku, and bodywork</li>
-                            </ul>
-                            <p class="mt-3">This integrative approach allows for deeper, more lasting transformation than any single modality alone.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Do I need to believe in energy healing for it to work?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">No, you don't need to believe in energy healing for it to be effective. Energy work operates on a physical, measurable level—your body's bioelectromagnetic fields—regardless of your beliefs.</p>
-                            <p class="mb-3">That said, an open, receptive attitude does enhance the experience. If you're skeptical, that's completely fine—many of my clients started as skeptics. I encourage you to:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Come with curiosity rather than expectation</li>
-                                <li>Notice what you experience without judgment</li>
-                                <li>Give yourself permission to simply receive</li>
-                            </ul>
-                            <p class="mt-3">The results speak for themselves, and many former skeptics become my most enthusiastic advocates!</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Is energy healing safe? Are there any side effects?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Energy healing is extremely safe and non-invasive. It works with your body's natural healing processes, never forcing or overriding them. However, as your body releases stored tension and energy, you may experience:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Emotional releases:</strong> Tears, laughter, or other emotions</li>
-                                <li><strong>Physical sensations:</strong> Tingling, warmth, temporary soreness</li>
-                                <li><strong>Fatigue:</strong> As your body integrates the work</li>
-                                <li><strong>Vivid dreams:</strong> As processing continues during sleep</li>
-                                <li><strong>Temporary symptom increase:</strong> Before improvement (healing crisis)</li>
-                            </ul>
-                            <p class="mt-3">These are all normal signs of healing and typically resolve within 24-48 hours. I provide integration support to help you navigate any responses.</p>
-                        </div>
-                    </div>
-
-                    <!-- Session Questions -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">How long is a typical session and how much does it cost?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Session lengths and investment vary by modality:</p>
-                            <ul class="list-disc pl-6 space-y-3">
-                                <li><strong>Deep Alignment Therapy:</strong> 90 minutes - AED 950 (≈$260 USD)<br>
-                                    <span class="text-sm text-charcoal/60">Full-spectrum healing: Energy alignment, hara work, meridian balancing, subconscious integration</span>
-                                </li>
-                                <li><strong>Hara Release (Anma & Ampuku):</strong> 60-75 minutes - AED 850 (≈$230 USD)<br>
-                                    <span class="text-sm text-charcoal/60">Traditional Japanese bodywork for grounding, opening, and releasing</span>
-                                </li>
-                                <li><strong>Energetic Recalibration (Reiki):</strong> 60 minutes - AED 800 (≈$220 USD)<br>
-                                    <span class="text-sm text-charcoal/60">Master-level Reiki (20+ years) with chakra harmonizing</span>
-                                </li>
-                                <li><strong>Subconscious Shift Therapy:</strong> 75 minutes - AED 850 (≈$230 USD)<br>
-                                    <span class="text-sm text-charcoal/60">Hypnotherapy + Nir Levy Method for emotional blocks and conditioned patterns</span>
-                                </li>
-                                <li><strong>The Nir Levy Method:</strong> 90 minutes - AED 950 (≈$260 USD)<br>
-                                    <span class="text-sm text-charcoal/60">Ancient Anma bodywork with Five Elements Body Reading</span>
-                                </li>
-                                <li><strong>The Full Frequency Session:</strong> 120 minutes - AED 1,200 (≈$325 USD)<br>
-                                    <span class="text-sm text-charcoal/60">All modalities integrated: Reiki, hara work, meridian balancing, chakra harmonizing, hypnotherapy, Nir Levy Method</span>
-                                </li>
-                            </ul>
-                            <p class="mt-3">Package discounts are available for multiple sessions. All sessions include pre-consultation and integration support.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">How many sessions will I need?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">This varies greatly depending on your goals, the issues we're addressing, and your body's healing timeline. As a general guide:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Acute stress or tension:</strong> 1-3 sessions</li>
-                                <li><strong>Chronic patterns or pain:</strong> 3-6 sessions</li>
-                                <li><strong>Deep trauma or complex issues:</strong> 6-12+ sessions</li>
-                                <li><strong>Ongoing wellness support:</strong> Monthly maintenance sessions</li>
-                            </ul>
-                            <p class="mt-3">Many clients notice improvements after just one session, with changes deepening over time. We'll discuss your specific needs during our initial consultation and create a personalized plan. You're never locked into a specific number of sessions—we'll work at your pace.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What should I wear to a session? Do I need to undress?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Comfort is key! Here's what to wear for different modalities:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Reiki & Energy Work:</strong> You remain fully clothed. Wear comfortable, loose clothing (yoga wear, soft fabrics)</li>
-                                <li><strong>Hypnotherapy:</strong> Whatever makes you feel comfortable—you'll be sitting or reclining in a chair</li>
-                                <li><strong>Somatic Work & Bodywork:</strong> Comfortable, stretchy clothing that allows movement. For Anma and Ampuku, I may need access to your abdomen (you can lift your shirt or I can work through clothing)</li>
-                            </ul>
-                            <p class="mt-3">You never need to undress unless you choose to for your comfort. Everything is done with full consent and respect for your boundaries.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What does a typical session look like?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Here's what you can expect in a Deep Alignment Session:</p>
-                            <ol class="list-decimal pl-6 space-y-3">
-                                <li><strong>Welcome & Check-In (10 min):</strong> We discuss what brings you in, your intentions, and any specific concerns</li>
-                                <li><strong>Energy Assessment (5 min):</strong> I scan your energy field and chakras to identify blockages or imbalances</li>
-                                <li><strong>Hands-On Healing (60 min):</strong> You lie comfortably on a massage table while I work with Reiki, energy medicine, and somatic techniques. Many clients enter a deep meditative state</li>
-                                <li><strong>Integration (10 min):</strong> Time to process, ask questions, and receive guidance for continued healing</li>
-                                <li><strong>Closing (5 min):</strong> Recommendations for aftercare and scheduling if needed</li>
-                            </ol>
-                            <p class="mt-3">Sessions are conducted in a safe, sacred space with soft lighting, gentle music, and complete privacy.</p>
-                        </div>
-                    </div>
-
-                    <!-- Modality Questions -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What is Reiki and how does it work?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>Reiki</strong> (pronounced "ray-key") is a Japanese healing technique that translates to "universal life force energy." Developed by Mikao Usui in the early 1900s, it's now practiced worldwide as a gentle yet powerful healing modality.</p>
-                            
-                            <p class="mb-3"><strong>What Reiki Is:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Energy Medicine:</strong> Works with your body's bioelectromagnetic field and subtle energy systems</li>
-                                <li><strong>Non-invasive:</strong> Fully clothed, hands placed on or above the body</li>
-                                <li><strong>Intelligent Energy:</strong> Reiki goes where it's needed most—you don't have to direct it</li>
-                                <li><strong>Holistic:</strong> Addresses physical, emotional, mental, and spiritual imbalances simultaneously</li>
-                                <li><strong>Complementary:</strong> Works beautifully alongside medical treatment, never interfering</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>How Reiki Works:</strong></p>
-                            <ol class="list-decimal pl-6 space-y-2 mb-3">
-                                <li><strong>Energy Channeling:</strong> As a Master-level practitioner, I've been attuned to channel high-frequency healing energy. I serve as a conduit, not the source—the energy comes through me, not from me.</li>
-                                <li><strong>Biofield Balancing:</strong> Reiki clears blockages in your energy field (chakras, meridians, aura) that may be causing physical or emotional symptoms</li>
-                                <li><strong>Resonance Healing:</strong> The high-frequency Reiki energy raises your body's vibration, helping cells return to their optimal state</li>
-                                <li><strong>Nervous System Reset:</strong> Shifts you from sympathetic (stress) to parasympathetic (healing) mode, allowing deep restoration</li>
-                                <li><strong>Subconscious Release:</strong> Often releases suppressed emotions, traumas, or limiting beliefs held in the energy field</li>
-                            </ol>
-
-                            <p class="mb-3"><strong>What You Might Experience:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Physical:</strong> Warmth, tingling, pulsing, coolness, heaviness, or floating sensations</li>
-                                <li><strong>Emotional:</strong> Deep peace, emotional releases (tears, laughter), joy, or feelings of love</li>
-                                <li><strong>Visual:</strong> Colors, light, images, or memories with eyes closed</li>
-                                <li><strong>Mental:</strong> Clarity, insights, downloads of information, or gentle awareness shifts</li>
-                                <li><strong>Spiritual:</strong> Sense of connection, expanded consciousness, or divine presence</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>My Training & Approach:</strong></p>
-                            <p class="mb-3">I hold Master-level certifications in both:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Usui Reiki:</strong> The foundational system, gentle and balancing</li>
-                                <li><strong>Karuna Reiki®:</strong> Advanced system for deep emotional healing and compassionate action</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>Scientific Support:</strong></p>
-                            <p class="mb-2">Research has shown Reiki may:</p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Reduce pain, anxiety, and depression (numerous peer-reviewed studies)</li>
-                                <li>Lower blood pressure and heart rate</li>
-                                <li>Improve sleep quality</li>
-                                <li>Enhance recovery from surgery</li>
-                                <li>Support immune function</li>
-                                <li>Increase feelings of peace and well-being</li>
-                            </ul>
-
-                            <p class="mt-3"><strong>What Makes My Reiki Different:</strong></p>
-                            <p class="mb-2">I integrate Reiki with other modalities for enhanced effectiveness:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Combined with somatic bodywork (Anma/Ampuku) for physical release</li>
-                                <li>Layered with energy medicine protocols for specific conditions</li>
-                                <li>Integrated with hypnotherapy for subconscious reprogramming</li>
-                                <li>Enhanced with chakra balancing and meridian clearing</li>
-                            </ul>
-
-                            <p class="mt-3">Reiki is deeply peaceful, safe for all ages, and many clients describe it as the most relaxing experience they've ever had. It's especially effective for stress, anxiety, pain, insomnia, and supporting overall wellness.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What is hypnotherapy and will I be under your control?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>Let me dispel the myths immediately:</strong> You remain fully conscious and in complete control during hypnotherapy. You're not asleep, unconscious, or under anyone's control. You cannot be made to do anything against your will or values. Hypnosis is simply a deeply relaxed, focused state (similar to meditation or daydreaming) where your subconscious mind becomes more receptive to positive suggestions and healing.</p>
-                            
-                            <p class="mb-3"><strong>What Hypnotherapy Really Is:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>A Natural Brain State:</strong> Theta brainwave state (4-8 Hz) you enter naturally many times daily—when absorbed in a book, driving on autopilot, or in the moments before sleep</li>
-                                <li><strong>Heightened Suggestibility:</strong> Your critical conscious mind relaxes, allowing direct communication with the subconscious (where habits, beliefs, and patterns live)</li>
-                                <li><strong>Focused Awareness:</strong> You're deeply relaxed yet mentally alert and aware of everything happening</li>
-                                <li><strong>Therapeutic Tool:</strong> Used clinically for behavior change, pain management, trauma healing, and personal transformation</li>
-                                <li><strong>Evidence-Based:</strong> Recognized by the American Psychological Association and used in medical settings worldwide</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>How Hypnotherapy Works:</strong></p>
-                            <p class="mb-2">Your mind has two primary aspects:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Conscious Mind (10%):</strong> Logical, analytical, willpower-driven. This is where you make decisions and try to change through effort.</li>
-                                <li><strong>Subconscious Mind (90%):</strong> Holds all your memories, beliefs, habits, emotions, and automatic responses. This runs 95% of your daily behavior.</li>
-                            </ul>
-                            <p class="mb-3">When you try to change through willpower alone (conscious mind), you're fighting against the much more powerful subconscious. Hypnotherapy bypasses the conscious mind's resistance to communicate directly with the subconscious, where lasting change happens.</p>
-
-                            <p class="mb-3"><strong>My Hypnotherapy Approach (Ericksonian Method):</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Permissive vs. Authoritarian:</strong> I use gentle, indirect suggestions that honor your autonomy (Ericksonian approach) rather than commanding directives</li>
-                                <li><strong>Metaphor & Story:</strong> The subconscious speaks in symbols, so I use metaphors, guided imagery, and storytelling</li>
-                                <li><strong>Customized:</strong> Every session is tailored to your unique needs, language patterns, and goals</li>
-                                <li><strong>Multi-Layered:</strong> I address not just the symptom but the root cause and underlying needs</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>What Hypnotherapy Can Help With:</strong></p>
-                            <p class="mb-2"><strong>Behavioral Patterns:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Breaking unwanted habits (smoking, nail biting, emotional eating)</li>
-                                <li>Building new positive habits and routines</li>
-                                <li>Overcoming procrastination and self-sabotage</li>
-                                <li>Enhancing motivation and discipline</li>
-                            </ul>
-
-                            <p class="mb-2"><strong>Emotional Healing:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Anxiety, panic attacks, and phobias</li>
-                                <li>Depression and low mood</li>
-                                <li>Anger and emotional regulation</li>
-                                <li>Grief and loss processing</li>
-                                <li>Trauma resolution (PTSD, childhood wounds)</li>
-                            </ul>
-
-                            <p class="mb-2"><strong>Belief System Work:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Reprogramming limiting beliefs ("I'm not good enough," "I don't deserve happiness")</li>
-                                <li>Building self-esteem and confidence</li>
-                                <li>Releasing perfectionism and people-pleasing</li>
-                                <li>Installing empowering beliefs and identity shifts</li>
-                            </ul>
-
-                            <p class="mb-2"><strong>Physical Applications:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Pain management (chronic pain, migraines)</li>
-                                <li>Sleep disorders and insomnia</li>
-                                <li>IBS and stress-related digestive issues</li>
-                                <li>Preparation for surgery or medical procedures</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>A Typical Hypnotherapy Session (75 minutes):</strong></p>
-                            <ol class="list-decimal pl-6 space-y-2 mb-3">
-                                <li><strong>Consultation (15 mins):</strong> We discuss your goals, history, and what you'd like to shift. I explain the process and answer questions.</li>
-                                <li><strong>Induction (10 mins):</strong> Guided relaxation using breath, body awareness, and visualization to enter the hypnotic state</li>
-                                <li><strong>Deepening (5 mins):</strong> Using techniques like counting down stairs, progressive relaxation, or imagery to deepen the trance</li>
-                                <li><strong>Therapeutic Work (30-35 mins):</strong> The core healing work using techniques like:
-                                    <ul class="list-disc pl-8 space-y-1 mt-2">
-                                        <li><strong>Regression:</strong> Revisiting past events to release emotional charge</li>
-                                        <li><strong>Parts Therapy:</strong> Dialoguing with different aspects of self</li>
-                                        <li><strong>Future Pacing:</strong> Rehearsing new behaviors and outcomes</li>
-                                        <li><strong>Metaphor Therapy:</strong> Using stories for unconscious change</li>
-                                        <li><strong>Suggestion Work:</strong> Installing new beliefs and patterns</li>
-                                        <li><strong>Resource Building:</strong> Anchoring states of calm, confidence, power</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Emergence (5 mins):</strong> Gently bringing you back to full waking consciousness, feeling refreshed</li>
-                                <li><strong>Integration (10 mins):</strong> Discussing the experience, insights gained, and providing tools for continued transformation</li>
-                            </ol>
-
-                            <p class="mb-3"><strong>What You'll Experience:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Deep Relaxation:</strong> Your body feels heavy, relaxed, and comfortable—like sinking into a warm bath</li>
-                                <li><strong>Focused Awareness:</strong> Distractions fade away; you're absorbed in the process</li>
-                                <li><strong>Time Distortion:</strong> 45 minutes might feel like 10 minutes (or vice versa)</li>
-                                <li><strong>Vivid Imagery:</strong> Visualizations feel more real and immersive</li>
-                                <li><strong>Emotional Releases:</strong> Tears, laughter, or other emotions may arise as old patterns release</li>
-                                <li><strong>Physical Sensations:</strong> Tingling, warmth, lightness, or energy moving</li>
-                                <li><strong>Insights & Clarity:</strong> Sudden understanding of patterns, "aha" moments</li>
-                                <li><strong>Complete Memory:</strong> You remember the session (unlike stage hypnosis portrayals)</li>
-                                <li><strong>Refreshed After:</strong> Most feel energized, clear, and lighter afterward</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>Important Truths About Hypnotherapy:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>✓ You remain in complete control at all times</li>
-                                <li>✓ You hear everything and can speak anytime</li>
-                                <li>✓ You can open your eyes and end the session whenever you choose</li>
-                                <li>✓ You cannot be made to do anything against your will, morals, or values</li>
-                                <li>✓ It's a collaborative process—you're an active, empowered participant</li>
-                                <li>✓ You cannot get "stuck" in hypnosis (you'd simply open your eyes or fall asleep)</li>
-                            </ul>
-
-                            <p class=\"mb-3\"><strong>Research & Effectiveness:</strong></p>\n                            <p class=\"mb-2\">Clinical studies show hypnotherapy can be highly effective for:</p>\n                            <ul class=\"list-disc pl-6 space-y-1 mb-3\">\n                                <li>Breaking habits: 90%+ success rate for smoking cessation after 6 sessions</li>\n                                <li>Anxiety reduction: Comparable to medication without side effects</li>\n                                <li>Pain management: Used in hospitals for surgery, childbirth, chronic pain</li>\n                                <li>IBS: APA recognizes hypnotherapy as evidence-based treatment for IBS</li>\n                                <li>PTSD: Effective for trauma resolution when combined with other therapies</li>\n                            </ul>
-
-                            <p class="mb-3"><strong>Why Choose Hypnotherapy?</strong></p>\n                            <p class="mb-2">Consider hypnotherapy if:</p>\n                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>You've tried to change through willpower alone without lasting results</li>
-                                <li>You know what you want to change but can't seem to stop the behavior</li>
-                                <li>You have deep-seated beliefs or patterns that feel hardwired</li>
-                                <li>You want to accelerate healing and transformation</li>
-                                <li>You're open to a mind-body approach to change</li>
-                            </ul>
-
-                            <p class="mt-3"><strong>My Approach:</strong> I use Ericksonian hypnotherapy, which is gentle, conversational, respectful, and client-centered. It's more like guided meditation with therapeutic suggestions than stage hypnosis. I create a safe, supportive space where your subconscious can heal at its own pace, in its own way.</p>
-                            
-                            <p class="mt-3">Hypnotherapy is one of the fastest paths to lasting change when you're ready to work with—not against—your subconscious mind.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What are Anma and Ampuku?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>Anma</strong> and <strong>Ampuku</strong> are ancient Japanese therapeutic bodywork modalities that I've integrated into my practice to address the physical, energetic, and emotional layers of healing simultaneously.</p>
-
-                            <p class="mb-3"><strong>ANMA (按摩): Traditional Japanese Therapeutic Massage</strong></p>
-                            <p class="mb-2"><strong>History & Philosophy:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Dating back over 1,300 years, Anma predates modern massage</li>
-                                <li>Arrived in Japan from China in the 6th century</li>
-                                <li>The term means "press-rub" or "calming with hand pressure"</li>
-                                <li>Based on Traditional Chinese Medicine principles of Qi (energy) and meridians</li>
-                                <li>Practiced fully clothed on a futon or massage table</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>Anma Techniques:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Pressing (Oshi):</strong> Deep, sustained pressure on meridian points and trigger points</li>
-                                <li><strong>Rubbing (Ma):</strong> Friction techniques to warm tissues and improve circulation</li>
-                                <li><strong>Kneading (Jyunetsu):</strong> Deep tissue kneading to release muscle tension</li>
-                                <li><strong>Percussion (Tataki):</strong> Rhythmic tapping to invigorate and energize</li>
-                                <li><strong>Stretching (Shin):</strong> Passive joint mobilization and muscle stretching</li>
-                                <li><strong>Vibration (Shindo):</strong> Trembling movements to release stagnation</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>What Anma Addresses:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Physical:</strong> Chronic muscle tension, poor circulation, joint stiffness, fatigue</li>
-                                <li><strong>Energetic:</strong> Meridian blockages, stagnant Qi, depleted vitality</li>
-                                <li><strong>Nervous System:</strong> Stress, anxiety, autonomic imbalance</li>
-                                <li><strong>Grounding:</strong> Feeling spacey, ungrounded, disconnected from body</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>AMPUKU (腹診): Japanese Abdominal Therapy</strong></p>
-                            <p class="mb-2"><strong>Philosophy & Approach:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Hara (腹):</strong> The belly/abdomen—considered the body's physical and energetic center in Japanese medicine</li>
-                                <li><strong>"Second Brain":</strong> The gut contains 500 million neurons and produces 90% of the body's serotonin</li>
-                                <li><strong>Emotional Storage:</strong> The belly holds unprocessed emotions (fear, grief, anxiety, trauma)</li>
-                                <li><strong>Diagnostic & Therapeutic:</strong> Ampuku both assesses and treats imbalances through abdominal palpation</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>What Ampuku Treats:</strong></p>
-                            <p class="mb-2"><strong>Physical Issues:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Digestive disorders: IBS, bloating, constipation, acid reflux</li>
-                                <li>Reproductive concerns: menstrual cramps, PMS, fertility support</li>
-                                <li>Back and hip pain (often rooted in abdominal tension)</li>
-                                <li>Chronic tension and armoring in the belly</li>
-                            </ul>
-
-                            <p class="mb-2"><strong>Emotional & Energetic:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Anxiety and worry (held in the solar plexus)</li>
-                                <li>Fear and insecurity (held in the lower belly)</li>
-                                <li>Grief and sadness (constricting the diaphragm)</li>
-                                <li>Power issues and boundaries (solar plexus chakra)</li>
-                                <li>Disconnection from intuition and "gut feelings"</li>
-                                <li>Lack of groundedness or centeredness</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>The Ampuku Experience:</strong></p>
-                            <p class="mb-2">During Ampuku, I use:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Gentle Palpation:</strong> Feeling for areas of tension, coldness, heat, or pulsation</li>
-                                <li><strong>Sustained Pressure:</strong> Holding specific points to release deep holdings</li>
-                                <li><strong>Breathing Coordination:</strong> Working with your breath to deepen the release</li>
-                                <li><strong>Intention & Presence:</strong> Creating a safe container for emotional release</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>What You Might Experience:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Physical:</strong> Gurgling, warmth spreading through belly, softening of abdominal wall, deeper breathing</li>
-                                <li><strong>Emotional:</strong> Tears, laughter, sighs, or release of stored emotions</li>
-                                <li><strong>Energetic:</strong> Feeling more grounded, centered, "at home" in your body</li>
-                                <li><strong>Digestive:</strong> Improved digestion, reduced bloating, regular elimination</li>
-                                <li><strong>Mental:</strong> Clearer intuition, better decision-making ("trusting your gut")</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>Why Anma & Ampuku Are Powerful:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Addresses Root Causes:</strong> Not just symptom relief but addressing underlying imbalances</li>
-                                <li><strong>Body-Mind Integration:</strong> Releases both physical tension and emotional holdings simultaneously</li>
-                                <li><strong>Deeply Grounding:</strong> Brings you back into your body after trauma or dissociation</li>
-                                <li><strong>Energetically Clearing:</strong> Removes blockages in meridians and chakras</li>
-                                <li><strong>Nervous System Reset:</strong> Shifts from stress (sympathetic) to rest/digest (parasympathetic)</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>How I Use Them:</strong></p>
-                            <p class="mb-2">I integrate Anma and Ampuku into Deep Alignment Sessions and the SKP Method:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Assessment:</strong> Begin with Ampuku abdominal diagnosis to identify imbalances</li>
-                                <li><strong>Full-Body Work:</strong> Use Anma meridian therapy to release tension and improve flow</li>
-                                <li><strong>Targeted Release:</strong> Deep Ampuku work to address emotional holdings in the belly</li>
-                                <li><strong>Integration:</strong> Combine with Reiki, energy medicine, or hypnotherapy for multi-layered healing</li>
-                            </ul>
-
-                            <p class="mt-3"><strong>Who Benefits Most:</strong></p>
-                            <p class="mb-2">These modalities are especially effective for:</p>
-                            <ul class="list-disc pl-6 space-y-1">
-                                <li>People who carry tension in their belly or gut</li>
-                                <li>Those with digestive issues tied to stress or emotion</li>
-                                <li>Individuals who are "in their head" and disconnected from their body</li>
-                                <li>Anyone seeking deep grounding and centering</li>
-                                <li>Those who want therapeutic bodywork beyond surface-level massage</li>
-                            </ul>
-
-                            <p class="mt-3">Both Anma and Ampuku honor the body's wisdom and work with—not against—its natural healing capacity. They're deeply relaxing yet profoundly therapeutic, often releasing years of held tension in a single session.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What is the Nir Levy Method / SKP Method?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">This question gets to the heart of my most advanced and comprehensive healing offering. Let me explain both the <strong>Nir Levy Method</strong> and how it integrates into my signature <strong>SKP Method (Soul Key Process™)</strong>.</p>
-
-                            <p class="mb-3"><strong>THE NIR LEVY METHOD</strong></p>
-                            <p class="mb-2"><strong>Overview & Philosophy:</strong></p>
-                            <p class="mb-3">The Nir Levy Method is an advanced somatic and energetic healing system developed by Israeli master healer Nir Levy. It represents the cutting edge of consciousness-based healing, integrating ancient wisdom with modern neuroscience and trauma research. I'm completing my certification in February 2026 and am one of the first practitioners in the Middle East to offer this transformative work.</p>
-
-                            <p class="mb-3"><strong>Core Principles:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Trauma Lives in the Body:</strong> Past experiences are stored as somatic patterns, not just memories</li>
-                                <li><strong>Nervous System Repatterning:</strong> Healing requires resetting the autonomic nervous system, not just understanding trauma cognitively</li>
-                                <li><strong>Energy Follows Consciousness:</strong> Where we place our awareness determines how energy moves and heals</li>
-                                <li><strong>Cellular Memory:</strong> Every cell holds consciousness and can be reprogrammed</li>
-                                <li><strong>Wholeness, Not Fixing:</strong> You're not broken—healing is remembering your innate wholeness</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>What the Nir Levy Method Addresses:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Complex Trauma & PTSD:</strong> Including developmental trauma, shock trauma, and attachment wounds</li>
-                                <li><strong>Chronic Nervous System Dysregulation:</strong> Stuck in fight/flight/freeze/fawn responses</li>
-                                <li><strong>Somatic Symptoms:</strong> Physical pain, chronic tension, or illness rooted in unresolved trauma</li>
-                                <li><strong>Dissociation & Numbing:</strong> Feeling disconnected from body, emotions, or life</li>
-                                <li><strong>Repeating Patterns:</strong> Relationship dynamics, self-sabotage, or limiting beliefs that won't shift</li>
-                                <li><strong>Spiritual Emergencies:</strong> Awakening experiences that feel destabilizing</li>
-                                <li><strong>Ancestral & Karmic Patterns:</strong> Inherited trauma and soul-level wounds</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>Key Techniques & Approaches:</strong></p>
-                            <ol class="list-decimal pl-6 space-y-3 mb-3">
-                                <li><strong>Somatic Resourcing:</strong> Building capacity in the nervous system to hold more activation without overwhelm. We establish "islands of safety" in the body before addressing trauma.</li>
-                                
-                                <li><strong>Pendulation:</strong> Gently moving between activation (trauma charge) and regulation (safety/calm), gradually increasing the nervous system's window of tolerance.</li>
-                                
-                                <li><strong>Completion of Defensive Responses:</strong> Trauma often occurs when the body's natural defensive responses (fight/flight) are thwarted. We allow the body to complete these incomplete survival responses.</li>
-                                
-                                <li><strong>Energetic Surgery:</strong> Advanced energy work to remove energetic cords, attachments, implants, and foreign energies that don't serve your highest good.</li>
-                                
-                                <li><strong>Timeline Healing:</strong> Working across past, present, and even future timelines to heal wounds at their source and prevent pattern repetition.</li>
-                                
-                                <li><strong>Cellular Reprogramming:</strong> Communicating directly with cells and organs to release stored trauma and install new, healthy programming.</li>
-                                
-                                <li><strong>Integration of Fragmented Parts:</strong> Addressing dissociated aspects of self (similar to Internal Family Systems) but with somatic and energetic components.</li>
-                                
-                                <li><strong>Awakening Dormant Capacities:</strong> Activating latent abilities, gifts, and potentials that have been suppressed or shut down.</li>
-                            </ol>
-
-                            <p class="mb-3"><strong>What Makes It Different:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Non-Retraumatizing:</strong> No need to retell traumatic stories or relive painful experiences</li>
-                                <li><strong>Works at Root Level:</strong> Addresses the energetic and somatic imprints, not just the mental understanding</li>
-                                <li><strong>Rapid Yet Gentle:</strong> Profound shifts can occur quickly because we bypass cognitive defenses</li>
-                                <li><strong>Holistic Integration:</strong> Addresses physical, emotional, mental, energetic, and spiritual dimensions simultaneously</li>
-                                <li><strong>Empowering:</strong> Restores your sense of agency, power, and sovereignty</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>THE SKP METHOD (SOUL KEY PROCESS™)</strong></p>
-                            <p class="mb-2"><strong>My Signature Integration:</strong></p>
-                            <p class="mb-3">The SKP Method is my unique synthesis of the Nir Levy Method with all the modalities I've mastered over 20+ years of practice. It's designed for those seeking profound, lasting transformation—not just symptom relief.</p>
-
-                            <p class="mb-3"><strong>What SKP Method Includes:</strong></p>
-                            <ol class="list-decimal pl-6 space-y-3 mb-3">
-                                <li><strong>Nir Levy Method Protocols:</strong> Advanced somatic and energetic healing techniques described above</li>
-                                
-                                <li><strong>Master-Level Reiki (Usui & Karuna):</strong> High-frequency energy healing for balancing, clearing, and activation</li>
-                                
-                                <li><strong>Hypnotherapy (Ericksonian):</strong> Subconscious reprogramming and belief system transformation</li>
-                                
-                                <li><strong>Energy Medicine:</strong> Chakra balancing, meridian clearing, biofield optimization</li>
-                                
-                                <li><strong>Somatic Bodywork (Anma & Ampuku):</strong> Deep tissue release, abdominal therapy, and nervous system regulation through touch</li>
-                                
-                                <li><strong>Trauma-Informed Practices:</strong> Working gently with the nervous system's capacity, honoring your pace</li>
-                                
-                                <li><strong>Intuitive Guidance:</strong> I'm guided to use exactly what your system needs in each moment</li>
-                            </ol>
-
-                            <p class="mb-3"><strong>The SKP Method Session (120 minutes):</strong></p>
-                            <p class="mb-2"><strong>Part 1 - Assessment & Preparation (20 mins):</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Deep discussion of what you're experiencing and what you're ready to shift</li>
-                                <li>Assessment of nervous system state, energy field, and somatic patterns</li>
-                                <li>Setting clear intentions for the session</li>
-                                <li>Establishing safety and building resources in the body</li>
-                            </ul>
-
-                            <p class="mb-2"><strong>Part 2 - Multi-Layered Healing Work (80 mins):</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Somatic & Nervous System Work:</strong> Nir Levy Method protocols to address trauma, complete defensive responses, and increase capacity</li>
-                                <li><strong>Energetic Clearing:</strong> Reiki and energy medicine to clear blockages, cords, and attachments</li>
-                                <li><strong>Subconscious Reprogramming:</strong> Hypnotherapy to install new beliefs and patterns</li>
-                                <li><strong>Bodywork Integration:</strong> Anma/Ampuku to release physical holdings and ground the shifts</li>
-                                <li><strong>Timeline & Cellular Healing:</strong> Working across time and with cellular consciousness</li>
-                                <li><strong>Activation & Empowerment:</strong> Awakening dormant capacities and restoring your full power</li>
-                            </ul>
-
-                            <p class="mb-2"><strong>Part 3 - Integration & Embodiment (20 mins):</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Grounding and integrating all the shifts that occurred</li>
-                                <li>Discussing your experience and any insights</li>
-                                <li>Providing integration practices tailored to your needs</li>
-                                <li>Establishing ongoing support and next steps</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>Who Is SKP Method For?</strong></p>
-                            <p class="mb-2">This intensive is ideal for:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Complex Healing Needs:</strong> Multiple layers of trauma, chronic patterns, or deep-seated issues</li>
-                                <li><strong>Advanced Seekers:</strong> Those already doing inner work who are ready for the next level</li>
-                                <li><strong>Major Transitions:</strong> Life crossroads, spiritual awakening, or significant transformation</li>
-                                <li><strong>Exhausted by Other Approaches:</strong> Tried therapy, medication, or other modalities without lasting results</li>
-                                <li><strong>Deep Commitment:</strong> Ready to invest in comprehensive, transformational healing</li>
-                                <li><strong>Accelerated Healing:</strong> Want to compress months or years of healing into focused, intensive sessions</li>
-                            </ul>
-
-                            <p class="mb-3"><strong>What Clients Say:</strong></p>
-                            <p class="mb-2 italic text-charcoal/80">"The SKP Method session was like months of therapy condensed into two hours. I felt layers of old trauma lift that I'd been carrying for decades. Susan's intuitive integration of all her modalities is masterful."</p>
-                            <p class="mb-3 italic text-charcoal/80">"I finally understand what 'embodied healing' means. The Nir Levy Method work Susan does goes so deep—I've never experienced anything like it. This isn't just healing; it's transformation."</p>
-
-                            <p class="mb-3"><strong>Investment & Commitment:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Session Length:</strong> 120 minutes (2 full hours of intensive work)</li>
-                                <li><strong>Investment:</strong> AED 1,200 (≈$325 USD)</li>
-                                <li><strong>Recommended:</strong> Series of 3-6 sessions for complex issues (package pricing available)</li>
-                                <li><strong>Integration Support:</strong> Email support between sessions, integration practices, follow-up guidance</li>
-                            </ul>
-
-                            <p class="mt-3"><strong>Why "Soul Key Process"?</strong></p>
-                            <p class="mb-3">I call this the Soul Key Process because it unlocks your deepest potential by addressing all the locks that have kept you from full expression—trauma patterns, limiting beliefs, energetic blockages, somatic armoring, and disconnection from your true self. It's not just about healing what's broken; it's about remembering who you really are and activating your soul's full capacity.</p>
-
-                            <p class="mt-3">This is the most comprehensive, powerful work I offer. It's for those ready to go deep, heal fully, and emerge transformed.</p>
-                        </div>
-                    </div>
-
-                    <!-- Practical Questions -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Where are you located and do you offer online sessions?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>In-Person Sessions:</strong> I offer in-person sessions in a private, peaceful studio designed for deep healing work. Location details provided upon booking.</p>
-                            <p class="mb-3"><strong>Distance Sessions:</strong> Yes! I offer distance healing worldwide for:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Reiki & Energy Work:</strong> Energy transcends physical distance. Distance Reiki is just as effective as in-person</li>
-                                <li><strong>Hypnotherapy:</strong> Conducted via secure video call</li>
-                                <li><strong>Consultation & Integration Support:</strong> Via phone, WhatsApp, or video</li>
-                            </ul>
-                            <p class="mt-3">Distance sessions are ideal for clients traveling, living abroad, or unable to come in person. Many of my international clients work exclusively via distance.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What forms of payment do you accept?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">I accept:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Cash:</strong> AED or USD</li>
-                                <li><strong>Bank Transfer:</strong> Local UAE transfer or international wire</li>
-                                <li><strong>Payment Plans:</strong> Available for package purchases</li>
-                            </ul>
-                            <p class="mt-3">Payment is due at the time of service unless we've arranged a package or payment plan in advance.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What is your cancellation policy?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">I understand that life happens and schedules change. My policy is:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>48+ hours notice:</strong> Full refund or reschedule at no charge</li>
-                                <li><strong>24-48 hours notice:</strong> Reschedule once at no charge (subsequent late cancellations charged 50%)</li>
-                                <li><strong>Less than 24 hours or no-show:</strong> Full session fee applies</li>
-                            </ul>
-                            <p class="mt-3">I reserve your session time specifically for you and turn away other clients during that slot, so advance notice is appreciated. For emergencies, please contact me directly—I'm happy to work with you.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">How do I prepare for my first session?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">To get the most from your session:</p>
-                            <p class="mb-3"><strong>24 Hours Before:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Drink plenty of water</li>
-                                <li>Reduce caffeine and sugar if possible</li>
-                                <li>Get adequate sleep</li>
-                                <li>Set an intention for what you'd like to receive</li>
-                            </ul>
-                            <p class="mb-3"><strong>Day Of:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Eat lightly 2 hours before</li>
-                                <li>Avoid alcohol or recreational substances</li>
-                                <li>Arrive 5-10 minutes early to settle in</li>
-                                <li>Wear comfortable clothing</li>
-                                <li>Turn off or silence your phone</li>
-                            </ul>
-                            <p class="mb-3"><strong>After Your Session:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Drink extra water</li>
-                                <li>Rest if possible—avoid rushing back to activities</li>
-                                <li>Avoid alcohol for 24 hours</li>
-                                <li>Early bedtime helps integration</li>
-                                <li>Gentle movement (walking, stretching) supports processing</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Can energy healing replace medical treatment?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>No.</strong> Energy healing is complementary to, not a replacement for, medical care. I am not a doctor and do not diagnose or treat medical conditions.</p>
-                            <p class="mb-3">That said, energy healing works beautifully alongside conventional medicine:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Reduces stress and anxiety</li>
-                                <li>Supports the body's natural healing processes</li>
-                                <li>Helps manage pain and side effects</li>
-                                <li>Accelerates recovery from surgery or illness</li>
-                                <li>Addresses the emotional and spiritual aspects of healing</li>
-                            </ul>
-                            <p class="mt-3">Always consult your healthcare provider for medical concerns. I'm happy to work in coordination with your medical team for the most comprehensive care.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What issues can you help with?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">My clients seek support for a wide range of issues including:</p>
-                            <p class="mb-3"><strong>Emotional & Mental:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Stress, anxiety, panic attacks</li>
-                                <li>Depression and low mood</li>
-                                <li>Trauma (PTSD, childhood trauma, relationship trauma)</li>
-                                <li>Grief and loss</li>
-                                <li>Life transitions and uncertainty</li>
-                            </ul>
-                            <p class="mb-3"><strong>Physical:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Chronic pain and tension</li>
-                                <li>Fatigue and low energy</li>
-                                <li>Sleep issues and insomnia</li>
-                                <li>Digestive concerns</li>
-                                <li>Headaches and migraines</li>
-                            </ul>
-                            <p class="mb-3"><strong>Behavioral & Patterns:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Breaking unwanted habits</li>
-                                <li>Confidence and self-esteem</li>
-                                <li>Relationship patterns</li>
-                                <li>Performance enhancement</li>
-                            </ul>
-                            <p class="mb-3"><strong>Spiritual & Growth:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1">
-                                <li>Disconnection from self or purpose</li>
-                                <li>Spiritual awakening support</li>
-                                <li>Personal transformation</li>
-                                <li>Conscious living</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- More Session Questions -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Can I bring someone with me to a session?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">For your first session, I prefer clients to come alone to create a safe, confidential space for deep work. The healing environment is most effective when you can fully relax without concern for others.</p>
-                            <p class="mb-3">However, exceptions can be made for:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Minors (parent/guardian must be present)</li>
-                                <li>Clients with mobility issues requiring assistance</li>
-                                <li>Those with specific cultural or personal needs</li>
-                            </ul>
-                            <p class="mt-3">If you have concerns about coming alone, please discuss this with me when booking—I'm here to ensure your comfort.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What happens during a hypnotherapy session?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">A hypnotherapy session typically unfolds in stages:</p>
-                            <ol class="list-decimal pl-6 space-y-3 mb-3">
-                                <li><strong>Consultation (15 mins):</strong> We discuss your goals, concerns, and what you'd like to shift</li>
-                                <li><strong>Induction (10 mins):</strong> Guided relaxation to access the theta brainwave state where the subconscious is receptive</li>
-                                <li><strong>Deepening (5-10 mins):</strong> Moving into deeper relaxation while maintaining awareness</li>
-                                <li><strong>Therapeutic Work (30-40 mins):</strong> Using techniques like regression, parts work, visualization, and suggestion to address your specific goals</li>
-                                <li><strong>Emergence (5 mins):</strong> Gently returning to full conscious awareness</li>
-                                <li><strong>Integration (10 mins):</strong> Discussing the experience and providing tools for continued transformation</li>
-                            </ol>
-                            <p class="mt-3">You remain conscious and in control throughout. Many describe it as a deeply relaxed, meditative state—similar to daydreaming or the moments before sleep.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What will I feel during a Reiki or energy session?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Everyone's experience is unique, but common sensations include:</p>
-                            <p class="mb-3"><strong>Physical Sensations:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Warmth, tingling, or pulsing in various areas</li>
-                                <li>Deep relaxation and heavy limbs</li>
-                                <li>Cool breezes or temperature shifts</li>
-                                <li>Gentle twitching as tension releases</li>
-                                <li>Waves of energy moving through the body</li>
-                            </ul>
-                            <p class="mb-3"><strong>Emotional/Energetic:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Profound peace and calm</li>
-                                <li>Emotional releases (tears, laughter)</li>
-                                <li>Memories or insights arising</li>
-                                <li>Colors or visions behind closed eyes</li>
-                                <li>Feeling "lighter" or more spacious</li>
-                            </ul>
-                            <p class="mt-3">Some people feel subtle shifts, while others have dramatic experiences. There's no "right" way to experience energy work—whatever you feel is perfect for you.</p>
-                        </div>
-                    </div>
-
-                    <!-- Modality Deep-Dive Questions -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What's the difference between Usui Reiki and Karuna Reiki?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>Usui Reiki</strong> (the foundation system) focuses on:</p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Physical healing and energy balance</li>
-                                <li>Chakra clearing and alignment</li>
-                                <li>Grounding and centering energy</li>
-                                <li>General wellness and stress relief</li>
-                            </ul>
-                            <p class="mb-3"><strong>Karuna Reiki</strong> (advanced system) works with:</p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Deep emotional and trauma healing</li>
-                                <li>Shadow work and subconscious patterns</li>
-                                <li>Karmic and ancestral clearing</li>
-                                <li>Compassionate action (Karuna = compassionate action)</li>
-                                <li>Higher vibrational frequencies for spiritual evolution</li>
-                            </ul>
-                            <p class="mt-3">As a Master in both systems, I intuitively select which frequencies will best serve your healing in each session. Often, I combine both for comprehensive support.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">How is your bodywork different from a regular massage?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">While massage primarily addresses muscular tension, my somatic bodywork integrates:</p>
-                            <p class="mb-3"><strong>Anma (Japanese therapeutic massage):</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Meridian-based work to balance energy flow</li>
-                                <li>Rhythmic pressure and stretching</li>
-                                <li>Focus on Ki (life force) circulation</li>
-                            </ul>
-                            <p class="mb-3"><strong>Ampuku (Japanese abdominal therapy):</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Addresses the "Hara" (energetic center below the navel)</li>
-                                <li>Releases deep emotional holding patterns</li>
-                                <li>Supports digestive health and nervous system regulation</li>
-                                <li>Grounds and centers your energy</li>
-                            </ul>
-                            <p class="mb-3"><strong>Somatic Alignment:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Works with the nervous system to release trauma held in tissues</li>
-                                <li>Honors the body's innate wisdom and timing</li>
-                                <li>Combines gentle touch with awareness and presence</li>
-                            </ul>
-                            <p class="mt-3">This isn't relaxation massage—it's therapeutic bodywork that addresses physical, energetic, and emotional layers simultaneously.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="modalities">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What makes the SKP Method unique?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">The SKP Method (Soul Key Process™) is my signature integration of everything I've mastered over 15+ years, including the transformative Nir Levy Method. It's designed for those seeking profound, lasting transformation rather than temporary relief.</p>
-                            <p class="mb-3"><strong>What makes it different:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Full-Spectrum Integration:</strong> Combines Reiki, energy medicine, hypnotherapy, somatic work, and the Nir Levy Method in one comprehensive session</li>
-                                <li><strong>Personalized Protocol:</strong> Each session is uniquely designed for your specific needs and healing timeline</li>
-                                <li><strong>Deeper Layers:</strong> Works simultaneously with physical, emotional, mental, energetic, and spiritual bodies</li>
-                                <li><strong>Root-Level Shifts:</strong> Addresses not just symptoms but the underlying patterns creating them</li>
-                                <li><strong>Extended Integration Support:</strong> Includes follow-up guidance and practices tailored to your journey</li>
-                            </ul>
-                            <p class="mt-3">This 120-minute session is ideal for complex issues, trauma healing, major life transitions, or when you're ready for significant transformation. Many clients describe it as "months of therapy in one session."</p>
-                        </div>
-                    </div>
-
-                    <!-- Credentials & Experience Questions -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What are your qualifications and training?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">I bring 20+ years of experience and comprehensive training across multiple healing disciplines:</p>
-                            <p class="mb-3"><strong>Master-Level Certifications:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Usui Reiki Master/Teacher</li>
-                                <li>Karuna Reiki® Master</li>
-                                <li>Certified Energy Medicine Specialist</li>
-                                <li>Hypnotherapy Certification (Ericksonian approach)</li>
-                            </ul>
-                            <p class="mb-3"><strong>Specialized Training:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Anma (Japanese Therapeutic Massage)</li>
-                                <li>Ampuku (Hara-Centered Abdominal Therapy)</li>
-                                <li>Somatic Alignment & Trauma-Informed Touch</li>
-                                <li>Chakra Balancing & Energy Clearing</li>
-                                <li>Nir Levy Method Certification (February 2026)</li>
-                            </ul>
-                            <p class="mb-3"><strong>Ongoing Education:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1">
-                                <li>Regular continuing education in somatic psychology</li>
-                                <li>Advanced energy medicine techniques</li>
-                                <li>Trauma-informed healing practices</li>
-                            </ul>
-                            <p class="mt-3">I maintain professional liability insurance and approach this work with deep reverence, continuous learning, and commitment to ethical practice. I serve clients worldwide both in-person and remotely.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">How long have you been practicing?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">I've been a professional healing practitioner for over 20 years, serving clients worldwide both in-person and remotely.</p>
-                            <p class="mb-3">Over this time, I've:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Worked with hundreds of clients across 5 continents</li>
-                                <li>Specialized in serving high-achieving professionals, expatriates, and those navigating complex life transitions</li>
-                                <li>Developed the SKP Method based on years of clinical observation and refinement</li>
-                                <li>Maintained a private practice focused on depth, discretion, and lasting results</li>
-                                <li>Continuously expanded my skills through advanced trainings and mentorship</li>
-                            </ul>
-                            <p class="mt-3">This work isn't a side practice—it's my life's calling, and I bring the full depth of my experience to every session.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="general">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Do you work with men, women, and all genders?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Yes, absolutely. I welcome clients of all genders, ages (18+), backgrounds, and belief systems. Healing is a universal human need, and my practice is a safe, inclusive space for anyone seeking transformation.</p>
-                            <p class="mb-3">My diverse client base includes:</p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>Men and women from their 20s to their 70s</li>
-                                <li>LGBTQ+ individuals</li>
-                                <li>People of all cultural and religious backgrounds</li>
-                                <li>Believers, skeptics, and everyone in between</li>
-                                <li>Expatriates, locals, and international visitors</li>
-                            </ul>
-                            <p class="mt-3">What matters most is your openness to healing and your commitment to your own growth. I honor each person's unique path and create a space of deep respect, confidentiality, and non-judgment.</p>
-                        </div>
-                    </div>
-
-                    <!-- Specific Conditions & Concerns -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Can you help with anxiety and panic attacks?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Yes, anxiety is one of the most common issues I address, and my multi-modal approach is particularly effective for:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Generalized anxiety</strong> and persistent worry</li>
-                                <li><strong>Panic attacks</strong> and panic disorder</li>
-                                <li><strong>Social anxiety</strong> and performance anxiety</li>
-                                <li><strong>Health anxiety</strong> and hypervigilance</li>
-                                <li><strong>Trauma-related anxiety</strong> (PTSD)</li>
-                            </ul>
-                            <p class="mb-3"><strong>How I work with anxiety:</strong></p>
-                            <ol class="list-decimal pl-6 space-y-2 mb-3">
-                                <li><strong>Nervous System Regulation:</strong> Somatic techniques to shift from sympathetic (fight/flight) to parasympathetic (rest/digest) states</li>
-                                <li><strong>Energy Clearing:</strong> Release stuck energy in the solar plexus, heart, and throat chakras where anxiety typically lodges</li>
-                                <li><strong>Hypnotherapy:</strong> Reprogram the subconscious patterns triggering anxious responses</li>
-                                <li><strong>Root Cause Work:</strong> Address underlying beliefs, past experiences, or trauma fueling the anxiety</li>
-                            </ol>
-                            <p class="mt-3">Many clients report significant relief after just 1-2 sessions, with continued improvement over time. I also teach self-regulation tools you can use between sessions.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Can energy healing help with physical pain?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Yes, especially for pain with an energetic or emotional component. While I cannot diagnose or treat medical conditions, energy healing is remarkably effective for:</p>
-                            <p class="mb-3"><strong>Chronic Pain Conditions:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Back, neck, and shoulder tension</li>
-                                <li>Headaches and migraines</li>
-                                <li>Fibromyalgia and chronic fatigue</li>
-                                <li>Joint pain and arthritis symptoms</li>
-                                <li>Digestive discomfort (IBS, tension)</li>
-                            </ul>
-                            <p class="mb-3"><strong>How it works:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li><strong>Releases energetic blockages</strong> that contribute to inflammation and tension</li>
-                                <li><strong>Relaxes the nervous system,</strong> reducing pain signaling</li>
-                                <li><strong>Addresses emotional components</strong>—many physical pains have emotional roots (e.g., shouldering burdens = shoulder pain)</li>
-                                <li><strong>Stimulates the body's natural healing</strong> through improved energy flow</li>
-                            </ul>
-                            <p class="mt-3">I work in complement to your medical care, not as a replacement. Always consult your doctor for physical symptoms, and share your treatment plan with me so we can coordinate the most effective support.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Can you help me break unwanted habits or addictions?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Hypnotherapy is particularly powerful for habit change and addiction support. I work with clients on:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Smoking cessation</li>
-                                <li>Emotional eating and food compulsions</li>
-                                <li>Alcohol reduction or sobriety support</li>
-                                <li>Nail biting, skin picking, hair pulling</li>
-                                <li>Technology/phone addictions</li>
-                                <li>Procrastination and avoidance patterns</li>
-                            </ul>
-                            <p class="mb-3"><strong>My approach addresses:</strong></p>
-                            <ol class="list-decimal pl-6 space-y-2">
-                                <li><strong>The subconscious triggers:</strong> What's really driving the behavior?</li>
-                                <li><strong>The underlying needs:</strong> What is the habit providing (comfort, distraction, control)?</li>
-                                <li><strong>Pattern interruption:</strong> Creating new neural pathways and responses</li>
-                                <li><strong>Healthier alternatives:</strong> Installing new behaviors that meet the same needs</li>
-                                <li><strong>Energetic clearing:</strong> Releasing attachments on all levels</li>
-                            </ol>
-                            <p class="mt-3"><strong>Important:</strong> For substance addictions, I work best as part of a comprehensive treatment team (medical supervision, support groups, therapy). I'm not a substitute for medical detox or addiction counseling, but I'm a powerful complement to traditional treatment.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="sessions">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Do you work with trauma and PTSD?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Yes, trauma healing is central to my work. I'm trained in trauma-informed approaches and work with clients experiencing:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>PTSD (post-traumatic stress disorder)</li>
-                                <li>Complex trauma (C-PTSD)</li>
-                                <li>Childhood trauma and adverse childhood experiences</li>
-                                <li>Relationship trauma and betrayal</li>
-                                <li>Medical trauma and birth trauma</li>
-                                <li>Acute trauma from recent events</li>
-                            </ul>
-                            <p class="mb-3"><strong>My trauma-informed approach:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Safety first:</strong> We work at YOUR pace, honoring your nervous system's capacity</li>
-                                <li><strong>Somatic focus:</strong> Trauma lives in the body—we address it where it's stored</li>
-                                <li><strong>Gentle, indirect:</strong> No forced "reliving" of traumatic events</li>
-                                <li><strong>Resource building:</strong> Developing safety and regulation skills before deep work</li>
-                                <li><strong>Energy clearing:</strong> Releasing imprints without having to retell the story</li>
-                            </ul>
-                            <p class="mt-3">I'm experienced in working with complex trauma and understand the layers involved. However, if you're in active crisis or have complex mental health needs, I'll recommend working with a trauma therapist alongside our sessions for comprehensive support.</p>
-                        </div>
-                    </div>
-
-                    <!-- Practical Deep Dive -->
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Do you offer online/remote sessions?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Yes, I offer remote sessions via secure video call for clients worldwide who:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>Prefer the comfort and privacy of their own space</li>
-                                <li>Are traveling or live internationally</li>
-                                <li>Have mobility or transportation challenges</li>
-                                <li>Want continuity of care regardless of location</li>
-                            </ul>
-                            <p class="mb-3"><strong>What works well remotely:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Hypnotherapy sessions (actually ideal via video)</li>
-                                <li>Distance Reiki and energy healing</li>
-                                <li>Energy clearing and chakra balancing</li>
-                                <li>Consultation and integration sessions</li>
-                            </ul>
-                            <p class="mb-3"><strong>What requires in-person:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Anma and Ampuku bodywork (hands-on required)</li>
-                                <li>Full SKP Method sessions (best in-person)</li>
-                            </ul>
-                            <p class="mt-3">Remote sessions are equally powerful—energy transcends physical distance. I recommend starting in-person if possible, then transitioning to remote as needed. Same rates apply for all formats.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What if I need to reschedule or cancel?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Life happens, and I understand scheduling conflicts arise. My cancellation policy is:</p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>48+ hours notice:</strong> Full refund or free rescheduling</li>
-                                <li><strong>24-48 hours notice:</strong> 50% fee, remaining credit toward future session</li>
-                                <li><strong>Less than 24 hours:</strong> Full session fee (no refund or credit)</li>
-                                <li><strong>No-show:</strong> Full session fee charged</li>
-                            </ul>
-                            <p class="mb-3"><strong>Exceptions made for:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Medical emergencies (documentation required)</li>
-                                <li>Family emergencies</li>
-                                <li>Sudden illness</li>
-                            </ul>
-                            <p class="mt-3">Please contact me as soon as possible if you need to change your appointment. I hold sacred space for each client and often decline other bookings to accommodate your session, so timely notice is appreciated.</p>
-                            <p class="mt-2"><strong>To reschedule:</strong> Call/WhatsApp +971 55 177 0957 or email susan@susankpearson.com</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Do you offer package deals or multiple-session discounts?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Yes! Deep healing often unfolds over multiple sessions, so I offer packages that provide both savings and accountability:</p>
-                            <p class="mb-3"><strong>Foundation Package (3 sessions):</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>AED 2,550 (save AED 300)</li>
-                                <li>Ideal for: Addressing a specific issue or establishing a healing foundation</li>
-                                <li>Valid for 3 months</li>
-                            </ul>
-                            <p class="mb-3"><strong>Transformation Package (6 sessions):</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>AED 5,100 (save AED 600)</li>
-                                <li>Ideal for: Chronic patterns, trauma healing, or major life transitions</li>
-                                <li>Valid for 6 months</li>
-                            </ul>
-                            <p class="mb-3"><strong>Custom Packages:</strong></p>
-                            <p class="mb-2">For ongoing support or specialized programs, I can create custom packages tailored to your needs and budget. Contact me to discuss.</p>
-                            <p class="mt-3"><strong>Package benefits:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1">
-                                <li>Cost savings (10-15% discount)</li>
-                                <li>Consistent appointment times (priority scheduling)</li>
-                                <li>Deeper transformation through committed work</li>
-                                <li>Flexible modality selection within the package</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">Is my information confidential?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Absolutely. Confidentiality is sacred in this work. Everything you share—verbally or energetically—is held in complete confidence.</p>
-                            <p class="mb-3"><strong>My confidentiality commitment:</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li>I never disclose client names, details, or session content</li>
-                                <li>Client records are stored securely and encrypted</li>
-                                <li>Testimonials are shared only with explicit written permission</li>
-                                <li>Your healing journey is yours alone—I'm merely the witness</li>
-                            </ul>
-                            <p class="mb-3"><strong>Exceptions (legally required):</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Threat of harm to self or others</li>
-                                <li>Child abuse or neglect</li>
-                                <li>Court order or legal subpoena</li>
-                            </ul>
-                            <p class="mt-3">I value discretion deeply, and your privacy is paramount. You can trust that your healing space is completely safe and confidential.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">What should I avoid before or after a session?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3"><strong>Before your session (24 hours):</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Avoid:</strong> Heavy alcohol consumption (light is okay)</li>
-                                <li><strong>Avoid:</strong> Recreational substances that alter consciousness</li>
-                                <li><strong>Minimize:</strong> Caffeine intake (reduces nervous system reactivity)</li>
-                                <li><strong>Hydrate well:</strong> Water supports energy flow</li>
-                            </ul>
-                            <p class="mb-3"><strong>Day of session:</strong></p>
-                            <ul class="list-disc pl-6 space-y-1 mb-3">
-                                <li>Eat lightly 1-2 hours before (not on full or empty stomach)</li>
-                                <li>Avoid wearing strong perfumes or scents</li>
-                                <li>Wear comfortable, loose clothing</li>
-                                <li>Silence your phone during the session</li>
-                            </ul>
-                            <p class="mb-3"><strong>After your session (24-48 hours):</strong></p>
-                            <ul class="list-disc pl-6 space-y-2 mb-3">
-                                <li><strong>Rest:</strong> Allow your body to integrate; avoid scheduling intense activities</li>
-                                <li><strong>Hydrate:</strong> Drink extra water to support energy clearing</li>
-                                <li><strong>Gentle movement:</strong> Walking, stretching, or gentle yoga (avoid intense exercise)</li>
-                                <li><strong>Limit alcohol/substances:</strong> Your system is more sensitive post-session</li>
-                                <li><strong>Journal:</strong> Note insights, dreams, or shifts you experience</li>
-                                <li><strong>Be gentle with yourself:</strong> Honor any emotional releases or fatigue</li>
-                            </ul>
-                            <p class="mt-3">Integration is as important as the session itself. Treat the 48 hours after as sacred time for embodying your shifts.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item bg-white rounded-sm shadow-sm border-l-4 border-gold" data-category="practical">
-                        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-cream/50 transition-colors">
-                            <span class="text-lg font-medium text-charcoal pr-8">How do I book a session?</span>
-                            <i class="fas fa-chevron-down text-gold transition-transform"></i>
-                        </button>
-                        <div class="faq-answer hidden px-6 pb-6 text-charcoal/80 leading-relaxed">
-                            <p class="mb-3">Booking is easy:</p>
-                            <ol class="list-decimal pl-6 space-y-2 mb-3">
-                                <li><strong>Use the booking form</strong> at the bottom of this page to request your preferred date and time</li>
-                                <li><strong>Call or WhatsApp:</strong> +971 55 177 0957</li>
-                                <li><strong>Email:</strong> susan@susankpearson.com</li>
-                            </ol>
-                            <p class="mb-3">I'll respond within 24 hours to confirm your appointment. If you have questions before booking, feel free to reach out—I'm happy to discuss which modality might be best for your needs.</p>
-                            <p class="mt-3">For your first session, I recommend scheduling when you have no major obligations afterward, allowing time for integration and rest.</p>
-                        </div>
-                    </div>
+                <div style="padding:0.3rem 1.5rem 0.8rem;">
+                    <a href="#services" style="display:block;padding:0.6rem 0;text-decoration:none;" onmouseover="this.querySelector('p').style.color='var(--gold)'" onmouseout="this.querySelector('p').style.color='var(--white)'">
+                        <p style="font-size:0.78rem;color:var(--white);font-weight:500;margin:0 0 0.2rem;letter-spacing:0.05em;transition:color 0.2s;">The Full Frequency Session</p>
+                        <p style="font-size:0.68rem;color:var(--gray);margin:0;font-weight:300;">All modalities | One deep journey</p>
+                    </a>
                 </div>
-
-                <!-- Still Have Questions CTA -->
-                <div class="mt-16 text-center bg-white p-8 rounded-sm border-2 border-gold/30">
-                    <h3 class="text-2xl font-serif text-charcoal mb-4">Still Have Questions?</h3>
-                    <p class="text-charcoal/70 mb-6">
-                        I'm happy to answer any questions you have about my work, approach, or whether a session would be right for you.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:+971551770957" class="inline-flex items-center justify-center bg-gold text-black px-8 py-3 rounded-sm hover:bg-champagne transition-colors font-medium">
-                            <i class="fas fa-phone-alt mr-2"></i>
-                            Call +971 55 177 0957
-                        </a>
-                        <a href="mailto:susan@susankpearson.com" class="inline-flex items-center justify-center bg-charcoal text-cream px-8 py-3 rounded-sm hover:bg-gold hover:text-black transition-colors font-medium">
-                            <i class="fas fa-envelope mr-2"></i>
-                            Email Me
-                        </a>
-                    </div>
+                <div style="padding:0.8rem 1.5rem 1rem;border-top:1px solid rgba(201,169,110,0.15);margin-top:0.3rem;">
+                    <a href="#services" style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;font-weight:500;">View All Services →</a>
                 </div>
             </div>
-        </section>
+        </li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/cat-rescue">Cat Rescue</a></li>
+        <li><a href="/intake-form">Intake Form</a></li>
+    </ul>
+    <button class="btn-book" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Book Session</button>
+</nav>
 
-        <!-- Booking Section -->
-        <section id="booking" class="py-20 bg-white">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Book Your Session</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Complete the form below to request a session. I'll respond within 24 hours to confirm your appointment.
-                    </p>
-                </div>
-                
-                <!-- Booking Form -->
-                <div class="bg-cream p-8 rounded-sm shadow-lg">
-                    <form id="bookingForm" class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-charcoal font-medium mb-2">Full Name *</label>
-                                <input type="text" name="name" required 
-                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
-                            </div>
-                            <div>
-                                <label class="block text-charcoal font-medium mb-2">Email Address *</label>
-                                <input type="email" name="email" required 
-                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
-                            </div>
-                        </div>
-                        
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-charcoal font-medium mb-2">Phone Number *</label>
-                                <input type="tel" name="phone" required 
-                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
-                            </div>
-                            <div>
-                                <label class="block text-charcoal font-medium mb-2">Preferred Session *</label>
-                                <select name="session" required 
-                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
-                                    <option value="">Select a service...</option>
-                                    <option value="deep-alignment">Deep Alignment Session (90 min) - AED 950</option>
-                                    <option value="hypnotherapy">Hypnotherapy (75 min) - AED 850</option>
-                                    <option value="skp-method">SKP Method (120 min) - AED 1,200</option>
-                                    <option value="consultation">Free Consultation (15 min)</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-charcoal font-medium mb-2">Preferred Date</label>
-                                <input type="date" name="date" 
-                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
-                            </div>
-                            <div>
-                                <label class="block text-charcoal font-medium mb-2">Preferred Time</label>
-                                <select name="time" 
-                                    class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
-                                    <option value="">Select time...</option>
-                                    <option value="morning">Morning (9am - 12pm)</option>
-                                    <option value="afternoon">Afternoon (12pm - 4pm)</option>
-                                    <option value="evening">Evening (4pm - 8pm)</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label class="block text-charcoal font-medium mb-2">Message / Special Requests</label>
-                            <textarea name="message" rows="4" 
-                                class="w-full px-4 py-3 bg-white border border-gold/30 rounded-sm focus:outline-none focus:border-gold transition-colors resize-none"
-                                placeholder="Please share any specific concerns or questions..."></textarea>
-                        </div>
-                        
-                        <div class="text-center">
-                            <button type="submit" 
-                                class="bg-gold text-midnight px-12 py-4 rounded-sm hover:bg-champagne transition-all duration-300 font-medium text-lg shadow-lg hover:scale-105 transform">
-                                <i class="fas fa-paper-plane mr-2"></i>
-                                Request Booking
-                            </button>
-                            <p class="mt-4 text-sm text-charcoal/60">
-                                I'll respond within 24 hours to confirm your session
-                            </p>
-                        </div>
-                        
-                        <div id="formMessage" class="hidden mt-4 p-4 rounded-sm"></div>
-                    </form>
-                    
-                    <div class="mt-8 text-center text-sm text-charcoal/70 border-t border-gold/20 pt-6">
-                        <p class="mb-3 font-medium text-charcoal">Prefer to reach out directly?</p>
-                        <div class="flex flex-col sm:flex-row justify-center gap-4">
-                            <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors font-medium">
-                                <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
-                            </a>
-                            <a href="mailto:susan@susankpearson.com" class="text-gold hover:text-champagne transition-colors font-medium">
-                                <i class="fas fa-envelope mr-2"></i>susan@susankpearson.com
-                            </a>
-                        </div>
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-ornament"></div>
+    <div class="hero-scroll">
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- HERO TEXT — below the image, face never covered -->
+<section style="background:var(--black);padding:5rem 5vw 4rem;text-align:center;">
+    <div style="max-width:780px;margin:0 auto;">
+        <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;opacity:0;animation:fadeUp 1s ease forwards 0.3s;">Dubai · Worldwide</p>
+        <h1 style="font-family:var(--font-display);font-size:clamp(2.2rem,4.5vw,4rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.5rem;opacity:0;animation:fadeUp 1s ease forwards 0.6s;">Where Attention<br>Becomes <em style="color:var(--gold);font-style:italic;">Possibility</em></h1>
+        <p style="font-family:var(--font-body);font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:3rem;opacity:0;animation:fadeUp 1s ease forwards 0.9s;">Presence · Listening · The space where your own process can unfold</p>
+        <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp 1s ease forwards 1.2s;">
+            <button class="btn-primary" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Explore Working Together</button>
+            <button class="btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Discover the Work</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+    <div class="about-grid">
+        <div class="about-img-container reveal-left">
+            <img class="about-img-main" src="/images/about-main.jpg" alt="Susan K. Pearson">
+            <div class="about-img-frame"></div>
+        </div>
+        <div class="about-text reveal-right">
+            <p class="section-label">About Susan</p>
+            <h2 class="section-title">The Work Begins<br>With <em>Attention</em></h2>
+            <div class="gold-line"></div>
+            <p class="section-text">
+                I bring presence, experience, curiosity, and careful attention to what is seeking to be understood.
+                I do not believe healing is something that is done to a person. Each individual carries
+                an innate capacity for balance, insight, and transformation — and my role is to create the conditions
+                in which that process can unfold.
+            </p>
+            <br>
+            <p class="section-text">
+                I will meet you where you are. I listen deeply, observe carefully, and support your process —
+                drawing on decades of experience and a range of modalities as tools, not as the focus.
+                The relationship comes first. The person comes first. The rest unfolds from there.
+            </p>
+            <div style="margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid rgba(201,169,110,0.15);display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;">
+
+                <!-- Credentials -->
+                <div>
+                    <p style="font-family:var(--font-body);font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;">Credentials &amp; Training</p>
+                    <div style="display:flex;flex-direction:column;gap:0.65rem;">
+                        <div class="credential-item"><span class="credential-dot"></span>Usui Reiki Ryoho Master</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Holy Fire® III Reiki Master</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Holy Fire® III Karuna Reiki Master</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Nir Levy Method Therapist</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Certified Hypnotherapist</div>
                     </div>
+                </div>
+
+                <!-- Areas of Focus -->
+                <div>
+                    <p style="font-family:var(--font-body);font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;">Areas of Focus</p>
+                    <div style="display:flex;flex-direction:column;gap:0.65rem;">
+                        <div class="credential-item"><span class="credential-dot"></span>Anma — Traditional Japanese Bodywork</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Ampuku — Japanese Abdominal Therapy</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Chakra Balancing &amp; Energetic Clearing</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Subconscious Work &amp; Pattern Release</div>
+                        <div class="credential-item"><span class="credential-dot"></span>Multidimensional Therapeutic Practice</div>
+                        <div class="credential-item" style="color:var(--gold);"><span style="width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0;display:inline-block;margin-right:1rem;"></span>Worldwide · Remote &amp; In-Person</div>
+                        <div class="credential-item" style="color:var(--gold);"><span style="width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0;display:inline-block;margin-right:1rem;"></span>20+ Years Professional Experience</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="strip-divider"><span></span><span class="lotus">✿</span><span></span></div>
+
+<!-- SERVICES -->
+<section id="services" style="padding:8rem 5vw;background:var(--black);">
+    <div style="max-width:1300px;margin:0 auto;">
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:5rem;">
+            <div class="reveal">
+                <p class="section-label">Modalities</p>
+                <h2 class="section-title">The <em>Sessions</em></h2>
+                <div class="gold-line"></div>
+            </div>
+            <div class="reveal" style="padding-bottom:0.5rem;">
+                <p style="font-size:0.85rem;color:var(--gray);line-height:1.9;max-width:420px;">Each session is uniquely tailored — I begin by listening to your body, your energy, and your story. Available in Dubai and worldwide via distance sessions.</p>
+            </div>
+        </div>
+
+        <!-- SERVICE 1 -->
+        <div class="reveal" style="display:grid;grid-template-columns:220px 1fr auto;gap:3rem;align-items:start;padding:3.5rem 0;border-top:1px solid rgba(201,169,110,0.12);transition:border-color 0.3s;"
+             onmouseover="this.style.borderTopColor='var(--gold)'" onmouseout="this.style.borderTopColor='rgba(201,169,110,0.12)'">
+            <div>
+                <p style="font-family:var(--font-display);font-size:3.5rem;color:rgba(201,169,110,0.1);font-weight:300;line-height:1;margin-bottom:0.5rem;">01</p>
+                <p style="font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);">Holistic Bodywork</p>
+            </div>
+            <div>
+                <h3 style="font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:400;color:var(--white);margin-bottom:1rem;line-height:1.2;">The Nir Levy Method</h3>
+                <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:580px;">A body-centered approach working with the Five Elements. Deep tissue work combined with energetic awareness — supporting the physical and subtle body in releasing held patterns and reorganising toward greater ease.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;">
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Five Elements</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Deep Tissue</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Energetic Release</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Somatic Awareness</span>
                 </div>
             </div>
-        </section>
+            <div style="padding-top:0.5rem;">
+                <a href="/intake-form" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;transition:gap 0.3s;"
+                   onmouseover="this.style.gap='1rem'" onmouseout="this.style.gap='0.6rem'">Book Session →</a>
+            </div>
+        </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-cream">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-serif font-light text-charcoal mb-4">Get in Touch</h2>
-                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-                    <p class="text-lg text-charcoal/70 max-w-2xl mx-auto">
-                        Have questions? I'm here to support you on your healing journey.
-                    </p>
-                </div>
-                
-                <div class="bg-white p-12 rounded-sm shadow-sm">
-                    <form id="contactForm" class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium text-charcoal mb-2">Name</label>
-                                <input type="text" required class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="Your name">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-charcoal mb-2">Email</label>
-                                <input type="email" required class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="your@email.com">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-charcoal mb-2">Phone (Optional)</label>
-                            <input type="tel" class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="+971 ...">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-charcoal mb-2">Service Interest</label>
-                            <select class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors">
-                                <option>Deep Alignment Session</option>
-                                <option>Hypnotherapy</option>
-                                <option>SKP Method</option>
-                                <option>General Inquiry</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-charcoal mb-2">Message</label>
-                            <textarea rows="5" required class="w-full px-4 py-3 border border-sage/30 rounded-sm focus:outline-none focus:border-gold transition-colors" placeholder="Tell me about your healing journey and intentions..."></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="bg-gold text-cream px-10 py-4 rounded-sm hover:bg-gold/90 transition-colors text-lg font-medium">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="mt-12 text-center">
-                    <p class="text-charcoal/70 mb-6">Connect With Us</p>
-                    <div class="flex justify-center space-x-8">
-                        <a href="mailto:susan@susankpearson.com" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Email">
-                            <i class="fas fa-envelope text-2xl"></i>
-                        </a>
-                        <a href="tel:+971551770957" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Phone">
-                            <i class="fas fa-phone text-2xl"></i>
-                        </a>
-                        <a href="https://wa.me/971551770957?text=Hello%2C%20I%20would%20like%20to%20book%20a%20session%20with%20Susan" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="WhatsApp">
-                            <i class="fab fa-whatsapp text-2xl"></i>
-                        </a>
-                        <a href="https://www.facebook.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Facebook">
-                            <i class="fab fa-facebook text-2xl"></i>
-                        </a>
-                        <a href="https://www.instagram.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-champagne transition-colors transform hover:scale-110" title="Instagram">
-                            <i class="fab fa-instagram text-2xl"></i>
-                        </a>
-                    </div>
+        <!-- SERVICE 2 -->
+        <div class="reveal" style="display:grid;grid-template-columns:220px 1fr auto;gap:3rem;align-items:start;padding:3.5rem 0;border-top:1px solid rgba(201,169,110,0.12);transition:border-color 0.3s;"
+             onmouseover="this.style.borderTopColor='var(--gold)'" onmouseout="this.style.borderTopColor='rgba(201,169,110,0.12)'">
+            <div>
+                <p style="font-family:var(--font-display);font-size:3.5rem;color:rgba(201,169,110,0.1);font-weight:300;line-height:1;margin-bottom:0.5rem;">02</p>
+                <p style="font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);">Body · Energy · Subconscious</p>
+            </div>
+            <div>
+                <h3 style="font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:400;color:var(--white);margin-bottom:1rem;line-height:1.2;">Deep Alignment Therapy</h3>
+                <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:580px;">A comprehensive session supporting the body, nervous system, and energy field in reorganizing toward balance. Through a blend of hara-centered bodywork, meridian balancing, subtle-energy work, and subconscious facilitation, the system is invited into clarity, regulated breath, and inner spaciousness.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;">
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Hara Bodywork</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Meridian Balancing</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Subtle Energy Work</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Subconscious Facilitation</span>
                 </div>
             </div>
-        </section>
-        ${renderInitiativeTeaser()}
+            <div style="padding-top:0.5rem;">
+                <a href="/intake-form" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;transition:gap 0.3s;"
+                   onmouseover="this.style.gap='1rem'" onmouseout="this.style.gap='0.6rem'">Schedule a Session →</a>
+            </div>
+        </div>
 
-        <!-- Footer -->
-        <footer class="bg-charcoal text-cream/70 py-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <div class="mb-6">
-                        <span class="text-4xl font-serif font-light text-cream tracking-widest">SKP</span>
-                    </div>
-                    <p class="mb-4 elegant-text text-lg">Susan K Pearson | Elemental Healing</p>
-                    <p class="text-sm mb-2">Energy Medicine • Reiki Master • Hypnotherapy • Somatic Alignment</p>
-                    <p class="text-sm mb-2">
-                        <i class="fas fa-phone-alt mr-2"></i>+971 55 177 0957
-                    </p>
-                    <p class="text-sm mb-6">
-                        <i class="fas fa-envelope mr-2"></i>susan@susankpearson.com
-                    </p>
-                    <div class="flex justify-center space-x-6 mb-6">
-                        <a href="https://wa.me/971551770957" target="_blank" rel="noopener noreferrer" class="text-cream/70 hover:text-gold transition-colors" title="WhatsApp">
-                            <i class="fab fa-whatsapp text-2xl"></i>
-                        </a>
-                        <a href="https://www.facebook.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-cream/70 hover:text-gold transition-colors" title="Facebook">
-                            <i class="fab fa-facebook text-2xl"></i>
-                        </a>
-                        <a href="https://www.instagram.com/susankpearson" target="_blank" rel="noopener noreferrer" class="text-cream/70 hover:text-gold transition-colors" title="Instagram">
-                            <i class="fab fa-instagram text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="section-divider opacity-30"></div>
-                    <p class="text-xs mt-6">© 2026 Elemental Healing LLC. All rights reserved. | Confidential & Proprietary</p>
+        <!-- SERVICE 3 -->
+        <div class="reveal" style="display:grid;grid-template-columns:220px 1fr auto;gap:3rem;align-items:start;padding:3.5rem 0;border-top:1px solid rgba(201,169,110,0.12);transition:border-color 0.3s;"
+             onmouseover="this.style.borderTopColor='var(--gold)'" onmouseout="this.style.borderTopColor='rgba(201,169,110,0.12)'">
+            <div>
+                <p style="font-family:var(--font-display);font-size:3.5rem;color:rgba(201,169,110,0.1);font-weight:300;line-height:1;margin-bottom:0.5rem;">03</p>
+                <p style="font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);">Anma &amp; Ampuku</p>
+            </div>
+            <div>
+                <h3 style="font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:400;color:var(--white);margin-bottom:1rem;line-height:1.2;">Hara Release</h3>
+                <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:580px;">A grounding, body-led process focused on the abdominal center. Gentle, attentive touch supports the release of held patterns, improves internal communication, and restores connection to the body's core.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;">
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Traditional Japanese Bodywork</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Abdominal Therapy</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Core Restoration</span>
                 </div>
             </div>
-        </footer>
+            <div style="padding-top:0.5rem;">
+                <a href="/intake-form" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;transition:gap 0.3s;"
+                   onmouseover="this.style.gap='1rem'" onmouseout="this.style.gap='0.6rem'">Learn More →</a>
+            </div>
+        </div>
 
-        <!-- Floating WhatsApp Button -->
-        <a href="https://wa.me/971551770957?text=Hello%2C%20I%20would%20like%20to%20book%20a%20session%20with%20Susan" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 shadow-2xl hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50 animate-bounce"
-           title="Chat on WhatsApp"
-           id="whatsappButton">
-            <i class="fab fa-whatsapp text-3xl"></i>
-        </a>
+        <!-- SERVICE 4 -->
+        <div class="reveal" style="display:grid;grid-template-columns:220px 1fr auto;gap:3rem;align-items:start;padding:3.5rem 0;border-top:1px solid rgba(201,169,110,0.12);transition:border-color 0.3s;"
+             onmouseover="this.style.borderTopColor='var(--gold)'" onmouseout="this.style.borderTopColor='rgba(201,169,110,0.12)'">
+            <div>
+                <p style="font-family:var(--font-display);font-size:3.5rem;color:rgba(201,169,110,0.1);font-weight:300;line-height:1;margin-bottom:0.5rem;">04</p>
+                <p style="font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);">Reiki + Chakra Harmonizing</p>
+            </div>
+            <div>
+                <h3 style="font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:400;color:var(--white);margin-bottom:1rem;line-height:1.2;">Energetic Recalibration</h3>
+                <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:580px;">Reiki combined with chakra balancing to clear energetic congestion, restore flow, and support regulation across subtle body systems.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;">
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Usui Reiki</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Holy Fire® III</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Chakra Balancing</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Energetic Clearing</span>
+                </div>
+            </div>
+            <div style="padding-top:0.5rem;">
+                <a href="/intake-form" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;transition:gap 0.3s;"
+                   onmouseover="this.style.gap='1rem'" onmouseout="this.style.gap='0.6rem'">Explore This Session →</a>
+            </div>
+        </div>
 
-        <!-- AI Chatbot Widget -->
-        <div id="chatbotWidget" class="fixed bottom-24 right-6 z-50">
-            <!-- Chat Button -->
-            <button id="chatbotToggle" class="bg-gold text-black rounded-full p-4 shadow-2xl hover:bg-champagne transition-all duration-300 hover:scale-110">
-                <i class="fas fa-comments text-3xl"></i>
-            </button>
-            
-            <!-- Chat Window -->
-            <div id="chatbotWindow" class="hidden absolute bottom-16 right-0 w-80 md:w-96 bg-white rounded-lg shadow-2xl border-2 border-gold/30 overflow-hidden">
-                <!-- Chat Header -->
-                <div class="bg-gold text-black p-4 flex justify-between items-center">
-                    <div class="flex items-center">
-                        <i class="fas fa-robot text-2xl mr-3"></i>
-                        <div>
-                            <h3 class="font-semibold">Susan's Assistant</h3>
-                            <p class="text-xs opacity-80">Ask me anything!</p>
-                        </div>
-                    </div>
-                    <button id="chatbotClose" class="text-black hover:text-charcoal transition-colors">
-                        <i class="fas fa-times text-xl"></i>
-                    </button>
+        <!-- SERVICE 5 -->
+        <div class="reveal" style="display:grid;grid-template-columns:220px 1fr auto;gap:3rem;align-items:start;padding:3.5rem 0;border-top:1px solid rgba(201,169,110,0.12);transition:border-color 0.3s;"
+             onmouseover="this.style.borderTopColor='var(--gold)'" onmouseout="this.style.borderTopColor='rgba(201,169,110,0.12)'">
+            <div>
+                <p style="font-family:var(--font-display);font-size:3.5rem;color:rgba(201,169,110,0.1);font-weight:300;line-height:1;margin-bottom:0.5rem;">05</p>
+                <p style="font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);">Subconscious &amp; Consciousness Work</p>
+            </div>
+            <div>
+                <h3 style="font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:400;color:var(--white);margin-bottom:1rem;line-height:1.2;">Subconscious Shift Therapy</h3>
+                <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:580px;">A collaborative process working with the subconscious as an ally rather than an obstacle. Sessions support the system in updating outdated patterns, allowing new responses to emerge organically and sustainably.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;">
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Nir Levy Method</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Pattern Release</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Subconscious Repatterning</span>
                 </div>
-                
-                <!-- Chat Messages -->
-                <div id="chatbotMessages" class="h-80 overflow-y-auto p-4 bg-cream/50">
-                    <div class="mb-4">
-                        <div class="bg-white rounded-lg p-3 shadow-sm border border-gold/20">
-                            <p class="text-sm text-charcoal">
-                                👋 Hello! I'm Susan's virtual assistant. I can help you with:
-                            </p>
-                            <ul class="text-sm text-charcoal mt-2 space-y-1">
-                                <li>• Booking sessions</li>
-                                <li>• Learning about services</li>
-                                <li>• Pricing information</li>
-                                <li>• Answering FAQs</li>
-                            </ul>
-                            <p class="text-sm text-charcoal mt-2">
-                                How can I assist you today?
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div style="padding-top:0.5rem;">
+                <a href="/intake-form" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;transition:gap 0.3s;"
+                   onmouseover="this.style.gap='1rem'" onmouseout="this.style.gap='0.6rem'">Request an Appointment →</a>
+            </div>
+        </div>
+
+        <!-- SERVICE 6 -->
+        <div class="reveal" style="display:grid;grid-template-columns:220px 1fr auto;gap:3rem;align-items:start;padding:3.5rem 0;border-top:1px solid rgba(201,169,110,0.12);border-bottom:1px solid rgba(201,169,110,0.12);transition:border-color 0.3s;"
+             onmouseover="this.style.borderTopColor='var(--gold)'" onmouseout="this.style.borderTopColor='rgba(201,169,110,0.12)'">
+            <div>
+                <p style="font-family:var(--font-display);font-size:3.5rem;color:rgba(201,169,110,0.1);font-weight:300;line-height:1;margin-bottom:0.5rem;">06</p>
+                <p style="font-size:0.62rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);">All Modalities · One Deep Journey</p>
+            </div>
+            <div>
+                <h3 style="font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:400;color:var(--white);margin-bottom:1rem;line-height:1.2;">The Full Frequency Session</h3>
+                <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:580px;">The most complete offering — bringing together every modality into one immersive, deeply personalised session. For those who feel ready to go deeper. A carefully held space for whatever wants to emerge.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;">
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:0.3rem 0.9rem;">Signature Session</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">All Modalities</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Full Integration</span>
+                    <span style="font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-light);border:1px solid rgba(201,169,110,0.2);padding:0.3rem 0.9rem;">Deeply Personalised</span>
                 </div>
-                
-                <!-- Quick Actions -->
-                <div class="p-3 bg-cream border-t border-gold/20">
-                    <p class="text-xs text-charcoal/70 mb-2">Quick Actions:</p>
-                    <div class="grid grid-cols-2 gap-2">
-                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="book">
-                            📅 Book Session
-                        </button>
-                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="services">
-                            💆 View Services
-                        </button>
-                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="pricing">
-                            💰 Pricing
-                        </button>
-                        <button class="chatbot-quick-btn bg-white hover:bg-gold/10 border border-gold/30 rounded-lg p-2 text-xs text-charcoal transition-colors" data-action="contact">
-                            📞 Contact
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Chat Input -->
-                <div class="p-4 bg-white border-t border-gold/20">
-                    <div class="flex space-x-2">
-                        <input 
-                            type="text" 
-                            id="chatbotInput" 
-                            placeholder="Type your message..."
-                            class="flex-1 border border-gold/30 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold"
-                        >
-                        <button id="chatbotSend" class="bg-gold text-black rounded-lg px-4 py-2 hover:bg-champagne transition-colors">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                    <p class="text-xs text-charcoal/50 mt-2 text-center">
-                        Or <a href="https://wa.me/971551770957" class="text-gold hover:underline">chat on WhatsApp</a>
-                    </p>
+            </div>
+            <div style="padding-top:0.5rem;">
+                <a href="/intake-form" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;white-space:nowrap;transition:gap 0.3s;"
+                   onmouseover="this.style.gap='1rem'" onmouseout="this.style.gap='0.6rem'">Enquire Now →</a>
+            </div>
+        </div>
+
+        <div class="reveal" style="text-align:center;margin-top:4rem;">
+            <a href="/pricing" style="display:inline-flex;align-items:center;gap:0.8rem;font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(201,169,110,0.3);padding:1rem 2.5rem;transition:all 0.3s;"
+               onmouseover="this.style.background='var(--gold-dim)';this.style.borderColor='var(--gold)'"
+               onmouseout="this.style.background='transparent';this.style.borderColor='rgba(201,169,110,0.3)'">View Pricing →</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- QUOTE SECTION with full image -->
+<section style="background:var(--black);display:grid;grid-template-columns:1fr 1fr;min-height:85vh;">
+    <!-- Left: full image -->
+    <div style="overflow:hidden;position:relative;">
+        <img src="/images/philosophy-bg.jpg" 
+             alt="Susan K. Pearson" 
+             style="width:100%;height:100%;min-height:500px;object-fit:cover;object-position:center 20%;display:block;transition:transform 0.8s ease;"
+             onmouseover="this.style.transform='scale(1.03)'"
+             onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,rgba(10,10,10,0.6) 100%);pointer-events:none;"></div>
+    </div>
+    <!-- Right: quote -->
+    <div style="display:flex;flex-direction:column;justify-content:center;padding:6rem 5vw;background:var(--dark2);position:relative;" class="reveal-right">
+        <div style="position:absolute;top:3rem;right:3rem;font-family:var(--font-display);font-size:8rem;color:rgba(201,169,110,0.06);line-height:1;pointer-events:none;">"</div>
+        <div class="gold-line"></div>
+        <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1.4rem,2.2vw,2.2rem);color:var(--white);line-height:1.55;font-weight:300;margin-bottom:2.5rem;">
+            "I cannot fix people. What I can do is create a space where people feel safe enough
+            to listen to themselves, reconnect with their own <span style="color:var(--gold);">inner resources,</span>
+            and discover new possibilities for balance, insight, and change."
+        </p>
+        <div style="display:flex;align-items:center;gap:1rem;">
+            <div style="width:30px;height:1px;background:var(--gold);"></div>
+            <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);">Susan K. Pearson</p>
+        </div>
+    </div>
+</section>
+
+<!-- 3 PRACTICE IMAGES -->
+<section style="background:var(--black);padding:6rem 0 0;">
+    <div style="max-width:1300px;margin:0 auto;padding:0 5vw;">
+        <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+            <p class="section-label">The Work</p>
+            <h2 class="section-title">The Work, <em>in Practice</em></h2>
+            <div class="gold-line" style="margin:1rem auto 0;"></div>
+        </div>
+    </div>
+
+    <!-- IMAGE 1: Full-width cinematic — Photo 5, full outdoor scene -->
+    <div style="position:relative;overflow:hidden;margin-bottom:4px;" class="reveal">
+        <img src="/images/gallery-outdoor.jpg"
+             alt="Energy healing session"
+             style="width:100%;height:75vh;min-height:500px;object-fit:cover;object-position:22% 48%;display:block;transition:transform 1s ease;"
+             onmouseover="this.style.transform='scale(1.02)'"
+             onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(10,10,10,0.6) 0%,rgba(10,10,10,0) 40%,rgba(10,10,10,0) 70%,rgba(10,10,10,0.5) 100%);pointer-events:none;"></div>
+        <div style="position:absolute;bottom:3rem;left:5vw;">
+            <p style="font-family:var(--font-display);font-size:clamp(1.2rem,2.5vw,2rem);color:var(--white);font-style:italic;margin:0 0 0.5rem;font-weight:300;">The Work in Practice</p>
+            <div style="display:flex;align-items:center;gap:0.8rem;">
+                <div style="width:30px;height:1px;background:var(--gold);"></div>
+                <p style="font-size:0.65rem;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;margin:0;">Nir Levy Method · Bodywork · Energy Work</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGES 2 & 3: Side by side, tall — Photo 4 portrait + Photo 6 landscape -->
+    <div style="display:grid;grid-template-columns:55fr 45fr;gap:4px;">
+
+        <!-- Photo 4: portrait — face at top, hands at bottom. Use very tall height + show full portrait -->
+        <div style="position:relative;overflow:hidden;" class="reveal-left">
+            <img src="/images/gallery-portrait.jpg"
+                 alt="Susan K. Pearson close-up healing"
+                 style="width:100%;height:80vh;min-height:600px;object-fit:cover;object-position:50% 28%;display:block;transition:transform 1s ease;"
+                 onmouseover="this.style.transform='scale(1.02)'"
+                 onmouseout="this.style.transform='scale(1)'">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.85) 0%,rgba(10,10,10,0) 45%);pointer-events:none;"></div>
+            <div style="position:absolute;bottom:3rem;left:3rem;">
+                <p style="font-family:var(--font-display);font-size:clamp(1.2rem,2vw,1.8rem);color:var(--white);font-style:italic;margin:0 0 0.5rem;font-weight:300;">One-to-One Sessions</p>
+                <div style="display:flex;align-items:center;gap:0.8rem;">
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                    <p style="font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin:0;">In-Person · Dubai Studio</p>
                 </div>
             </div>
         </div>
 
-        
-        <script>
-          // Booking Form Handler
-          document.addEventListener('DOMContentLoaded', function() {
-            const bookingForm = document.getElementById('bookingForm');
-            const formMessage = document.getElementById('formMessage');
-            
-            if (bookingForm) {
-              bookingForm.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(bookingForm);
-                const data = Object.fromEntries(formData.entries());
-                
-                try {
-                  const response = await fetch('/api/booking', {
-                    method: 'POST',
-                    headers: {
-                      'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                  });
-                  
-                  const result = await response.json();
-                  
-                  if (response.ok) {
-                    formMessage.className = 'mt-4 p-4 rounded-sm bg-green-100 border border-green-400 text-green-700';
-                    formMessage.textContent = result.message || 'Thank you! Your booking request has been received. I will contact you within 24 hours.';
-                    formMessage.classList.remove('hidden');
-                    bookingForm.reset();
-                  } else {
-                    throw new Error(result.message || 'Something went wrong');
-                  }
-                } catch (error) {
-                  formMessage.className = 'mt-4 p-4 rounded-sm bg-red-100 border border-red-400 text-red-700';
-                  formMessage.textContent = 'There was an error submitting your request. Please contact us directly at +971 55 177 0957 or susan@susankpearson.com';
-                  formMessage.classList.remove('hidden');
-                }
-                
-                setTimeout(() => {
-                  formMessage.classList.add('hidden');
-                }, 8000);
-              });
-            }
-          });
-        </script>
-        
-        <script>
-            // Mobile menu toggle
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mobileMenu = document.getElementById('mobileMenu');
-            
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+        <!-- Photo 6: landscape — Susan leaning over client, pull to left to show her face & hands -->
+        <div style="position:relative;overflow:hidden;" class="reveal-right">
+            <img src="/images/gallery-landscape.jpg"
+                 alt="Healing session"
+                 style="width:100%;height:80vh;min-height:600px;object-fit:cover;object-position:12% 45%;display:block;transition:transform 1s ease;"
+                 onmouseover="this.style.transform='scale(1.02)'"
+                 onmouseout="this.style.transform='scale(1)'">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.85) 0%,rgba(10,10,10,0) 45%);pointer-events:none;"></div>
+            <div style="position:absolute;bottom:3rem;left:3rem;">
+                <p style="font-family:var(--font-display);font-size:clamp(1.2rem,2vw,1.8rem);color:var(--white);font-style:italic;margin:0 0 0.5rem;font-weight:300;">The Work in Nature</p>
+                <div style="display:flex;align-items:center;gap:0.8rem;">
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                    <p style="font-size:0.62rem;letter-spacing:0.25em;color:var(--gold);text-transform:uppercase;margin:0;">Outdoor &amp; Retreat Sessions</p>
+                </div>
+            </div>
+        </div>
 
-            // Close mobile menu when clicking on a link
-            document.querySelectorAll('#mobileMenu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
+    </div>
+</section>
 
-            // Testimonials Carousel
-            const carousel = document.getElementById('testimonialCarousel');
-            const prevBtn = document.getElementById('prevTestimonial');
-            const nextBtn = document.getElementById('nextTestimonial');
-            const dots = document.querySelectorAll('.testimonial-dot');
-            let currentSlide = 0;
-            const totalSlides = ${testimonials.length};
-            let autoplayInterval;
+<!-- ROOMS & WORKING SPACE -->
+<section style="background:var(--dark);">
+    <div style="max-width:1300px;margin:0 auto;padding:6rem 5vw 3rem;">
+        <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+            <p class="section-label">The Space</p>
+            <h2 class="section-title">The <em>Sanctuary</em></h2>
+            <div class="gold-line" style="margin:1rem auto 0;"></div>
+        </div>
+    </div>
+    <!-- Full-width studio image -->
+    <div style="overflow:hidden;max-height:70vh;" class="reveal">
+        <img src="/images/sanctuary-studio.jpg" alt="The SKP Healing Studio" style="width:100%;height:70vh;object-fit:cover;object-position:center 40%;display:block;transition:transform 0.8s ease;">
+    </div>
+    <!-- Side by side: studio detail + text -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
+        <div style="overflow:hidden;" class="reveal-left">
+            <img src="/images/sanctuary-detail.jpg" alt="Studio detail" style="width:100%;height:100%;min-height:500px;object-fit:cover;object-position:center;display:block;transition:transform 0.8s ease;">
+        </div>
+        <div style="padding:5rem 5vw;background:var(--dark2);display:flex;flex-direction:column;justify-content:center;" class="reveal-right">
+            <p class="section-label">Dubai Studio</p>
+            <h3 style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--white);line-height:1.3;margin-bottom:1.5rem;">A space designed to hold <em style="color:var(--gold);font-style:italic;">whatever you bring</em></h3>
+            <div class="gold-line"></div>
+            <p class="section-text">
+                Every detail of the studio has been intentionally curated — from the gallery of black-and-white portraits to the crystals, aromatherapy, and the plush treatment table — to support the nervous system and invite profound states of receptivity.
+            </p>
+            <br>
+            <p class="section-text">
+                Private, discreet, and considered. A space where something genuine can unfold.
+            </p>
+            <div style="margin-top:2.5rem;display:flex;gap:1.5rem;flex-wrap:wrap;">
+                <button class="btn-primary" onclick="window.location.href='/intake-form'">Begin an Enquiry</button>
+                <button class="btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore the Sessions</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-            function updateCarousel() {
-                carousel.style.transform = \`translateX(-\${currentSlide * 100}%)\`;
-                
-                // Update dots
-                dots.forEach((dot, index) => {
-                    if (index === currentSlide) {
-                        dot.classList.remove('bg-cream/30', 'w-3');
-                        dot.classList.add('bg-gold', 'w-8');
-                    } else {
-                        dot.classList.remove('bg-gold', 'w-8');
-                        dot.classList.add('bg-cream/30', 'w-3');
-                    }
-                });
-            }
+<!-- TESTIMONIALS -->
+<section style="background:var(--black);padding:8rem 5vw;">
+    <div style="max-width:1300px;margin:0 auto;">
 
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateCarousel();
-            }
+        <!-- Header -->
+        <div class="reveal" style="text-align:center;margin-bottom:5rem;">
+            <p class="section-label">Client Voices</p>
+            <h2 class="section-title">What Clients <em>Say</em></h2>
+            <div class="gold-line" style="margin:1rem auto 0;"></div>
+        </div>
 
-            function prevSlide() {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            }
+        <!-- Carousel wrapper -->
+        <div style="position:relative;">
 
-            function goToSlide(index) {
-                currentSlide = index;
-                updateCarousel();
-            }
+            <!-- Prev button -->
+            <button onclick="prevSlide()" style="position:absolute;left:0;top:50%;transform:translateY(-50%);z-index:10;background:none;border:1px solid rgba(201,169,110,0.3);color:var(--gold);width:48px;height:48px;cursor:pointer;font-size:1.2rem;transition:all 0.3s;display:flex;align-items:center;justify-content:center;"
+                    onmouseover="this.style.background='var(--gold-dim)';this.style.borderColor='var(--gold)'"
+                    onmouseout="this.style.background='none';this.style.borderColor='rgba(201,169,110,0.3)'">‹</button>
 
-            function startAutoplay() {
-                autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
-            }
+            <!-- Slides container -->
+            <div id="t-track" style="min-height:380px;display:flex;align-items:center;justify-content:center;padding:0 4rem;">
 
-            function stopAutoplay() {
-                clearInterval(autoplayInterval);
-            }
-
-            // Event listeners
-            nextBtn.addEventListener('click', () => {
-                nextSlide();
-                stopAutoplay();
-                startAutoplay();
-            });
-
-            prevBtn.addEventListener('click', () => {
-                prevSlide();
-                stopAutoplay();
-                startAutoplay();
-            });
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    goToSlide(index);
-                    stopAutoplay();
-                    startAutoplay();
-                });
-            });
-
-            // Pause autoplay on hover
-            carousel.parentElement.addEventListener('mouseenter', stopAutoplay);
-            carousel.parentElement.addEventListener('mouseleave', startAutoplay);
-
-            // Start autoplay
-            startAutoplay();
-
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowLeft') {
-                    prevSlide();
-                    stopAutoplay();
-                    startAutoplay();
-                } else if (e.key === 'ArrowRight') {
-                    nextSlide();
-                    stopAutoplay();
-                    startAutoplay();
-                }
-            });
-
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        const offset = 80;
-                        const targetPosition = target.offsetTop - offset;
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            // FAQ Accordion functionality
-            document.querySelectorAll('.faq-question').forEach(question => {
-                question.addEventListener('click', () => {
-                    const answer = question.nextElementSibling;
-                    const icon = question.querySelector('i');
-                    const isOpen = !answer.classList.contains('hidden');
-                    
-                    if (isOpen) {
-                        answer.classList.add('hidden');
-                        icon.classList.remove('fa-chevron-up');
-                        icon.classList.add('fa-chevron-down');
-                    } else {
-                        answer.classList.remove('hidden');
-                        icon.classList.remove('fa-chevron-down');
-                        icon.classList.add('fa-chevron-up');
-                    }
-                });
-            });
-
-            // FAQ Category filtering
-            document.querySelectorAll('.faq-category-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const category = btn.getAttribute('data-category');
-                    
-                    // Update active button
-                    document.querySelectorAll('.faq-category-btn').forEach(b => {
-                        b.classList.remove('active', 'bg-gold', 'text-black');
-                        b.classList.add('bg-white', 'border-gold/30', 'text-charcoal');
-                    });
-                    btn.classList.add('active', 'bg-gold', 'text-black');
-                    btn.classList.remove('bg-white', 'border-gold/30', 'text-charcoal');
-                    
-                    // Filter FAQ items
-                    document.querySelectorAll('.faq-item').forEach(item => {
-                        if (category === 'all' || item.getAttribute('data-category') === category) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-
-            // Contact form handling
-            document.getElementById('contactForm').addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Thank you for your interest. Your message has been received. I will respond within 24 hours.\\n\\nFor immediate assistance, please call +971 55 177 0957 or email susan@susankpearson.com');
-                e.target.reset();
-            });
-
-            // Add fade-in animations on scroll
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -100px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in-up');
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('section').forEach(section => {
-                observer.observe(section);
-            });
-
-            // Chatbot functionality
-            const chatbotToggle = document.getElementById('chatbotToggle');
-            const chatbotWindow = document.getElementById('chatbotWindow');
-            const chatbotClose = document.getElementById('chatbotClose');
-            const chatbotInput = document.getElementById('chatbotInput');
-            const chatbotSend = document.getElementById('chatbotSend');
-            const chatbotMessages = document.getElementById('chatbotMessages');
-            const quickBtns = document.querySelectorAll('.chatbot-quick-btn');
-
-            // Toggle chatbot
-            chatbotToggle.addEventListener('click', () => {
-                chatbotWindow.classList.toggle('hidden');
-                if (!chatbotWindow.classList.contains('hidden')) {
-                    chatbotInput.focus();
-                }
-            });
-
-            chatbotClose.addEventListener('click', () => {
-                chatbotWindow.classList.add('hidden');
-            });
-
-            // Send message function
-            function addMessage(text, isUser = false) {
-                const messageDiv = document.createElement('div');
-                messageDiv.className = \`mb-4 \${isUser ? 'text-right' : ''}\`;
-                messageDiv.innerHTML = \`
-                    <div class="\${isUser ? 'bg-gold text-black ml-auto' : 'bg-white border border-gold/20'} rounded-lg p-3 shadow-sm inline-block max-w-[80%]">
-                        <p class="text-sm">\${text}</p>
+            <div class="t-slide" data-index="0" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 4vw;max-width:800px;margin:0 auto;animation:fadeIn 0.5s ease;">
+                <!-- Avatar -->
+                <div style="width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);background:var(--black);margin-bottom:2rem;flex-shrink:0;">
+                    <img src="/images/testimonial-1.jpg" 
+                         style="width:110px;height:110px;object-fit:none;object-position:27% 68%;display:block;">
+                </div>
+                <!-- Stars -->
+                <p style="color:var(--gold);font-size:1rem;letter-spacing:0.2em;margin-bottom:1.8rem;">★★★★★</p>
+                <!-- Quote -->
+                <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1rem,1.8vw,1.4rem);color:var(--white);line-height:1.75;font-weight:300;margin-bottom:2.5rem;">
+                    "I felt seen, heard, and held in a way I had never experienced before. Susan's depth of understanding, combined with her intuitive awareness of exactly what I needed, created profound shifts that I can only describe as miraculous. Her Deep Alignment sessions helped me release patterns I didn't even know I was holding. The integration of Anma, Reiki, and body-led awareness is seamless and extraordinary. I've recommended her to everyone I know — she is truly exceptional."
+                </p>
+                <!-- Author -->
+                <div style="display:flex;align-items:center;gap:1rem;justify-content:center;">
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                    <div>
+                        <p style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:0;">Lisa M.</p>
+                        <p style="font-size:0.7rem;color:var(--gray);margin:0.25rem 0 0;letter-spacing:0.05em;">Ireland · Deep Alignment Sessions</p>
                     </div>
-                \`;
-                chatbotMessages.appendChild(messageDiv);
-                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
-            }
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                </div>
+            </div>
+            <div class="t-slide" data-index="1" style="display:none;flex-direction:column;align-items:center;text-align:center;padding:0 4vw;max-width:800px;margin:0 auto;animation:fadeIn 0.5s ease;">
+                <!-- Avatar -->
+                <div style="width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);background:var(--black);margin-bottom:2rem;flex-shrink:0;">
+                    <img src="/images/testimonial-2.jpg" 
+                         style="width:110px;height:110px;object-fit:none;object-position:50% 82%;display:block;">
+                </div>
+                <!-- Stars -->
+                <p style="color:var(--gold);font-size:1rem;letter-spacing:0.2em;margin-bottom:1.8rem;">★★★★★</p>
+                <!-- Quote -->
+                <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1rem,1.8vw,1.4rem);color:var(--white);line-height:1.75;font-weight:300;margin-bottom:2.5rem;">
+                    "I went into the session carrying a fair amount of stress, and left feeling deeply elevated, grounded, and restored. What stood out most was the profound sense of safety she creates. I rarely allow myself to fully let go in sessions, yet I found myself completely relaxed — I even fell asleep, which almost never happens for me. Susan has a very calming, genuine, and reassuring presence. Her energy allows your nervous system to truly unwind and reset."
+                </p>
+                <!-- Author -->
+                <div style="display:flex;align-items:center;gap:1rem;justify-content:center;">
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                    <div>
+                        <p style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:0;">S.B.</p>
+                        <p style="font-size:0.7rem;color:var(--gray);margin:0.25rem 0 0;letter-spacing:0.05em;">Canada · Dubai · Nir Levi Method Session</p>
+                    </div>
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                </div>
+            </div>
+            <div class="t-slide" data-index="2" style="display:none;flex-direction:column;align-items:center;text-align:center;padding:0 4vw;max-width:800px;margin:0 auto;animation:fadeIn 0.5s ease;">
+                <!-- Avatar -->
+                <div style="width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);background:var(--black);margin-bottom:2rem;flex-shrink:0;">
+                    <img src="/images/testimonial-3.jpg" 
+                         style="width:110px;height:110px;object-fit:none;object-position:50% 55%;display:block;">
+                </div>
+                <!-- Stars -->
+                <p style="color:var(--gold);font-size:1rem;letter-spacing:0.2em;margin-bottom:1.8rem;">★★★★★</p>
+                <!-- Quote -->
+                <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1rem,1.8vw,1.4rem);color:var(--white);line-height:1.75;font-weight:300;margin-bottom:2.5rem;">
+                    "All these sessions have been an opportunity for profound learning in letting go and experiencing total well-being. Susan's voice, her expertise, her gentleness, and her kindness carry you toward serenity. This has significantly increased my ability to manage my emotions, and as a result, the quality of my sleep has improved. I highly recommend these sessions to anyone seeking to reconnect with themselves."
+                </p>
+                <!-- Author -->
+                <div style="display:flex;align-items:center;gap:1rem;justify-content:center;">
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                    <div>
+                        <p style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:0;">Carole Damour</p>
+                        <p style="font-size:0.7rem;color:var(--gray);margin:0.25rem 0 0;letter-spacing:0.05em;">France · Reiki Sessions</p>
+                    </div>
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                </div>
+            </div>
+            <div class="t-slide" data-index="3" style="display:none;flex-direction:column;align-items:center;text-align:center;padding:0 4vw;max-width:800px;margin:0 auto;animation:fadeIn 0.5s ease;">
+                <!-- Avatar -->
+                <div style="width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);background:var(--black);margin-bottom:2rem;flex-shrink:0;">
+                    <img src="/images/testimonial-4.jpg" 
+                         style="width:110px;height:110px;object-fit:none;object-position:50% 41%;display:block;">
+                </div>
+                <!-- Stars -->
+                <p style="color:var(--gold);font-size:1rem;letter-spacing:0.2em;margin-bottom:1.8rem;">★★★★★</p>
+                <!-- Quote -->
+                <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1rem,1.8vw,1.4rem);color:var(--white);line-height:1.75;font-weight:300;margin-bottom:2.5rem;">
+                    "Susan creates a calm, grounded environment where you immediately feel at ease. Her approach is intuitive and tailored, combining different techniques in a way that feels both seamless and highly effective. I was able to fully switch off during the session, which is not always easy for me. I left feeling deeply relaxed, rebalanced, and lighter overall. A truly refined and restorative experience. I would return without hesitation."
+                </p>
+                <!-- Author -->
+                <div style="display:flex;align-items:center;gap:1rem;justify-content:center;">
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                    <div>
+                        <p style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:0;">Matthieu</p>
+                        <p style="font-size:0.7rem;color:var(--gray);margin:0.25rem 0 0;letter-spacing:0.05em;">Dubai · Deep Alignment</p>
+                    </div>
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                </div>
+            </div>
+            <div class="t-slide" data-index="4" style="display:none;flex-direction:column;align-items:center;text-align:center;padding:0 4vw;max-width:800px;margin:0 auto;animation:fadeIn 0.5s ease;">
+                <!-- Avatar -->
+                <div style="width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);background:var(--black);margin-bottom:2rem;flex-shrink:0;">
+                    <img src="/images/testimonial-5.jpg" 
+                         style="width:110px;height:110px;object-fit:none;object-position:18% 100%;display:block;">
+                </div>
+                <!-- Stars -->
+                <p style="color:var(--gold);font-size:1rem;letter-spacing:0.2em;margin-bottom:1.8rem;">★★★★★</p>
+                <!-- Quote -->
+                <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1rem,1.8vw,1.4rem);color:var(--white);line-height:1.75;font-weight:300;margin-bottom:2.5rem;">
+                    "Receiving a session from Susan felt something unique — each and every time. There's a softness and ease in how she works, but at the same time you can feel the depth and experience behind it. What I love most is how she blends energy work with the Nir Levi Method in her own unique way — no two sessions feel the same. She really tunes into what you and your soul need in that moment. Bonus is the elegance of her space. Thank you dear Susan!"
+                </p>
+                <!-- Author -->
+                <div style="display:flex;align-items:center;gap:1rem;justify-content:center;">
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                    <div>
+                        <p style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:0;">Pırıl</p>
+                        <p style="font-size:0.7rem;color:var(--gray);margin:0.25rem 0 0;letter-spacing:0.05em;">Istanbul, Turkey · Energy + Nir Levi</p>
+                    </div>
+                    <div style="width:30px;height:1px;background:var(--gold);"></div>
+                </div>
+            </div>
+            </div>
 
-            // Bot responses
-            function getBotResponse(message) {
-                const msg = message.toLowerCase();
-                
-                if (msg.includes('book') || msg.includes('appointment') || msg.includes('session')) {
-                    return "I'd be happy to help you book a session! You can:<br>• Fill out our <a href='#booking' class='text-gold hover:underline'>booking form</a><br>• Call +971 55 177 0957<br>• <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp us</a>";
-                } else if (msg.includes('price') || msg.includes('cost') || msg.includes('pricing')) {
-                    return "Our session pricing:<br>• Deep Alignment (90 min): AED 950<br>• Hypnotherapy (75 min): AED 850<br>• SKP Method (120 min): AED 1,200<br><br>Check our <a href='#pricing' class='text-gold hover:underline'>pricing page</a> for packages!";
-                } else if (msg.includes('service') || msg.includes('what do you do')) {
-                    return "Susan offers:<br>• Deep Alignment Therapy<br>• Hara Release (Anma & Ampuku)<br>• Energetic Recalibration (Reiki)<br>• Subconscious Shift Therapy<br>• The Full Frequency Session<br><br>Learn more in our <a href='#services' class='text-gold hover:underline'>services section</a>!";
-                } else if (msg.includes('location') || msg.includes('where')) {
-                    return "Sessions available worldwide - both remote and in-person. Contact us at +971 55 177 0957 to discuss your preferred session format and location details.";
-                } else if (msg.includes('hour') || msg.includes('time') || msg.includes('schedule')) {
-                    return "Sessions are by appointment. We're flexible with scheduling globally! Please call +971 55 177 0957 or book via our <a href='#booking' class='text-gold hover:underline'>booking form</a>.";
-                } else if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey')) {
-                    return "Hello! 👋 How can I assist you today? I can help with booking, pricing, services, or any questions you have!";
-                } else if (msg.includes('thank')) {
-                    return "You're welcome! Feel free to reach out anytime. Have a wonderful day! 🌟";
-                } else {
-                    return "I'm here to help! For detailed information, please:<br>• Check our <a href='#faq' class='text-gold hover:underline'>FAQ section</a><br>• Call +971 55 177 0957<br>• Email susan@susankpearson.com<br><br>What specific information can I help you find?";
-                }
-            }
+            <!-- Next button -->
+            <button onclick="nextSlide()" style="position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:10;background:none;border:1px solid rgba(201,169,110,0.3);color:var(--gold);width:48px;height:48px;cursor:pointer;font-size:1.2rem;transition:all 0.3s;display:flex;align-items:center;justify-content:center;"
+                    onmouseover="this.style.background='var(--gold-dim)';this.style.borderColor='var(--gold)'"
+                    onmouseout="this.style.background='none';this.style.borderColor='rgba(201,169,110,0.3)'">›</button>
 
-            // Send message
-            function sendMessage() {
-                const message = chatbotInput.value.trim();
-                if (message) {
-                    addMessage(message, true);
-                    chatbotInput.value = '';
-                    
-                    setTimeout(() => {
-                        const response = getBotResponse(message);
-                        addMessage(response, false);
-                    }, 500);
-                }
-            }
+        </div>
 
-            chatbotSend.addEventListener('click', sendMessage);
-            chatbotInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    sendMessage();
-                }
-            });
+        <!-- Dot indicators -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:0.6rem;margin-top:3rem;">
+            <button class="t-dot" data-i="0" onclick="goTo(0)" style="width:28px;height:8px;border-radius:4px;background:var(--gold);border:none;cursor:pointer;transition:all 0.4s ease;padding:0;"></button><button class="t-dot" data-i="1" onclick="goTo(1)" style="width:8px;height:8px;border-radius:4px;background:rgba(201,169,110,0.25);border:none;cursor:pointer;transition:all 0.4s ease;padding:0;"></button><button class="t-dot" data-i="2" onclick="goTo(2)" style="width:8px;height:8px;border-radius:4px;background:rgba(201,169,110,0.25);border:none;cursor:pointer;transition:all 0.4s ease;padding:0;"></button><button class="t-dot" data-i="3" onclick="goTo(3)" style="width:8px;height:8px;border-radius:4px;background:rgba(201,169,110,0.25);border:none;cursor:pointer;transition:all 0.4s ease;padding:0;"></button><button class="t-dot" data-i="4" onclick="goTo(4)" style="width:8px;height:8px;border-radius:4px;background:rgba(201,169,110,0.25);border:none;cursor:pointer;transition:all 0.4s ease;padding:0;"></button>
+        </div>
 
-            // Quick action buttons
-            quickBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const action = btn.getAttribute('data-action');
-                    let response = '';
-                    
-                    switch(action) {
-                        case 'book':
-                            response = "Great! You can book a session by:<br>• Filling our <a href='#booking' class='text-gold hover:underline'>booking form</a><br>• Calling +971 55 177 0957<br>• <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br><br>What type of session interests you?";
-                            break;
-                        case 'services':
-                            response = "Our core healing sessions include:<br>• <strong>Deep Alignment Therapy</strong><br>• <strong>Hara Release</strong> (Anma & Ampuku)<br>• <strong>Energetic Recalibration</strong> (Reiki)<br>• <strong>Subconscious Shift Therapy</strong><br>• <strong>Full Frequency Session</strong><br><br>Check <a href='#services' class='text-gold hover:underline'>services</a> for details!";
-                            break;
-                        case 'pricing':
-                            response = "Pricing:<br>• Deep Alignment: AED 950<br>• Hypnotherapy: AED 850<br>• SKP Method: AED 1,200<br><br>Packages available! See <a href='#pricing' class='text-gold hover:underline'>pricing</a>";
-                            break;
-                        case 'contact':
-                            response = "Contact Susan:<br>📞 +971 55 177 0957<br>✉️ susan@susankpearson.com<br>💬 <a href='https://wa.me/971551770957' class='text-gold hover:underline'>WhatsApp</a><br>🌍 Worldwide Practice";
-                            break;
-                    }
-                    
-                    addMessage(response, false);
-                });
-            });
+        <!-- Stats bar -->
+        <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:5rem;">
+            <div style="background:var(--dark2);padding:2.5rem;text-align:center;">
+                <p style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);color:var(--gold);font-weight:300;margin:0 0 0.5rem;">20+</p>
+                <p style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin:0;">Years of Experience</p>
+            </div>
 
-            // Stop WhatsApp button animation after 5 seconds
-            setTimeout(() => {
-                document.getElementById('whatsappButton').classList.remove('animate-bounce');
-            }, 5000);
-        </script>
+            <div style="background:var(--dark2);padding:2.5rem;text-align:center;">
+                <p style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);color:var(--gold);font-weight:300;margin:0 0 0.5rem;">∞</p>
+                <p style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin:0;">Continued Learning</p>
+            </div>
+            <div style="background:var(--dark2);padding:2.5rem;text-align:center;">
+                <p style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);color:var(--gold);font-weight:300;margin:0 0 0.5rem;">20+</p>
+                <p style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin:0;">Countries</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+@keyframes fadeIn {
+    from { opacity:0; transform:translateY(12px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+</style>
+
+<script>
+(function() {
+    let current = 0;
+    const total = 5;
+    const slides = document.querySelectorAll('.t-slide');
+    const dots   = document.querySelectorAll('.t-dot');
+    let autoTimer;
+
+    function goTo(n) {
+        slides[current].style.display = 'none';
+        dots[current].style.width = '8px';
+        dots[current].style.background = 'rgba(201,169,110,0.25)';
+        current = (n + total) % total;
+        slides[current].style.display = 'flex';
+        slides[current].style.animation = 'none';
+        slides[current].offsetHeight; // reflow
+        slides[current].style.animation = 'fadeIn 0.5s ease';
+        dots[current].style.width = '28px';
+        dots[current].style.background = 'var(--gold)';
+        resetAuto();
+    }
+
+    function nextSlide() { goTo(current + 1); }
+    function prevSlide() { goTo(current - 1); }
+
+    function resetAuto() {
+        clearInterval(autoTimer);
+        autoTimer = setInterval(() => goTo(current + 1), 6000);
+    }
+
+    // Expose globally for inline onclick
+    window.goTo = goTo;
+    window.nextSlide = nextSlide;
+    window.prevSlide = prevSlide;
+
+    // Swipe support
+    const track = document.getElementById('t-track');
+    let startX = 0;
+    track.addEventListener('touchstart', e => startX = e.touches[0].clientX, {passive:true});
+    track.addEventListener('touchend', e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) diff > 0 ? nextSlide() : prevSlide();
+    }, {passive:true});
+
+    resetAuto();
+})();
+</script>
+
+<!-- GALLERY -->
+
+<section id="cta" class="cta-section">
+    <div style="max-width:700px;margin:0 auto;text-align:center;padding:8rem 5vw;">
+        <p class="section-label reveal">Get in Touch</p>
+        <h2 class="section-title reveal">Ready to <em>Begin</em>?</h2>
+        <div class="gold-line reveal" style="margin: 0 auto 2rem;"></div>
+        <p class="section-text reveal" style="max-width: 500px; margin: 0 auto 2rem; text-align: center;">
+            Every process begins with a conversation. Reach out to explore how we might work together.
+        </p>
+        <div class="cta-contacts reveal">
+            <div class="cta-contact-item">✉ <a href="mailto:susankpearson@elementalskp.com">susankpearson@elementalskp.com</a></div>
+            <div class="cta-contact-item">☎ <a href="tel:+971551770957">+971 55 177 0957</a></div>
+        </div>
+        <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;" class="reveal">
+            <button class="btn-primary" onclick="window.location.href='/intake-form'">Begin an Enquiry</button>
+            <button class="btn-ghost" onclick="window.location.href='/intake-form'">Complete Intake Form</button>
+        </div>
+    </div>
+</section>
+
+<!-- PERSONAL NOTE -->
+<section style="background:var(--dark2);padding:7rem 5vw;border-top:1px solid rgba(201,169,110,0.1);">
+    <div style="max-width:760px;margin:0 auto;text-align:center;" class="reveal">
+        <p class="section-label">Beyond the Studio</p>
+        <div class="gold-line" style="margin:1rem auto 2.5rem;"></div>
+        <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1.1rem,1.8vw,1.5rem);color:var(--white);line-height:1.7;font-weight:300;margin-bottom:2rem;">
+            Beyond my professional work, I share my life with a large family of rescued cats and am actively involved in supporting abandoned and vulnerable animals throughout the UAE.
+        </p>
+        <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:600px;margin:0 auto;">
+            People often describe this as rescue work. But the truth is that the relationship is far more mutual than that.
+            While I help provide care, safety, and support, these animals have given me just as much in return —
+            teaching me patience, presence, resilience, and unconditional acceptance.
+            In many ways, they rescue me too.
+        </p>
+        <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:600px;margin:1.5rem auto 0;">
+            The same philosophy appears everywhere in my life: I do not approach from the position of someone who already knows.
+            I approach with curiosity, openness, and a willingness to be changed by what I encounter.
+            I have learned as much from the beings I have cared for as from any teacher, training, or certification.
+        </p>
+        <div style="margin-top:2.5rem;">
+            <a href="/cat-rescue" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(201,169,110,0.3);padding:0.9rem 2rem;transition:all 0.3s;"
+               onmouseover="this.style.background='var(--gold-dim)';this.style.borderColor='var(--gold)'"
+               onmouseout="this.style.background='transparent';this.style.borderColor='rgba(201,169,110,0.3)'">The Cat Rescue Work →</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ANIMAL ADVOCATE INITIATIVE -->
+<section style="background:var(--black);padding:8rem 5vw;text-align:center;border-top:1px solid rgba(201,169,110,0.1);">
+    <div style="max-width:640px;margin:0 auto;" class="reveal">
+        <div style="margin-bottom:2rem;display:flex;justify-content:center;">${daisyIcon(64, '#f5f0e8', '#c9a96e')}</div>
+        <p class="section-label">An Initiative by Susan K. Pearson</p>
+        <h2 class="section-title" style="margin-bottom:1.2rem;">Animal Advocate <em>Initiative</em></h2>
+        <div class="gold-line" style="margin:0 auto 2rem;"></div>
+        <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1.1rem,1.8vw,1.4rem);color:var(--gold-light);margin-bottom:1.8rem;">Honoring Life. Respecting All Creatures.</p>
+        <p class="section-text" style="max-width:520px;margin:0 auto 2.5rem;">
+            To create the conditions in which life — in all its forms — can flourish with dignity.
+            A sustainable framework of compassion, stewardship, and respect for every being.
+        </p>
+        <a href="/cat-rescue#initiative" class="btn-ghost" style="text-decoration:none;display:inline-block;">Meet the Cats We're Rescuing</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:var(--dark2);border-top:1px solid rgba(201,169,110,0.12);">
+
+    <!-- Session info bar -->
+    <div style="background:var(--dark);border-bottom:1px solid rgba(201,169,110,0.1);padding:1.2rem 5vw;">
+        <div style="max-width:1300px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2rem;">
+            <div style="display:flex;align-items:center;gap:0.7rem;">
+                <span style="color:var(--gold);font-size:0.7rem;">✦</span>
+                <p style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-light);margin:0;">All sessions include pre-session consultation &amp; post-session integration support</p>
+            </div>
+            <div style="width:1px;height:16px;background:rgba(201,169,110,0.2);"></div>
+            <div style="display:flex;align-items:center;gap:0.7rem;">
+                <span style="color:var(--gold);font-size:0.7rem;">✦</span>
+                <p style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-light);margin:0;">Cash &amp; Bank Transfer Accepted</p>
+            </div>
+            <div style="width:1px;height:16px;background:rgba(201,169,110,0.2);"></div>
+            <div style="display:flex;align-items:center;gap:0.7rem;">
+                <span style="color:var(--gold);font-size:0.7rem;">✦</span>
+                <p style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-light);margin:0;">48-Hour Cancellation Policy</p>
+            </div>
+            <div style="width:1px;height:16px;background:rgba(201,169,110,0.2);"></div>
+            <div style="display:flex;align-items:center;gap:0.7rem;">
+                <span style="color:var(--gold);font-size:0.7rem;">✦</span>
+                <p style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray-light);margin:0;">Worldwide Practice</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main footer grid -->
+    <div style="max-width:1300px;margin:0 auto;padding:5rem 5vw 3rem;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:4rem;">
+
+        <!-- Brand column -->
+        <div>
+            <div style="margin-bottom:1.8rem;">
+                <div style="width:72px;height:72px;background:var(--black);border:1px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:8px;">
+                    <svg width="44" height="40" viewBox="0 0 88 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g transform="translate(44,52)">
+                        <path d="M0,-48 C-4,-32 -4,-16 0,0 C4,-16 4,-32 0,-48Z" fill="#c9a96e"/>
+                        <path d="M0,0 C-5,-20 -18,-38 -28,-48 C-18,-34 -8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+                        <path d="M0,0 C5,-20 18,-38 28,-48 C18,-34 8,-18 0,0Z" fill="#c9a96e" opacity="0.9"/>
+                        <path d="M0,0 C-10,-16 -28,-30 -44,-38 C-30,-26 -16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+                        <path d="M0,0 C10,-16 28,-30 44,-38 C30,-26 16,-12 0,0Z" fill="#c9a96e" opacity="0.75"/>
+                        <path d="M0,0 C-16,-8 -40,-12 -58,-12 C-40,-6 -20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+                        <path d="M0,0 C16,-8 40,-12 58,-12 C40,-6 20,-2 0,0Z" fill="#c9a96e" opacity="0.5"/>
+                        <line x1="-62" y1="0" x2="62" y2="0" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+                        <circle cx="0" cy="-52" r="2" fill="#c9a96e"/>
+                      </g>
+                    </svg>
+                    <span style="font-family:'Raleway',sans-serif;font-size:0.42rem;color:#c9a96e;letter-spacing:0.22em;text-transform:uppercase;font-weight:500;">Susan K Pearson</span>
+                </div>
+            </div>
+            <p style="font-size:0.85rem;color:var(--gray);line-height:1.9;margin-bottom:1.5rem;max-width:280px;">Practitioner · Facilitator · Witness. Creating the conditions in which your own process can unfold.</p>
+            <p style="font-size:0.78rem;color:var(--gray-light);">Dubai, UAE · Available Worldwide</p>
+            <p style="font-size:0.78rem;margin-top:0.4rem;"><a href="mailto:susankpearson@elementalskp.com" style="color:var(--gold);text-decoration:none;">susankpearson@elementalskp.com</a></p>
+            <p style="font-size:0.78rem;margin-top:0.3rem;"><a href="tel:+971551770957" style="color:var(--gray-light);text-decoration:none;">+971 55 177 0957</a></p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+            <p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">Navigation</p>
+            <div style="display:flex;flex-direction:column;gap:0.7rem;">
+                <a href="/" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Home</a>
+                <a href="/#about" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">About</a>
+                <a href="/#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Services</a>
+                <a href="/pricing" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Pricing</a>
+                <a href="/blog" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Blog</a>
+                <a href="/faq" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">FAQ</a>
+                <a href="/intake-form" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Intake Form</a>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+            <p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">Services</p>
+            <div style="display:flex;flex-direction:column;gap:0.7rem;">
+                <a href="/#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">The Nir Levy Method</a>
+                <a href="/#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Deep Alignment Therapy</a>
+                <a href="/#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Hara Release</a>
+                <a href="/#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Energetic Recalibration</a>
+                <a href="/#services" style="font-size:0.82rem;color:var(--gray-light);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray-light)'">Subconscious Shift Therapy</a>
+                <a href="/#services" style="font-size:0.82rem;color:var(--gold);text-decoration:none;font-weight:500;">The Full Frequency Session</a>
+            </div>
+        </div>
+
+        <!-- Cat Rescue -->
+        <div>
+            <p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">🐾 Cat Rescue</p>
+            <p style="font-size:0.82rem;color:var(--gray);line-height:1.85;margin-bottom:1.2rem;">Susan is also committed to supporting abandoned and street cats in the UAE. A portion of session proceeds contributes to rescue, medical care, and rehoming efforts for vulnerable animals in the local community.</p>
+            <a href="/cat-rescue" style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;transition:gap 0.3s;"
+               onmouseover="this.style.gap='0.9rem'" onmouseout="this.style.gap='0.5rem'">Learn More →</a>
+        </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="border-top:1px solid rgba(201,169,110,0.1);padding:1.5rem 5vw;">
+        <div style="max-width:1300px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+            <p style="font-size:0.72rem;color:var(--gray);">© 2026 Susan K. Pearson. All rights reserved.</p>
+            <p style="font-size:0.72rem;color:var(--gray);">Dubai, UAE · <a href="/" style="color:var(--gray);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray)'">Privacy Policy</a></p>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+// Scroll animations
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+revealEls.forEach(el => observer.observe(el));
+
+// Nav scroll
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 80);
+});
+
+// Particles
+const container = document.getElementById('particles');
+for (let i = 0; i < 25; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 3 + 1;
+    p.style.cssText = \`
+        width: \${size}px;
+        height: \${size}px;
+        left: \${Math.random() * 100}%;
+        animation-duration: \${Math.random() * 15 + 8}s;
+        animation-delay: \${Math.random() * 10}s;
+        opacity: \${Math.random() * 0.5 + 0.2};
+    \`;
+    container.appendChild(p);
+}
+
+// Practice image hover
+document.querySelectorAll('.practice-img-hover').forEach(img => {
+    img.parentElement.addEventListener('mouseenter', () => img.style.transform = 'scale(1.05)');
+    img.parentElement.addEventListener('mouseleave', () => img.style.transform = 'scale(1)');
+});
+
+</script>
+
+<!-- FLOATING CHAT BUTTONS -->
+<div style="position:fixed;bottom:2rem;right:2rem;display:flex;flex-direction:column;gap:0.8rem;z-index:9999;">
+
+    <!-- AI Chat button -->
+    <button onclick="toggleAiChat()"
+            title="Chat with AI Assistant"
+            style="width:52px;height:52px;border-radius:50%;background:#c9a96e;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:transform 0.2s,box-shadow 0.2s;"
+            onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 25px rgba(201,169,110,0.4)'"
+            onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.4)'">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="#0a0a0a"/>
+            <circle cx="8" cy="10" r="1.2" fill="#c9a96e"/>
+            <circle cx="12" cy="10" r="1.2" fill="#c9a96e"/>
+            <circle cx="16" cy="10" r="1.2" fill="#c9a96e"/>
+        </svg>
+    </button>
+
+    <!-- WhatsApp button -->
+    <a href="https://wa.me/971551770957" target="_blank"
+       title="Chat on WhatsApp"
+       style="width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:transform 0.2s,box-shadow 0.2s;text-decoration:none;"
+       onmouseover="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 25px rgba(37,211,102,0.4)'"
+       onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.4)'">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+</div>
+
+<!-- AI Chat Widget -->
+<div id="ai-chat-widget" style="display:none;position:fixed;bottom:7rem;right:2rem;width:360px;max-height:500px;background:var(--dark2);border:1px solid rgba(201,169,110,0.2);box-shadow:0 20px 60px rgba(0,0,0,0.6);z-index:9998;flex-direction:column;border-radius:2px;">
+    <div style="padding:1.2rem 1.5rem;border-bottom:1px solid rgba(201,169,110,0.1);display:flex;justify-content:space-between;align-items:center;">
+        <div>
+            <p style="font-family:var(--font-display);font-size:1rem;color:var(--white);margin:0;">Ask Susan's Assistant</p>
+            <p style="font-size:0.65rem;color:var(--gold);margin:0;letter-spacing:0.1em;">Powered by AI · Available 24/7</p>
+        </div>
+        <button onclick="toggleAiChat()" style="background:none;border:none;color:var(--gray);cursor:pointer;font-size:1.2rem;padding:0.2rem;">×</button>
+    </div>
+    <div id="chat-messages" style="flex:1;overflow-y:auto;padding:1.2rem;display:flex;flex-direction:column;gap:0.8rem;min-height:200px;max-height:300px;">
+        <div style="background:rgba(201,169,110,0.08);padding:0.9rem 1.1rem;border-radius:0 8px 8px 8px;max-width:85%;">
+            <p style="font-size:0.82rem;color:var(--gray-light);margin:0;line-height:1.6;">Hello! I'm here to help you learn about Susan's work, sessions, pricing, and availability. What would you like to know?</p>
+        </div>
+    </div>
+    <div style="padding:1rem;border-top:1px solid rgba(201,169,110,0.1);display:flex;gap:0.6rem;">
+        <input id="chat-input" type="text" placeholder="Ask a question..."
+               style="flex:1;padding:0.7rem 1rem;background:var(--black);border:1px solid rgba(201,169,110,0.2);color:var(--cream);font-family:var(--font-body);font-size:0.82rem;outline:none;border-radius:0;"
+               onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(201,169,110,0.2)'"
+               onkeydown="if(event.key==='Enter') sendChat()">
+        <button onclick="sendChat()" style="background:var(--gold);border:none;color:var(--black);padding:0.7rem 1.1rem;cursor:pointer;font-size:0.8rem;font-weight:600;transition:background 0.2s;"
+                onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">→</button>
+    </div>
+</div>
+
+<script>
+function toggleAiChat() {
+    const w = document.getElementById('ai-chat-widget');
+    w.style.display = w.style.display === 'none' ? 'flex' : 'none';
+    if (w.style.display === 'flex') {
+        document.getElementById('chat-input').focus();
+    }
+}
+
+async function sendChat() {
+    const input = document.getElementById('chat-input');
+    const messages = document.getElementById('chat-messages');
+    const text = input.value.trim();
+    if (!text) return;
+
+    // User bubble
+    const userBubble = document.createElement('div');
+    userBubble.style.cssText = 'background:rgba(201,169,110,0.15);padding:0.9rem 1.1rem;border-radius:8px 0 8px 8px;max-width:85%;align-self:flex-end;';
+    userBubble.innerHTML = \`<p style="font-size:0.82rem;color:var(--cream);margin:0;line-height:1.6;">\${text}</p>\`;
+    messages.appendChild(userBubble);
+    input.value = '';
+    messages.scrollTop = messages.scrollHeight;
+
+    // Typing indicator
+    const typing = document.createElement('div');
+    typing.style.cssText = 'background:rgba(201,169,110,0.08);padding:0.9rem 1.1rem;border-radius:0 8px 8px 8px;max-width:85%;';
+    typing.innerHTML = '<p style="font-size:0.82rem;color:var(--gray);margin:0;">...</p>';
+    messages.appendChild(typing);
+    messages.scrollTop = messages.scrollHeight;
+
+    try {
+        // Calls the secure Cloudflare Worker proxy — API key never exposed
+        const res = await fetch('https://skp-chat-proxy.warrenlisa2001.workers.dev', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: text })
+        });
+        const data = await res.json();
+        typing.innerHTML = \`<p style="font-size:0.82rem;color:var(--gray-light);margin:0;line-height:1.6;">\${data.reply}</p>\`;
+    } catch(e) {
+        typing.innerHTML = '<p style="font-size:0.82rem;color:var(--gray);margin:0;">Sorry, I'm having trouble connecting. Please WhatsApp Susan directly at +971 55 177 0957</p>';
+    }
+    messages.scrollTop = messages.scrollHeight;
+}
+</script>
+
+
     </body>
     </html>
   `)
 })
-
 // Deep Alignment Therapy page
 app.get('/deep-alignment-therapy', (c) => {
   return c.html(`
