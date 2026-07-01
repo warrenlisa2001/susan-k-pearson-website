@@ -1629,68 +1629,9 @@ app.get('/', (c) => {
         <title>Susan K Pearson | Elemental Healing</title>
         <meta name="description" content="Master-level Reiki, Energy Medicine, and Hypnotherapy. Elemental Guidance to awaken Your Healing Intelligence. Worldwide practice serving clients remotely and in-person.">
 
-        <!-- Tailwind loads first, before anything else that could slow the page down -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  'midnight': '#0A0A0A',
-                  'charcoal': '#1A1A1A',
-                  'obsidian': '#000000',
-                  'gold': '#C8A974',
-                  'champagne': '#D4AF37',
-                  'cream': '#FAF7F3',
-                  'bone': '#F4F2EF',
-                  'taupe': '#7C7165',
-                },
-                fontFamily: {
-                  'serif': ['Cormorant Garamond', 'serif'],
-                  'sans': ['Montserrat', 'sans-serif'],
-                }
-              }
-            }
-          }
-        </script>
-        <script>
-          // Watchdog: if Tailwind's CDN script failed to load or execute (flaky network,
-          // ad-blocker, slow connection), retry once with a fresh script tag so the page
-          // never gets stuck fully unstyled.
-          (function () {
-            function tailwindMissing() {
-              return typeof window.tailwind === 'undefined';
-            }
-            window.addEventListener('load', function () {
-              setTimeout(function () {
-                if (tailwindMissing()) {
-                  var retry = document.createElement('script');
-                  retry.src = 'https://cdn.tailwindcss.com?retry=' + Date.now();
-                  retry.onload = function () {
-                    if (window.tailwind && window.tailwind.config) {
-                      window.tailwind.config = {
-                        theme: {
-                          extend: {
-                            colors: {
-                              midnight: '#0A0A0A', charcoal: '#1A1A1A', obsidian: '#000000',
-                              gold: '#C8A974', champagne: '#D4AF37', cream: '#FAF7F3',
-                              bone: '#F4F2EF', taupe: '#7C7165'
-                            },
-                            fontFamily: {
-                              serif: ['Cormorant Garamond', 'serif'],
-                              sans: ['Montserrat', 'sans-serif']
-                            }
-                          }
-                        }
-                      };
-                    }
-                  };
-                  document.head.appendChild(retry);
-                }
-              }, 1200);
-            });
-          })();
-        </script>
+        <!-- Styling is now compiled into the site permanently at build time -->
+        <!-- (previously loaded live from an external CDN on every page view, which could fail) -->
+        <link href="/static/site.css" rel="stylesheet">
         
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
