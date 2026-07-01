@@ -1778,6 +1778,175 @@ app.get('/', (c) => {
             background: rgba(10, 10, 10, 0.95);
             border-bottom: 1px solid rgba(200, 169, 116, 0.1);
           }
+
+          /* ===== Entrance / Splash Gate ===== */
+          #splash-gate {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+            background:
+              radial-gradient(circle at 50% 40%, rgba(200, 169, 116, 0.16), transparent 60%),
+              linear-gradient(160deg, #050505 0%, #100E0B 55%, #050505 100%);
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 1s ease, visibility 1s ease;
+          }
+          #splash-gate.splash-gate-hide {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+          }
+          html.skp-entered #splash-gate {
+            display: none;
+          }
+          body.gate-open {
+            overflow: hidden;
+            height: 100vh;
+          }
+          .splash-content {
+            max-width: 620px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .splash-daisy {
+            width: 260px;
+            height: 260px;
+            margin-bottom: 24px;
+            perspective: 900px;
+          }
+          .splash-daisy-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: visible;
+            animation: splashDaisyIn 1.4s cubic-bezier(0.19, 1, 0.22, 1) both;
+          }
+          @keyframes splashDaisyIn {
+            0% { opacity: 0; transform: scale(0.5) rotateX(52deg); }
+            55% { opacity: 1; }
+            100% { opacity: 1; transform: scale(1) rotateX(0deg); }
+          }
+          .daisy-spin {
+            transform-box: view-box;
+            transform-origin: 250px 250px;
+            animation: splashRotate 90s linear infinite;
+            animation-delay: 1.6s;
+          }
+          @keyframes splashRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+          .daisy-glow {
+            opacity: 0;
+            animation: daisyGlowIn 2.4s ease-out 0.1s both;
+          }
+          @keyframes daisyGlowIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+          }
+          .petal {
+            transform-box: view-box;
+            transform-origin: 0px 0px;
+            opacity: 0;
+            animation-name: petalBloom;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.34, 1.42, 0.64, 1);
+            animation-fill-mode: both;
+          }
+          @keyframes petalBloom {
+            0% { opacity: 0; transform: scale(0.08) rotate(-34deg); }
+            50% { opacity: 1; }
+            72% { transform: scale(1.08) rotate(4deg); }
+            100% { opacity: 1; transform: scale(1) rotate(0deg); }
+          }
+          .daisy-sphere {
+            transform-box: view-box;
+            transform-origin: 250px 250px;
+            opacity: 0;
+            animation: sphereBloom 0.7s ease-out 0.9s both;
+          }
+          @keyframes sphereBloom {
+            0% { opacity: 0; transform: scale(0.15); }
+            60% { opacity: 1; transform: scale(1.3); }
+            100% { opacity: 1; transform: scale(1); }
+          }
+          .splash-daisy.is-idle .splash-daisy-svg {
+            animation: splashBreathe 7s ease-in-out infinite;
+          }
+          @keyframes splashBreathe {
+            0%, 100% { transform: scale(1); opacity: 0.97; }
+            50% { transform: scale(1.04); opacity: 1; }
+          }
+          .splash-eyebrow {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: #C8A974;
+            margin: 0 0 22px;
+          }
+          .splash-headline {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            font-size: clamp(2.5rem, 5.4vw, 4rem);
+            color: #FAF7F3;
+            margin: 0 0 20px;
+            line-height: 1.18;
+            max-width: 15ch;
+          }
+          .splash-subline {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.1rem, 2.1vw, 1.4rem);
+            color: #D9CFC0;
+            margin: 0 0 46px;
+            line-height: 1.6;
+          }
+          .splash-enter {
+            background: transparent;
+            border: 1px solid rgba(200, 169, 116, 0.55);
+            color: #FAF7F3;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            padding: 16px 48px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+          }
+          .splash-enter:hover,
+          .splash-enter:focus-visible {
+            background: rgba(200, 169, 116, 0.12);
+            border-color: #D4AF37;
+            color: #D4AF37;
+            letter-spacing: 0.4em;
+            outline: none;
+          }
+          @media (max-width: 480px) {
+            .splash-daisy { width: 190px; height: 190px; }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .splash-daisy-svg,
+            .daisy-spin,
+            .daisy-glow,
+            .petal,
+            .daisy-sphere,
+            .splash-daisy.is-idle .splash-daisy-svg {
+              animation: none !important;
+              opacity: 1 !important;
+              transform: none !important;
+            }
+            #splash-gate { transition: none; }
+          }
         </style>
         
         <!-- Calendly Badge Widget Begin -->
@@ -1786,6 +1955,163 @@ app.get('/', (c) => {
         <!-- Calendly Badge Widget End -->
     </head>
     <body class="smooth-scroll">
+        <script>
+          (function () {
+            try {
+              if (sessionStorage.getItem('skpEntered') === '1') {
+                document.documentElement.classList.add('skp-entered');
+              }
+            } catch (e) {}
+          })();
+        </script>
+
+        <!-- Entrance / Splash Gate -->
+        <div id="splash-gate" role="dialog" aria-modal="true" aria-label="Enter Susan K Pearson">
+          <div class="splash-content">
+            <div class="splash-daisy" aria-hidden="true">
+              <svg class="splash-daisy-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="splashGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.32"/>
+                    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="splashPetalOuter" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#FAF7F3" stop-opacity="0.22"/>
+                    <stop offset="55%" stop-color="#FAF7F3" stop-opacity="0.06"/>
+                    <stop offset="100%" stop-color="#FAF7F3" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="splashPetalInner" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+                  </linearGradient>
+                  <radialGradient id="splashCenterSphere" cx="35%" cy="32%" r="70%">
+                    <stop offset="0%" stop-color="#FFF6DE"/>
+                    <stop offset="45%" stop-color="#D4AF37"/>
+                    <stop offset="100%" stop-color="#B8863B"/>
+                  </radialGradient>
+                </defs>
+                <g class="daisy-spin">
+                  <circle class="daisy-glow" cx="250" cy="250" r="201" fill="url(#splashGlow)"/>
+                  <g transform="translate(250,250) rotate(0)">
+                    <g class="petal petal-outer" style="animation-delay:0.05s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(45)">
+                    <g class="petal petal-outer" style="animation-delay:0.1s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(90)">
+                    <g class="petal petal-outer" style="animation-delay:0.15s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(135)">
+                    <g class="petal petal-outer" style="animation-delay:0.2s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(180)">
+                    <g class="petal petal-outer" style="animation-delay:0.25s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(225)">
+                    <g class="petal petal-outer" style="animation-delay:0.3s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(270)">
+                    <g class="petal petal-outer" style="animation-delay:0.35s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(315)">
+                    <g class="petal petal-outer" style="animation-delay:0.4s">
+                      <path d="M 0 0 C -19 -56, -27 -119, 0 -175 C 27 -119, 19 -56, 0 0 Z" fill="url(#splashPetalOuter)" stroke="#FAF7F3" stroke-width="1.3" stroke-linejoin="round" opacity="0.96"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(22.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.5s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(67.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.545s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(112.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.59s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(157.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.635s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(202.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.68s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(247.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.725s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(292.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.77s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <g transform="translate(250,250) rotate(337.5)">
+                    <g class="petal petal-inner" style="animation-delay:0.815s">
+                      <path d="M 0 0 C -12 -34.5, -17 -73.4, 0 -108 C 17 -73.4, 12 -34.5, 0 0 Z" fill="url(#splashPetalInner)" stroke="#D4AF37" stroke-width="0.9" stroke-linejoin="round" opacity="0.85"/>
+                    </g>
+                  </g>
+                  <circle class="daisy-sphere" cx="250" cy="250" r="12.5" fill="url(#splashCenterSphere)"/>
+                  <circle class="daisy-sphere" cx="250" cy="250" r="19" fill="none" stroke="#D4AF37" stroke-width="0.8" opacity="0.45"/>
+                </g>
+              </svg>
+            </div>
+            <p class="splash-eyebrow">Susan K. Pearson</p>
+            <h1 class="splash-headline">Stop carrying what was never yours to hold.</h1>
+            <p class="splash-subline">One session can shift what years of thinking couldn't.</p>
+            <button id="splash-enter-btn" class="splash-enter" type="button">Enter</button>
+          </div>
+        </div>
+        <script>
+          (function () {
+            var gate = document.getElementById('splash-gate');
+            if (!gate) return;
+            if (document.documentElement.classList.contains('skp-entered')) {
+              gate.style.display = 'none';
+              return;
+            }
+            document.body.classList.add('gate-open');
+            var btn = document.getElementById('splash-enter-btn');
+            function openSite() {
+              gate.classList.add('splash-gate-hide');
+              document.body.classList.remove('gate-open');
+              try { sessionStorage.setItem('skpEntered', '1'); } catch (e) {}
+              setTimeout(function () { gate.style.display = 'none'; }, 900);
+            }
+            if (btn) btn.addEventListener('click', openSite);
+            gate.addEventListener('click', function (e) { if (e.target === gate) openSite(); });
+            document.addEventListener('keydown', function (e) {
+              if (e.key === 'Enter' || e.key === 'Escape') openSite();
+            });
+            setTimeout(function () { if (btn) btn.focus(); }, 350);
+            var daisyEl = gate.querySelector('.splash-daisy');
+            if (daisyEl) {
+              setTimeout(function () { daisyEl.classList.add('is-idle'); }, 1650);
+            }
+          })();
+        </script>
+
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
