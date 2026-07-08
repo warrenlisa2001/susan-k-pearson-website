@@ -419,6 +419,145 @@ nav.scrolled {
     50% { opacity: 1; transform: scaleY(1.1); }
 }
 
+/* ===== DAISY SPLASH 3D ===== */
+#skp-splash {
+    position: fixed; inset: 0; z-index: 9999;
+    background: #07070e;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: opacity 1.1s ease, visibility 1.1s ease;
+}
+#skp-splash.out { opacity: 0; visibility: hidden; pointer-events: none; }
+.skp-ambient {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 55% at 50% 50%,
+        rgba(201,169,110,0.1) 0%,
+        rgba(201,169,110,0.03) 45%,
+        transparent 70%
+    );
+    animation: skpPulse 5s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes skpPulse {
+    0%,100%{ opacity:.7; transform:scale(1); }
+    50%    { opacity:1;  transform:scale(1.12); }
+}
+.skp-scene {
+    position: relative;
+    perspective: 1000px;
+    perspective-origin: 50% 44%;
+    width: 380px; height: 380px;
+    display: flex; align-items: center; justify-content: center;
+}
+.skp-daisy { position: absolute; transform-style: preserve-3d; }
+.skp-pw {
+    position: absolute; width: 0; height: 0;
+    transform-style: preserve-3d;
+}
+.skp-petal {
+    position: absolute;
+    width: 64px; height: 158px;
+    left: -32px; bottom: 0;
+    border-radius: 32px 32px 14px 14px;
+    transform-style: preserve-3d;
+    transform-origin: center bottom;
+    transform: rotateX(-91deg);
+    will-change: transform;
+    transition: none;
+}
+.skp-pf {
+    position: absolute; inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(168deg,
+        #ffffff 0%, #faf7f2 20%, #f0ead8 50%, #faf8f4 80%, #ffffff 100%
+    );
+    box-shadow:
+        inset 0 3px 10px rgba(255,255,255,0.95),
+        inset -4px 0 16px rgba(0,0,0,0.07),
+        inset  4px 0 16px rgba(0,0,0,0.07),
+        0 10px 40px rgba(0,0,0,0.55),
+        0  3px  8px rgba(201,169,110,0.2);
+    backface-visibility: hidden;
+}
+.skp-pf::before {
+    content: '';
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    top: 6%; bottom: 20%;
+    width: 2.5px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4) 55%, transparent 100%);
+    border-radius: 2px;
+}
+.skp-pf::after {
+    content: ''; position: absolute; inset: 0; border-radius: inherit;
+    background: linear-gradient(90deg,
+        rgba(160,148,128,0.22) 0%, rgba(255,255,255,0) 18%,
+        rgba(255,255,255,0.18) 50%, rgba(255,255,255,0) 82%,
+        rgba(160,148,128,0.18) 100%
+    );
+}
+.skp-pb {
+    position: absolute; inset: 0; border-radius: inherit;
+    background: linear-gradient(180deg, #cdc8bc 0%, #b8b2a2 50%, #c4bfb0 100%);
+    transform: rotateX(180deg); backface-visibility: visible;
+}
+.skp-center {
+    position: absolute; width: 92px; height: 92px;
+    border-radius: 50%; top: -46px; left: -46px;
+    transform: translateZ(10px) scale(0);
+    transform-style: preserve-3d;
+    background: radial-gradient(circle at 34% 28%,
+        #f5d87a 0%, #d4a435 28%, #c99620 52%, #a07018 72%, #7a5210 100%
+    );
+    box-shadow:
+        0 0 0 4px rgba(201,169,110,0.28),
+        0 0 30px rgba(201,169,110,0.7),
+        0 0 65px rgba(201,169,110,0.35),
+        0 0 110px rgba(201,169,110,0.12),
+        inset 0 -10px 24px rgba(0,0,0,0.38),
+        inset 0  6px 14px rgba(255,220,80,0.38);
+    transition: transform 0.65s cubic-bezier(0.34,1.55,0.64,1);
+    will-change: transform; z-index: 20;
+}
+.skp-center::before {
+    content: ''; position: absolute; inset: 14px; border-radius: 50%;
+    background:
+        radial-gradient(circle at 32% 28%, rgba(255,255,255,0.28) 0%, transparent 45%),
+        radial-gradient(circle at 68% 72%, rgba(0,0,0,0.12) 0%, transparent 40%);
+}
+.skp-center.open { transform: translateZ(10px) scale(1); }
+.skp-txt { position: absolute; bottom: -110px; left: 50%; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+.skp-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.35rem, 2.8vw, 2rem);
+    font-weight: 300; font-style: italic;
+    color: #f5f2ed; letter-spacing: 0.2em;
+    opacity: 0; transform: translateY(14px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.skp-name.on { opacity: 1; transform: translateY(0); }
+.skp-hint {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.58rem; font-weight: 400;
+    letter-spacing: 0.5em; text-transform: uppercase;
+    color: rgba(201,169,110,0.85); margin-top: 0.85rem;
+    opacity: 0; transition: opacity 0.8s ease;
+    animation: skpHint 2.8s ease-in-out infinite;
+    animation-play-state: paused;
+}
+.skp-hint.on { opacity: 1; animation-play-state: running; }
+@keyframes skpHint { 0%,100%{ opacity:.5; } 50%{ opacity:1; } }
+.skp-scene.exit .skp-daisy {
+    animation: skpOut 1s cubic-bezier(0.55,0,1,0.45) forwards;
+}
+@keyframes skpOut {
+    0%  { transform: scale(1) translateZ(0); opacity:1; }
+    35% { transform: scale(1.22) translateZ(80px); opacity:.85; }
+    100%{ transform: scale(0.04) translateZ(-300px); opacity:0; }
+}
+
+
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -1087,6 +1226,38 @@ footer .footer-gold { color: var(--gold); }
 </head>
 <body>
 
+<!-- ══════════════════════ DAISY SPLASH 3D ══════════════════════ -->
+<div id="skp-splash" onclick="skpBloom()">
+  <div class="skp-ambient"></div>
+  <div class="skp-scene" id="skpScene">
+    <div class="skp-daisy" id="skpDaisy">
+      <div class="skp-pw" style="transform:rotate(0deg)">    <div class="skp-petal" id="sp0">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(22.5deg)"> <div class="skp-petal" id="sp1">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(45deg)">   <div class="skp-petal" id="sp2">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(67.5deg)"> <div class="skp-petal" id="sp3">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(90deg)">   <div class="skp-petal" id="sp4">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(112.5deg)"><div class="skp-petal" id="sp5">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(135deg)">  <div class="skp-petal" id="sp6">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(157.5deg)"><div class="skp-petal" id="sp7">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(180deg)">  <div class="skp-petal" id="sp8">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(202.5deg)"><div class="skp-petal" id="sp9">  <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(225deg)">  <div class="skp-petal" id="sp10"> <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(247.5deg)"><div class="skp-petal" id="sp11"> <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(270deg)">  <div class="skp-petal" id="sp12"> <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(292.5deg)"><div class="skp-petal" id="sp13"> <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(315deg)">  <div class="skp-petal" id="sp14"> <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-pw" style="transform:rotate(337.5deg)"><div class="skp-petal" id="sp15"> <div class="skp-pf"></div><div class="skp-pb"></div></div></div>
+      <div class="skp-center" id="skpCenter"></div>
+    </div>
+    <div class="skp-txt">
+      <div class="skp-name" id="skpName">Susan K. Pearson</div>
+      <div class="skp-hint" id="skpHint">Touch to enter</div>
+    </div>
+  </div>
+</div>
+<!-- ══════════════════════════════════════════════════════════════ -->
+
+
 <!-- NAVIGATION -->
 <nav id="mainNav">
     <a href="#home" class="nav-logo" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:5px;">
@@ -1155,7 +1326,7 @@ footer .footer-gold { color: var(--gold); }
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="cat-rescue.html">Cat Rescue</a></li>
+        <li><a href="animal-advocate.html">Animal Advocate Initiative</a></li>
         <li><a href="intake.html">Intake Form</a></li>
     </ul>
     <button class="btn-book" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Book Session</button>
@@ -1783,23 +1954,22 @@ footer .footer-gold { color: var(--gold); }
         <p class="section-label">Beyond the Studio</p>
         <div class="gold-line" style="margin:1rem auto 2.5rem;"></div>
         <p style="font-family:var(--font-display);font-style:italic;font-size:clamp(1.1rem,1.8vw,1.5rem);color:var(--white);line-height:1.7;font-weight:300;margin-bottom:2rem;">
-            Beyond my professional work, I share my life with a large family of rescued cats and am actively involved in supporting abandoned and vulnerable animals throughout the UAE.
+            For many years, I have quietly dedicated my personal time, resources, and energy to the care of vulnerable animals.
         </p>
         <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:600px;margin:0 auto;">
-            People often describe this as rescue work. But the truth is that the relationship is far more mutual than that.
-            While I help provide care, safety, and support, these animals have given me just as much in return —
-            teaching me patience, presence, resilience, and unconditional acceptance.
-            In many ways, they rescue me too.
+            What began as individual acts of compassion gradually became something much greater than I originally imagined.
+            I came to realise that I am not simply caring for animals — I am building something.
+            Something that reflects my values. Something grounded in compassion, responsibility, stewardship,
+            and respect for all living creatures. Most importantly, something that can endure.
         </p>
         <p style="font-size:0.9rem;color:var(--gray);line-height:1.9;max-width:600px;margin:1.5rem auto 0;">
-            The same philosophy appears everywhere in my life: I do not approach from the position of someone who already knows.
-            I approach with curiosity, openness, and a willingness to be changed by what I encounter.
-            I have learned as much from the beings I have cared for as from any teacher, training, or certification.
+            The Animal Advocate Initiative exists to honour life and respect all creatures —
+            to create the conditions in which life, in all its forms, can flourish with dignity.
         </p>
         <div style="margin-top:2.5rem;">
-            <a href="cat-rescue.html" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(201,169,110,0.3);padding:0.9rem 2rem;transition:all 0.3s;"
+            <a href="animal-advocate.html" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(201,169,110,0.3);padding:0.9rem 2rem;transition:all 0.3s;"
                onmouseover="this.style.background='var(--gold-dim)';this.style.borderColor='var(--gold)'"
-               onmouseout="this.style.background='transparent';this.style.borderColor='rgba(201,169,110,0.3)'">The Cat Rescue Work →</a>
+               onmouseout="this.style.background='transparent';this.style.borderColor='rgba(201,169,110,0.3)'">Animal Advocate Initiative →</a>
         </div>
     </div>
 </section>
@@ -1888,21 +2058,27 @@ footer .footer-gold { color: var(--gold); }
             </div>
         </div>
 
-        <!-- Cat Rescue -->
+        <!-- Animal Advocate Initiative -->
         <div>
-            <p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">🐾 Cat Rescue</p>
+            <p style="font-size:0.62rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">🐾 Animal Advocate Initiative</p>
             <p style="font-size:0.82rem;color:var(--gray);line-height:1.85;margin-bottom:1.2rem;">Susan is also committed to supporting abandoned and street cats in the UAE. A portion of session proceeds contributes to rescue, medical care, and rehoming efforts for vulnerable animals in the local community.</p>
-            <a href="cat-rescue.html" style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;transition:gap 0.3s;"
+            <a href="animal-advocate.html" style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;transition:gap 0.3s;"
                onmouseover="this.style.gap='0.9rem'" onmouseout="this.style.gap='0.5rem'">Learn More →</a>
         </div>
 
     </div>
 
     <!-- Bottom bar -->
-    <div style="border-top:1px solid rgba(201,169,110,0.1);padding:1.5rem 5vw;">
+    <div style="border-top:1px solid rgba(201,169,110,0.1);padding:2rem 5vw;">
         <div style="max-width:1300px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
-            <p style="font-size:0.72rem;color:var(--gray);">© 2026 Susan K. Pearson. All rights reserved.</p>
-            <p style="font-size:0.72rem;color:var(--gray);">Dubai, UAE · <a href="privacy.html" style="color:var(--gray);text-decoration:none;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray)'">Privacy Policy</a></p>
+            <div>
+                <p style="font-size:0.72rem;color:var(--white);margin:0 0 0.3rem;">© 2026 Susan K. Pearson. All Rights Reserved.</p>
+                <p style="font-size:0.68rem;color:var(--gray);margin:0;">Elemental Healing LLC · International Practice</p>
+            </div>
+            <div style="text-align:right;">
+                <p style="font-size:0.68rem;color:var(--gray);margin:0 0 0.3rem;letter-spacing:0.15em;text-transform:uppercase;">UAE · New York City · Worldwide</p>
+                <a href="privacy.html" style="font-size:0.65rem;color:var(--gray);text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray)'">Privacy Policy</a>
+            </div>
         </div>
     </div>
 
@@ -2050,5 +2226,60 @@ async function sendChat() {
     messages.scrollTop = messages.scrollHeight;
 }
 </script>
+
+<script>
+(function(){
+    var petals  = Array.from({length:16}, function(_,i){ return document.getElementById('sp'+i); });
+    var center  = document.getElementById('skpCenter');
+    var sname   = document.getElementById('skpName');
+    var shint   = document.getElementById('skpHint');
+    var scene   = document.getElementById('skpScene');
+    var splash  = document.getElementById('skp-splash');
+    var done    = false;
+    var auto;
+
+    // Show text
+    setTimeout(function(){ sname.classList.add('on'); }, 700);
+    setTimeout(function(){ shint.classList.add('on');  }, 1500);
+
+    // Auto-bloom after 3.5s
+    auto = setTimeout(skpBloom, 3500);
+
+    window.skpBloom = function(){
+        if(done) return; done = true;
+        clearTimeout(auto);
+        shint.style.opacity = '0';
+
+        // Wave: pairs of opposite petals unfurl simultaneously
+        var wave = [0,8, 4,12, 2,10, 6,14, 1,9, 3,11, 5,13, 7,15];
+        wave.forEach(function(idx, i){
+            setTimeout(function(){
+                var p = petals[idx];
+                p.style.transition = 'transform 0.78s cubic-bezier(0.34,1.42,0.64,1)';
+                p.style.transform  = 'rotateX(-16deg)';
+            }, i * 42);
+        });
+
+        // Centre rises
+        setTimeout(function(){ center.classList.add('open'); }, 220);
+
+        // Name fades
+        setTimeout(function(){
+            sname.style.transition = 'opacity 0.7s ease';
+            sname.style.opacity    = '0';
+        }, 900);
+
+        // Daisy exit
+        setTimeout(function(){ scene.classList.add('exit'); }, 1350);
+
+        // Splash fades — site beneath is revealed
+        setTimeout(function(){ splash.classList.add('out'); }, 1900);
+
+        // Remove from DOM entirely
+        setTimeout(function(){ splash.style.display = 'none'; }, 3200);
+    };
+})();
+</script>
+
 
 </body>
