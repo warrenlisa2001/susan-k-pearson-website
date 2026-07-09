@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiki, The Placebo Effect, and the Power of Attention · Susan K. Pearson</title>
+    <meta name="description" content="Perhaps the question is not whether something is 'just a placebo,' but whether we have fully understood the extraordinary capacity of the human mind and body to respond to care, attention, and intention. A reflection by Susan K. Pearson.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --black:      #0A0A0F;
+            --dark:       #0f0f14;
+            --dark2:      #141418;
+            --gold:       #c9a96e;
+            --white:      #f5f2ed;
+            --gray:       #8a8880;
+            --gray-light: #b8b5b0;
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body:    'Raleway', sans-serif;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--black);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-weight: 300;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.4rem 5vw;
+            background: rgba(10,10,15,0.95);
+            border-bottom: 1px solid rgba(201,169,110,0.08);
+            backdrop-filter: blur(12px);
+        }
+
+        .nav-back {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.65rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-back:hover { color: var(--gold); }
+        .nav-back::before { content: '←'; font-size: 0.8rem; }
+
+        .nav-center {
+            font-size: 0.58rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        /* HEADER */
+        .blog-header {
+            padding: 12rem 5vw 5rem;
+            max-width: 780px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .blog-label {
+            font-size: 0.62rem;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 1.8rem;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards 0.2s;
+        }
+
+        .blog-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 300;
+            line-height: 1.15;
+            color: var(--white);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeUp 0.9s ease forwards 0.4s;
+        }
+
+        .blog-title em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .blog-opener {
+            font-family: var(--font-display);
+            font-size: clamp(1rem, 1.8vw, 1.3rem);
+            font-style: italic;
+            color: var(--gray-light);
+            font-weight: 300;
+            line-height: 1.7;
+            max-width: 640px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeUp 0.9s ease forwards 0.6s;
+        }
+
+        .gold-line {
+            width: 48px;
+            height: 1px;
+            background: var(--gold);
+            opacity: 0.4;
+            margin: 3rem auto;
+        }
+
+        .blog-meta {
+            font-size: 0.62rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gray);
+            opacity: 0;
+            animation: fadeUp 0.9s ease forwards 0.8s;
+        }
+
+        /* BODY */
+        .blog-body {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 5vw 8rem;
+        }
+
+        .blog-body p {
+            font-size: 0.97rem;
+            color: var(--gray-light);
+            line-height: 2;
+            margin-bottom: 1.6rem;
+        }
+
+        .blog-body p.lead {
+            font-family: var(--font-display);
+            font-size: clamp(1rem, 1.6vw, 1.2rem);
+            color: var(--white);
+            font-style: italic;
+            line-height: 1.75;
+            margin-bottom: 2.5rem;
+        }
+
+        .blog-body h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+            font-weight: 400;
+            color: var(--white);
+            margin: 3.5rem 0 1.2rem;
+            line-height: 1.3;
+        }
+
+        .blog-body h2 em { color: var(--gold); font-style: italic; }
+
+        /* PULL QUOTE */
+        .pull-quote {
+            border-left: 2px solid var(--gold);
+            padding: 1.8rem 2.5rem;
+            margin: 3rem 0;
+            background: var(--dark2);
+        }
+
+        .pull-quote p {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: clamp(1.05rem, 1.7vw, 1.3rem) !important;
+            color: var(--white) !important;
+            line-height: 1.65 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .pull-quote cite {
+            display: block;
+            margin-top: 1rem;
+            font-size: 0.62rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-style: normal;
+        }
+
+        /* LIST */
+        .blog-list {
+            list-style: none;
+            margin: 1rem 0 1.6rem;
+        }
+
+        .blog-list li {
+            font-size: 0.97rem;
+            color: var(--gray-light);
+            line-height: 1.9;
+            padding: 0.3rem 0 0.3rem 1.8rem;
+            position: relative;
+        }
+
+        .blog-list li::before {
+            content: '·';
+            position: absolute;
+            left: 0.5rem;
+            color: var(--gold);
+            font-size: 1.3rem;
+            line-height: 1.5;
+        }
+
+        /* REFLECTION BOX */
+        .reflection {
+            background: var(--dark2);
+            border-top: 1px solid rgba(201,169,110,0.2);
+            border-bottom: 1px solid rgba(201,169,110,0.2);
+            padding: 3rem 2.5rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .reflection p {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: clamp(1rem, 1.7vw, 1.25rem) !important;
+            color: var(--white) !important;
+            line-height: 1.7 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .reflection cite {
+            font-size: 0.62rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        /* BACK */
+        .back-section {
+            border-top: 1px solid rgba(201,169,110,0.1);
+            padding: 4rem 5vw;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.65rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--gold); }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark2);
+            border-top: 1px solid rgba(201,169,110,0.12);
+            padding: 2.5rem 5vw;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.68rem;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        footer a:hover { color: var(--gold); }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 600px) {
+            .pull-quote { padding: 1.4rem 1.5rem; }
+            .reflection { padding: 2rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html" class="nav-back">Susan K. Pearson</a>
+    <span class="nav-center">Reflections</span>
+    <div style="width:120px;"></div>
+</nav>
+
+
+<!-- HEADER -->
+<header class="blog-header">
+    <span class="blog-label">Reflections · Susan K. Pearson</span>
+    <h1 class="blog-title">Reiki, The Placebo Effect,<br>and the Power of <em>Attention</em></h1>
+    <div class="gold-line"></div>
+    <p class="blog-opener">"Perhaps the question is not whether something is 'just a placebo,' but whether we have fully understood the extraordinary capacity of the human mind and body to respond to care, attention, and intention."</p>
+    <p class="blog-meta" style="margin-top:2rem;">Susan K. Pearson · 2026</p>
+</header>
+
+
+<!-- BODY -->
+<main class="blog-body">
+
+    <p class="lead reveal">One of the questions I am occasionally asked is: <em>"Is Reiki just the placebo effect?"</em></p>
+
+    <p class="reveal">It is a fair question.</p>
+
+    <p class="reveal">In a world that increasingly seeks evidence, measurement, and certainty, it is natural to wonder whether the benefits people experience from Reiki come from the practice itself or from their expectations surrounding it.</p>
+
+    <p class="reveal">Over the years, I have come to feel that perhaps we are asking the wrong question.</p>
+
+    <p class="reveal">Not because science is unimportant. Far from it. But because the phrase <em>"just a placebo"</em> often dismisses something that is, in itself, deeply fascinating.</p>
+
+
+    <h2 class="reveal">The Placebo Effect Is Not <em>Imaginary</em></h2>
+
+    <p class="reveal">It is not people making things up.</p>
+
+    <p class="reveal">It is a well-documented phenomenon in which belief, expectation, trust, and the therapeutic relationship can influence how people experience pain, stress, wellbeing, and healing.</p>
+
+    <p class="reveal">When we look more closely, the placebo effect reveals something remarkable: the human system is responsive. Our thoughts, emotions, expectations, and experiences all influence how we feel.</p>
+
+    <div class="pull-quote reveal">
+        <p>That, to me, is not something to dismiss. It is something to honour.</p>
+    </div>
+
+
+    <h2 class="reveal">What People Bring to the <em>Session</em></h2>
+
+    <p class="reveal">When people come for Reiki, they often arrive carrying more than physical symptoms.</p>
+
+    <p class="reveal">They bring stress. Grief. Exhaustion. Life transitions. Questions that have no simple answers. Sometimes they simply need a space where they can stop holding everything together for a while.</p>
+
+    <p class="reveal">In those moments, something important happens.</p>
+
+    <ul class="blog-list reveal">
+        <li>The pace slows.</li>
+        <li>Attention deepens.</li>
+        <li>The nervous system begins to settle.</li>
+        <li>The mind becomes quieter.</li>
+    </ul>
+
+    <p class="reveal">Whether we choose to describe that experience through the language of energy, neuroscience, relaxation, or human connection, the experience itself remains meaningful.</p>
+
+
+    <h2 class="reveal">A More <em>Interesting</em> Question</h2>
+
+    <p class="reveal">I have never believed that healing can be reduced to a single explanation. Human beings are wonderfully complex. We are physical, emotional, mental, relational, and spiritual beings all at once.</p>
+
+    <p class="reveal">The reality is that many things contribute to wellbeing:</p>
+
+    <ul class="blog-list reveal">
+        <li>Connection.</li>
+        <li>Presence.</li>
+        <li>Hope.</li>
+        <li>Rest.</li>
+        <li>Safety.</li>
+        <li>Meaning.</li>
+        <li>Compassion.</li>
+        <li>And perhaps the simple experience of being fully seen and heard.</li>
+    </ul>
+
+    <p class="reveal">For me, Reiki has never been about convincing anyone of a particular belief system. It has always been about creating the conditions in which people can reconnect with themselves.</p>
+
+    <p class="reveal">Some clients describe feeling deeply relaxed. Some report a sense of clarity. Others notice shifts in how they relate to challenges in their lives. And occasionally, people simply enjoy having an hour dedicated entirely to stillness.</p>
+
+    <p class="reveal">All of these experiences are valid. All of them matter.</p>
+
+    <p class="reveal">Perhaps the most important question is not whether Reiki is the placebo effect. Perhaps the more interesting question is:</p>
+
+    <div class="pull-quote reveal">
+        <p>What becomes possible when we give ourselves permission to slow down, receive support, and pay attention to what is happening within us?</p>
+    </div>
+
+    <p class="reveal">I don't claim to have all the answers.</p>
+
+    <p class="reveal">What I do know is that attention has power. Presence has power. Human connection has power.</p>
+
+    <p class="reveal">And whether we call that healing, self-awareness, nervous system regulation, or something else entirely, it remains one of the most profound experiences available to us.</p>
+
+
+    <div class="reflection reveal">
+        <p>"I have never been interested in convincing people what to believe. I am interested in creating a space where people can become more aware of themselves. Sometimes that awareness brings insight. Sometimes it brings peace. Sometimes it simply reminds us that we are more connected to ourselves than we realised."</p>
+        <cite>— Susan K. Pearson</cite>
+    </div>
+
+</main>
+
+
+<!-- BACK -->
+<div class="back-section">
+    <a href="blog.html" class="back-link">← All Reflections</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="index.html" class="back-link">Return to Susan K. Pearson</a>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Susan K. Pearson. All Rights Reserved.</p>
+    <p style="margin-top:0.3rem;">Elemental Healing LLC · International Practice</p>
+    <p style="margin-top:0.3rem; letter-spacing:0.1em;">UAE · New York City · Worldwide</p>
+</footer>
+
+
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.1 });
+revealEls.forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
